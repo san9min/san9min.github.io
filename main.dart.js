@@ -45881,7 +45881,7 @@ A.ako.prototype={
 $0(){$.hH().lW(this.a,"/")},
 $S:0}
 A.akp.prototype={
-$0(){A.aqm(A.hC("https://chat-profile.audrey.kr/api/user/google/login/",0,null),B.nd,"_blanck")},
+$0(){A.aqm(A.hC("https://chat-profile.audrey.kr/api/user/google/login/",0,null),B.nd,"_self")},
 $S:0}
 A.pZ.prototype={
 am(){var s=null
