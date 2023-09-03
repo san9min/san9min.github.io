@@ -89,7 +89,7 @@ else if(B.c.bj(s,"Linux"))return B.vA
 else if(B.c.bj(s,"Win"))return B.vB
 else return B.Qa},
 aYq(){var s=$.e2()
-return J.dR(B.le.a,s)},
+return J.dR(B.ld.a,s)},
 aYr(){var s=$.e2()
 return s===B.aW&&B.c.p(self.window.navigator.userAgent,"OS 15_")},
 oK(){var s,r=A.xW(1,1)
@@ -954,7 +954,7 @@ g=a0.style
 g.setProperty("transform-origin","0 0 0","")
 n=A.hB(n)
 g.setProperty("transform",n,"")
-if(k===B.iD){n=o.style
+if(k===B.iC){n=o.style
 n.setProperty("transform-style","preserve-3d","")
 n=a0.style
 n.setProperty("transform-style","preserve-3d","")}o.append(a0)}A.u(s.style,"position","absolute")
@@ -1879,12 +1879,12 @@ if(r==null?$.BB="OffscreenCanvas" in self.window:r)s.a=new globalThis.OffscreenC
 else{r=s.b=A.xW(b,a)
 r.className="gl-canvas"
 s.Rs(r)}return s},
-aYh(){var s=A.aCJ(B.j4),r=A.aCJ(B.j5)
+aYh(){var s=A.aCJ(B.j3),r=A.aCJ(B.j4)
 self.document.body.append(s)
 self.document.body.append(r)
 $.a0G=new A.a1o(s,r)
 $.lb.push(new A.axg())},
-aCJ(a){var s="setAttribute",r=a===B.j5?"assertive":"polite",q=A.br(self.document,"label"),p=A.aB("ftl-announcement-"+r)
+aCJ(a){var s="setAttribute",r=a===B.j4?"assertive":"polite",q=A.br(self.document,"label"),p=A.aB("ftl-announcement-"+r)
 A.J(q,s,["id",p==null?t.K.a(p):p])
 p=q.style
 A.u(p,"position","fixed")
@@ -1915,7 +1915,7 @@ A.u(s,"left","0px")}else{s=a.style
 s.removeProperty("top")
 s.removeProperty("left")}},
 lv(){var s=t.UF,r=A.a([],t.eE),q=A.a([],t.d),p=$.e2()
-p=J.dR(B.le.a,p)?new A.a4f():new A.abY()
+p=J.dR(B.ld.a,p)?new A.a4f():new A.abY()
 p=new A.a6f(A.t(t.S,s),A.t(t.bo,s),r,q,new A.a6i(),new A.agW(p),B.dq,A.a([],t.U9))
 p.a3f()
 return p},
@@ -2013,37 +2013,37 @@ else q.$2(B.cB,5)
 continue}if(r===B.ez||r===B.hs||r===B.hw){q.$2(B.z,6)
 continue}p=a.f
 if(p>=o)break
-if(r===B.dt||r===B.kp){q.$2(B.z,7)
+if(r===B.dt||r===B.ko){q.$2(B.z,7)
 continue}if(i===B.dt){q.$2(B.cV,18)
-continue}if(i===B.kp){q.$2(B.cV,8)
-continue}if(i===B.kq){q.$2(B.z,8)
-continue}h=i!==B.kk
+continue}if(i===B.ko){q.$2(B.cV,8)
+continue}if(i===B.kp){q.$2(B.z,8)
+continue}h=i!==B.kj
 if(h&&!0)k=i==null?B.bp:i
-if(r===B.kk||r===B.kq){if(k!==B.dt){if(k===B.hu)--j
+if(r===B.kj||r===B.kp){if(k!==B.dt){if(k===B.hu)--j
 q.$2(B.z,9)
 r=k
 continue}r=B.bp}if(!h||!1){a.a=k
 h=k}else h=i
-if(r===B.ks||h===B.ks){q.$2(B.z,11)
-continue}if(h===B.kn){q.$2(B.z,12)
+if(r===B.kr||h===B.kr){q.$2(B.z,11)
+continue}if(h===B.km){q.$2(B.z,12)
 continue}g=h!==B.dt
-if(!(!g||h===B.hp||h===B.ey)&&r===B.kn){q.$2(B.z,12)
-continue}if(g)g=r===B.km||r===B.ex||r===B.oT||r===B.hq||r===B.kl
+if(!(!g||h===B.hp||h===B.ey)&&r===B.km){q.$2(B.z,12)
+continue}if(g)g=r===B.kl||r===B.ex||r===B.oT||r===B.hq||r===B.kk
 else g=!1
 if(g){q.$2(B.z,13)
 continue}if(h===B.ew){q.$2(B.z,14)
-continue}g=h===B.kv
+continue}g=h===B.ku
 if(g&&r===B.ew){q.$2(B.z,15)
-continue}f=h!==B.km
-if((!f||h===B.ex)&&r===B.ko){q.$2(B.z,16)
-continue}if(h===B.kr&&r===B.kr){q.$2(B.z,17)
-continue}if(g||r===B.kv){q.$2(B.z,19)
-continue}if(h===B.ku||r===B.ku){q.$2(B.cV,20)
-continue}if(r===B.hp||r===B.ey||r===B.ko||h===B.oR){q.$2(B.z,21)
+continue}f=h!==B.kl
+if((!f||h===B.ex)&&r===B.kn){q.$2(B.z,16)
+continue}if(h===B.kq&&r===B.kq){q.$2(B.z,17)
+continue}if(g||r===B.ku){q.$2(B.z,19)
+continue}if(h===B.kt||r===B.kt){q.$2(B.cV,20)
+continue}if(r===B.hp||r===B.ey||r===B.kn||h===B.oR){q.$2(B.z,21)
 continue}if(a.b===B.bo)g=h===B.ey||h===B.hp
 else g=!1
 if(g){q.$2(B.z,21)
-continue}g=h===B.kl
+continue}g=h===B.kk
 if(g&&r===B.bo){q.$2(B.z,21)
 continue}if(r===B.oS){q.$2(B.z,22)
 continue}e=h!==B.bp
@@ -2052,10 +2052,10 @@ else d=!1
 else d=!0
 if(d){q.$2(B.z,23)
 continue}d=h===B.hx
-if(d)c=r===B.kt||r===B.ht||r===B.hv
+if(d)c=r===B.ks||r===B.ht||r===B.hv
 else c=!1
 if(c){q.$2(B.z,23)
-continue}if((h===B.kt||h===B.ht||h===B.hv)&&r===B.cW){q.$2(B.z,23)
+continue}if((h===B.ks||h===B.ht||h===B.hv)&&r===B.cW){q.$2(B.z,23)
 continue}c=!d
 if(!c||h===B.cW)b=r===B.bp||r===B.bo
 else b=!1
@@ -2156,7 +2156,7 @@ aZ4(a,b){switch(a){case B.cm:return"left"
 case B.fl:return"right"
 case B.c3:return"center"
 case B.dS:return"justify"
-case B.lq:switch(b.a){case 1:return"end"
+case B.lp:switch(b.a){case 1:return"end"
 case 0:return"left"}break
 case B.bh:switch(b.a){case 1:return""
 case 0:return"right"}break
@@ -2185,7 +2185,7 @@ if(s>=48&&s<=57)return B.hh
 if(s>=1632&&s<=1641)return B.oo
 switch($.aC8().qP(s)){case B.y:return B.on
 case B.ab:return B.oo
-case null:return B.kb}},
+case null:return B.ka}},
 J2(a,b){var s
 if(b<0||b>=a.length)return null
 s=B.c.X(a,b)
@@ -2215,9 +2215,9 @@ s=b-1
 if((B.c.X(a,s)&63488)===55296)return!1
 r=$.Jm().Af(0,a,b)
 q=$.Jm().Af(0,a,s)
-if(q===B.iH&&r===B.iI)return!1
-if(A.ex(q,B.lP,B.iH,B.iI,j,j))return!0
-if(A.ex(r,B.lP,B.iH,B.iI,j,j))return!0
+if(q===B.iG&&r===B.iH)return!1
+if(A.ex(q,B.lP,B.iG,B.iH,j,j))return!0
+if(A.ex(r,B.lP,B.iG,B.iH,j,j))return!0
 if(q===B.lO&&r===B.lO)return!1
 if(A.ex(r,B.fz,B.fA,B.fy,j,j))return!1
 for(p=0;A.ex(q,B.fz,B.fA,B.fy,j,j);){++p
@@ -2244,8 +2244,8 @@ if(s&&A.ex(r,B.bM,B.b1,j,j,j))return!1
 if(k===B.cp&&A.ex(q,B.lN,B.fx,B.dW,j,j)&&r===B.cp)return!1
 if(s&&A.ex(r,B.lN,B.fx,B.dW,j,j)&&l===B.cp)return!1
 if(q===B.fB&&r===B.fB)return!1
-if(A.ex(q,B.bM,B.b1,B.cp,B.fB,B.iG)&&r===B.iG)return!1
-if(q===B.iG&&A.ex(r,B.bM,B.b1,B.cp,B.fB,j))return!1
+if(A.ex(q,B.bM,B.b1,B.cp,B.fB,B.iF)&&r===B.iF)return!1
+if(q===B.iF&&A.ex(r,B.bM,B.b1,B.cp,B.fB,j))return!1
 return!0},
 ex(a,b,c,d,e,f){if(a===b)return!0
 if(a===c)return!0
@@ -2271,7 +2271,7 @@ case"TextInputType.text":default:return B.Em}},
 aT5(a){var s
 if(a==="TextCapitalization.words")s=B.AF
 else if(a==="TextCapitalization.characters")s=B.AH
-else s=a==="TextCapitalization.sentences"?B.AG:B.lr
+else s=a==="TextCapitalization.sentences"?B.AG:B.lq
 return new A.E0(s)},
 aVF(a){},
 a0M(a,b){var s,r="transparent",q="none",p=a.style
@@ -2316,7 +2316,7 @@ h=s.a(i.h(j,"autofill"))
 g=A.bO(i.h(j,"textCapitalization"))
 if(g==="TextCapitalization.words")g=B.AF
 else if(g==="TextCapitalization.characters")g=B.AH
-else g=g==="TextCapitalization.sentences"?B.AG:B.lr
+else g=g==="TextCapitalization.sentences"?B.AG:B.lq
 f=A.ayw(h,new A.E0(g))
 g=f.b
 n.push(g)
@@ -2431,9 +2431,9 @@ A.u(s,"transform-origin","0 0 0")
 A.u(s,"transform",A.hB(b))},
 hB(a){var s=A.axQ(a)
 if(s===B.Bd)return"matrix("+A.i(a[0])+","+A.i(a[1])+","+A.i(a[4])+","+A.i(a[5])+","+A.i(a[12])+","+A.i(a[13])+")"
-else if(s===B.iD)return A.aXX(a)
+else if(s===B.iC)return A.aXX(a)
 else return"none"},
-axQ(a){if(!(a[15]===1&&a[14]===0&&a[11]===0&&a[10]===1&&a[9]===0&&a[8]===0&&a[7]===0&&a[6]===0&&a[3]===0&&a[2]===0))return B.iD
+axQ(a){if(!(a[15]===1&&a[14]===0&&a[11]===0&&a[10]===1&&a[9]===0&&a[8]===0&&a[7]===0&&a[6]===0&&a[3]===0&&a[2]===0))return B.iC
 if(a[0]===1&&a[1]===0&&a[4]===0&&a[5]===1&&a[12]===0&&a[13]===0)return B.Bc
 else return B.Bd},
 aXX(a){var s=a[0]
@@ -6181,12 +6181,12 @@ if(B.c.bj(a,"Digit"))return B.c.a7(a,5)
 s=B.c.a7(b,0)
 if(b.length<=1)r=!(s>=32&&s<=127)
 else r=!0
-if(r){r=B.kU.h(0,a)
+if(r){r=B.kT.h(0,a)
 return r==null?null:B.c.a7(r,0)}if(!(s>=$.aLO()&&s<=$.aLP()))r=s>=$.aLZ()&&s<=$.aM_()
 else r=!0
 if(r)return B.c.a7(b.toLowerCase(),0)
 return null},
-aUE(a){var s=B.kU.gfg(B.kU),r=A.t(t.S,t.N)
+aUE(a){var s=B.kT.gfg(B.kT),r=A.t(t.S,t.N)
 r.Sk(r,s.ig(s,new A.aug(),t.q9))
 return new A.auf(a,r)},
 aWP(a){var s,r,q,p,o,n=a.X8(),m=A.t(t.N,t.S)
@@ -10044,11 +10044,11 @@ return s==null?$.aLr():s},
 awD:function awD(){},
 avE:function avE(){},
 bB(a){var s=null,r=A.a([a],t.Q)
-return new A.u7(s,!1,!0,s,s,s,!1,r,s,B.bb,s,!1,!1,s,B.jK)},
+return new A.u7(s,!1,!0,s,s,s,!1,r,s,B.bb,s,!1,!1,s,B.jJ)},
 pG(a){var s=null,r=A.a([a],t.Q)
-return new A.Mh(s,!1,!0,s,s,s,!1,r,s,B.Hq,s,!1,!1,s,B.jK)},
+return new A.Mh(s,!1,!0,s,s,s,!1,r,s,B.Hq,s,!1,!1,s,B.jJ)},
 a6k(a){var s=null,r=A.a([a],t.Q)
-return new A.Mg(s,!1,!0,s,s,s,!1,r,s,B.Hp,s,!1,!1,s,B.jK)},
+return new A.Mg(s,!1,!0,s,s,s,!1,r,s,B.Hp,s,!1,!1,s,B.jJ)},
 My(a){var s=A.a(a.split("\n"),t.s),r=A.a([A.pG(B.b.gJ(s))],t.G),q=A.eJ(s,1,null,t.N)
 B.b.M(r,new A.a6(q,new A.a78(),q.$ti.i("a6<aD.E,f8>")))
 return new A.lB(r)},
@@ -15128,7 +15128,7 @@ j=a2==null?i:new A.bL(a2,k)
 return A.K6(a,b,p,l,h,i,r,i,i,j,new A.bL(a3,k),n,o,new A.bL(a4,t.Ak),m,new A.bL(a6,t.kU),i,a7,i,a8,q,b0)},
 aIp(a){var s=A.N(a).y?B.nV:B.at,r=A.cn(a,B.bN)
 r=r==null?null:r.c
-return A.a2u(s,B.nZ,B.jS,r==null?1:r)},
+return A.a2u(s,B.nZ,B.jR,r==null?1:r)},
 Rs:function Rs(a,b,c,d,e,f,g,h,i,j,k){var _=this
 _.c=a
 _.d=b
@@ -15180,7 +15180,7 @@ return new A.E_(A.n4(a.a,b.a,c))},
 E_:function E_(a){this.a=a},
 Zp:function Zp(){},
 ht(a,b,c,d,e,f,g,h,i,j,k){var s,r=h?B.Td:B.Te,q=h?B.Tf:B.Tg
-if(e==null)s=f===1?B.Ud:B.iv
+if(e==null)s=f===1?B.Ud:B.lu
 else s=e
 return new A.E1(a,d,c,s,k,j,h,r,q,f,g,i,b,!0,null)},
 aT8(a,b){return new A.y4(b.gH3(),b.gH2(),null)},
@@ -15506,7 +15506,7 @@ case B.ck:case B.bz:case B.cl:s=B.Pl
 break
 default:s=c8}r=A.aTJ(d0)
 d7=d7===!0
-if(d7)q=B.jg
+if(d7)q=B.jf
 else q=B.Ew
 if(d2==null)p=c8
 else p=d2
@@ -15539,34 +15539,34 @@ j=k
 b=j
 g=b}if(f==null)f=o?B.na:B.az
 a=A.RM(f)
-a0=o?B.jt:B.ju
-a1=o?B.q:B.jn
+a0=o?B.js:B.jt
+a1=o?B.q:B.jm
 a2=a===B.a6
 if(o)a3=B.nh
 else{a4=n==null?c8:n.f
-a3=a4==null?B.jo:a4}a5=o?A.W(31,255,255,255):A.W(31,0,0,0)
+a3=a4==null?B.jn:a4}a5=o?A.W(31,255,255,255):A.W(31,0,0,0)
 if(d4==null)d4=o?A.W(10,255,255,255):A.W(10,0,0,0)
 if(k==null)k=o?B.c9:B.nq
 if(d5==null)d5=k
 if(c==null)c=o?B.fW:B.j
 if(i==null)i=o?B.GY:B.bE
 if(n==null){a6=o?B.nh:B.nb
-a4=o?B.cN:B.js
+a4=o?B.cN:B.jr
 a7=A.RM(B.az)===B.a6
 a8=A.RM(a6)
-a9=o?B.Fl:B.jn
+a9=o?B.Fl:B.jm
 b0=a7?B.j:B.q
 a8=a8===B.a6?B.j:B.q
 b1=o?B.j:B.q
 b2=a7?B.j:B.q
-n=A.ayJ(a4,p,B.jx,c8,c8,c8,b2,o?B.q:B.j,c8,c8,b0,c8,a8,c8,b1,c8,c8,c8,c8,c8,B.az,c8,a1,c8,a6,c8,a9,c8,c,c8,c8,c8,c8)}b3=o?B.R:B.W
+n=A.ayJ(a4,p,B.jw,c8,c8,c8,b2,o?B.q:B.j,c8,c8,b0,c8,a8,c8,b1,c8,c8,c8,c8,c8,B.az,c8,a1,c8,a6,c8,a9,c8,c,c8,c8,c8,c8)}b3=o?B.R:B.W
 b4=o?B.cN:B.nl
 if(d==null)d=o?B.fW:B.j
 if(e==null){e=n.f
 if(e.j(0,f))e=B.j}b5=o?B.F5:A.W(153,0,0,0)
-b6=A.aD0(!1,o?B.jo:B.nk,n,c8,a5,36,d3,d4,B.Dn,s,88,c8,c8,d6,B.Dp)
+b6=A.aD0(!1,o?B.jn:B.nk,n,c8,a5,36,d3,d4,B.Dn,s,88,c8,c8,d6,B.Dp)
 b7=o?B.F0:B.F_
-if(d3==null)d3=o?B.mY:B.jl
+if(d3==null)d3=o?B.mY:B.jk
 if(d6==null)d6=o?B.mY:B.F2
 if(d7){b8=A.aGA(d0,c8,c8,B.YA,B.Yz,B.Yv)
 a4=n.a===B.ay
@@ -15582,8 +15582,8 @@ c5=c3.aN(c8)
 c6=o?B.oA:B.Je
 c7=a2?B.oA:B.Jf
 if(d1==null)d1=B.C0
-if(h==null)h=B.jx
-if(b==null)b=o?B.cN:B.js
+if(h==null)h=B.jw
+if(b==null)b=o?B.cN:B.jr
 if(j==null)j=o?B.fW:B.j
 return A.aA8(c8,c8,d1,g===!0,b,B.C9,B.Pf,j,B.Cz,B.CA,B.CB,B.Do,b6,k,c,B.EG,B.EN,B.EO,n,c8,B.Hh,B.Hi,d,B.Hu,b7,i,B.Hx,B.HD,B.HE,B.Ie,h,B.Ii,A.aTi(c9),B.Iv,!0,B.Iy,a5,d3,b5,d4,B.IH,c6,e,B.DQ,B.K3,s,B.Pp,B.Pq,B.Pr,B.Pz,B.PA,B.PB,B.Qf,B.E5,d0,B.R9,f,a,a1,a0,c7,c5,B.Rd,B.Re,d5,B.RQ,B.RR,B.RS,b4,B.RT,B.no,B.q,B.Tc,B.Ti,d6,q,B.TR,B.TX,B.TZ,B.Uh,c4,B.Zq,B.Zr,a3,B.Zv,c1,b3,d7,r)},
 aA8(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,e0,e1,e2,e3,e4,e5,e6,e7,e8,e9,f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,g0,g1,g2,g3,g4,g5,g6,g7,g8,g9){return new A.ix(d,a0,b3,c4,c6,d4,d5,e6,f6,g8,g9,h,n,o,s,a3,a5,a6,b7,b8,b9,c0,c3,d7,d9,e0,e5,e9,f1,f2,f5,g7,c2,e1,e2,g1,g6,a,c,f,g,i,j,k,l,m,p,q,r,a1,a2,a4,a7,a8,a9,b0,b2,b4,b6,c1,c5,c7,c8,c9,d0,d1,d2,d3,d6,e3,e4,e7,e8,f0,f3,f4,f7,f8,f9,g0,g2,g3,g5,!0,d8,b,b1,e,g4)},
@@ -16598,8 +16598,8 @@ a6.aF(0,-a,0)
 a6.e1(0,-1,1)
 a6.aF(0,a,0)}a0=a5.amZ(k,new A.w(0,0,n,m))
 if(b8===B.et)a6.kt(b3,a0,c,h)
-else{a1=b8===B.oH||b8===B.kg?B.iA:B.iC
-a2=b8===B.oI||b8===B.kg?B.iA:B.iC
+else{a1=b8===B.oH||b8===B.kf?B.iz:B.iB
+a2=b8===B.oI||b8===B.kf?B.iz:B.iB
 a3=B.b.gJ(A.aVW(b7,c,b8))
 s=new Float64Array(16)
 a4=new A.bx(s)
@@ -16610,7 +16610,7 @@ a4.e1(0,(a3.c-r)/(a0.c-a0.a),(a3.d-q)/(a0.d-a0.b))
 a4.jr(r,q,0)
 h.st7(i.TC(b3,a1,a2,s,b0))
 a6.cj(b7,h)}if(b)a6.c5(0)},
-aVW(a,b,c){var s,r,q,p,o,n,m=b.c,l=b.a,k=m-l,j=b.d,i=b.b,h=j-i,g=c!==B.kg
+aVW(a,b,c){var s,r,q,p,o,n,m=b.c,l=b.a,k=m-l,j=b.d,i=b.b,h=j-i,g=c!==B.kf
 if(!g||c===B.oH){s=B.d.eY((a.a-l)/k)
 r=B.d.e4((a.c-m)/k)}else{s=0
 r=0}if(!g||c===B.oI){q=B.d.eY((a.b-i)/h)
@@ -16908,12 +16908,12 @@ _.d=c
 _.a=d},
 aFK(a){var s,r,q
 switch(a.w.a){case 1:s=a.c
-r=s!=null?new A.e5(0,s.grJ(s)):B.ji
+r=s!=null?new A.e5(0,s.grJ(s)):B.jh
 break
 case 0:s=a.d
 r=a.c
 if(s!=null){q=r==null?null:r.grJ(r)
-r=new A.cd(s,q==null?B.p:q)}else if(r==null)r=B.j8
+r=new A.cd(s,q==null?B.p:q)}else if(r==null)r=B.j7
 break
 default:r=null}return new A.fQ(a.a,a.f,a.b,a.e,r)},
 ahc(a,b,c){var s,r,q,p,o,n,m=null
@@ -17377,7 +17377,7 @@ GI:function GI(){},
 XC:function XC(){},
 aFt(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d={}
 d.a=b
-if(a==null)a=B.kx
+if(a==null)a=B.kw
 s=J.aj(a)
 r=s.gq(a)-1
 q=A.b0(0,e,!1,t.LQ)
@@ -17424,7 +17424,7 @@ p.bl(B.zT,q.gZ4(q))
 q.gaiY(q)
 p.bl(B.zY,q.gaiY(q))
 q.goo()
-p.bl(B.ld,q.goo())
+p.bl(B.lc,q.goo())
 q.gaqi()
 p.bl(B.zM,q.gaqi())
 q.gZE()
@@ -17436,7 +17436,7 @@ p.bl(B.zK,q.gJj(q))
 q.galv()
 p.bl(B.zQ,q.galv())
 q.galw(q)
-p.bl(B.lc,q.galw(q))
+p.bl(B.lb,q.galw(q))
 q.gqw(q)
 s=q.gqw(q)
 p.bl(B.zX,!0)
@@ -17525,7 +17525,7 @@ q.gIT()
 p.sIT(q.gIT())
 q.gB5()
 p.sB5(q.gB5())
-r.lE(0,B.kx,p)
+r.lE(0,B.kw,p)
 r.sbd(0,b.gbd(b))
 r.sc6(0,b.gc6(b))
 r.dx=b.garA()
@@ -20109,8 +20109,8 @@ _.a=0
 _.c=_.b=null},
 iI:function iI(){},
 aXW(a){switch(a.a){case 0:return B.f6
-case 1:return B.l9
-case 2:return B.l8}},
+case 1:return B.l8
+case 2:return B.l7}},
 vG:function vG(a,b){this.a=a
 this.b=b},
 fq:function fq(){},
@@ -20857,7 +20857,7 @@ $.aGj=r+1
 return new A.aiQ(s,r,a)},
 aWN(a){switch(a){case"TextInputAction.none":return B.U3
 case"TextInputAction.unspecified":return B.U4
-case"TextInputAction.go":return B.lu
+case"TextInputAction.go":return B.lt
 case"TextInputAction.search":return B.U7
 case"TextInputAction.send":return B.U8
 case"TextInputAction.next":return B.U9
@@ -20866,11 +20866,11 @@ case"TextInputAction.continueAction":return B.Ub
 case"TextInputAction.join":return B.Uc
 case"TextInputAction.route":return B.U5
 case"TextInputAction.emergencyCall":return B.U6
-case"TextInputAction.done":return B.lt
+case"TextInputAction.done":return B.ls
 case"TextInputAction.newline":return B.AP}throw A.c(A.A5(A.a([A.pG("Unknown text input action: "+a)],t.G)))},
 aWM(a){switch(a){case"FloatingCursorDragState.start":return B.og
-case"FloatingCursorDragState.update":return B.k5
-case"FloatingCursorDragState.end":return B.k6}throw A.c(A.A5(A.a([A.pG("Unknown text cursor action: "+a)],t.G)))},
+case"FloatingCursorDragState.update":return B.k4
+case"FloatingCursorDragState.end":return B.k5}throw A.c(A.A5(A.a([A.pG("Unknown text cursor action: "+a)],t.G)))},
 Dw:function Dw(a,b){this.a=a
 this.b=b},
 Dx:function Dx(a,b){this.a=a
@@ -21941,9 +21941,9 @@ aPp(a,b,c,d,e){var s,r=null,q=d!=null
 if(q&&a===B.dh)return A.a([],t.ZD)
 s=A.a([],t.ZD)
 if(c!=null)s.push(new A.e6(c,B.nA,r))
-if(b!=null)s.push(new A.e6(b,B.jA,r))
+if(b!=null)s.push(new A.e6(b,B.jz,r))
 if(q)s.push(new A.e6(d,B.nB,r))
-if(e!=null)s.push(new A.e6(e,B.jB,r))
+if(e!=null)s.push(new A.e6(e,B.jA,r))
 return s},
 aPo(a){var s,r=a.a,q=a.j(0,B.fj),p=r==null
 if(p){$.ax.toString
@@ -22269,7 +22269,7 @@ fE(a,b,c,d,e,f,g){return new A.dx(g,a,!0,!0,e,f,A.a([],t.bp),$.aZ())},
 a7h(a,b,c){var s=t.bp
 return new A.pO(B.Bj,A.a([],s),c,a,!0,!0,null,null,A.a([],s),$.aZ())},
 rP(){switch(A.bt().a){case 0:case 1:case 2:if($.ax.bi$.b.a!==0)return B.hf
-return B.k9
+return B.k8
 case 3:case 4:case 5:return B.hf}},
 lM:function lM(a,b){this.a=a
 this.b=b},
@@ -23856,7 +23856,7 @@ WH:function WH(){},
 IJ:function IJ(){},
 a05:function a05(){},
 aE6(a,b,c){return new A.Ag(a,c,b,null)},
-aH_(a,b,c){var s,r,q=null,p=t.Y,o=new A.aL(0,0,p),n=new A.aL(0,0,p),m=new A.FL(B.iO,o,n,b,a,$.aZ()),l=A.c8(q,q,q,q,c)
+aH_(a,b,c){var s,r,q=null,p=t.Y,o=new A.aL(0,0,p),n=new A.aL(0,0,p),m=new A.FL(B.iN,o,n,b,a,$.aZ()),l=A.c8(q,q,q,q,c)
 l.bq()
 s=l.cG$
 s.b=!0
@@ -26118,7 +26118,7 @@ mn:function mn(){},
 aW4(a,b,c){var s=null,r=a.glh(a),q=r.gao0(r)
 if(B.c.bj(q,"image/"))return new A.hg(A.azS(s,s,new A.nN(a.glh(a).ajE(),1)),b,c,s,s)
 else if(B.c.bj(q,"text/"))return A.bm(a.glh(a).ajF(),s,s,s,s,s,s)
-return B.lo},
+return B.ln},
 axq:function axq(){},
 axr:function axr(){},
 EN:function EN(a,b){this.a=a
@@ -26165,7 +26165,7 @@ n=a.CW
 m=A.aGd(n,1)
 l=A.bK(2)
 if(r)s=a.at
-return A.abb(B.AX,8,i,B.Q,new A.aO(B.ju,k,k,l,k,k,B.t),B.at,o,p,B.Q,new A.aO(s,k,k,A.bK(2),k,k,B.t),B.at,B.V5,B.VX,j.f,B.Q,B.J,j.r,B.Q,B.J,j.w,B.Q,B.J,q,B.Q,B.J,q,B.Q,B.J,q,B.Q,B.J,new A.aO(k,k,new A.cY(new A.aU(n,5,B.A,-1),B.p,B.p,B.p),k,k,k,B.t),i,i,B.nS,24,B.Q,i,B.J,B.iz,i,m,B.CL,B.nW,B.mF,B.Xi,B.c3,B.lp,B.Q,k,B.Q)},
+return A.abb(B.AX,8,i,B.Q,new A.aO(B.jt,k,k,l,k,k,B.t),B.at,o,p,B.Q,new A.aO(s,k,k,A.bK(2),k,k,B.t),B.at,B.V5,B.VX,j.f,B.Q,B.J,j.r,B.Q,B.J,j.w,B.Q,B.J,q,B.Q,B.J,q,B.Q,B.J,q,B.Q,B.J,new A.aO(k,k,new A.cY(new A.aU(n,5,B.A,-1),B.p,B.p,B.p),k,k,k,B.t),i,i,B.nS,24,B.Q,i,B.J,B.iy,i,m,B.CL,B.nW,B.mF,B.Xi,B.c3,B.lo,B.Q,k,B.Q)},
 aEF(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=null,a5=a6.gd_().gcl()
 a5=a5.bR(a6.gfX()===B.a6?B.Fr:B.fS)
 s=a6.gd_().gcl()
@@ -26210,7 +26210,7 @@ a0=a6.gfX()===B.a6?B.e9:B.h_
 a1=a6.gfX()===B.a6?B.nf:B.nj
 a2=a6.gfX()===B.a6?B.e9:B.h_
 a3=a6.gfX()===B.a6?B.nf:B.nj
-return A.abb(a5,8,h,B.Q,new A.aO(a0,a4,new A.cY(B.p,B.p,B.p,new A.aU(a1,4,B.A,-1)),a4,a4,a4,B.t),B.h7,f,p,B.Q,new A.aO(a2,a4,a4,a4,a4,a4,B.t),B.at,i,k,r,B.Q,B.J,o,B.Q,B.J,n,B.Q,B.J,m,B.Q,B.J,l,B.Q,B.J,q,B.Q,B.J,new A.aO(a4,a4,new A.cY(new A.aU(a3,1,B.A,-1),B.p,B.p,B.p),a4,a4,a4,B.t),g,e,B.nS,24,B.Q,s,B.J,j,c,b,new A.aO(a,a4,a4,a4,a4,a4,B.t),B.nW,B.mF,d,B.c3,B.lp,B.Q,a4,B.Q)},
+return A.abb(a5,8,h,B.Q,new A.aO(a0,a4,new A.cY(B.p,B.p,B.p,new A.aU(a1,4,B.A,-1)),a4,a4,a4,B.t),B.h7,f,p,B.Q,new A.aO(a2,a4,a4,a4,a4,a4,B.t),B.at,i,k,r,B.Q,B.J,o,B.Q,B.J,n,B.Q,B.J,m,B.Q,B.J,l,B.Q,B.J,q,B.Q,B.J,new A.aO(a4,a4,new A.cY(new A.aU(a3,1,B.A,-1),B.p,B.p,B.p),a4,a4,a4,B.t),g,e,B.nS,24,B.Q,s,B.J,j,c,b,new A.aO(a,a4,a4,a4,a4,a4,B.t),B.nW,B.mF,d,B.c3,B.lo,B.Q,a4,B.Q)},
 qk:function qk(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2){var _=this
 _.a=a
 _.b=b
@@ -26801,11 +26801,11 @@ case 3:A.lE(l,a,B.om,A.a(["# ","## ","### ","#### ","##### ","###### "],t.s),h,!
 break
 case 10:A.lE("> ",a,B.om,l,l,!0,l,"Quote",i).kC()
 break
-case 7:A.lE(c+" ",a,B.ka,l,l,l,l,"Bulleted list",i).kC()
+case 7:A.lE(c+" ",a,B.k9,l,l,l,l,"Bulleted list",i).kC()
 break
-case 8:A.lE(l,a,B.ka,l,l,l,!0,"Numbered list",i).kC()
+case 8:A.lE(l,a,B.k9,l,l,l,!0,"Numbered list",i).kC()
 break
-case 9:A.lE(l,a,B.ka,A.a(["- [ ] ","- [x] "],t.s),h,l,l,"Checkbox",i).kC()
+case 9:A.lE(l,a,B.k9,A.a(["- [ ] ","- [x] "],t.s),h,l,l,"Checkbox",i).kC()
 break
 case 4:s=a.a.a
 r=i.a
@@ -26935,7 +26935,7 @@ _.r=d},
 azN(a,b,c){var s
 if(c){s=$.t9()
 A.ub(a)
-s=s.a.get(a)===B.jd}else s=!1
+s=s.a.get(a)===B.jc}else s=!1
 if(s)throw A.c(A.k_("`const Object()` cannot be used as the token."))
 s=$.t9()
 A.ub(a)
@@ -31298,7 +31298,7 @@ if(r===0)r=1}A.u(s,"transform","scale("+A.i(1/r)+")")},
 acp(a){var s
 this.Y6()
 s=$.e2()
-if(!J.dR(B.le.a,s)&&!$.cB().ann()&&$.ayi().c){$.cB().Tc(!0)
+if(!J.dR(B.ld.a,s)&&!$.cB().ann()&&$.ayi().c){$.cB().Tc(!0)
 $.be().Iw()}else{s=$.cB()
 s.qc()
 s.Tc(!1)
@@ -31509,7 +31509,7 @@ jk(a,b){var s=this.d
 s.a2a(0,b)
 if(s.y!=null)s.gaY(s).rotate(b)},
 a8(a,b){var s
-if(A.axQ(b)===B.iD)this.at=!0
+if(A.axQ(b)===B.iC)this.at=!0
 s=this.d
 s.a2d(0,b)
 if(s.y!=null)A.J(s.gaY(s),"transform",[b[0],b[1],b[4],b[5],b[12],b[13]])},
@@ -34308,8 +34308,8 @@ A.zQ.prototype={
 He(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9=this,b0="createPattern",b1="u_ctransform",b2="u_textransform",b3="v_texcoord",b4="texture2D",b5="uniform4f",b6="bindBuffer",b7="texParameteri",b8=a9.a,b9=a9.b,c0=b8===B.cH
 if(!c0&&b9!==B.cH){c0=a9.aeV(a9.e,b8,b9)
 c0.toString
-s=b8===B.iA||b8===B.iB
-r=b9===B.iA||b9===B.iB
+s=b8===B.iz||b8===B.iA
+r=b9===B.iz||b9===B.iA
 if(s)q=r?"repeat":"repeat-x"
 else q=r?"repeat-y":"no-repeat"
 q=A.J(c1,b0,[c0,q])
@@ -34429,7 +34429,7 @@ a8.toString
 c0=A.J(c1,b0,[a8,"no-repeat"])
 c0.toString
 return c0}},
-aeV(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=a2===B.iB?2:1,a0=a3===B.iB?2:1
+aeV(a1,a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=a2===B.iA?2:1,a0=a3===B.iA?2:1
 if(a===1&&a0===1)return a1.a
 s=a1.d
 r=a1.e
@@ -34491,7 +34491,7 @@ A.ahd.prototype={}
 A.zP.prototype={}
 A.a89.prototype={
 He(a,b,c){var s,r,q,p,o,n,m,l,k,j,i=this,h=i.f
-if(h===B.cH||h===B.iC){s=i.r
+if(h===B.cH||h===B.iB){s=i.r
 r=b.a
 q=b.b
 p=i.b
@@ -34507,7 +34507,7 @@ p=s.b
 n=s.c
 s.XX(0,m-l,o-k)
 j=a.createLinearGradient(p+l-r,n+k-q,s.b+l-r,s.c+k-q)}else j=a.createLinearGradient(n-r,p-q,m-r,o-q)
-A.aV6(j,i.d,i.e,h===B.iC)
+A.aV6(j,i.d,i.e,h===B.iB)
 return j}else{h=A.J(a,"createPattern",[i.TB(b,c,!1),"no-repeat"])
 h.toString
 return h}},
@@ -35930,13 +35930,13 @@ if(r===0&&s!==0)return new A.l4(B.d0,r)
 this.a=s
 return new A.l4(s===0?B.d0:B.f3,s)},
 wK(a){if(this.a!==0&&(a&1073741823)===0){this.a=0
-return new A.l4(B.l4,0)}return null},
+return new A.l4(B.l3,0)}return null},
 K8(a){if((a&1073741823)===0){this.a=0
 return new A.l4(B.d0,0)}return null},
 K9(a){var s
 if(this.a===0)return null
 s=this.a=(a==null?0:a)&1073741823
-if(s===0)return new A.l4(B.l4,s)
+if(s===0)return new A.l4(B.l3,s)
 else return new A.l4(B.f3,s)}}
 A.arm.prototype={
 Ea(a){return this.w.bV(0,a,new A.aro())},
@@ -36065,7 +36065,7 @@ p=p.h(0,q)
 p.toString
 p.a=0
 r.PJ(a)
-r.hi(s,new A.l4(B.l2,0),a)
+r.hi(s,new A.l4(B.l1,0),a)
 r.c.$1(s)}},
 $S:14}
 A.aru.prototype={
@@ -36146,7 +36146,7 @@ if(l.p(0,B.d.a9(m))){m=n.identifier
 if(m==null)m=null
 m.toString
 l.C(0,B.d.a9(m))
-o.xu(B.l4,q,!1,r,n)}}o.c.$1(q)},
+o.xu(B.l3,q,!1,r,n)}}o.c.$1(q)},
 $S:14}
 A.av6.prototype={
 $1(a){var s,r,q,p,o,n,m,l=a.timeStamp
@@ -36163,7 +36163,7 @@ if(m.p(0,B.d.a9(n))){n=o.identifier
 if(n==null)n=null
 n.toString
 m.C(0,B.d.a9(n))
-p.xu(B.l2,r,!1,s,o)}}p.c.$1(r)},
+p.xu(B.l1,r,!1,s,o)}}p.c.$1(r)},
 $S:14}
 A.aqW.prototype={
 LQ(a,b,c,d){this.Gu(0,a,b,new A.aqX(this,!0,c),d)},
@@ -36265,13 +36265,13 @@ a.push(p.nq(b,c,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,m,0,n,o))
 break
 case 3:s=p.a.am(0,d)
 p.xz(d,f,g)
-if(!s)a.push(p.m6(b,B.l3,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
+if(!s)a.push(p.m6(b,B.l2,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 a.push(p.nq(b,c,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,m,0,n,o))
 p.b=b
 break
 case 4:s=p.a.am(0,d)
 p.xz(d,f,g).a=$.aHb=$.aHb+1
-if(!s)a.push(p.m6(b,B.l3,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
+if(!s)a.push(p.m6(b,B.l2,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 if(p.F1(d,f,g))a.push(p.m6(0,B.d0,d,0,0,e,!1,0,f,g,0,0,i,0,0,0,0,0,j,k,l,0,n,o))
 a.push(p.nq(b,c,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,m,0,n,o))
 p.b=b
@@ -36282,7 +36282,7 @@ break
 case 6:case 0:r=p.a
 q=r.h(0,d)
 q.toString
-if(c===B.l2){f=q.b
+if(c===B.l1){f=q.b
 g=q.c}if(p.F1(d,f,g))a.push(p.m6(p.b,B.f3,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 a.push(p.nq(b,c,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,m,0,n,o))
 if(e===B.aY){a.push(p.m6(0,B.R5,d,0,0,e,!1,0,f,g,0,0,i,0,0,0,0,0,j,k,l,0,n,o))
@@ -36295,7 +36295,7 @@ r.C(0,d)
 break
 case 7:case 8:case 9:break}else switch(m.a){case 1:case 2:case 3:s=p.a.am(0,d)
 p.xz(d,f,g)
-if(!s)a.push(p.m6(b,B.l3,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
+if(!s)a.push(p.m6(b,B.l2,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 if(p.F1(d,f,g))if(b!==0)a.push(p.m6(b,B.f3,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 else a.push(p.m6(b,B.d0,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,0,n,o))
 a.push(p.nq(b,c,d,0,0,e,!1,0,f,g,0,h,i,0,0,0,0,0,j,k,l,m,0,n,o))
@@ -36482,7 +36482,7 @@ break
 case 1:n.hR("radio",!0)
 break
 case 2:n.hR("switch",!0)
-break}if(n.Uk()===B.jU){s=n.k2
+break}if(n.Uk()===B.jT){s=n.k2
 r=A.aB(p)
 A.J(s,o,["aria-disabled",r==null?t.K.a(r):r])
 r=A.aB(p)
@@ -36641,7 +36641,7 @@ if(s!=r){this.c=r
 if(r!=null&&r.length!==0){s=$.a0G
 s.toString
 r.toString
-s.Sy(r,B.j4)}}},
+s.Sy(r,B.j3)}}},
 l(){}}
 A.vI.prototype={
 aes(){var s,r,q,p,o=this,n=null
@@ -36813,7 +36813,7 @@ r=(s&1)===0&&(r&8)===0}else r=!1
 return r},
 Uk(){var s=this.a
 if((s&64)!==0)if((s&128)!==0)return B.Ig
-else return B.jU
+else return B.jT
 else return B.If},
 aqK(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2=this,a3=a2.fr
 if(a3==null||a3.length===0){s=a2.p1
@@ -37181,7 +37181,7 @@ A.wb.prototype={
 f1(a){var s,r=this,q=r.b,p=q.k2
 p.tabIndex=0
 q.hR("button",(q.a&8)!==0)
-if(q.Uk()===B.jU&&(q.a&8)!==0){s=A.aB("true")
+if(q.Uk()===B.jT&&(q.a&8)!==0){s=A.aB("true")
 A.J(p,"setAttribute",["aria-disabled",s==null?t.K.a(s):s])
 r.FS()}else{p.removeAttribute("aria-disabled")
 s=q.b
@@ -38337,7 +38337,7 @@ break}}},
 aeb(a){var s,r,q,p,o,n,m=this,l=null,k=m.a.b.b,j=k==null,i=j?B.y:k
 for(s=a.w,r=l,q=0,p=0,o=0;n=s.length,o<=n;++o){if(o<n){n=s[o].e
 if(n===B.hh){r=l
-continue}if(n===B.kb){if(r==null)r=o
+continue}if(n===B.ka){if(r==null)r=o
 continue}if((n===B.on?B.y:B.ab)===i){r=l
 continue}}if(r==null)q+=m.Fk(i,o,a,p,q)
 else{q+=m.Fk(i,r,a,p,q)
@@ -38541,7 +38541,7 @@ o=A.oT(q,f,0,p,null)
 m=n-o}i=B.b.gK(r)
 g.UY(!0,m)
 f=g.gUo()
-h=new A.M3($,$,$,$,$,$,$,$,0,B.cC,null,B.kb,i.f,0,0,f,f)
+h=new A.M3($,$,$,$,$,$,$,$,0,B.cC,null,B.ka,i.f,0,0,f,f)
 f=i.mt$
 f===$&&A.b()
 r=i.mu$
@@ -39950,14 +39950,14 @@ if($.oM)s.c=A.awR($.IS)
 $.lb.push(new A.a61(s))},
 gzu(){var s,r=this.c
 if(r==null){if($.oM)s=$.IS
-else s=B.jc
+else s=B.jb
 $.oM=!0
 r=this.c=A.awR(s)}return r},
 u7(){var s=0,r=A.S(t.H),q,p=this,o,n,m
 var $async$u7=A.T(function(a,b){if(a===1)return A.P(b,r)
 while(true)switch(s){case 0:m=p.c
 if(m==null){if($.oM)o=$.IS
-else o=B.jc
+else o=B.jb
 $.oM=!0
 m=p.c=A.awR(o)}if(m instanceof A.Do){s=1
 break}n=m.gmZ()
@@ -39971,7 +39971,7 @@ za(){var s=0,r=A.S(t.H),q,p=this,o,n,m
 var $async$za=A.T(function(a,b){if(a===1)return A.P(b,r)
 while(true)switch(s){case 0:m=p.c
 if(m==null){if($.oM)o=$.IS
-else o=B.jc
+else o=B.jb
 $.oM=!0
 m=p.c=A.awR(o)}if(m instanceof A.Bm){s=1
 break}n=m.gmZ()
@@ -40855,7 +40855,7 @@ gI(a){var s=this.a
 return s.gI(s)}}
 A.hJ.prototype={
 gaf(a){var s=this.$ti
-return new A.u8(J.ay(this.a),this.b,B.jb,s.i("@<1>").ak(s.z[1]).i("u8<1,2>"))}}
+return new A.u8(J.ay(this.a),this.b,B.ja,s.i("@<1>").ak(s.z[1]).i("u8<1,2>"))}}
 A.u8.prototype={
 gI(a){var s=this.d
 return s==null?this.$ti.z[1].a(s):s},
@@ -40911,7 +40911,7 @@ for(s=q.a,r=q.b;s.A();)if(!r.$1(s.gI(s)))return!0}return q.a.A()},
 gI(a){var s=this.a
 return s.gI(s)}}
 A.lt.prototype={
-gaf(a){return B.jb},
+gaf(a){return B.ja},
 a6(a,b){},
 gai(a){return!0},
 gq(a){return 0},
@@ -46183,7 +46183,7 @@ return}s.w=!0
 s.c.X7(0,65536).bs(0,new A.ao6(s),t.P).le(new A.ao7(s))},
 abL(a){var s=this,r=new A.ao8(s,new A.aoa(s)),q=new A.aob(s),p=s.c
 if(p!=null)r.$1(p)
-else A.aDX(s.b).WC(0,B.k4).f0(0,r,q,t.H)}}
+else A.aDX(s.b).WC(0,B.k3).f0(0,r,q,t.H)}}
 A.aoc.prototype={
 $0(){var s=this.a
 s.r=!0
@@ -46250,9 +46250,9 @@ s.f.i5(0)},
 $S:73}
 A.UI.prototype={
 al6(){A.aU5(A.aH5(),this.b)},
-WC(a,b){if(b!==B.k4&&b!==B.Ir&&b!==B.Is&&b!==B.It&&b!==B.Iu)return A.Ae(new A.ia(!1,null,null,"Invalid file mode for this operation"),null,t.YK)
+WC(a,b){if(b!==B.k3&&b!==B.Ir&&b!==B.Is&&b!==B.It&&b!==B.Iu)return A.Ae(new A.ia(!1,null,null,"Invalid file mode for this operation"),null,t.YK)
 return A.aGX(5,[null,this.b,b.a]).bs(0,new A.aoe(this),t.YK)},
-rk(a){return this.WC(a,B.k4)},
+rk(a){return this.WC(a,B.k3)},
 h5(a){return A.aGX(12,[null,this.b]).bs(0,new A.aod(this),t.S)},
 anB(){A.aU6(A.aH5(),this.b)},
 mW(){return this.rk(0).bs(0,new A.aog(new A.aok(),new A.aoh()),t.E)},
@@ -47688,7 +47688,7 @@ k.display="none"
 i.a=!1
 k=new A.a6I(i,p,l,null,n,!1,!0)
 A.mw(l,"change",k,!1,t.TV.c)
-B.kj.Gt(l,"change",k)
+B.ki.Gt(l,"change",k)
 k=window
 k.toString
 B.fw.Gt(k,"focus",new A.a6G(i,n))
@@ -48110,7 +48110,7 @@ $S:98}
 A.a7_.prototype={
 $4(a,b,c,d){var s,r=this.a
 if(r===B.co)return A.ih(!1,d,b)
-else{if(r===B.Zz)s=B.l_
+else{if(r===B.Zz)s=B.kZ
 else if(r===B.ZB)s=B.cZ
 else if(r===B.ZC)s=B.b6
 else s=r===B.ZA?new A.j(0,-1):B.b6
@@ -48135,7 +48135,7 @@ i.b=!0
 return}q=(B.c.bj(h,"/")?B.c.bk(h,1):h).split("/")
 for(s=t.gL,p=t.py,o=i.a,n=null,m=0;l=q.length,m<l;++m,n=r){k=q[m]
 r=i.acG(k,n)
-if(r==null){j=B.c.bj(k,":")?B.l7:B.zv
+if(r==null){j=B.c.bj(k,":")?B.l6:B.zv
 r=new A.vB(k,j,A.a([],s),A.a([],p))
 r.c=n
 if(n==null)o.push(r)
@@ -48154,11 +48154,11 @@ f=g[0]
 e=this.ap1(g[1])}else{f=j
 e=null}for(d=p.length,c=e!=null,b=0;b<p.length;p.length===d||(0,A.H)(p),++b){a=p[b]
 a0=a.a
-if(a0===f||a.b===B.l7){a1=q.h(0,a.c)
+if(a0===f||a.b===B.l6){a1=q.h(0,a.c)
 a2=new A.Q4(a,A.t(n,m))
 a3=a2.b=A.t(n,m)
 if(a1!=null)a3.M(0,a1.b)
-if(a.b===B.l7)a3.n(0,B.c.bk(a0,1),A.a([f],a7))
+if(a.b===B.l6)a3.n(0,B.c.bk(a0,1),A.a([f],a7))
 if(c)a3.M(0,e)
 i.n(0,a,a2)
 B.b.M(h,a.e)}}if(J.ba(i.gb_(i).a)===0)return null}a7=q.gb_(q)
@@ -48228,7 +48228,7 @@ s.z=B.aT
 if(b!=null)s.sm(0,b)
 return s.M0(s.b)},
 bU(a){return this.kD(a,null)},
-XF(a,b){this.z=B.iJ
+XF(a,b){this.z=B.iI
 return this.M0(this.a)},
 dJ(a){return this.XF(a,null)},
 kg(a,b,c){var s,r,q,p,o,n,m=this,l=$.Qr.A6$
@@ -48242,7 +48242,7 @@ if(c==null){r=m.b-m.a
 if(isFinite(r)){l=m.x
 l===$&&A.b()
 q=Math.abs(a-l)/r}else q=1
-if(m.z===B.iJ&&m.f!=null){l=m.f
+if(m.z===B.iI&&m.f!=null){l=m.f
 l.toString
 p=l}else{l=m.e
 l.toString
@@ -48260,7 +48260,7 @@ n===$&&A.b()
 return m.FR(new A.aq1(l*s/1e6,n,a,b,B.cn))},
 M0(a){return this.kg(a,B.ai,null)},
 Ah(a){var s,r,q,p=this,o=$.aLI(),n=a<0
-p.z=n?B.iJ:B.aT
+p.z=n?B.iI:B.aT
 s=n?p.a-0.01:p.b+0.01
 n=$.Qr.A6$
 n===$&&A.b()
@@ -48849,7 +48849,7 @@ o=o.a-40
 n=s-73.5
 m=r.c
 m.toString
-m=A.x(m,B.iQ,t.w).w.a
+m=A.x(m,B.iP,t.w).w.a
 r.a.toString
 n=A.aEC(new A.w(10,-21.5,0+m.a-10,0+m.b+21.5),new A.w(o,n,o+80,n+47.5))
 r.N(new A.am7(r,new A.j(n.a,n.b),p,s))},
@@ -48992,7 +48992,7 @@ q===$&&A.b()
 q=A.a4(0,800,q)
 q.toString
 q=A.d7(0,B.d.eY(q),0)
-r.z=B.iJ
+r.z=B.iI
 r.kg(0,B.nE,q)}}q=r.r
 if(q!=null&&q.a!=null){p=A.bg("animationStatusCallback")
 p.b=new A.alZ(o,p)
@@ -49173,7 +49173,7 @@ A.TK.prototype={}
 A.TR.prototype={
 H(a){return A.b2(null,null,1/A.x(a,B.cr,t.w).w.b)}}
 A.Lm.prototype={
-H(a){var s,r=t.w,q=A.x(a,B.bk,r).w.f,p=q.b+8,o=this.c,n=o.b,m=n>=p+8+43,l=26+q.a,k=A.x(a,B.iQ,r).w.a.a-q.c-26,j=new A.j(A.F(o.a,l,k),n-8-p)
+H(a){var s,r=t.w,q=A.x(a,B.bk,r).w.f,p=q.b+8,o=this.c,n=o.b,m=n>=p+8+43,l=26+q.a,k=A.x(a,B.iP,r).w.a.a-q.c-26,j=new A.j(A.F(o.a,l,k),n-8-p)
 n=this.d
 s=new A.j(A.F(n.a,l,k),n.b+8-p)
 r=m?j:s
@@ -50618,21 +50618,21 @@ A.j1.prototype={
 fU(a){var s=this
 if(a.gw9()<=1)s.a1(B.ak)
 else{s.td(a)
-if(s.dy===B.lX){s.dy=B.iM
+if(s.dy===B.lX){s.dy=B.iL
 s.db=new A.fg(a.gdI(),a.gbO(a))}}},
 h4(a){var s,r=this
 if(t.n2.b(a)||t.pY.b(a)){s=A.aE2(a.gBs(),a.gw9(),a.gWT(a))
 r.db=new A.fg(a.gdI(),a.gbO(a))
 r.dx=s
-if(r.dy===B.iM)if(s>0.4){r.dy=B.iN
+if(r.dy===B.iL)if(s>0.4){r.dy=B.iM
 r.a1(B.cc)}else if(a.gqo().gv5()>A.oP(a.gcJ(a),r.b))r.a1(B.ak)
-if(s>0.4&&r.dy===B.BI){r.dy=B.iN
+if(s>0.4&&r.dy===B.BI){r.dy=B.iM
 if(r.at!=null)r.d9("onStart",new A.a7x(r,s))}}r.x_(a)},
 hq(a){var s=this,r=s.dy
-if(r===B.iM)r=s.dy=B.BI
-if(s.at!=null&&r===B.iN)s.d9("onStart",new A.a7v(s))},
-qt(a){var s=this,r=s.dy,q=r===B.iN||r===B.a0t
-if(r===B.iM){s.a1(B.ak)
+if(r===B.iL)r=s.dy=B.BI
+if(s.at!=null&&r===B.iM)s.d9("onStart",new A.a7v(s))},
+qt(a){var s=this,r=s.dy,q=r===B.iM||r===B.a0t
+if(r===B.iL){s.a1(B.ak)
 return}if(q&&s.ch!=null)if(s.ch!=null)s.d9("onEnd",new A.a7w(s))
 s.dy=B.lX},
 fp(a){this.hg(a)
@@ -50868,7 +50868,7 @@ r.fy=B.vu
 r.k2=0
 r.go=a.giq(a)
 r.k1=a.gc6(a)
-r.a4V()}else if(s===B.iK)r.a1(B.cc)},
+r.a4V()}else if(s===B.iJ)r.a1(B.cc)},
 fU(a){var s=this
 s.td(a)
 if(s.fr===B.d8)s.id=a.gdT(a)
@@ -50893,7 +50893,7 @@ if(s)p=a.gbO(a)
 else{o=a.gbO(a)
 t.DB.a(a)
 p=o.Y(0,a.gJ6(a))}n=s?a.gdI():a.gdI().Y(0,t.DB.a(a).gIF())
-if(j.fr===B.iK){s=a.giq(a)
+if(j.fr===B.iJ){s=a.giq(a)
 j.Mm(j.tF(q),p,n,j.tG(q),s)}else{s=j.fy
 s===$&&A.b()
 j.fy=s.Y(0,new A.fg(q,r))
@@ -50913,7 +50913,7 @@ o=j.b
 if(j.EM(s,o==null?null:o.a))j.a1(B.cc)}}if(t.oN.b(a)||t.Ko.b(a)||t.WQ.b(a))j.Ev(a.gbN())},
 hq(a){var s,r,q,p,o,n,m,l,k=this
 k.k4.E(0,a)
-if(k.fr!==B.iK){k.fr=B.iK
+if(k.fr!==B.iJ){k.fr=B.iJ
 s=k.fy
 s===$&&A.b()
 r=k.go
@@ -51528,7 +51528,7 @@ A.a4Z.prototype={
 $1(a){return a==null?null:a.c},
 $S:74}
 A.a5_.prototype={
-$1(a){return B.ke},
+$1(a){return B.kd},
 $S:75}
 A.a50.prototype={
 $1(a){return"Open navigation menu"},
@@ -51543,7 +51543,7 @@ A.a5T.prototype={
 $1(a){return a==null?null:a.d},
 $S:74}
 A.a5U.prototype={
-$1(a){return B.ke},
+$1(a){return B.kd},
 $S:75}
 A.a5V.prototype={
 $1(a){return"Open navigation menu"},
@@ -51610,9 +51610,9 @@ case 0:case 1:case 2:return b}break}},
 zx(a,b,c){var s=A.bg("indicator")
 if(A.N(a).y)s.scW(B.mh)
 else{A.N(a)
-s.scW(B.j3)}switch(A.N(a).r.a){case 2:case 3:case 4:case 5:return b
+s.scW(B.j2)}switch(A.N(a).r.a){case 2:case 3:case 4:case 5:return b
 case 0:switch(s.aL()){case B.mh:return A.aST(c.a,b,c.d)
-case B.j3:break}break
+case B.j2:break}break
 case 1:break}return A.aE6(c.a,b,A.N(a).ax.f)}}
 A.G8.prototype={
 ar(){this.aK()
@@ -52146,7 +52146,7 @@ g=g.y
 d=a0.Y2(B.H)
 c=a0.a
 b=c.c
-n=A.ku(B.a1,a1,A.bz(!1,a1,!0,A.up(A.av(a1,A.cq(c.dy,1,1),B.i,a1,a1,a1,a1,a1,p,a1),new A.d9(a1,a1,a1,a1,a1,a4,a1,a1)),a5,!0,e,k,a1,g,q,i,h,d,a1,b,a1,f,a1,a1),j,m,o,a1,l,a5,a1,n,B.kW)
+n=A.ku(B.a1,a1,A.bz(!1,a1,!0,A.up(A.av(a1,A.cq(c.dy,1,1),B.i,a1,a1,a1,a1,a1,p,a1),new A.d9(a1,a1,a1,a1,a1,a4,a1,a1)),a5,!0,e,k,a1,g,q,i,h,d,a1,b,a1,f,a1,a1),j,m,o,a1,l,a5,a1,n,B.kV)
 switch(c.fr.a){case 0:a=new A.I(48+a2,48+a3)
 break
 case 1:a=B.r
@@ -52383,7 +52383,7 @@ c2.f=p
 s.toString
 q=r==null?c3:r.bR(o)
 k=d.mh(e)
-a9=p==null?B.eR:B.kW
+a9=p==null?B.eR:B.kV
 b0=c2.a
 b1=b0.w
 b2=b0.c
@@ -52568,8 +52568,8 @@ F(){return"ButtonBarLayoutBehavior."+this.b}}
 A.K8.prototype={
 gcY(a){var s=this.e
 if(s!=null)return s
-switch(this.c.a){case 0:case 1:return B.jP
-case 2:return B.jQ}},
+switch(this.c.a){case 0:case 1:return B.jO
+case 2:return B.jP}},
 gbz(a){var s=this.f
 if(s!=null)return s
 switch(this.c.a){case 0:case 1:return B.zs
@@ -53170,7 +53170,7 @@ A.tQ.prototype={
 H(a){var s=null
 return A.b2(A.aiz(this.d,this.c,A.aA5(B.fG,s,s,s,s,B.bg,s,s,B.bg,A.N(a).ax.a===B.a6?B.j:B.T,s,B.T3,B.nY,s,B.ia,s,s,s,s)),s,1/0)}}
 A.LN.prototype={
-H(a){var s,r,q,p,o,n,m,l=null,k=A.N(a),j=A.N(a).aQ,i=t.w,h=A.x(a,B.iR,i).w,g=h.e.Y(0,this.x)
+H(a){var s,r,q,p,o,n,m,l=null,k=A.N(a),j=A.N(a).aQ,i=t.w,h=A.x(a,B.iQ,i).w,g=h.e.Y(0,this.x)
 if(k.y)s=A.aGS(a)
 else s=A.aGR(a)
 h=j.f
@@ -53563,7 +53563,7 @@ case 1:s=!0
 break
 default:s=null}if(a&&s){q=this.a
 r=q.c.C7(q.e,q.f.d,q.r)
-this.a.c.cI.iQ(r.d,B.jC,B.aU)}},
+this.a.c.cI.iQ(r.d,B.jB,B.aU)}},
 a9O(){var s,r=this.a
 r=r.c.cH[r.r]
 s=this.c
@@ -53752,7 +53752,7 @@ m=o.a
 o=o.b
 l=q.a
 q=q.b
-q=B.jO.a1(s).AC(new A.w(m,o,m+l,o+q))
+q=B.jN.a1(s).AC(new A.w(m,o,m+l,o+q))
 o=b.d
 if(o==null)o=0
 b.a.toString
@@ -53777,7 +53777,7 @@ f=A.o0(B.c6)
 e=A.a([],t.wi)
 d=A.dY(a,t.R)
 c=$.an
-b.e=new A.Fo(r,B.jP,q,o,8,l,m,48,a,a,!0,a,k,"Dismiss",a,a,j,new A.bI(a,a0.i("bI<l1<iD<1>>>")),new A.bI(a,t.A),new A.qy(),a,0,new A.bf(new A.ak(i,h),g),f,e,B.ic,d,new A.bf(new A.ak(c,h),g),a0.i("Fo<1>"))
+b.e=new A.Fo(r,B.jO,q,o,8,l,m,48,a,a,!0,a,k,"Dismiss",a,a,j,new A.bI(a,a0.i("bI<l1<iD<1>>>")),new A.bI(a,t.A),new A.qy(),a,0,new A.bf(new A.ak(i,h),g),f,e,B.ic,d,new A.bf(new A.ak(c,h),g),a0.i("Fo<1>"))
 a0=b.gc9(b)
 if(a0!=null)a0.hL()
 a0=b.e
@@ -53793,7 +53793,7 @@ case 0:return B.R}}else{r.a.toString
 s=r.c
 s.toString
 switch(A.N(s).ax.a.a){case 1:return B.bR
-case 0:return B.jz}}},
+case 0:return B.jy}}},
 gpp(){var s=this.a
 return s.c.length!==0&&!0},
 H(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=A.cn(a,B.lY),g=h==null?i:h.gow(h)
@@ -53826,7 +53826,7 @@ n.push(A.eN(q,1))
 m=j.gabn()
 l=j.a.as
 n.push(A.Ap(l,new A.d9(24,i,i,i,i,m,i,i),i))
-g=A.k8(A.av(i,A.ce(n,B.o,B.kS,B.cE,i),B.i,i,i,i,i,i,p,i),i,i,B.c4,!0,h,i,i,B.b0)
+g=A.k8(A.av(i,A.ce(n,B.o,B.kR,B.cE,i),B.i,i,i,i,i,i,p,i),i,i,B.c4,!0,h,i,i,B.b0)
 if(a.an(t.U2)==null){j.a.toString
 h=A.av(i,i,B.i,i,i,B.CP,1,i,i,i)
 g=A.jy(B.cs,A.a([g,A.Cb(8,h,i,i,0,0,i,i)],o),B.Z,B.bx,i)}h=A.aF(t.ui)
@@ -53893,7 +53893,7 @@ else{s=n.db.a
 r=s>>>16&255
 q=s>>>8&255
 s&=255
-s=A.u4(B.N,B.a1,n.b,A.W(31,r,q,s),A.W(97,r,q,s),B.bg,2,!0,B.by,n.c,B.lm,B.At,A.aIo(a),o.k2,B.ib,B.jg,o.e,o.p3.as,o.z)}return s},
+s=A.u4(B.N,B.a1,n.b,A.W(31,r,q,s),A.W(97,r,q,s),B.bg,2,!0,B.by,n.c,B.ll,B.At,A.aIo(a),o.k2,B.ib,B.jf,o.e,o.p3.as,o.z)}return s},
 Jw(a){var s
 a.an(t.ds)
 s=A.N(a)
@@ -53920,7 +53920,7 @@ A.Uz.prototype={
 uX(a){var s,r
 if(A.N(a).y){s=A.cn(a,B.bN)
 s=s==null?null:s.c
-r=A.a2u(B.jO,B.HW,B.HV,s==null?1:s)}else{s=A.cn(a,B.bN)
+r=A.a2u(B.jN,B.HW,B.HV,s==null?1:s)}else{s=A.cn(a,B.bN)
 s=s==null?null:s.c
 r=A.a2u(B.HU,B.nZ,B.HX,s==null?1:s)}return this.a_M(a).uI(new A.bL(r,t.Ak))}}
 A.UA.prototype={
@@ -54318,7 +54318,7 @@ gbY(a){return this.fx.f},
 gmy(){return this.fr.cx},
 gmE(){return this.fr.dx},
 gp_(){return this.fr.k3},
-gbz(a){return this.dx===B.lW?B.Ay:B.ji},
+gbz(a){return this.dx===B.lW?B.Ay:B.jh},
 gfi(){return this.dx===B.a0s?36:24},
 gqB(){return new A.e8(this.dy&&this.dx===B.lW?16:20,0,20,0)},
 gqC(){return this.fr.p3.as.ajU(1.2)}}
@@ -54413,7 +54413,7 @@ m=new A.f6(o,new A.aG(B.at,A.b2(new A.dS(B.N,k,k,A.up(l.w,new A.d9(n,k,k,k,k,l.z
 r=l.cx
 if(r!=null)m=A.aAd(m,r)
 r=Math.max(35,(n+Math.min(B.at.gdN(),B.at.gbX(B.at)+B.at.gc1(B.at)))*0.7)
-return A.cb(!0,k,A.aQt(!1,k,!0,m,!1,k,!0,!1,j.cx,k,j.cy,B.ja,j.dx,k,B.by,k,k,k,k,k,k,k,k,k,l.ax,k,k,k,k,r,j.k3,k,k),!1,k,!0,!1,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)}}
+return A.cb(!0,k,A.aQt(!1,k,!0,m,!1,k,!0,!1,j.cx,k,j.cy,B.j9,j.dx,k,B.by,k,k,k,k,k,k,k,k,k,l.ax,k,k,k,k,r,j.k3,k,k),!1,k,!0,!1,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)}}
 A.Hh.prototype={
 ae(){return new A.Yn(B.k)}}
 A.Yn.prototype={
@@ -54850,7 +54850,7 @@ s.toString
 r=s}s=Math.max(r.zt(0,B.h).gd0(),new A.j(0+r.a,0).a3(0,new A.j(0,0+r.b)).gd0())/2}else s=a1
 q=new A.Av(a0,B.ax,s,A.aW_(a3,d,a2),a4,c,f,e,a3,g)
 p=e.v
-o=A.c8(h,B.jN,h,h,p)
+o=A.c8(h,B.jM,h,h,p)
 n=e.gdY()
 o.bq()
 m=o.cz$
@@ -54912,7 +54912,7 @@ q===$&&A.b()
 q.sm(0,s)
 if(s<1){q=r.db
 q.z=B.aT
-q.kg(1,B.ai,B.jN)}},
+q.kg(1,B.ai,B.jM)}},
 abz(a){if(a===B.a5)this.l()},
 l(){var s=this,r=s.ch
 r===$&&A.b()
@@ -56332,7 +56332,7 @@ ar(){var s,r,q,p=this,o=null
 p.aK()
 s=p.a
 r=s.c.ch
-if(r!==B.k8)if(r!==B.k7){if(s.y)s=s.r&&!0
+if(r!==B.k7)if(r!==B.k6){if(s.y)s=s.r&&!0
 else s=!0
 q=s}else q=!1
 else q=!0
@@ -56375,10 +56375,10 @@ if(r.y)r=r.r&&!0
 else r=!0
 if(a.y)p=a.r&&!0
 else p=!0
-if(r!==p||q){if(n.gaw().ch!==B.k7){r=n.a
+if(r!==p||q){if(n.gaw().ch!==B.k6){r=n.a
 if(r.y)p=r.r&&!0
 else p=!0
-r=p||r.c.ch===B.k8}else r=!1
+r=p||r.c.ch===B.k7}else r=!1
 p=n.d
 if(r){p===$&&A.b()
 p.bU(0)}else{p===$&&A.b()
@@ -56422,7 +56422,7 @@ if(r.y)r=r.r&&!0
 else r=!0
 if(!r){if(s.gaw().d==null){s.gaw()
 r=!1}else r=!0
-r=r&&s.gaw().ch!==B.k8}else r=!1
+r=r&&s.gaw().ch!==B.k7}else r=!1
 return r},
 NI(a,b){return A.ct(b.gqX(),this.gf_(),t.em).aN(A.ct(this.gaw().w,this.gf_(),t.p8))},
 gf_(){var s,r=this,q=A.aF(t.ui)
@@ -56483,7 +56483,7 @@ f=!0}else f=!1
 if(f)e=b5
 else{f=b4.f
 f===$&&A.b()
-d=b4.gOm()||b4.gaw().ch!==B.k7?1:0
+d=b4.gOm()||b4.gaw().ch!==B.k6?1:0
 c=b4.a
 if(c.y)c=c.r&&!0
 else c=!0
@@ -56701,7 +56701,7 @@ return s.p3.Q.bR(s.ax.at)},
 $S:21}
 A.apI.prototype={
 $1(a){if(a.p(0,B.x))switch(A.N(this.a.ok).ax.a.a){case 0:return B.F4
-case 1:return B.H_}switch(A.N(this.a.ok).ax.a.a){case 0:return B.jz
+case 1:return B.H_}switch(A.N(this.a.ok).ax.a.a){case 0:return B.jy
 case 1:return B.F1}},
 $S:4}
 A.apM.prototype={
@@ -56881,7 +56881,7 @@ EU(a,b){return!1},
 H(b1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6=null,a7=A.N(b1),a8=A.aEv(b1),a9=a8.c,b0=a9==null?a7.aj.c:a9
 if(b0==null)b0=B.K1
 a9=a7.y
-s=a9?new A.aqg(b1,a6,B.ia,a6,a6,a6,a6,a6,a6,a6,B.jO,a6,a6,a6,8,24,a6,a6,a6,a6):new A.aqf(b1,a6,B.j8,b0,a6,a6,a6,a6,a6,a6,B.jP,a6,a6,a6,4,40,a6,a6,a6,a6)
+s=a9?new A.aqg(b1,a6,B.ia,a6,a6,a6,a6,a6,a6,a6,B.jN,a6,a6,a6,8,24,a6,a6,a6,a6):new A.aqf(b1,a6,B.j7,b0,a6,a6,a6,a6,a6,a6,B.jO,a6,a6,a6,4,40,a6,a6,a6,a6)
 r=t.ui
 q=new A.aaQ(A.aF(r))
 p=a5.Q
@@ -56943,7 +56943,7 @@ else a=p
 if(a==null)a=B.fD.a1(r)
 a0=a9?B.K4:B.K5
 a9=a8.b
-r=a9==null?B.j8:a9
+r=a9==null?B.j7:a9
 p=a8.z
 a1=p==null?a7.aj.z:p
 p=a1==null?s.grG():a1
@@ -57287,7 +57287,7 @@ q.G(0,s)
 r.a.c.T(0,s)}r.b4(a)},
 N2(){var s,r,q,p,o,n,m,l=this,k={},j=l.a.c.a,i=l.c
 i.toString
-i=A.x(i,B.iQ,t.w).w.a
+i=A.x(i,B.iP,t.w).w.a
 s=j.a
 r=j.b
 r=new A.j(A.F(s.a,r.a,r.c),j.c.gaO().b).a3(0,new A.j(38.685,59.9))
@@ -57371,7 +57371,7 @@ switch(s.a){case 0:case 4:return B.ia
 case 1:case 3:s=B.OH.h(0,s)
 s.toString
 return new A.cd(s,B.p)
-case 2:return B.ji}}}
+case 2:return B.jh}}}
 A.aqN.prototype={
 $1(a){var s,r=$.ax.O$.z.h(0,this.a.d).ga2()
 r.toString
@@ -57979,33 +57979,33 @@ A.SR.prototype={
 H(a){return this.c}}
 A.ats.prototype={
 Bq(a7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2=this,a3=A.yC(a7),a4=a7.a,a5=a3.wo(a4),a6=a7.b
-if(a2.b.h(0,B.iT)!=null){s=a2.fK(B.iT,a5).b
-a2.h7(B.iT,B.h)
+if(a2.b.h(0,B.iS)!=null){s=a2.fK(B.iS,a5).b
+a2.h7(B.iS,B.h)
 r=s}else{r=0
 s=0}if(a2.b.h(0,B.m9)!=null){q=0+a2.fK(B.m9,a5).b
 p=Math.max(0,a6-q)
 a2.h7(B.m9,new A.j(0,p))}else{q=0
 p=null}if(a2.b.h(0,B.m8)!=null){q+=a2.fK(B.m8,new A.au(0,a5.b,0,Math.max(0,a6-q-r))).b
-a2.h7(B.m8,new A.j(0,Math.max(0,a6-q)))}if(a2.b.h(0,B.iX)!=null){o=a2.fK(B.iX,a5)
-a2.h7(B.iX,new A.j(0,s))
+a2.h7(B.m8,new A.j(0,Math.max(0,a6-q)))}if(a2.b.h(0,B.iW)!=null){o=a2.fK(B.iW,a5)
+a2.h7(B.iW,new A.j(0,s))
 if(!a2.ay)r+=o.b}else o=B.r
 n=a2.f
 m=Math.max(0,a6-Math.max(n.d,q))
-if(a2.b.h(0,B.iS)!=null){l=Math.max(0,m-r)
+if(a2.b.h(0,B.iR)!=null){l=Math.max(0,m-r)
 k=a2.d
 if(k)l=A.F(l+q,0,a3.d-r)
 k=k?q:0
-a2.fK(B.iS,new A.EO(k,s,o.b,0,a5.b,0,l))
-a2.h7(B.iS,new A.j(0,r))}if(a2.b.h(0,B.iV)!=null){a2.fK(B.iV,new A.au(0,a5.b,0,m))
-a2.h7(B.iV,B.h)}k=a2.b.h(0,B.e_)!=null&&!a2.at?a2.fK(B.e_,a5):B.r
-if(a2.b.h(0,B.iW)!=null){j=a2.fK(B.iW,new A.au(0,a5.b,0,Math.max(0,m-r)))
-a2.h7(B.iW,new A.j((a4-j.a)/2,m-j.b))}else j=B.r
+a2.fK(B.iR,new A.EO(k,s,o.b,0,a5.b,0,l))
+a2.h7(B.iR,new A.j(0,r))}if(a2.b.h(0,B.iU)!=null){a2.fK(B.iU,new A.au(0,a5.b,0,m))
+a2.h7(B.iU,B.h)}k=a2.b.h(0,B.e_)!=null&&!a2.at?a2.fK(B.e_,a5):B.r
+if(a2.b.h(0,B.iV)!=null){j=a2.fK(B.iV,new A.au(0,a5.b,0,Math.max(0,m-r)))
+a2.h7(B.iV,new A.j((a4-j.a)/2,m-j.b))}else j=B.r
 i=A.bg("floatingActionButtonRect")
-if(a2.b.h(0,B.iY)!=null){h=a2.fK(B.iY,a3)
+if(a2.b.h(0,B.iX)!=null){h=a2.fK(B.iX,a3)
 g=new A.afV(h,j,m,n,a2.r,a7,k,a2.w)
 f=a2.z.n1(g)
 e=a2.as.YF(a2.y.n1(g),f,a2.Q)
-a2.h7(B.iY,e)
+a2.h7(B.iX,e)
 d=e.a
 c=e.b
 i.b=new A.w(d,c,d+h.a,c+h.b)}if(a2.b.h(0,B.e_)!=null){d=a2.ax
@@ -58016,9 +58016,9 @@ if(!new A.I(c.c-c.a,c.d-c.b).j(0,B.r)&&a2.at){a0=i.aL().b
 c=a0}else{a0=a2.at?Math.min(m,a6-a2.r.d):m
 c=a0}if(b){d.toString
 a1=(a4-d)/2}else a1=0
-a2.h7(B.e_,new A.j(a1,c-k.b))}if(a2.b.h(0,B.iU)!=null){a2.fK(B.iU,a5.BI(n.b))
-a2.h7(B.iU,B.h)}if(a2.b.h(0,B.iZ)!=null){a2.fK(B.iZ,A.yD(a7))
-a2.h7(B.iZ,B.h)}if(a2.b.h(0,B.m7)!=null){a2.fK(B.m7,A.yD(a7))
+a2.h7(B.e_,new A.j(a1,c-k.b))}if(a2.b.h(0,B.iT)!=null){a2.fK(B.iT,a5.BI(n.b))
+a2.h7(B.iT,B.h)}if(a2.b.h(0,B.iY)!=null){a2.fK(B.iY,A.yD(a7))
+a2.h7(B.iY,B.h)}if(a2.b.h(0,B.m7)!=null){a2.fK(B.m7,A.yD(a7))
 a2.h7(B.m7,B.h)}a2.x.ahT(p,i.aL())},
 lM(a){var s=this
 return!a.f.j(0,s.f)||!a.r.j(0,s.r)||a.w!==s.w||a.Q!==s.Q||a.y!==s.y||a.z!==s.z||a.d!==s.d||!1}}
@@ -58102,7 +58102,7 @@ s===$&&A.b()
 r=q.x
 r===$&&A.b()
 p.push(A.aFz(A.azT(o,r),s))
-return A.jy(B.j2,p,B.Z,B.bx,null)},
+return A.jy(B.j1,p,B.Z,B.bx,null)},
 ad7(){var s,r,q=this.e
 q===$&&A.b()
 s=q.a
@@ -58211,7 +58211,7 @@ if(o!=null){p=p.fr
 s=q.w
 r=s.y
 s=r==null?A.m(s).i("cI.T").a(r):r
-q.pg(a,new A.zz(o,B.nO,q.ga6q(),B.a9,null,p,null,s,q.d),B.iZ,!1,b===B.ab,b===B.y,!1)}},
+q.pg(a,new A.zz(o,B.nO,q.ga6q(),B.a9,null,p,null,s,q.d),B.iY,!1,b===B.ab,b===B.y,!1)}},
 H(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h={},g=A.N(a),f=a.an(t.I)
 f.toString
 s=f.w
@@ -58221,20 +58221,20 @@ q=f.f
 q=q==null?i:new A.SR(new A.qc(q,j.f),!1,!1,i)
 f=f.e
 j.gpC()
-j.a3P(r,q,B.iS,!0,!1,!1,!1,f!=null)
-if(j.dy)j.pg(r,A.azA(!0,i,j.fr,!1,i,i,i),B.iV,!0,!0,!0,!0)
+j.a3P(r,q,B.iR,!0,!1,!1,!1,f!=null)
+if(j.dy)j.pg(r,A.azA(!0,i,j.fr,!1,i,i,i),B.iU,!0,!0,!0,!0)
 if(j.a.e!=null){f=A.x(a,B.bk,t.w).w
 f=j.r=A.aNu(a,j.a.e.fx)+f.f.b
 q=j.a.e
 q.toString
-j.pg(r,new A.f6(new A.au(0,1/0,0,f),new A.A4(1,f,f,f,i,q,i),i),B.iT,!0,!1,!1,!1)}h.a=!1
+j.pg(r,new A.f6(new A.au(0,1/0,0,f),new A.A4(1,f,f,f,i,q,i),i),B.iS,!0,!1,!1,!1)}h.a=!1
 h.b=null
 if(j.at!=null||j.as.length!==0){f=A.ap(j.as,!0,t.l7)
 q=j.at
 if(q!=null)f.push(q.a)
 p=A.jy(B.cI,f,B.Z,B.bx,i)
 j.gpC()
-j.pg(r,p,B.iW,!0,!1,!1,!0)}f=j.z
+j.pg(r,p,B.iV,!0,!1,!1,!0)}f=j.z
 if(f!=null){f.a.garl()
 h.a=!1
 f=j.z
@@ -58253,7 +58253,7 @@ f=j.Q
 f=f==null?i:f.a
 q=j.a.e
 j.gpC()
-j.LP(r,f,B.iX,!1,!0,!1,!1,q!=null)}j.a.toString
+j.LP(r,f,B.iW,!1,!0,!1,!1,q!=null)}j.a.toString
 f=j.ch
 f===$&&A.b()
 q=j.CW
@@ -58262,8 +58262,8 @@ n=j.dx
 n===$&&A.b()
 m=j.db
 m===$&&A.b()
-j.pg(r,new A.FD(i,f,q,n,m,i),B.iY,!0,!0,!0,!0)
-switch(g.r.a){case 2:case 4:j.pg(r,A.hK(B.bc,i,B.a9,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,j.gaaO(),i,i,i,i,i,i),B.iU,!0,!1,!1,!0)
+j.pg(r,new A.FD(i,f,q,n,m,i),B.iX,!0,!0,!0,!0)
+switch(g.r.a){case 2:case 4:j.pg(r,A.hK(B.bc,i,B.a9,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,j.gaaO(),i,i,i,i,i,i),B.iT,!0,!1,!1,!0)
 break
 case 0:case 1:case 3:case 5:break}f=j.x
 q=f.y
@@ -58272,11 +58272,11 @@ j.M8(r,s)}else{j.M8(r,s)
 j.M7(r,s)}f=t.w
 q=A.x(a,B.bk,f).w
 j.gpC()
-n=A.x(a,B.iR,f).w
+n=A.x(a,B.iQ,f).w
 l=q.f.zJ(n.e.d)
 q=A.x(a,B.a0J,f).w
 j.gpC()
-f=A.x(a,B.iR,f).w
+f=A.x(a,B.iQ,f).w
 f=f.e.d!==0?0:i
 k=q.r.zJ(f)
 if(l.d<=0)j.a.toString
@@ -58752,7 +58752,7 @@ A.Rs.prototype={
 uX(a){var s,r=null,q=A.N(a),p=q.ax
 if(A.N(a).y)s=new A.Zo(a,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.a1,!0,B.N,r)
 else{s=p.db.a
-s=A.aA5(B.N,B.a1,B.u,B.u,A.W(97,s>>>16&255,s>>>8&255,s&255),B.bg,0,!0,B.by,p.b,B.lm,B.At,A.aIp(a),q.k2,B.ib,B.jg,q.e,q.p3.as,q.z)}return s},
+s=A.aA5(B.N,B.a1,B.u,B.u,A.W(97,s>>>16&255,s>>>8&255,s&255),B.bg,0,!0,B.by,p.b,B.ll,B.At,A.aIp(a),q.k2,B.ib,B.jf,q.e,q.p3.as,q.z)}return s},
 Jw(a){var s
 a.an(t.Pj)
 s=A.N(a)
@@ -58967,7 +58967,7 @@ if(s.ghn().gbE())r.E(0,B.D)
 if(s.gpv())r.E(0,B.bt)
 return r},
 H(c0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5=this,b6=null,b7={},b8=A.N(c0),b9=c0.an(t.Uf)
-if(b9==null)b9=B.jD
+if(b9==null)b9=B.jC
 if(b8.y){s=A.N(c0).p3.y
 s.toString}else{s=b8.p3.w
 s.toString}r=b5.c
@@ -59298,7 +59298,7 @@ if(J.X(b)!==A.A(s))return!1
 return b instanceof A.E9&&J.d(b.a,s.a)&&J.d(b.b,s.b)&&J.d(b.c,s.c)}}
 A.Zu.prototype={}
 A.RI.prototype={
-H(a){var s=this.c.a3(0,B.kZ),r=this.d.Y(0,B.PG),q=A.x(a,B.bk,t.w).w.f.b+8,p=44<=s.b-8-q,o=new A.j(8,q)
+H(a){var s=this.c.a3(0,B.kY),r=this.d.Y(0,B.PG),q=A.x(a,B.bk,t.w).w.f.b+8,p=44<=s.b-8-q,o=new A.j(8,q)
 return new A.aG(new A.aa(8,q,8,8),new A.id(new A.RJ(s.a3(0,o),r.a3(0,o),p),new A.HQ(this.e,p,A.aZ7(),null),null),null)}}
 A.HQ.prototype={
 ae(){return new A.Zz(new A.mk(),null,null,B.k)},
@@ -59652,7 +59652,7 @@ return A.V(s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,B.a,B.
 A.ZD.prototype={}
 A.wq.prototype={
 H(a){var s,r,q=this.c,p=B.cx.a,o=B.cx.b,n=B.cx.c,m=B.cx.d,l=B.cx.e,k=B.cx.f,j=B.cx.r,i=a.an(t.Uf)
-if(i==null)i=B.jD
+if(i==null)i=B.jC
 s=q.cH
 r=s.b
 if(r==null)r=i.x
@@ -60139,7 +60139,7 @@ ar(){var s,r,q=this
 q.aK()
 q.fx=q.fr=!1
 q.cy=$.o5.bi$.b.a!==0
-s=A.c8(null,B.dl,B.jN,null,q)
+s=A.c8(null,B.dl,B.jM,null,q)
 s.bq()
 r=s.cG$
 r.b=!0
@@ -60430,7 +60430,7 @@ p.toString
 s=new A.j6(!0,q,A.ih(!1,new A.f6(new A.au(0,1/0,r.d,1/0),A.k8(A.av(q,A.cq(A.aGf(r.c,q,r.w,r.x,q),1,1),B.i,q,q,r.r,q,r.f,r.e,q),q,q,B.c4,!0,p,q,q,B.b0),q),r.y),q)
 p=r.at
 if(p!=null||r.ax!=null)s=A.kw(s,B.c7,q,p,r.ax,q)
-p=A.cn(a,B.iR)
+p=A.cn(a,B.iQ)
 p=p==null?q:p.e
 p=p==null?q:p.d
 if(p==null)p=0
@@ -62960,7 +62960,7 @@ switch(o.eC.a){case 0:n=o.bx
 s=o.t$.k3
 s.toString
 n.a=n.b=s
-o.eC=B.l5
+o.eC=B.l4
 break
 case 1:s=o.bx
 q=s.b
@@ -62989,7 +62989,7 @@ q.toString
 s.a=s.b=q
 o.cV=0
 n.kD(0,0)
-o.eC=B.Ri}else{o.eC=B.l5
+o.eC=B.Ri}else{o.eC=B.l4
 s=n.r
 if(!(s!=null&&s.a!=null))n.bU(0)}break
 case 3:s=o.bx
@@ -63001,7 +63001,7 @@ q.toString
 s.a=s.b=q
 o.cV=0
 n.kD(0,0)}else{n.fu(0)
-o.eC=B.l5}break}n=o.bx
+o.eC=B.l4}break}n=o.bx
 s=o.dK
 s===$&&A.b()
 s=n.a8(0,s.gm(s))
@@ -63760,7 +63760,7 @@ r=s.r
 r.toString
 a.y2=r
 a.d=!0
-a.bl(B.lc,d.cf)
+a.bl(B.lb,d.cf)
 a.bl(B.zM,!0)
 a.bl(B.zK,d.dG)
 if(d.cf&&d.gKh())a.sBh(d.gaaG())
@@ -63834,7 +63834,7 @@ a7.R8=new A.d5(b8,f.f)
 a9=f.c
 if(a9!=null){b8=a9.aQ
 if(b8!=null){a7.fw(B.d3,b8)
-a7.bl(B.ld,!0)}}b8=b9.y
+a7.bl(B.lc,!0)}}b8=b9.y
 if(b8!=null){b0=b8.ej(a6)
 if(b0.a>=b0.c||b0.b>=b0.d)b8=!(a4>=d||a5>=a)
 else b8=!1
@@ -64218,7 +64218,7 @@ l.Z.m9(0,l.di)},
 Ks(a,b,c,d){var s,r,q,p=this
 if(a===B.og){p.ky=B.h
 p.HV=null
-p.A2=p.A3=p.A4=!1}s=a!==B.k6
+p.A2=p.A3=p.A4=!1}s=a!==B.k5
 p.j4=s
 p.qE=d
 if(s){p.ic=c
@@ -66569,7 +66569,7 @@ a7.R8=new A.d5(b8,f.f)
 a9=f.c
 if(a9!=null){b8=a9.aQ
 if(b8!=null){a7.fw(B.d3,b8)
-a7.bl(B.ld,!0)}}b8=b9.y
+a7.bl(B.lc,!0)}}b8=b9.y
 if(b8!=null){b0=b8.ej(a6)
 if(b0.a>=b0.c||b0.b>=b0.d)b8=!(a4>=d||a5>=a)
 else b8=!1
@@ -66658,7 +66658,7 @@ k=n?B.dU:B.dT
 j=A.bJ(m,p)
 f=f.gd4()
 i=n?B.dT:B.dU
-h=g.d.a===g.e.a?B.S0:B.lb
+h=g.d.a===g.e.a?B.S0:B.la
 return new A.ob(new A.ra(o,l,k),new A.ra(j,f,i),h,!0)},
 eR(a){var s=this,r=A.bg("result"),q=s.d,p=s.e,o=a.a
 switch(o.a){case 0:case 1:r.scW(s.ahH(t.mb.a(a).b,o===B.c_))
@@ -67749,7 +67749,7 @@ if(s!=null)a.bl(B.zV,s)
 s=q.v.as
 if(s!=null)a.bl(B.zQ,s)
 s=q.v.at
-if(s!=null)a.bl(B.lc,s)
+if(s!=null)a.bl(B.lb,s)
 s=q.v.db
 if(s!=null)a.bl(B.zN,s)
 s=q.cI
@@ -68965,7 +68965,7 @@ p=B.cZ
 o=!1
 break
 case B.aD:r=a0.Y(0,new A.j(c.id.c,0))
-q=B.l_
+q=B.kZ
 p=B.b6
 o=!0
 break
@@ -70860,7 +70860,7 @@ s.Q=c.k2
 s.to=c.ok
 s.x1=c.p1
 s.x2=c.p2
-s.aeK(b==null?B.kx:b)},
+s.aeK(b==null?B.kw:b)},
 Y9(a,b){return this.lE(a,null,b)},
 YQ(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6=this,a7={}
 a7.a=a6.dy
@@ -71683,10 +71683,10 @@ cF(a){if(a==null)return null
 return A.qs(B.cw.cD(a).buffer,0,null)}}
 A.aa_.prototype={
 cF(a){if(a==null)return null
-return B.je.cF(B.b_.ia(a))},
+return B.jd.cF(B.b_.ia(a))},
 hw(a){var s
 if(a==null)return a
-s=B.je.hw(a)
+s=B.jd.hw(a)
 s.toString
 return B.b_.dD(0,s)}}
 A.aa1.prototype={
@@ -72165,7 +72165,7 @@ s.xM()}return s.b.a},
 xM(){var s=0,r=A.S(t.H),q,p=this,o
 var $async$xM=A.T(function(a,b){if(a===1)return A.P(b,r)
 while(true)switch(s){case 0:s=3
-return A.O(B.l0.mG("get",t.pE),$async$xM)
+return A.O(B.l_.mG("get",t.pE),$async$xM)
 case 3:o=b
 if(p.b==null){s=1
 break}p.Pm(o)
@@ -72211,7 +72211,7 @@ if(!n.f)return
 n.f=!1
 for(s=n.r,r=A.cR(s,s.r,A.m(s).c),q=r.$ti.c;r.A();){p=r.d;(p==null?q.a(p):p).w=!1}s.W(0)
 o=B.aP.cF(n.a.a)
-B.l0.d1("put",A.dn(o.buffer,o.byteOffset,o.byteLength),t.H)},
+B.l_.d1("put",A.dn(o.buffer,o.byteOffset,o.byteLength),t.H)},
 US(){if($.bU.fx$)return
 this.Nc()}}
 A.afu.prototype={
@@ -72753,14 +72753,14 @@ break
 case"TextInputClient.updateFloatingCursor":n=l.r
 l=A.aWM(A.bO(m.h(o,1)))
 m=t.a.a(m.h(o,2))
-if(l===B.k5){k=J.aj(m)
+if(l===B.k4){k=J.aj(m)
 c=new A.j(A.jV(k.h(m,"X")),A.jV(k.h(m,"Y")))}else c=B.h
 n.aqM(new A.ae3(c,l))
 break
 case"TextInputClient.onConnectionClosed":n=l.r
 if(n.giL()){n.y.toString
 n.fx=n.y=$.cp().d=null
-n.xB(B.lt,!0)}break
+n.xB(B.ls,!0)}break
 case"TextInputClient.showAutocorrectionPromptRect":l.r.Zy(A.eA(m.h(o,1)),A.eA(m.h(o,2)))
 break
 case"TextInputClient.showToolbar":l.r.ka()
@@ -74231,13 +74231,13 @@ yv(){var s,r,q,p,o,n,m,l=this
 try{o=l.p1
 n=l.f
 n.toString
-l.p1=l.ey(o,l.$ti.i("qV<1>").a(n).c,B.jd)}catch(m){s=A.al(m)
+l.p1=l.ey(o,l.$ti.i("qV<1>").a(n).c,B.jc)}catch(m){s=A.al(m)
 r=A.aT(m)
 o=A.bB("attaching to the render tree")
 q=new A.bR(s,r,"widgets library",o,null,!1)
 A.dg(q)
 p=A.zU(q)
-l.p1=l.ey(null,p,B.jd)}},
+l.p1=l.ey(null,p,B.jc)}},
 ga2(){return this.$ti.i("aI<1>").a(A.bl.prototype.ga2.call(this))},
 j8(a,b){var s=this.$ti
 s.i("aI<1>").a(A.bl.prototype.ga2.call(this)).saW(s.c.a(a))},
@@ -74265,7 +74265,7 @@ $.fP=o
 o.cV$!==$&&A.dw()
 o.cV$=B.Et
 s=new A.CR(A.aF(t.z4),$.aZ())
-B.l0.kY(s.gacm())
+B.l_.kY(s.gacm())
 o.eC$=s
 s=t.v3
 r=new A.a8d(A.t(s,t.bd),A.aF(t.SQ),A.a([],t.sA))
@@ -74420,7 +74420,7 @@ H(a){var s,r,q,p,o=this,n=null,m=o.c
 if(m==null){s=o.x
 if(s!=null)s=!(s.a>=s.b&&s.c>=s.d)
 else s=!0}else s=!1
-if(s)m=new A.Nz(0,0,new A.f6(B.j9,n,n),n)
+if(s)m=new A.Nz(0,0,new A.f6(B.j8,n,n),n)
 else{s=o.d
 if(s!=null)m=new A.dS(s,n,n,m,n)}r=o.gadg()
 if(r!=null)m=new A.aG(r,m,n)
@@ -74719,9 +74719,9 @@ aiZ(){var s,r=this,q=null,p=r.a.z
 if(p===B.Bb)return q
 s=A.a([],t.ZD)
 if(p.b&&r.gqj())s.push(new A.e6(new A.a5q(r),B.nA,q))
-if(p.a&&r.gqe())s.push(new A.e6(new A.a5r(r),B.jA,q))
+if(p.a&&r.gqe())s.push(new A.e6(new A.a5r(r),B.jz,q))
 if(p.c&&r.gmT())s.push(new A.e6(new A.a5s(r),B.nB,q))
-if(p.d&&r.gwM())s.push(new A.e6(new A.a5t(r),B.jB,q))
+if(p.d&&r.gwM())s.push(new A.e6(new A.a5t(r),B.jA,q))
 return s},
 a7O(){var s,r,q,p,o,n,m,l=this,k=l.a.c.a.b,j=l.ga_().aq.d.XS(),i=l.a.c.a.a
 if(j!==i||!k.gca()||k.a===k.b)return new A.V6(l.ga_().aq.gd4(),l.ga_().aq.gd4())
@@ -74767,7 +74767,7 @@ s.toString
 s=A.cn(s,B.lZ)
 s=s==null?null:s.at
 r=o.a
-o.cy=s===!0?r.CW.aN(B.iz):r.CW
+o.cy=s===!0?r.CW.aN(B.iy):r.CW
 o.c.an(t.BY)
 if(!o.ch)o.a.toString
 s=o.c
@@ -74814,7 +74814,7 @@ s.toString
 s=A.cn(s,B.lZ)
 s=s==null?null:s.at
 r=o.a
-o.cy=s===!0?r.CW.aN(B.iz):r.CW
+o.cy=s===!0?r.CW.aN(B.iy):r.CW
 if(o.giL()){s=o.y
 s.toString
 r=o.cy
@@ -74960,7 +74960,7 @@ n=o.dx
 if(n.gba(n)===B.a5){n=o.ga_()
 m=o.go
 m.toString
-n.Ci(B.k6,s,m)
+n.Ci(B.k5,s,m)
 n=o.ga_().v
 if(n.a===n.b){n=o.go
 n.toString
@@ -74974,7 +74974,7 @@ m.toString
 q=o.ga_()
 p=o.go
 p.toString
-q.Ks(B.k5,new A.j(r,m),p,n)}},
+q.Ks(B.k4,new A.j(r,m),p,n)}},
 xB(a,b){var s,r,q,p,o,n=this,m=n.a.c
 m.lP(0,m.a.Tk(B.b8))
 if(b){switch(a.a){case 0:case 1:case 2:case 3:case 4:case 5:case 8:case 9:case 10:case 11:case 12:n.a.d.oG()
@@ -75482,7 +75482,7 @@ l=q.ay
 if(q.aM)k=!o||!n
 else k=!1
 q=q.p3
-if(q==null)q=p.j(0,B.iv)?B.AP:B.lt
+if(q==null)q=p.j(0,B.lu)?B.AP:B.ls
 j=h.a
 i=j.dy
 j=j.ad
@@ -76476,7 +76476,7 @@ l=$.iP()
 if(l!=null)l.$1(new A.bR(r,q,"widgets library",n,null,!1))}}},
 Ik(a){var s,r,q=this
 switch(a.gcJ(a).a){case 0:case 2:case 3:q.a=!0
-s=B.k9
+s=B.k8
 break
 case 1:case 4:case 5:q.a=!1
 s=B.hf
@@ -76509,7 +76509,7 @@ default:r=!1}break $label0$1}s.length===q||(0,A.H)(s);++m}return r},
 Y4(){var s,r,q=this
 switch(0){case 0:s=q.a
 if(s==null)return
-r=s?B.k9:B.hf
+r=s?B.k8:B.hf
 break}s=q.b
 if(s==null)s=A.rP()
 q.b=r
@@ -77675,13 +77675,13 @@ else q=!0
 else q=!0
 else q=!0
 else q=!0
-if(q)r.n(0,B.iF,new A.cm(new A.a7T(s),new A.a7U(s,p),t.jl))
+if(q)r.n(0,B.iE,new A.cm(new A.a7T(s),new A.a7U(s,p),t.jl))
 if(s.ay==null)q=!1
 else q=!0
 if(q)r.n(0,B.ZR,new A.cm(new A.a7V(s),new A.a7Z(s,p),t.uA))
 if(s.cy==null)q=!1
 else q=!0
-if(q)r.n(0,B.iE,new A.cm(new A.a8_(s),new A.a80(s,p),t.jn))
+if(q)r.n(0,B.iD,new A.cm(new A.a8_(s),new A.a80(s,p),t.jn))
 if(s.rx!=null||s.ry!=null||s.to!=null||!1)r.n(0,B.lI,new A.cm(new A.a81(s),new A.a82(s,p),t.ok))
 if(s.x2!=null||s.y1!=null||s.y2!=null||s.bK!=null)r.n(0,B.lH,new A.cm(new A.a83(s),new A.a84(s,p),t.Uv))
 if(s.bi!=null||s.bo!=null||s.aQ!=null||!1)r.n(0,B.fu,new A.cm(new A.a85(s),new A.a7W(s,p),t.YC))
@@ -77850,10 +77850,10 @@ a.smP(s.NX(r))
 a.slx(s.NL(r))
 a.sWw(s.NJ(r))
 a.sWB(s.O_(r))},
-NX(a){var s=t.f3.a(a.h(0,B.iF))
+NX(a){var s=t.f3.a(a.h(0,B.iE))
 if(s==null)return null
 return new A.amV(s)},
-NL(a){var s=t.qA.a(a.h(0,B.iE))
+NL(a){var s=t.qA.a(a.h(0,B.iD))
 if(s==null)return null
 return new A.amU(s)},
 NJ(a){var s=t.gx.a(a.h(0,B.lH)),r=t.uR.a(a.h(0,B.fu)),q=s==null?null:new A.amR(s),p=r==null?null:new A.amS(r)
@@ -79280,7 +79280,7 @@ if(r&&i.r!=null){m=a.an(t.I)
 m.toString
 m=m.w}else m=h
 l=i.c
-k=A.cb(h,h,A.kw(new A.f6(B.j9,l==null?h:new A.tD(l,h,h),h),B.bg,h,h,h,h),!1,h,h,!1,h,h,h,h,n,h,h,h,h,h,h,h,o,h,h,p,i.x,h,h,h,h,m,h)
+k=A.cb(h,h,A.kw(new A.f6(B.j8,l==null?h:new A.tD(l,h,h),h),B.bg,h,h,h,h),!1,h,h,!1,h,h,h,h,n,h,h,h,h,h,h,h,o,h,h,p,i.x,h,h,h,h,m,h)
 j=!r||!1
 return A.aCQ(new A.lw(j,new A.We(k,q,h),h))}}
 A.ac0.prototype={
@@ -79308,35 +79308,35 @@ H(a){var s,r,q=this,p=a.an(t.I)
 p.toString
 s=A.a([],t.p)
 r=q.c
-if(r!=null)s.push(A.aaA(r,B.j_))
+if(r!=null)s.push(A.aaA(r,B.iZ))
 r=q.d
-if(r!=null)s.push(A.aaA(r,B.j0))
+if(r!=null)s.push(A.aaA(r,B.j_))
 r=q.e
-if(r!=null)s.push(A.aaA(r,B.j1))
+if(r!=null)s.push(A.aaA(r,B.j0))
 return new A.zf(new A.av_(q.f,q.r,p.w),s,null)}}
 A.xN.prototype={
 F(){return"_ToolbarSlot."+this.b}}
 A.av_.prototype={
 Bq(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this
-if(e.b.h(0,B.j_)!=null){s=a.a
+if(e.b.h(0,B.iZ)!=null){s=a.a
 r=a.b
-q=e.fK(B.j_,new A.au(0,s,r,r)).a
+q=e.fK(B.iZ,new A.au(0,s,r,r)).a
 switch(e.f.a){case 0:p=s-q
 break
 case 1:p=0
 break
-default:p=null}e.h7(B.j_,new A.j(p,0))}else q=0
-if(e.b.h(0,B.j1)!=null){o=e.fK(B.j1,A.yC(a))
+default:p=null}e.h7(B.iZ,new A.j(p,0))}else q=0
+if(e.b.h(0,B.j0)!=null){o=e.fK(B.j0,A.yC(a))
 switch(e.f.a){case 0:n=0
 break
 case 1:n=a.a-o.a
 break
 default:n=null}m=o.a
-e.h7(B.j1,new A.j(n,(a.b-o.b)/2))}else m=0
-if(e.b.h(0,B.j0)!=null){s=a.a
+e.h7(B.j0,new A.j(n,(a.b-o.b)/2))}else m=0
+if(e.b.h(0,B.j_)!=null){s=a.a
 r=e.e
 l=Math.max(s-q-m-r*2,0)
-k=e.fK(B.j0,A.yC(a).uH(l))
+k=e.fK(B.j_,A.yC(a).uH(l))
 j=q+r
 if(e.d){i=k.a
 h=(s-i)/2
@@ -79347,7 +79347,7 @@ switch(e.f.a){case 0:f=s-k.a-h
 break
 case 1:f=h
 break
-default:f=null}e.h7(B.j0,new A.j(f,(a.b-k.b)/2))}},
+default:f=null}e.h7(B.j_,new A.j(f,(a.b-k.b)/2))}},
 lM(a){return a.d!==this.d||a.e!==this.e||a.f!==this.f}}
 A.r_.prototype={
 F(){return"RoutePopDisposition."+this.b}}
@@ -80197,11 +80197,11 @@ f.b=j?s-b-e:b
 break
 case B.hK:f.b=j?i-e:a1.k3.a-i
 break
-case B.kS:s=a1.k3.a
+case B.kR:s=a1.k3.a
 c=(s-o)/(a1.bP$-1)
 f.b=j?s-e:0
 break
-case B.kT:s=a1.bP$
+case B.kS:s=a1.bP$
 c=s>0?(a1.k3.a-o)/s:0
 s=c/2
 f.b=j?a1.k3.a-s-e:s
@@ -80674,7 +80674,7 @@ if(s!=null)s.aR(0)
 n.c=null
 l=A.F(Math.abs(q),100,1e4)
 s=n.f
-if(n.a===B.iO)r=0.3
+if(n.a===B.iN)r=0.3
 else{r=n.r
 r===$&&A.b()
 q=r.a
@@ -80708,9 +80708,9 @@ case 1:n.toString
 r=o.a
 n.WW(0,Math.abs(s),o.b,A.F(k.a,0,r),r)
 break}}}}else if(a instanceof A.o9||a instanceof A.ho)if(a.gUb()!=null){s=j.d
-if(s.a===B.iP)s.nw(B.el)
+if(s.a===B.iO)s.nw(B.el)
 s=j.e
-if(s.a===B.iP)s.nw(B.el)}j.r=A.A(a)
+if(s.a===B.iO)s.nw(B.el)}j.r=A.A(a)
 return!1},
 l(){this.d.l()
 this.e.l()
@@ -80764,19 +80764,19 @@ o.fu(0)
 p.z=null}o=p.b
 o===$&&A.b()
 o.e=B.cb
-if(p.a!==B.iP){o.kD(0,0)
-p.a=B.iP}else{o=o.r
+if(p.a!==B.iO){o.kD(0,0)
+p.a=B.iO}else{o=o.r
 if(!(o!=null&&o.a!=null))p.ap()}p.c=A.cK(B.cb,new A.ap_(p))},
 Do(a){var s=this
 if(a!==B.a5)return
 switch(s.a.a){case 1:s.nw(B.el)
 break
-case 3:s.a=B.iO
+case 3:s.a=B.iN
 s.at=0
 break
 case 2:case 0:break}},
 nw(a){var s,r,q=this,p=q.a
-if(p===B.BJ||p===B.iO)return
+if(p===B.BJ||p===B.iN)return
 p=q.c
 if(p!=null)p.aR(0)
 q.c=null
@@ -80918,18 +80918,18 @@ s.toString
 m=A.F(Math.abs(r)/s,0,1)
 l.gnz().apj(0,m,l.r)}}else if(a instanceof A.o9||a instanceof A.ho){l.r=0
 s=l.gnz()
-if(s.d===B.mb)s.nw(B.jM)}l.e=a
+if(s.d===B.mb)s.nw(B.jL)}l.e=a
 return!1},
 a7A(a){switch(this.a.c.a){case 0:return a===B.db?B.mf:B.me
-case 1:return a===B.db?B.j2:B.fG
+case 1:return a===B.db?B.j1:B.fG
 case 2:return a===B.db?B.me:B.mf
-case 3:return a===B.db?B.fG:B.j2}},
+case 3:return a===B.db?B.fG:B.j1}},
 l(){var s=this.gnz(),r=s.a
 r===$&&A.b()
 r.l()
 s.dA()
 this.a37()},
-H(a){var s={},r=A.x(a,B.iQ,t.w).w
+H(a){var s={},r=A.x(a,B.iP,t.w).w
 s.a=null
 return new A.eb(this.gFh(),A.li(this.gnz(),new A.aue(s,this,r.a),null),null,t.WA)}}
 A.aue.prototype={
@@ -80973,13 +80973,13 @@ q=p.e
 s.b=0.016*q+0.016*(1-Math.exp(-q*8.237217661997105))
 q=p.a
 q===$&&A.b()
-q.e=B.jM
+q.e=B.jL
 if(p.d!==B.mb){q.kD(0,0)
 p.d=B.mb}else{s=q.r
 if(!(s!=null&&s.a!=null))p.ap()}},
 Do(a){var s=this
 if(a!==B.a5)return
-switch(s.d.a){case 1:s.nw(B.jM)
+switch(s.d.a){case 1:s.nw(B.jL)
 break
 case 3:s.d=B.ma
 s.e=0
@@ -81385,7 +81385,7 @@ s=A.bJ(r.b8(0,null),B.h)
 r.cU.$2(q,s)},
 $S:3}
 A.WO.prototype={
-aB(a){var s=new A.WP(this.e,B.j9,null,A.af(t.T))
+aB(a){var s=new A.WP(this.e,B.j8,null,A.af(t.T))
 s.az()
 s.saW(null)
 return s},
@@ -81606,19 +81606,19 @@ r=o.a.c
 r.toString
 q=o.e
 q.toString
-if(q!==B.Ro)p=q===B.l6&&r.b.a==s.a
+if(q!==B.Ro)p=q===B.l5&&r.b.a==s.a
 else p=!0
 B.hW.mG("selectMultiEntryHistory",t.H)
 q=s.a
 q.toString
 A.aGc(q,p,s.b)
-r.b=r.a=s}o.e=B.l6},
+r.b=r.a=s}o.e=B.l5},
 aeZ(){this.a.e.garp()
 this.a.toString
 return null},
 yd(){var s=this
 s.f.sm(0,s.aeZ())
-if(s.e==null)s.e=B.l6
+if(s.e==null)s.e=B.l5
 s.afd()},
 bu(){var s,r=this
 r.r=!0
@@ -82177,7 +82177,7 @@ p=o.a3Y(s,q)
 if(p===0)return
 s=o.a
 if(A.a0R(s.w.a.c))p=-p
-s.JL(p>0?B.l8:B.l9)
+s.JL(p>0?B.l7:B.l8)
 r=s.at
 r.toString
 s.CX(r-s.r.GH(s,p))},
@@ -82323,7 +82323,7 @@ return b},
 zy(a,b,c){if(this.b)return this.a.zy(a,b,c)
 return b},
 mi(a,b,c,d,e,f,g){var s=this,r=c==null?s.c:c,q=s.gmn(),p=s.gw6(),o=d==null?s.d:d,n=e==null?s.e:e,m=s.w
-if(m==null)m=B.j3
+if(m==null)m=B.j2
 return s.a.mi(m,q,r,o,n,p,g)},
 Tw(a,b,c,d){return this.mi(null,null,a,b,c,null,d)},
 Tp(a){return this.mi(null,null,null,null,null,null,a)},
@@ -83165,7 +83165,7 @@ q=o.Q
 q.toString
 p=Math.min(r,q)
 if(p!==s){o.iU(new A.nt(o))
-o.JL(-a>0?B.l8:B.l9)
+o.JL(-a>0?B.l7:B.l8)
 s=o.at
 s.toString
 o.dy.sm(0,!0)
@@ -84029,7 +84029,7 @@ if(q===0)return
 p=s.d
 r=p.at
 r.toString
-p.vS(0,r+q,B.jC,B.aU)}}
+p.vS(0,r+q,B.jB,B.aU)}}
 A.vK.prototype={
 F(){return"ScrollbarOrientation."+this.b}}
 A.vL.prototype={
@@ -84451,7 +84451,7 @@ q=r.x
 if(q==null)q=6
 p=r.w
 r=r.dx
-r=new A.vL(B.jl,B.u,B.u,n,q,s,0,0,p,n,B.J,18,18,r,$.aZ())
+r=new A.vL(B.jk,B.u,B.u,n,q,s,0,0,p,n,B.J,18,18,r,$.aZ())
 s.a.T(0,r.gd3())
 o.at!==$&&A.dw()
 o.at=r},
@@ -84460,7 +84460,7 @@ ahW(a){if(a!==B.P)if(this.gnx()!=null)this.go2()},
 wu(){var s,r=this,q=r.at
 q===$&&A.b()
 r.a.toString
-q.saA(0,B.jl)
+q.saA(0,B.jk)
 r.a.toString
 q.saqC(null)
 if(r.gQA()){r.a.toString
@@ -84628,7 +84628,7 @@ o=A.ag5(p,new A.eU(q,B.f7))
 m=B.b.gaH(n.r.d)
 r=B.b.gaH(n.r.d).at
 r.toString
-m.vS(0,r+o,B.jC,B.aU)},
+m.vS(0,r+o,B.jB,B.aU)},
 FN(a){var s,r,q=this.gnx()
 if(q==null)return!0
 s=q.d
@@ -84832,7 +84832,7 @@ s.aK()
 s.a.d.T(0,s.gQg())
 s.abr()
 s.abs()
-s.e.n(0,B.iF,new A.cm(new A.agD(s),new A.agE(s),t.jl))},
+s.e.n(0,B.iE,new A.cm(new A.agD(s),new A.agE(s),t.jl))},
 bu(){var s,r,q=this
 q.dn()
 switch(A.bt().a){case 0:case 2:break
@@ -84865,7 +84865,7 @@ else{r=q.f
 if(r!=null)r.of()
 q.f=null}},
 abr(){this.e.n(0,B.fu,new A.cm(new A.agu(this),new A.agv(this),t.YC))},
-abs(){this.e.n(0,B.iE,new A.cm(new A.agw(this),new A.agx(this),t.jn))},
+abs(){this.e.n(0,B.iD,new A.cm(new A.agw(this),new A.agx(this),t.jn))},
 agz(a){this.a.d.hL()
 this.eE()
 this.pi()},
@@ -85118,8 +85118,8 @@ m.toString
 o=a?B.zD:B.RY
 q.a.e.eR(new A.zo(p.a,m,o,B.zC))}},
 gH3(){var s=this.y.at,r=A.a([],t.ZD)
-if(s.c!==B.ch)r.push(new A.e6(new A.agB(this),B.jA,null))
-if(s.d)r.push(new A.e6(new A.agC(this),B.jB,null))
+if(s.c!==B.ch)r.push(new A.e6(new A.agB(this),B.jz,null))
+if(s.d)r.push(new A.e6(new A.agC(this),B.jA,null))
 return r},
 goT(){var s,r=this.y.at,q=r.a,p=r.b,o=A.bg("points"),n=q==null?null:q.a
 if(n==null)n=p.a
@@ -85237,7 +85237,7 @@ a.ay=s.ga9q()
 a.ch=s.ga9s()
 a.CW=s.ga9o()
 a.cx=s.gDu()
-a.at=B.jL},
+a.at=B.jK},
 $S:101}
 A.agw.prototype={
 $0(){return A.aaU(this.a,null,B.SB)},
@@ -85449,9 +85449,9 @@ o=h.a.ga2()
 o.toString
 j=A.bJ(p.b8(0,t.x.a(o)),f.a)
 i=isFinite(j.a)&&isFinite(j.b)?new A.ra(j,f.b,f.c):g}else i=g
-return new A.ob(m,i,!s.j(0,l)?B.lb:s.c,!0)},
+return new A.ob(m,i,!s.j(0,l)?B.la:s.c,!0)},
 LX(a,b){var s=b>a
-while(!0){if(!(a!==b&&J.jZ(this.b[a]).c!==B.lb))break
+while(!0){if(!(a!==b&&J.jZ(this.b[a]).c!==B.la))break
 a+=s?1:-1}return a},
 ip(a,b){var s=this
 if(s.e==a&&s.r==b)return
@@ -86405,7 +86405,7 @@ c.p2=!1},
 RS(){var s=t.Jc.a(A.bl.prototype.ga2.call(this)),r=this.p1,q=r.length!==0?r[0].b.length:0,p=A.a1(r).i("hJ<1,y>")
 s.Zj(q,A.ap(new A.hJ(r,new A.aul(),p),!0,p.i("o.E")))},
 aZ(a){var s,r,q,p
-for(s=this.p1,r=A.a1(s),r=r.i("@<1>").ak(r.i("b_")),s=new A.u8(B.b.gaf(s),new A.auq(),B.jb,r.i("u8<1,2>")),q=this.p3,r=r.z[1];s.A();){p=s.d
+for(s=this.p1,r=A.a1(s),r=r.i("@<1>").ak(r.i("b_")),s=new A.u8(B.b.gaf(s),new A.auq(),B.ja,r.i("u8<1,2>")),q=this.p3,r=r.z[1];s.A();){p=s.d
 if(p==null)p=r.a(p)
 if(!q.p(0,p))a.$1(p)}},
 j5(a){this.p3.E(0,a)
@@ -86517,7 +86517,7 @@ switch(r.k1.a){case 0:r.QQ()
 r.a1(B.ak)
 break
 case 1:if(r.dy)if(r.fx){if(r.lo$!=null){if(!r.p4.C(0,a))r.BD(a,B.ak)
-r.k1=B.iL
+r.k1=B.iK
 s=r.lo$
 s.toString
 r.D_(s)
@@ -86537,7 +86537,7 @@ r===$&&A.b()
 r=a.gbO(a).a3(0,r.b).gd0()>s}else r=!0
 m.dy=r
 r=m.k1
-if(r===B.iL)m.Mf(a)
+if(r===B.iK)m.Mf(a)
 else if(r===B.lU){if(m.k2==null){if(a.gc6(a)==null)q=null
 else{r=a.gc6(a)
 r.toString
@@ -86553,11 +86553,11 @@ m.ok=r+A.vi(q,null,a.gkJ(),a.gdI()).gd0()*B.f.gCt(1)
 if(!m.QT(a.gcJ(a)))r=m.fx&&Math.abs(m.ok)>A.aB9(a.gcJ(a),m.b)
 else r=!0
 if(r){m.k2=a
-m.k1=B.iL
+m.k1=B.iK
 if(!m.fx)m.a1(B.cc)}}r=m.k2
 if(r!=null)m.D_(r)}}else if(t.oN.b(a)){r=m.k1
 if(r===B.lU)m.x_(a)
-else if(r===B.iL)m.FU(a.gbN())}else if(t.Ko.b(a)){m.k1=B.fC
+else if(r===B.iK)m.FU(a.gbN())}else if(t.Ko.b(a)){m.k1=B.fC
 m.FU(a.gbN())}},
 fp(a){var s=this
 if(a!==s.fy)return
@@ -86797,7 +86797,7 @@ s=h.e
 if(s==null||s.a)s=f.w.aN(s)
 r=A.cn(a,B.lZ)
 r=r==null?g:r.at
-if(r===!0)s=s.aN(B.iz)
+if(r===!0)s=s.aN(B.iy)
 q=A.azX(a)
 r=h.r
 if(r==null)r=f.x
@@ -86813,7 +86813,7 @@ if(n==null)n=1}m=h.as
 if(m==null)m=f.Q
 l=A.ayQ(a)
 k=a.an(t.Uf)
-k=(k==null?B.jD:k).x
+k=(k==null?B.jC:k).x
 if(k==null)k=B.F3
 j=h.d
 j=j!=null?A.a([j],t.VO):g
@@ -87787,9 +87787,9 @@ a9m(a){this.a.y.$1(a)},
 a9k(a){this.a.z.$1(a)},
 a9i(a){this.a.Q.$1(a)},
 H(a){var s,r,q=this,p=A.t(t.n,t.xR)
-p.n(0,B.iF,new A.cm(new A.auK(q),new A.auL(q),t.jl))
+p.n(0,B.iE,new A.cm(new A.auK(q),new A.auL(q),t.jl))
 q.a.toString
-p.n(0,B.iE,new A.cm(new A.auM(q),new A.auN(q),t.jn))
+p.n(0,B.iD,new A.cm(new A.auM(q),new A.auN(q),t.jn))
 q.a.toString
 switch(A.bt().a){case 0:case 1:case 2:p.n(0,B.ZI,new A.cm(new A.auO(q),new A.auP(q),t.hg))
 break
@@ -87822,7 +87822,7 @@ return new A.kT(B.a9,B.fC,A.aF(r),s,s,0,s,s,s,s,s,A.t(r,t.o),q,this.a,s,A.y_(),A
 $S:501}
 A.auP.prototype={
 $1(a){var s
-a.at=B.jL
+a.at=B.jK
 s=this.a
 a.ch=s.gR4()
 a.cx=s.gR1()
@@ -87837,7 +87837,7 @@ return new A.kU(B.a9,B.fC,A.aF(r),s,s,0,s,s,s,s,s,A.t(r,t.o),q,this.a,s,A.y_(),A
 $S:503}
 A.auR.prototype={
 $1(a){var s
-a.at=B.jL
+a.at=B.jK
 s=this.a
 a.ch=s.gR4()
 a.cx=s.gR1()
@@ -88378,7 +88378,7 @@ s=j.w
 if(s.am(0,h))s.h(0,h).JP(a)
 s=j.x
 if(s.am(0,h))s.h(0,h).JP(a)
-if(B.b.p(B.kw,h)){j.LK()
+if(B.b.p(B.kv,h)){j.LK()
 if(B.b.p(B.pc,h)){j.at.push(h)
 s=a.c
 if(s.h(0,"start")!=null){s=s.h(0,"start")
@@ -88435,10 +88435,10 @@ q=p.CW
 r=p.Dh(A.cF(o,q.length!==0?B.b.gK(q):o,o,n,s),p.QW(p.cy))}B.b.gK(p.ch).c.push(r)
 p.db=null},
 aqT(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null,e=a.a
-if(B.b.p(B.kw,e)){g.LK()
+if(B.b.p(B.kv,e)){g.LK()
 s=g.ax.pop().b
 if(s.length!==0)r=A.bk(s,B.h1,B.n,B.cE)
-else r=B.lo
+else r=B.ln
 if(B.b.p(B.pc,e))g.at.pop()
 else if(e==="li"){s=g.at
 if(s.length!==0){q=a.b
@@ -88504,7 +88504,7 @@ B.b.gK(B.b.gaH(g.ay).a).c.push(new A.Rk(new A.aG(p,q,f),f))}else if(e==="a")g.CW
 if(s.length!==0)B.b.M(k.c,s)}if(g.cy===e)g.cy=null
 g.db=e},
 a4r(a,b,c){var s,r,q,p,o,n,m,l=null,k=a.split("#")
-if(k.length===0)return B.lo
+if(k.length===0)return B.ln
 s=B.b.gJ(k)
 if(k.length===2){r=J.ayp(B.b.gK(k),"x")
 if(r.length===2){q=A.aBb(r[0])
@@ -88517,7 +88517,7 @@ if(m.length!==0)return A.hK(l,n,B.a9,!1,l,l,l,l,l,l,l,l,l,l,l,l,l,l,B.b.gK(m).aQ
 else return n},
 a4m(a){var s,r,q=this.c,p=q.fy
 p.toString
-s=a?B.kd:B.ov
+s=a?B.kc:B.ov
 q=q.dx
 r=q.r
 return new A.aG(p,A.hf(s,q.b,null,r),null)},
@@ -88539,7 +88539,7 @@ if(r.length!==0)r.push(A.b2(null,this.c.dy,null))
 r.push(a);++s.c},
 LK(){var s,r,q,p,o,n=this,m=n.ch
 if(m.length===0)return
-if(B.b.p(B.kw,n.cy)){s=n.Sd(n.cy)
+if(B.b.p(B.kv,n.cy)){s=n.Sd(n.cy)
 r=n.QW(n.cy)
 q=n.agJ(n.cy)
 p=n.x
@@ -88563,7 +88563,7 @@ j.push(this.Dh(this.acj(k),b))}else{if(j.length!==0)B.b.gK(j)
 j.push(o)}}return j},
 QW(a){switch(this.Sd(a).a){case 0:return B.bh
 case 2:return B.c3
-case 1:return B.lq
+case 1:return B.lp
 case 4:return B.dS
 case 3:return B.dS
 case 5:return B.dS}},
@@ -89081,7 +89081,7 @@ if(p==null)k=null
 else{p=B.oe.gJ(p).name
 p.toString
 k=p}h.M(0,A.aw(["name",k,"data",l,"data_scheme",m],j,i))
-B.kj.da(g)
+B.ki.da(g)
 q=h
 s=1
 break
@@ -89118,7 +89118,7 @@ if(p==null)k=null
 else{p=B.oe.gJ(p).name
 p.toString
 k=p}h.M(0,A.aw(["name",k,"data",l,"data_scheme",m],j,i))
-B.kj.da(g)
+B.ki.da(g)
 q=h
 s=1
 break
@@ -89126,7 +89126,7 @@ case 1:return A.Q(q,r)}})
 return A.R($async$w4,r)}}
 A.LX.prototype={
 H(a){var s=null,r=this.d
-return A.av(s,s,B.i,s,s,new A.aO(this.c,s,s,s,s,s,B.ja),r,s,s,r)}}
+return A.av(s,s,B.i,s,s,new A.aO(this.c,s,s,s,s,s,B.j9),r,s,s,r)}}
 A.AF.prototype={
 ae(){return new A.VB(A.a([],t.ax),null,null,B.k)}}
 A.VB.prototype={
@@ -90675,7 +90675,7 @@ l.push(n.kh(B.IP,new A.abr(n),b))
 l.push(n.kh(B.IQ,new A.abs(n),b2))
 n.a.toString
 k=t.S
-l.push(n.a4E(!0,A.a([A.pD(A.hf(B.ov,B.az,m,m),0,k),A.pD(A.hf(B.kd,B.az,m,m),1,k)],t.sd),B.kd,new A.abt(n),new A.abj(n),c))
+l.push(n.a4E(!0,A.a([A.pD(A.hf(B.ov,B.az,m,m),0,k),A.pD(A.hf(B.kc,B.az,m,m),1,k)],t.sd),B.kc,new A.abt(n),new A.abj(n),c))
 l.push(n.kh(B.IR,new A.abk(n),b3))
 l.push(n.kh(B.IU,new A.abl(n),a8))
 n.a.toString
@@ -91070,12 +91070,12 @@ r=q.r
 r.toString
 r=q.a3w(s,r)
 s=r}else s=q.a3k()
-return A.bk(A.a([B.ln,o,B.Qm,B.C,s,new A.kj(1,B.es,A.av(p,p,B.i,p,p,p,p,p,p,p),p),A.bz(!1,p,!0,A.av(p,B.YH,B.i,p,p,new A.aO(p,p,p,A.bK(8),p,B.hy,B.t),p,p,B.jR,p),p,!0,p,p,p,p,p,p,p,p,p,new A.apj(a),p,p,p,p),B.C,B.Z8,B.C],t.p),B.o,B.n,B.l)},
+return A.bk(A.a([B.lm,o,B.Qm,B.C,s,new A.kj(1,B.es,A.av(p,p,B.i,p,p,p,p,p,p,p),p),A.bz(!1,p,!0,A.av(p,B.YH,B.i,p,p,new A.aO(p,p,p,A.bK(8),p,B.hy,B.t),p,p,B.jQ,p),p,!0,p,p,p,p,p,p,p,p,p,new A.apj(a),p,p,p,p),B.C,B.Z8,B.C],t.p),B.o,B.n,B.l)},
 a3k(){var s,r,q=this,p=null,o=q.w?B.ne:B.hO
-o=A.bz(!1,p,!0,A.av(p,B.Z4,B.i,p,p,new A.aO(o,p,p,A.bK(8),p,p,B.t),p,p,B.jR,p),p,!0,p,p,p,p,p,p,p,new A.apd(q),p,new A.ape(q),p,p,p,p)
+o=A.bz(!1,p,!0,A.av(p,B.Z4,B.i,p,p,new A.aO(o,p,p,A.bK(8),p,p,B.t),p,p,B.jQ,p),p,!0,p,p,p,p,p,p,p,new A.apd(q),p,new A.ape(q),p,p,p,p)
 s=q.x?B.ne:B.hO
 r=t.p
-return A.av(p,A.bk(A.a([B.C,A.ce(A.a([o,A.bz(!1,p,!0,A.av(p,B.Z_,B.i,p,p,new A.aO(s,p,p,A.bK(8),p,p,B.t),p,p,B.jR,p),p,!0,p,p,p,p,p,p,p,new A.apf(q),p,new A.apg(q),p,p,p,p)],r),B.o,B.dv,B.l,p)],r),B.o,B.n,B.l),B.i,p,p,p,p,p,p,p)},
+return A.av(p,A.bk(A.a([B.C,A.ce(A.a([o,A.bz(!1,p,!0,A.av(p,B.Z_,B.i,p,p,new A.aO(s,p,p,A.bK(8),p,p,B.t),p,p,B.jQ,p),p,!0,p,p,p,p,p,p,p,new A.apf(q),p,new A.apg(q),p,p,p,p)],r),B.o,B.dv,B.l,p)],r),B.o,B.n,B.l),B.i,p,p,p,p,p,p,p)},
 a3w(a,b){var s,r,q,p,o=null,n=this.c
 n.toString
 n=A.N(n).ajR(B.u)
@@ -91196,7 +91196,7 @@ iu(a){var s=0,r=A.S(t.z),q,p=this,o,n
 var $async$iu=A.T(function(b,c){if(b===1)return A.P(c,r)
 while(true)switch(s){case 0:if(B.c.fs(a).length===0){s=1
 break}p.N(new A.alG(p,a))
-p.w.lP(0,B.ls)
+p.w.lP(0,B.lr)
 o=A.a([],t.s)
 p.f=A.RQ(B.cz,new A.alH(p))
 s=3
@@ -91223,12 +91223,12 @@ s=2
 break
 case 4:return A.Q(null,r)}})
 return A.R($async$tj,r)},
-H(a){var s,r,q=this,p=null,o=t.p,n=A.ce(A.a([B.T8,B.oB,B.oG,A.hf(B.hk,B.jp,p,18)],o),B.o,B.n,B.l,p),m=t.w,l=A.x(a,p,m).w
+H(a){var s,r,q=this,p=null,o=t.p,n=A.ce(A.a([B.T8,B.oB,B.oG,A.hf(B.hk,B.jo,p,18)],o),B.o,B.n,B.l,p),m=t.w,l=A.x(a,p,m).w
 l=A.av(p,A.bk(A.a([n,B.Hz,A.b2(q.ajD(0,q.as,!0),l.a.b/2,p)],o),B.o,B.n,B.l),B.i,p,p,p,p,p,p,p)
 m=A.b2(p,p,A.x(a,p,m).w.a.a/96)
 n=A.bK(20)
 s=A.bp(p,p,B.ad,p,p,p,p,p,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,p,p,p,p)
-s=A.eN(A.hp(A.av(p,A.ht(q.w,B.U,A.ik(p,new A.es(4,A.bK(20),B.bO),p,p,p,p,p,p,!0,new A.es(4,A.bK(20),B.bO),p,p,p,p,p,p,p,p,p,p,new A.es(4,n,B.bO),p,p,p,p,p,s,"\uc785\ub825\ud558\uc2e0 \uc790\ub8cc\uc640 \uad00\ub828\ub41c \uc9c8\ubb38\uc744 \ud574\ubcf4\uc138\uc694!",p,p,p,p,!1,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p),p,B.iv,p,p,!1,new A.alC(q),B.bA,B.lu),B.i,p,B.mv,p,p,p,p,p),p,p,!0,B.V),1)
+s=A.eN(A.hp(A.av(p,A.ht(q.w,B.U,A.ik(p,new A.es(4,A.bK(20),B.bO),p,p,p,p,p,p,!0,new A.es(4,A.bK(20),B.bO),p,p,p,p,p,p,p,p,p,p,new A.es(4,n,B.bO),p,p,p,p,p,s,"\uc785\ub825\ud558\uc2e0 \uc790\ub8cc\uc640 \uad00\ub828\ub41c \uc9c8\ubb38\uc744 \ud574\ubcf4\uc138\uc694!",p,p,p,p,!1,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p),p,B.lu,p,p,!1,new A.alC(q),B.bA,B.lt),B.i,p,B.mv,p,p,p,p,p),p,p,!0,B.V),1)
 n=q.e
 r=n?p:new A.alD(q)
 n=n?B.U:B.u
@@ -91272,7 +91272,7 @@ p=p[b]
 s=p.b==="model"
 r=s?B.cN:B.u
 s=s?B.cm:B.fl
-return A.b2(A.bk(A.a([new A.dS(o,q,q,A.av(q,new A.aG(B.jQ,A.bm(p.a,q,q,q,B.X2,s,q),q),B.i,q,q,new A.aO(r,q,q,q,q,q,B.t),q,q,B.h7,n.a.a),q)],t.p),B.o,B.n,B.l),q,q)},
+return A.b2(A.bk(A.a([new A.dS(o,q,q,A.av(q,new A.aG(B.jP,A.bm(p.a,q,q,q,B.X2,s,q),q),B.i,q,q,new A.aO(r,q,q,q,q,q,B.t),q,q,B.h7,n.a.a),q)],t.p),B.o,B.n,B.l),q,q)},
 $S:91}
 A.pd.prototype={
 ae(){var s=null,r="https://seeklogo.com/images/N/new-google-favicon-logo-5E38E037AF-seeklogo.com.png"
@@ -91285,7 +91285,7 @@ var s=this.d
 s.ad$=$.aZ()
 s.a4$=0
 this.a2F()},
-H(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=A.a1E(!1,B.fN,!1,0,g,A.bz(!1,g,!0,B.ki,g,!0,g,g,g,g,g,g,g,g,g,new A.akX(a),g,g,g,g)),e=A.azc(B.G_,B.H0,B.jT),d=A.bm(h.z,g,g,g,B.d5,g,g)
+H(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=A.a1E(!1,B.fN,!1,0,g,A.bz(!1,g,!0,B.kh,g,!0,g,g,g,g,g,g,g,g,g,new A.akX(a),g,g,g,g)),e=A.azc(B.G_,B.H0,B.jS),d=A.bm(h.z,g,g,g,B.d5,g,g)
 if(h.x){s=$.aMu()
 r=t.w
 q=A.x(a,g,r).w
@@ -91302,7 +91302,7 @@ o=h.w?A.x(a,g,q).w.a.b/2:A.x(a,g,q).w.a.b/1.2
 if(h.w)s=new A.AF(3,B.aR,B.cz,g)
 else{n=h.y
 m=A.bm(n?"Table of Contents":"Topic | Purpose",g,g,g,B.lB,g,g)
-l=A.bm(n?"\ub2e4\uc74c\uacfc \uac19\uc774 \ubaa9\ucc28\ub97c \uc791\uc131\ud574\ubd24\uc5b4\uc694.\n\ubaa9\ucc28\ub97c \uae30\uc900\uc73c\ub85c \uad00\ub828 \uc790\ub8cc\ub97c \uc218\uc9d1\ud558\uace0 \ucd08\uc548\uc744 \uc791\uc131\ud574\uc694! \ud544\uc694\ud558\uc2e0 \uacbd\uc6b0 \uc218\uc815\ud574\uc8fc\uc138\uc694":"\ud574\ub2f9 \ud504\ub85c\uc81d\ud2b8\uc758 \uc8fc\uc81c/ \ubaa9\uc801\uc744 \uc54c\ub824\uc8fc\uc138\uc694. \nAssistant\uac00 \ubaa9\ucc28\uc640 \uad00\ub828 \uc790\ub8cc\ub97c \ucc3e\uc544\ub4dc\ub824\uc694!",g,g,g,B.ix,g,g)
+l=A.bm(n?"\ub2e4\uc74c\uacfc \uac19\uc774 \ubaa9\ucc28\ub97c \uc791\uc131\ud574\ubd24\uc5b4\uc694.\n\ubaa9\ucc28\ub97c \uae30\uc900\uc73c\ub85c \uad00\ub828 \uc790\ub8cc\ub97c \uc218\uc9d1\ud558\uace0 \ucd08\uc548\uc744 \uc791\uc131\ud574\uc694! \ud544\uc694\ud558\uc2e0 \uacbd\uc6b0 \uc218\uc815\ud574\uc8fc\uc138\uc694":"\ud574\ub2f9 \ud504\ub85c\uc81d\ud2b8\uc758 \uc8fc\uc81c/ \ubaa9\uc801\uc744 \uc54c\ub824\uc8fc\uc138\uc694. \nAssistant\uac00 \ubaa9\ucc28\uc640 \uad00\ub828 \uc790\ub8cc\ub97c \ucc3e\uc544\ub4dc\ub824\uc694!",g,g,g,B.iw,g,g)
 k=A.bK(8)
 q=A.x(a,g,q).w
 j=h.r
@@ -91345,7 +91345,7 @@ A.akY.prototype={
 $2(a,b){var s=null,r=this.a,q=r.Q,p=q[b],o=p.f,n=o?B.q:B.j,m=A.bK(8),l=A.dK(B.U,1),k=A.aD9(B.aR,new A.akU(r,b),p.e),j=t.p
 p=A.ce(A.a([A.uq(p.c,s,s,24),B.aA,A.b2(A.bm(p.a,s,s,s,A.bp(s,s,n,s,s,s,s,s,s,s,s,14,s,s,s,s,s,!0,s,s,s,B.aS,s,s,s,s),s,s),s,175)],j),B.o,B.n,B.l,s)
 q=q[b]
-return A.av(s,A.az4(B.j,A.a([new A.aG(B.at,A.bm(q.b,s,s,s,s,s,s),s),A.cq(A.bz(!1,s,!0,new A.aG(B.jS,A.bm(q.d,s,s,s,B.AV,s,s),s),s,!0,s,s,s,s,s,s,s,s,s,new A.akV(r,b),s,s,s,s),s,s)],j),B.bD,B.q,o,k,new A.akW(r,b),p,s),B.i,s,s,new A.aO(s,s,l,m,s,s,B.t),s,s,s,1/0)},
+return A.av(s,A.az4(B.j,A.a([new A.aG(B.at,A.bm(q.b,s,s,s,s,s,s),s),A.cq(A.bz(!1,s,!0,new A.aG(B.jR,A.bm(q.d,s,s,s,B.AV,s,s),s),s,!0,s,s,s,s,s,s,s,s,s,new A.akV(r,b),s,s,s,s),s,s)],j),B.bD,B.q,o,k,new A.akW(r,b),p,s),B.i,s,s,new A.aO(s,s,l,m,s,s,B.t),s,s,s,1/0)},
 $S:95}
 A.akW.prototype={
 $1(a){var s=this.a
@@ -91372,7 +91372,7 @@ return A.O(A.awL(A.eK(p,0,null)),$async$$0)
 case 5:s=b?2:4
 break
 case 2:s=6
-return A.O(A.a12(A.eK(p,0,null),B.oP,null,B.jf),$async$$0)
+return A.O(A.a12(A.eK(p,0,null),B.oP,null,B.je),$async$$0)
 case 6:s=3
 break
 case 4:throw A.c("Could not launch "+p)
@@ -91383,7 +91383,7 @@ A.al_.prototype={
 $2(a,b){var s=null,r=this.a,q=r.Q,p=q[b],o=p.f,n=o?B.q:B.j,m=A.bK(8),l=A.dK(B.U,1),k=A.aD9(B.aR,new A.akR(r,b),p.e),j=t.p
 p=A.ce(A.a([A.uq(p.c,s,s,24),B.aA,A.b2(A.bm(p.a,s,s,s,A.bp(s,s,n,s,s,s,s,s,s,s,s,14,s,s,s,s,s,!0,s,s,s,B.aS,s,s,s,s),s,s),s,175)],j),B.o,B.n,B.l,s)
 q=q[b]
-return A.av(s,A.az4(B.j,A.a([A.bk(A.a([A.b2(new A.aG(B.at,A.hp(A.bm(q.b,s,s,s,s,s,s),s,s,!1,B.V),s),236,s),A.cq(A.bz(!1,s,!0,new A.aG(B.jS,A.bm(q.d,s,s,s,B.AV,s,s),s),s,!0,s,s,s,s,s,s,s,s,s,new A.akS(r,b),s,s,s,s),s,s)],j),B.o,B.n,B.l)],j),B.bD,B.q,o,k,new A.akT(r,b),p,s),B.i,s,s,new A.aO(s,s,l,m,s,s,B.t),s,s,s,s)},
+return A.av(s,A.az4(B.j,A.a([A.bk(A.a([A.b2(new A.aG(B.at,A.hp(A.bm(q.b,s,s,s,s,s,s),s,s,!1,B.V),s),236,s),A.cq(A.bz(!1,s,!0,new A.aG(B.jR,A.bm(q.d,s,s,s,B.AV,s,s),s),s,!0,s,s,s,s,s,s,s,s,s,new A.akS(r,b),s,s,s,s),s,s)],j),B.o,B.n,B.l)],j),B.bD,B.q,o,k,new A.akT(r,b),p,s),B.i,s,s,new A.aO(s,s,l,m,s,s,B.t),s,s,s,s)},
 $S:95}
 A.akT.prototype={
 $1(a){var s=this.a
@@ -91410,7 +91410,7 @@ return A.O(A.awL(A.eK(p,0,null)),$async$$0)
 case 5:s=b?2:4
 break
 case 2:s=6
-return A.O(A.a12(A.eK(p,0,null),B.oP,null,B.jf),$async$$0)
+return A.O(A.a12(A.eK(p,0,null),B.oP,null,B.je),$async$$0)
 case 6:s=3
 break
 case 4:throw A.c("Could not launch "+p)
@@ -91498,7 +91498,7 @@ q.ad$=n
 q.a4$=0}for(o=p.CW,s=o.length,r=0;r<s;++r){q=o[r].e
 q.ad$=n
 q.a4$=0}p.a2N()},
-H(a){var s,r,q,p,o,n,m,l=this,k=null,j=A.a1E(!1,B.fN,!1,0,k,A.bz(!1,k,!0,B.ki,k,!0,k,k,k,k,k,k,k,k,k,new A.amf(a),k,k,k,k)),i=A.azc(k,B.nw,B.jT)
+H(a){var s,r,q,p,o,n,m,l=this,k=null,j=A.a1E(!1,B.fN,!1,0,k,A.bz(!1,k,!0,B.kh,k,!0,k,k,k,k,k,k,k,k,k,new A.amf(a),k,k,k,k)),i=A.azc(k,B.nw,B.jS)
 l.a.toString
 s=A.bm("My Researh",k,k,k,B.Vv,k,k)
 r=t.w
@@ -91538,7 +91538,7 @@ p=o.c
 p.toString
 s=A.x(p,n,s).w.a.a/16
 return new A.aG(new A.aa(r,m,r,m),A.av(n,A.bk(A.a([A.cq(A.bz(!1,n,!0,A.av(n,B.YF,B.i,n,n,new A.aO(n,n,n,A.bK(8),n,B.hy,B.t),n,n,new A.aa(s,q,s,q),n),n,!0,n,n,n,n,n,n,n,n,n,new A.amc(o),n,n,n,n),n,n)],t.p),B.ae,B.n,B.l),B.i,n,n,n,n,n,B.em,n),n)},
-w0(a,b){var s=null,r=this.z===b,q=r?B.aR:B.jt,p=r?B.aR:B.u
+w0(a,b){var s=null,r=this.z===b,q=r?B.aR:B.js,p=r?B.aR:B.u
 return A.bz(!1,s,!0,A.bk(A.a([A.eN(A.cq(A.bm(a,s,s,s,A.bp(s,s,q,s,s,s,s,s,s,s,s,s,s,s,r?B.aQ:B.v,s,s,!0,s,s,s,s,s,s,s,s),s,s),s,s),1),A.av(s,s,B.i,p,s,s,1,s,s,s)],t.p),B.o,B.n,B.l),s,!0,s,s,s,s,s,s,s,s,s,new A.amK(this,b),s,B.n9,s,s)},
 J4(a){this.N(new A.amJ(this,a))},
 akm(){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.c
@@ -91878,8 +91878,8 @@ case 4:return A.Q(null,r)}})
 return A.R($async$iu,r)},
 a9I(){this.N(new A.an4(this))},
 age(a){A.aJL(new A.an7(this),a,t.z)},
-H(a){var s,r,q,p,o,n=this,m=null,l=A.dK(B.U,1),k=A.bK(8),j=t.p,i=A.ce(A.a([B.T7,B.oB,B.oG,A.hf(B.hk,B.jp,m,18)],j),B.ae,B.n,B.l,m)
-i=A.ce(A.a([i,n.x?A.ce(A.a([new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jr,m,!0,m,m,m,m,m,m,m,m,m,new A.ana(n),m,m,m,m),m),B.aA],j),B.h0,B.hK,B.l,m):A.ce(A.a([new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Ji,m,!0,m,m,m,m,m,m,m,m,m,new A.anb(n),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jj,m,!0,m,m,m,m,m,m,m,m,m,n.ga9H(),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jn,m,!0,m,m,m,m,m,m,m,m,m,new A.anc(n),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jo,m,!0,m,m,m,m,m,m,m,m,m,new A.and(n,a),m,m,m,m),m),B.aA],j),B.h0,B.hK,B.l,m)],j),B.h0,B.kS,B.l,m)
+H(a){var s,r,q,p,o,n=this,m=null,l=A.dK(B.U,1),k=A.bK(8),j=t.p,i=A.ce(A.a([B.T7,B.oB,B.oG,A.hf(B.hk,B.jo,m,18)],j),B.ae,B.n,B.l,m)
+i=A.ce(A.a([i,n.x?A.ce(A.a([new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jr,m,!0,m,m,m,m,m,m,m,m,m,new A.ana(n),m,m,m,m),m),B.aA],j),B.h0,B.hK,B.l,m):A.ce(A.a([new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Ji,m,!0,m,m,m,m,m,m,m,m,m,new A.anb(n),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jj,m,!0,m,m,m,m,m,m,m,m,m,n.ga9H(),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jn,m,!0,m,m,m,m,m,m,m,m,m,new A.anc(n),m,m,m,m),m),B.aA,new A.dS(B.cI,m,m,A.bz(!1,m,!0,B.Jo,m,!0,m,m,m,m,m,m,m,m,m,new A.and(n,a),m,m,m,m),m),B.aA],j),B.h0,B.hK,B.l,m)],j),B.h0,B.kR,B.l,m)
 s=A.bK(4)
 r=t.w
 q=A.x(a,m,r).w
@@ -91888,13 +91888,13 @@ if(n.x){p=n.at
 o=n.as
 o===$&&A.b()
 o=A.hp(A.bk(A.a([new A.B6(!1,p,o,m),A.ht(p,m,B.JF,o,m,m,m,!1,m,m,m)],j),B.o,B.n,B.l),m,m,!1,B.V)
-p=o}else p=A.av(m,new A.NK(n.Q,p,!1,A.abb(m,m,m,B.Q,m,m,m,m,B.Q,m,m,m,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,m,m,m,m,B.Q,m,m,m,m,m,m,m,m,m,m,B.lp,B.Q,m,B.Q),m,m,m,m,m,m,m,m,m,m,m,B.OP,B.OQ,B.P0,!1,m),B.i,m,m,m,m,B.I2,m,m)
+p=o}else p=A.av(m,new A.NK(n.Q,p,!1,A.abb(m,m,m,B.Q,m,m,m,m,B.Q,m,m,m,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,B.Q,m,m,m,m,m,m,B.Q,m,m,m,m,m,m,m,m,m,m,B.lo,B.Q,m,B.Q),m,m,m,m,m,m,m,m,m,m,m,B.OP,B.OQ,B.P0,!1,m),B.i,m,m,m,m,B.I2,m,m)
 k=A.av(m,A.bk(A.a([B.fi,new A.aG(B.at,i,m),B.Hy,A.av(m,new A.aG(B.nR,p,m),B.i,m,m,new A.aO(B.j,m,m,s,m,m,B.t),q.a.b/1.5,m,m,1/0)],j),B.o,B.n,B.l),B.i,m,m,new A.aO(m,m,l,k,m,m,B.t),m,m,m,m)
 l=A.av(m,m,B.i,B.u,m,m,12,m,m,m)
 r=A.b2(m,m,A.x(a,m,r).w.a.a/96)
 q=A.bK(20)
 s=A.bp(m,m,B.ad,m,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m,m)
-s=A.eN(A.hp(A.av(m,A.ht(n.y,B.U,A.ik(m,new A.es(4,A.bK(20),B.bO),m,m,m,m,m,m,!0,new A.es(4,A.bK(20),B.bO),m,m,m,m,m,m,m,m,m,m,new A.es(4,q,B.bO),m,m,m,m,m,s,"AI\uc5d0\uac8c \uc694\uccad\ud574\ubcf4\uc138\uc694",m,m,m,m,!1,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m),m,B.iv,m,m,!1,new A.ane(n),B.bA,B.lu),B.i,m,B.mv,m,m,m,m,m),m,m,!0,B.V),1)
+s=A.eN(A.hp(A.av(m,A.ht(n.y,B.U,A.ik(m,new A.es(4,A.bK(20),B.bO),m,m,m,m,m,m,!0,new A.es(4,A.bK(20),B.bO),m,m,m,m,m,m,m,m,m,m,new A.es(4,q,B.bO),m,m,m,m,m,s,"AI\uc5d0\uac8c \uc694\uccad\ud574\ubcf4\uc138\uc694",m,m,m,m,!1,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m),m,m,1,m,!1,new A.ane(n),B.bA,B.lt),B.i,m,B.mv,m,m,m,m,m),m,m,!0,B.V),1)
 return new A.De(A.bk(A.a([k,A.av(m,A.hp(A.bk(A.a([l,A.ce(A.a([r,s,B.Au,A.M2(!1,B.oF,B.i,m,m,m,m,m,new A.anf(n),m,A.u4(m,m,B.u,m,m,m,m,m,m,m,m,B.As,m,m,new A.cd(A.bK(10),B.bO),m,m,m,m)),B.aA],j),B.o,B.n,B.l,m)],j),B.o,B.n,B.l),m,m,!0,B.V),B.i,m,B.mw,m,m,m,B.HZ,1/0)],j),B.ae,B.n,B.l),m)}}
 A.ani.prototype={
 $0(){return this.a.N(new A.anh())},
@@ -91913,12 +91913,12 @@ r.at.sby(0,s)},
 $S:0}
 A.ank.prototype={
 $0(){var s=this.a
-s.y.lP(0,B.ls)
+s.y.lP(0,B.lr)
 s.CW="\uc801\uc808\ud55c \uc774\ubbf8\uc9c0\ub97c \ucc3e\uace0 \uc788\uc2b5\ub2c8\ub2e4... \n "+s.CW},
 $S:0}
 A.anl.prototype={
 $0(){var s=this.a
-s.y.lP(0,B.ls)
+s.y.lP(0,B.lr)
 s.CW="![LLM](https://miro.medium.com/v2/resize:fit:828/format:webp/1*RRUsg18czDkQluVPCCZYrw.png#784x224)\n\n# \uc11c\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM(Large Language Model)\uc740 \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc911\uc694\ud55c \uc5ed\ud560\uc744 \uc218\ud589\ud558\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub530\ub77c LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\uc740 \ub354\uc6b1 \ucee4\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\n\nLLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uba87 \uac00\uc9c0 \uc8fc\uc694\ud55c \uc601\ud5a5\ub825\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uc791\uc5c5 \uc790\ub3d9\ud654: LLM\uc740 \uc0ac\ub78c\uc774 \uc218\ud589\ud558\ub294 \ub9ce\uc740 \uc791\uc5c5\uc744 \uc790\ub3d9\ud654\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uc9c1\uc6d0\ub4e4\uc740 \ubcf4\ub2e4 \uc804\ub7b5\uc801\uc774\uace0 \ucc3d\uc758\uc801\uc778 \uc5c5\ubb34\uc5d0 \uc9d1\uc911\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120: LLM\uc744 \uc0ac\uc6a9\ud558\uc5ec \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub2f5\ubcc0\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud560 \uc218 \uc788\ub294 \ucc57\ubd07\uc744 \ub9cc\ub4e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131: LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815: LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \ubcf4\uace0\uc11c\uc758 \ubaa9\uc801\uacfc \ubc94\uc704\n\n\ubcf8 \ubcf4\uace0\uc11c\ub294 LLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uacfc \uc804\ub9dd\uc744 \ubd84\uc11d\ud558\uae30 \uc704\ud574 \uc791\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \ub2e4\uc74c\uacfc \uac19\uc740 \ub0b4\uc6a9\uc744 \ub2e4\ub8f0 \uc608\uc815\uc785\ub2c8\ub2e4:\n\n1. LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150: LLM\uc758 \uac1c\ub150\uacfc \uc6d0\ub9ac\uc5d0 \ub300\ud574 \uc124\uba85\ud558\uace0, \uc8fc\uc694 \ubaa8\ub378\uacfc \uc801\uc6a9 \uc0ac\ub840\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n2. LLM \uc2dc\uc7a5 \uac1c\uc694: LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc5d0 \ub300\ud574 \ubd84\uc11d\ud558\uace0, \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\uc640 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n3. LLM \uc2dc\uc7a5\uc758 \uc138\ubd84\ud654: \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uacfc \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n4. LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5: \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\uc5d0 \ub300\ud574 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n5. LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778: \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc744 \ubd84\uc11d\ud558\uace0, \uc774\uc5d0 \ub300\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.\n\n6. LLM \uc2dc\uc7a5\uc758 \uae30\ud68c\uc640 \ub3c4\uc804: \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc744 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n7. \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5: \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd \ub4f1 \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n8. \uacb0\ub860: LLM \uc2dc\uc7a5\uc758 \uc804\ub9dd\uacfc \ucd94\uc774\ub97c \uc608\uce21\ud558\uace0, \ubcf4\uace0\uc11c\uc758 \uc694\uc57d\uacfc \uacb0\ub860\uc744 \ub3c4\ucd9c\ud569\ub2c8\ub2e4.\n## LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150\n\nLLM\uc740 Large Language Model\uc758 \uc57d\uc790\ub85c, \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \uac70\ub300\ud55c \uc5b8\uc5b4 \ubaa8\ub378\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4. LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. LLM\uc740 \uc8fc\ub85c \ub525\ub7ec\ub2dd \uc54c\uace0\ub9ac\uc998\uacfc \uc778\uacf5\uc2e0\uacbd\ub9dd\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uba70, \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\nLLM\uc740 \uae30\uc874\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ubaa8\ub378\uacfc \ube44\uad50\ud558\uc5ec \ud070 \uaddc\ubaa8\uc758 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uace0, \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \uc0ac\ub78c\uacfc \uc790\uc5f0\uc2a4\ub7ec\uc6b4 \ub300\ud654\ub97c \ub098\ub20c \uc218 \uc788\ub294 \uc218\uc900\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM\uc740 \ub2e4\uc591\ud55c \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac00\uc9c0\uace0 \uc788\uc73c\uba70, GPT (Generative Pre-trained Transformer)\uc640 BERT (Bidirectional Encoder Representations from Transformers) \ub4f1\uc774 \ub300\ud45c\uc801\uc778 LLM \ubaa8\ub378\uc785\ub2c8\ub2e4. \uc774\ub7ec\ud55c LLM \ubaa8\ub378\uc740 \uc8fc\ub85c \ud14d\uc2a4\ud2b8 \uc0dd\uc131, \uae30\uacc4 \ubc88\uc5ed, \uc9c8\uc758\uc751\ub2f5, \uac10\uc131 \ubd84\uc11d \ub4f1 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\n\n\uadf8\ub798\ud504\ub97c \uc0dd\uc131 \uc911\uc785\ub2c8\ub2e4...\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \ucd94\uad6c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 ChatGPT \uc5f4\ud48d \uc774\ud6c4\uc5d0 \ube44\uc57d\uc801\uc73c\ub85c \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \ubc29\ud5a5\uc73c\ub85c \uc9c4\ud589\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM \uc2dc\uc7a5\uc740 VLLM (Very Large Language Model), \uc911\uaddc\ubaa8 LLM, Personal LM\uc758 \uc138 \ubd80\ub958\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud2b9\ud788, VLLM \uc2dc\uc7a5\uc740 Big Tech \uac04\uc758 \uacbd\uc7c1\uc73c\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.\n\n\ub458\uc9f8, LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \ud1b5\ud574 \uacc4\uc18d\ud574\uc11c \uc9c4\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uac00\uc18d\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \ub610\ud55c, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc751\uc6a9 \ubd84\uc57c\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc740 \ub354\uc6b1 \ub2e4\uc591\ud558\uace0 \uc131\uc7a5\ud558\ub294 \uacbd\ud5a5\uc744 \ubcf4\uc77c \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\n\nLLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \uc8fc\uc694\ud55c \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub4e4\uc774 \ud65c\ub3d9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub4e4\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 LLM \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub85c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uae30\uc5c5\ub4e4\uc774 \uc788\uc2b5\ub2c8\ub2e4:\n\n1. OpenAI: OpenAI\ub294 LLM \ubd84\uc57c\uc5d0\uc11c \uac00\uc7a5 \uc8fc\ubaa9\ubc1b\ub294 \uae30\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. OpenAI\ub294 GPT (Generative Pre-trained Transformer) \uc2dc\ub9ac\uc988\ub97c \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \ucd5c\uadfc\uc5d0\ub294 GPT-3 \ubaa8\ub378\uc744 \uacf5\uac1c\ud558\uc600\uc2b5\ub2c8\ub2e4. OpenAI\ub294 LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc120\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. Google: Google\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uac15\ub825\ud55c \uacbd\uc7c1 \uc5c5\uccb4\ub85c \uc54c\ub824\uc838 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 BERT (Bidirectional Encoder Representations from Transformers) \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. Microsoft: Microsoft\ub3c4 LLM \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 Turing-NLG\uc640 DALL-E \ub4f1\uc758 LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uc564\ud2b8\ub85c\ud53d (Antropic): \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uc8fc\ubaa9\ubc1b\ub294 \uc2a4\ud0c0\ud2b8\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 GPT-3 \ubaa8\ub378\uc744 \uac1c\ubc1c\ud55c \uc7ac\ub7ec\ub4dc \uce74\ud50c\ub780 \uacf5\ub3d9 \ucc3d\uc5c5\uc790\uac00 \uc774\ub044\ub294 \uae30\uc5c5\uc73c\ub85c, LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \uc2dc\uc7a5\uc5d0\uc11c \ud65c\ub3d9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uacbd\uc7c1 \uad6c\ub3c4\ub294 \uacc4\uc18d\ud574\uc11c \ubcc0\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud604\uc7ac\ub294 \uc8fc\ub85c Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc9c0\ub9cc, \uc55e\uc73c\ub85c\ub294 \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc758 \ud65c\uc57d\uacfc \ud568\uaed8 \uc2dc\uc7a5 \uad6c\ub3c4\uac00 \ub354\uc6b1 \ub2e4\uc591\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc73c\ub85c \uc138\ubd84\ud654\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc81c\ud488 \uc720\ud615\uc740 \ud2b9\uc815\ud55c \uc6a9\ub3c4\uc640 \uc0b0\uc5c5\uc5d0 \ub9de\uac8c \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc5d0\uc11c \ub2e4\uc591\ud55c \uc218\uc694\ub97c \ucda9\uc871\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc81c\ud488 \uc720\ud615\uacfc \uadf8 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ucc57\ubd07\uc6a9 LLM: \ucc57\ubd07\uc6a9 LLM\uc740 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120\uc744 \uc704\ud574 \uac1c\ubc1c\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub300\ub2f5\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucc57\ubd07\uc6a9 LLM\uc740 \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc73c\uba70, \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc740\ud589, \ud56d\uacf5\uc0ac, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM: \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud560 \uc218 \uc788\uc73c\uba70, \uc791\uac00\ub098 \uc608\uc220\uac00\uc758 \ucc3d\uc791 \ud65c\ub3d9\uc744 \ubcf4\uc870\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucd9c\ud310\uc0ac, \uc601\ud654 \uc81c\uc791\uc0ac, \uc74c\uc545 \uc0b0\uc5c5 \ub4f1\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ucc3d\uc791 \uacfc\uc815\uc744 \ud6a8\uc728\ud654\ud558\uace0 \ucc3d\uc758\uc131\uc744 \ub192\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM: \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uc5c5\uc774 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\ub3c4\ub85d \ub3c4\uc640\uc90d\ub2c8\ub2e4. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uae08\uc735, \ub9c8\ucf00\ud305, \uc608\uce21 \ubd84\uc11d \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM: \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \ub2e4\uad6d\uc5b4 \uac04\uc758 \uc758\uc0ac\uc18c\ud1b5\uc744 \uc6d0\ud65c\ud558\uac8c \ub3c4\uc640\uc8fc\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uacc4 \ubc88\uc5ed\uacfc \ub3d9\uc2dc \ud1b5\uc5ed \ub4f1\uc758 \uc791\uc5c5\uc5d0 \uc0ac\uc6a9\ub418\uba70, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \uad6d\uc81c \ube44\uc988\ub2c8\uc2a4, \uc5ec\ud589, \uad6d\uc81c \ud68c\uc758 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud544\uc218\uc801\uc778 \ub3c4\uad6c\ub85c \uc0ac\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc758 LLM\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc218\uc694\uc640 \uc694\uad6c\uc5d0 \ub530\ub77c \uacc4\uc18d\ud574\uc11c \uc0c8\ub85c\uc6b4 \uc81c\ud488\uc774 \ucd9c\uc2dc\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc81c\ud488\uc758 \ub2e4\uc591\uc131\uacfc \ud2b9\ud654\ub97c \ud1b5\ud574 \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc81c\ud488\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc5ed\ubcc4\ub85c\ub3c4 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uc744 \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ubbf8\uad6d: \ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uc911\uad6d: \uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \uc720\ub7fd: \uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd\uc744 \ube44\ub86f\ud55c \ub2e4\uc591\ud55c \uc9c0\uc5ed\ub4e4\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5\n\n### \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \uacbd\ud5d8\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \uacc4\uc18d\ud574\uc11c \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc758\ub8cc \ubd84\uc57c\uc5d0\uc11c \uc9c4\ub2e8\uacfc \uce58\ub8cc\ub97c \uc9c0\uc6d0\ud558\ub294 \uc758\uc0ac \uacb0\uc815 \uc2dc\uc2a4\ud15c\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uae08\uc735 \ubd84\uc57c\uc5d0\uc11c \ud22c\uc790 \ucd94\ucc9c\uacfc \uae08\uc735 \uc0c1\ud488 \uac1c\ubc1c\uc5d0 \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ud655\ub300\ub97c \uc774\ub04c\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ub2e4\uc591\ud55c \uc751\uc6a9 \ubd84\uc57c\uc640 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc758 \ub4f1\uc7a5\uc774 \uc608\uc0c1\ub429\ub2c8\ub2e4.\n\n### \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ud655\ub300\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 \ucd5c\uadfc \uba87 \ub2ec\uac04 \uae09\uaca9\ud788 \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uaddc\ubaa8\uc640 \uc218\uc694\ub294 \uacc4\uc18d\ud574\uc11c \uc99d\uac00\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\ub4e4\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\uc640 \uc218\uc694\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\n\n### \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc694\uc778\uc5d0 \uc758\ud574 \ucd09\uc9c4\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0: LLM \ubaa8\ub378\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \ub3d9\ub825\uc785\ub2c8\ub2e4.\n\n2. \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654: \ud604\ub300 \uc0b0\uc5c5\uc740 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654\uc758 \ucd94\uc138\ub97c \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ubcc0\ud654\uc640 \uc694\uad6c\uc5d0 \ubd80\ud569\ud558\ub294 \uae30\uc220\ub85c\uc11c \ud65c\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc744 \uc2e4\ud604\ud560 \uc218 \uc788\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ucd94\uc138\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. \ucd5c\uadfc \uba87 \ub144\uac04 \ub370\uc774\ud130\uc758 \uc591\uacfc \ub2e4\uc591\uc131\uc774 \ud06c\uac8c \uc99d\uac00\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 LLM \ubaa8\ub378\uc758 \ud559\uc2b5\uacfc \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ub370\uc774\ud130\uac00 \uc0dd\uc131\ub418\uace0 \uc788\uc73c\uba70, \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec LLM\uc744 \uc801\uc6a9\ud558\ub294 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc5b5\uc81c\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc81c\uc57d\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc5b5\uc81c\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294\ub370 \uc5b4\ub824\uc6c0\uc744 \uc904 \uc218 \uc788\uc73c\uba70, \ud2b9\ud788 \uc911\uc18c\uae30\uc5c5\uacfc \uc2a4\ud0c0\ud2b8\uc5c5\ub4e4\uc5d0\uac8c\ub294 \ud070 \uc7a5\ubcbd\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\ub294 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc758 \ubb38\uc81c\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc9c0\ub9cc, \uc5ec\uc804\ud788 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM \ubaa8\ub378\uc740 \ud2b9\uc815\ud55c \ub370\uc774\ud130\uc5d0 \uacfc\uc801\ud569\ub418\ub294 \uacbd\ud5a5\uc774 \uc788\uc73c\uba70, \uc77c\ubd80 \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc601\ud5a5\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc744 \ud65c\uc6a9\ud558\uace0 \uc5b5\uc81c\uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574 \ub178\ub825\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \uc815\ubd80\uc640 \uaddc\uc81c\uae30\uad00\uc740 LLM \uc2dc\uc7a5\uc758 \ubc1c\uc804\uc744 \uc9c0\uc6d0\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc801\uc808\ud788 \ud574\uacb0\ud558\uae30 \uc704\ud55c \uc815\ucc45\uacfc \uaddc\uc81c\ub97c \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4.\n## \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \ud604\uc7ac Big Tech \uae30\uc5c5\ub4e4\uc774 \uc8fc\ub3c4\ud558\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ub530\ub77c\uc11c, LLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\uac00 \ud544\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ud2b9\uc815\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc5d0 \ud2b9\ud654\ub41c LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uc2e0\uaddc \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\uc740 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\n3. \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\ub294 \uac83\uc774 \uc911\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \uc81c\uc870\uc5c5\uccb4\ub098 \uacf5\uae09\uc5c5\uccb4\uc640 \ud611\ub825\ud558\uc5ec \uae30\uc220\uacfc \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0, \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c: LLM\uc740 \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\uc5d0\uc11c\ub3c4 \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uac1c\uc778 \ub9de\ucda4\ud615 \ud559\uc2b5 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uac70\ub098, \uad50\uc721 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub4f1\uc758 \uc11c\ube44\uc2a4\ub97c \uac1c\ubc1c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uad50\uc721 \uc2dc\uc7a5\uc740 LLM\uc758 \uc801\uc6a9 \uac00\ub2a5\uc131\uc774 \ub192\uc740 \ubd84\uc57c \uc911 \ud558\ub098\uc774\uba70, \uc2e0\uaddc \uc9c4\uc785 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc704\uc758 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud558\uc5ec \uc801\uc808\ud55c \uc9c4\uc785 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \uae30\uc874\uc758 Big Tech \uae30\uc5c5\ub4e4\uacfc\uc758 \uacbd\uc7c1\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uacfc \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uba70, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c\uc744 \uace0\ub824\ud558\uc5ec \uc0c8\ub85c\uc6b4 \uc2dc\uc7a5\uc744 \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc801\uc808\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uc8fc\uc694 \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\uc815\ud55c \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc5ec\uc57c \ud558\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc131\ub2a5\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud6a8\uc728\uc801\uc778 \uc790\uc6d0 \uad00\ub9ac\uc640 \ube44\uc6a9 \uc808\uac10\uc744 \uc704\ud55c \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \ud1b5\ud574 \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0 \ube44\uc6a9\uc744 \ubd84\ub2f4\ud558\ub294 \ubc29\uc548\uc744 \ubaa8\uc0c9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc774\uace0, \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \ud6a8\uc728\uc801\uc73c\ub85c \uad00\ub9ac\ud558\ub294 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uc5ec \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uc744 \uc218 \uc788\ub3c4\ub85d \ud574\uc57c \ud569\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc5d0 \uc131\uacf5\uc801\uc73c\ub85c \uc9c4\uc785\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n## \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n### \ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc911\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc911\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc720\ub7fd\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc720\ub7fd\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n## \uacb0\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc791\uc5c5 \uc790\ub3d9\ud654, \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120, \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131, \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815 \ub4f1 \ub2e4\uc591\ud55c \uc601\uc5ed\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654, \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ub4f1\uc758 \uc694\uc778\uc5d0 \uc758\ud574 \uc131\uc7a5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uacfc \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4, \uc81c\ud488 \uc720\ud615\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc9c0\uc5ed\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc8fc\uc694 \ub3d9\ud5a5, \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5, \uc8fc\uc694 \uad6d\uac00\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5 \ub4f1\uc744 \ubd84\uc11d\ud558\uc5ec \uc608\uce21\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \uae30\uc220\uc801\uc778 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95 \ub4f1\uc758 \uc804\ub7b5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n\n"},
 $S:0}
 A.anm.prototype={
@@ -91937,7 +91937,7 @@ A.anp.prototype={
 $0(){A.dq("This code runs after a 2-second delay")},
 $S:5}
 A.anq.prototype={
-$0(){this.a.CW="![LLM](https://miro.medium.com/v2/resize:fit:828/format:webp/1*RRUsg18czDkQluVPCCZYrw.png#784x224)\n\n# \uc11c\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM(Large Language Model)\uc740 \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc911\uc694\ud55c \uc5ed\ud560\uc744 \uc218\ud589\ud558\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub530\ub77c LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\uc740 \ub354\uc6b1 \ucee4\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\n\nLLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uba87 \uac00\uc9c0 \uc8fc\uc694\ud55c \uc601\ud5a5\ub825\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uc791\uc5c5 \uc790\ub3d9\ud654: LLM\uc740 \uc0ac\ub78c\uc774 \uc218\ud589\ud558\ub294 \ub9ce\uc740 \uc791\uc5c5\uc744 \uc790\ub3d9\ud654\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uc9c1\uc6d0\ub4e4\uc740 \ubcf4\ub2e4 \uc804\ub7b5\uc801\uc774\uace0 \ucc3d\uc758\uc801\uc778 \uc5c5\ubb34\uc5d0 \uc9d1\uc911\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120: LLM\uc744 \uc0ac\uc6a9\ud558\uc5ec \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub2f5\ubcc0\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud560 \uc218 \uc788\ub294 \ucc57\ubd07\uc744 \ub9cc\ub4e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131: LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815: LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \ubcf4\uace0\uc11c\uc758 \ubaa9\uc801\uacfc \ubc94\uc704\n\n\ubcf8 \ubcf4\uace0\uc11c\ub294 LLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uacfc \uc804\ub9dd\uc744 \ubd84\uc11d\ud558\uae30 \uc704\ud574 \uc791\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \ub2e4\uc74c\uacfc \uac19\uc740 \ub0b4\uc6a9\uc744 \ub2e4\ub8f0 \uc608\uc815\uc785\ub2c8\ub2e4:\n\n1. LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150: LLM\uc758 \uac1c\ub150\uacfc \uc6d0\ub9ac\uc5d0 \ub300\ud574 \uc124\uba85\ud558\uace0, \uc8fc\uc694 \ubaa8\ub378\uacfc \uc801\uc6a9 \uc0ac\ub840\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n2. LLM \uc2dc\uc7a5 \uac1c\uc694: LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc5d0 \ub300\ud574 \ubd84\uc11d\ud558\uace0, \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\uc640 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n3. LLM \uc2dc\uc7a5\uc758 \uc138\ubd84\ud654: \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uacfc \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n4. LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5: \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\uc5d0 \ub300\ud574 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n5. LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778: \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc744 \ubd84\uc11d\ud558\uace0, \uc774\uc5d0 \ub300\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.\n\n6. LLM \uc2dc\uc7a5\uc758 \uae30\ud68c\uc640 \ub3c4\uc804: \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc744 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n7. \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5: \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd \ub4f1 \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n8. \uacb0\ub860: LLM \uc2dc\uc7a5\uc758 \uc804\ub9dd\uacfc \ucd94\uc774\ub97c \uc608\uce21\ud558\uace0, \ubcf4\uace0\uc11c\uc758 \uc694\uc57d\uacfc \uacb0\ub860\uc744 \ub3c4\ucd9c\ud569\ub2c8\ub2e4.\n## LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150\n\nLLM\uc740 Large Language Model\uc758 \uc57d\uc790\ub85c, \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \uac70\ub300\ud55c \uc5b8\uc5b4 \ubaa8\ub378\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4. LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. LLM\uc740 \uc8fc\ub85c \ub525\ub7ec\ub2dd \uc54c\uace0\ub9ac\uc998\uacfc \uc778\uacf5\uc2e0\uacbd\ub9dd\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uba70, \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\nLLM\uc740 \uae30\uc874\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ubaa8\ub378\uacfc \ube44\uad50\ud558\uc5ec \ud070 \uaddc\ubaa8\uc758 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uace0, \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \uc0ac\ub78c\uacfc \uc790\uc5f0\uc2a4\ub7ec\uc6b4 \ub300\ud654\ub97c \ub098\ub20c \uc218 \uc788\ub294 \uc218\uc900\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM\uc740 \ub2e4\uc591\ud55c \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac00\uc9c0\uace0 \uc788\uc73c\uba70, GPT (Generative Pre-trained Transformer)\uc640 BERT (Bidirectional Encoder Representations from Transformers) \ub4f1\uc774 \ub300\ud45c\uc801\uc778 LLM \ubaa8\ub378\uc785\ub2c8\ub2e4. \uc774\ub7ec\ud55c LLM \ubaa8\ub378\uc740 \uc8fc\ub85c \ud14d\uc2a4\ud2b8 \uc0dd\uc131, \uae30\uacc4 \ubc88\uc5ed, \uc9c8\uc758\uc751\ub2f5, \uac10\uc131 \ubd84\uc11d \ub4f1 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\n\n![MarketSize](assets/images/graph.png#700x500)\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \ucd94\uad6c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 ChatGPT \uc5f4\ud48d \uc774\ud6c4\uc5d0 \ube44\uc57d\uc801\uc73c\ub85c \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \ubc29\ud5a5\uc73c\ub85c \uc9c4\ud589\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM \uc2dc\uc7a5\uc740 VLLM (Very Large Language Model), \uc911\uaddc\ubaa8 LLM, Personal LM\uc758 \uc138 \ubd80\ub958\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud2b9\ud788, VLLM \uc2dc\uc7a5\uc740 Big Tech \uac04\uc758 \uacbd\uc7c1\uc73c\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.\n\n\ub458\uc9f8, LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \ud1b5\ud574 \uacc4\uc18d\ud574\uc11c \uc9c4\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uac00\uc18d\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \ub610\ud55c, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc751\uc6a9 \ubd84\uc57c\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc740 \ub354\uc6b1 \ub2e4\uc591\ud558\uace0 \uc131\uc7a5\ud558\ub294 \uacbd\ud5a5\uc744 \ubcf4\uc77c \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\n\nLLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \uc8fc\uc694\ud55c \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub4e4\uc774 \ud65c\ub3d9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub4e4\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 LLM \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub85c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uae30\uc5c5\ub4e4\uc774 \uc788\uc2b5\ub2c8\ub2e4:\n\n1. OpenAI: OpenAI\ub294 LLM \ubd84\uc57c\uc5d0\uc11c \uac00\uc7a5 \uc8fc\ubaa9\ubc1b\ub294 \uae30\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. OpenAI\ub294 GPT (Generative Pre-trained Transformer) \uc2dc\ub9ac\uc988\ub97c \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \ucd5c\uadfc\uc5d0\ub294 GPT-3 \ubaa8\ub378\uc744 \uacf5\uac1c\ud558\uc600\uc2b5\ub2c8\ub2e4. OpenAI\ub294 LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc120\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. Google: Google\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uac15\ub825\ud55c \uacbd\uc7c1 \uc5c5\uccb4\ub85c \uc54c\ub824\uc838 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 BERT (Bidirectional Encoder Representations from Transformers) \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. Microsoft: Microsoft\ub3c4 LLM \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 Turing-NLG\uc640 DALL-E \ub4f1\uc758 LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uc564\ud2b8\ub85c\ud53d (Antropic): \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uc8fc\ubaa9\ubc1b\ub294 \uc2a4\ud0c0\ud2b8\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 GPT-3 \ubaa8\ub378\uc744 \uac1c\ubc1c\ud55c \uc7ac\ub7ec\ub4dc \uce74\ud50c\ub780 \uacf5\ub3d9 \ucc3d\uc5c5\uc790\uac00 \uc774\ub044\ub294 \uae30\uc5c5\uc73c\ub85c, LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \uc2dc\uc7a5\uc5d0\uc11c \ud65c\ub3d9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uacbd\uc7c1 \uad6c\ub3c4\ub294 \uacc4\uc18d\ud574\uc11c \ubcc0\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud604\uc7ac\ub294 \uc8fc\ub85c Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc9c0\ub9cc, \uc55e\uc73c\ub85c\ub294 \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc758 \ud65c\uc57d\uacfc \ud568\uaed8 \uc2dc\uc7a5 \uad6c\ub3c4\uac00 \ub354\uc6b1 \ub2e4\uc591\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc73c\ub85c \uc138\ubd84\ud654\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc81c\ud488 \uc720\ud615\uc740 \ud2b9\uc815\ud55c \uc6a9\ub3c4\uc640 \uc0b0\uc5c5\uc5d0 \ub9de\uac8c \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc5d0\uc11c \ub2e4\uc591\ud55c \uc218\uc694\ub97c \ucda9\uc871\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc81c\ud488 \uc720\ud615\uacfc \uadf8 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ucc57\ubd07\uc6a9 LLM: \ucc57\ubd07\uc6a9 LLM\uc740 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120\uc744 \uc704\ud574 \uac1c\ubc1c\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub300\ub2f5\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucc57\ubd07\uc6a9 LLM\uc740 \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc73c\uba70, \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc740\ud589, \ud56d\uacf5\uc0ac, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM: \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud560 \uc218 \uc788\uc73c\uba70, \uc791\uac00\ub098 \uc608\uc220\uac00\uc758 \ucc3d\uc791 \ud65c\ub3d9\uc744 \ubcf4\uc870\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucd9c\ud310\uc0ac, \uc601\ud654 \uc81c\uc791\uc0ac, \uc74c\uc545 \uc0b0\uc5c5 \ub4f1\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ucc3d\uc791 \uacfc\uc815\uc744 \ud6a8\uc728\ud654\ud558\uace0 \ucc3d\uc758\uc131\uc744 \ub192\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM: \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uc5c5\uc774 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\ub3c4\ub85d \ub3c4\uc640\uc90d\ub2c8\ub2e4. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uae08\uc735, \ub9c8\ucf00\ud305, \uc608\uce21 \ubd84\uc11d \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM: \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \ub2e4\uad6d\uc5b4 \uac04\uc758 \uc758\uc0ac\uc18c\ud1b5\uc744 \uc6d0\ud65c\ud558\uac8c \ub3c4\uc640\uc8fc\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uacc4 \ubc88\uc5ed\uacfc \ub3d9\uc2dc \ud1b5\uc5ed \ub4f1\uc758 \uc791\uc5c5\uc5d0 \uc0ac\uc6a9\ub418\uba70, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \uad6d\uc81c \ube44\uc988\ub2c8\uc2a4, \uc5ec\ud589, \uad6d\uc81c \ud68c\uc758 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud544\uc218\uc801\uc778 \ub3c4\uad6c\ub85c \uc0ac\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc758 LLM\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc218\uc694\uc640 \uc694\uad6c\uc5d0 \ub530\ub77c \uacc4\uc18d\ud574\uc11c \uc0c8\ub85c\uc6b4 \uc81c\ud488\uc774 \ucd9c\uc2dc\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc81c\ud488\uc758 \ub2e4\uc591\uc131\uacfc \ud2b9\ud654\ub97c \ud1b5\ud574 \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc81c\ud488\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc5ed\ubcc4\ub85c\ub3c4 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uc744 \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ubbf8\uad6d: \ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uc911\uad6d: \uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \uc720\ub7fd: \uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd\uc744 \ube44\ub86f\ud55c \ub2e4\uc591\ud55c \uc9c0\uc5ed\ub4e4\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5\n\n### \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \uacbd\ud5d8\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \uacc4\uc18d\ud574\uc11c \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc758\ub8cc \ubd84\uc57c\uc5d0\uc11c \uc9c4\ub2e8\uacfc \uce58\ub8cc\ub97c \uc9c0\uc6d0\ud558\ub294 \uc758\uc0ac \uacb0\uc815 \uc2dc\uc2a4\ud15c\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uae08\uc735 \ubd84\uc57c\uc5d0\uc11c \ud22c\uc790 \ucd94\ucc9c\uacfc \uae08\uc735 \uc0c1\ud488 \uac1c\ubc1c\uc5d0 \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ud655\ub300\ub97c \uc774\ub04c\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ub2e4\uc591\ud55c \uc751\uc6a9 \ubd84\uc57c\uc640 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc758 \ub4f1\uc7a5\uc774 \uc608\uc0c1\ub429\ub2c8\ub2e4.\n\n### \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ud655\ub300\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 \ucd5c\uadfc \uba87 \ub2ec\uac04 \uae09\uaca9\ud788 \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uaddc\ubaa8\uc640 \uc218\uc694\ub294 \uacc4\uc18d\ud574\uc11c \uc99d\uac00\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\ub4e4\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\uc640 \uc218\uc694\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\n\n### \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc694\uc778\uc5d0 \uc758\ud574 \ucd09\uc9c4\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0: LLM \ubaa8\ub378\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \ub3d9\ub825\uc785\ub2c8\ub2e4.\n\n2. \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654: \ud604\ub300 \uc0b0\uc5c5\uc740 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654\uc758 \ucd94\uc138\ub97c \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ubcc0\ud654\uc640 \uc694\uad6c\uc5d0 \ubd80\ud569\ud558\ub294 \uae30\uc220\ub85c\uc11c \ud65c\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc744 \uc2e4\ud604\ud560 \uc218 \uc788\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ucd94\uc138\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. \ucd5c\uadfc \uba87 \ub144\uac04 \ub370\uc774\ud130\uc758 \uc591\uacfc \ub2e4\uc591\uc131\uc774 \ud06c\uac8c \uc99d\uac00\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 LLM \ubaa8\ub378\uc758 \ud559\uc2b5\uacfc \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ub370\uc774\ud130\uac00 \uc0dd\uc131\ub418\uace0 \uc788\uc73c\uba70, \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec LLM\uc744 \uc801\uc6a9\ud558\ub294 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc5b5\uc81c\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc81c\uc57d\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc5b5\uc81c\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294\ub370 \uc5b4\ub824\uc6c0\uc744 \uc904 \uc218 \uc788\uc73c\uba70, \ud2b9\ud788 \uc911\uc18c\uae30\uc5c5\uacfc \uc2a4\ud0c0\ud2b8\uc5c5\ub4e4\uc5d0\uac8c\ub294 \ud070 \uc7a5\ubcbd\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\ub294 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc758 \ubb38\uc81c\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc9c0\ub9cc, \uc5ec\uc804\ud788 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM \ubaa8\ub378\uc740 \ud2b9\uc815\ud55c \ub370\uc774\ud130\uc5d0 \uacfc\uc801\ud569\ub418\ub294 \uacbd\ud5a5\uc774 \uc788\uc73c\uba70, \uc77c\ubd80 \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc601\ud5a5\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc744 \ud65c\uc6a9\ud558\uace0 \uc5b5\uc81c\uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574 \ub178\ub825\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \uc815\ubd80\uc640 \uaddc\uc81c\uae30\uad00\uc740 LLM \uc2dc\uc7a5\uc758 \ubc1c\uc804\uc744 \uc9c0\uc6d0\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc801\uc808\ud788 \ud574\uacb0\ud558\uae30 \uc704\ud55c \uc815\ucc45\uacfc \uaddc\uc81c\ub97c \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4.\n## \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \ud604\uc7ac Big Tech \uae30\uc5c5\ub4e4\uc774 \uc8fc\ub3c4\ud558\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ub530\ub77c\uc11c, LLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\uac00 \ud544\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ud2b9\uc815\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc5d0 \ud2b9\ud654\ub41c LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uc2e0\uaddc \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\uc740 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\n3. \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\ub294 \uac83\uc774 \uc911\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \uc81c\uc870\uc5c5\uccb4\ub098 \uacf5\uae09\uc5c5\uccb4\uc640 \ud611\ub825\ud558\uc5ec \uae30\uc220\uacfc \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0, \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c: LLM\uc740 \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\uc5d0\uc11c\ub3c4 \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uac1c\uc778 \ub9de\ucda4\ud615 \ud559\uc2b5 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uac70\ub098, \uad50\uc721 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub4f1\uc758 \uc11c\ube44\uc2a4\ub97c \uac1c\ubc1c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uad50\uc721 \uc2dc\uc7a5\uc740 LLM\uc758 \uc801\uc6a9 \uac00\ub2a5\uc131\uc774 \ub192\uc740 \ubd84\uc57c \uc911 \ud558\ub098\uc774\uba70, \uc2e0\uaddc \uc9c4\uc785 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc704\uc758 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud558\uc5ec \uc801\uc808\ud55c \uc9c4\uc785 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \uae30\uc874\uc758 Big Tech \uae30\uc5c5\ub4e4\uacfc\uc758 \uacbd\uc7c1\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uacfc \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uba70, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c\uc744 \uace0\ub824\ud558\uc5ec \uc0c8\ub85c\uc6b4 \uc2dc\uc7a5\uc744 \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc801\uc808\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uc8fc\uc694 \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\uc815\ud55c \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc5ec\uc57c \ud558\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc131\ub2a5\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud6a8\uc728\uc801\uc778 \uc790\uc6d0 \uad00\ub9ac\uc640 \ube44\uc6a9 \uc808\uac10\uc744 \uc704\ud55c \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \ud1b5\ud574 \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0 \ube44\uc6a9\uc744 \ubd84\ub2f4\ud558\ub294 \ubc29\uc548\uc744 \ubaa8\uc0c9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc774\uace0, \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \ud6a8\uc728\uc801\uc73c\ub85c \uad00\ub9ac\ud558\ub294 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uc5ec \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uc744 \uc218 \uc788\ub3c4\ub85d \ud574\uc57c \ud569\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc5d0 \uc131\uacf5\uc801\uc73c\ub85c \uc9c4\uc785\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n## \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n### \ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc911\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc911\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc720\ub7fd\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc720\ub7fd\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n## \uacb0\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc791\uc5c5 \uc790\ub3d9\ud654, \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120, \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131, \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815 \ub4f1 \ub2e4\uc591\ud55c \uc601\uc5ed\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654, \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ub4f1\uc758 \uc694\uc778\uc5d0 \uc758\ud574 \uc131\uc7a5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uacfc \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4, \uc81c\ud488 \uc720\ud615\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc9c0\uc5ed\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc8fc\uc694 \ub3d9\ud5a5, \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5, \uc8fc\uc694 \uad6d\uac00\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5 \ub4f1\uc744 \ubd84\uc11d\ud558\uc5ec \uc608\uce21\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \uae30\uc220\uc801\uc778 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95 \ub4f1\uc758 \uc804\ub7b5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n\n"},
+$0(){this.a.CW="![LLM](https://miro.medium.com/v2/resize:fit:828/format:webp/1*RRUsg18czDkQluVPCCZYrw.png#784x224)\n\n# \uc11c\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM(Large Language Model)\uc740 \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc911\uc694\ud55c \uc5ed\ud560\uc744 \uc218\ud589\ud558\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub530\ub77c LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\uc740 \ub354\uc6b1 \ucee4\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc911\uc694\uc131\uacfc \uc601\ud5a5\ub825\n\nLLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uba87 \uac00\uc9c0 \uc8fc\uc694\ud55c \uc601\ud5a5\ub825\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uc791\uc5c5 \uc790\ub3d9\ud654: LLM\uc740 \uc0ac\ub78c\uc774 \uc218\ud589\ud558\ub294 \ub9ce\uc740 \uc791\uc5c5\uc744 \uc790\ub3d9\ud654\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uc9c1\uc6d0\ub4e4\uc740 \ubcf4\ub2e4 \uc804\ub7b5\uc801\uc774\uace0 \ucc3d\uc758\uc801\uc778 \uc5c5\ubb34\uc5d0 \uc9d1\uc911\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120: LLM\uc744 \uc0ac\uc6a9\ud558\uc5ec \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub2f5\ubcc0\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud560 \uc218 \uc788\ub294 \ucc57\ubd07\uc744 \ub9cc\ub4e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131: LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815: LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \ubcf4\uace0\uc11c\uc758 \ubaa9\uc801\uacfc \ubc94\uc704\n\n\ubcf8 \ubcf4\uace0\uc11c\ub294 LLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uacfc \uc804\ub9dd\uc744 \ubd84\uc11d\ud558\uae30 \uc704\ud574 \uc791\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \ub2e4\uc74c\uacfc \uac19\uc740 \ub0b4\uc6a9\uc744 \ub2e4\ub8f0 \uc608\uc815\uc785\ub2c8\ub2e4:\n\n1. LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150: LLM\uc758 \uac1c\ub150\uacfc \uc6d0\ub9ac\uc5d0 \ub300\ud574 \uc124\uba85\ud558\uace0, \uc8fc\uc694 \ubaa8\ub378\uacfc \uc801\uc6a9 \uc0ac\ub840\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n2. LLM \uc2dc\uc7a5 \uac1c\uc694: LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc5d0 \ub300\ud574 \ubd84\uc11d\ud558\uace0, \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\uc640 \uacbd\uc7c1 \uad6c\ub3c4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4.\n\n3. LLM \uc2dc\uc7a5\uc758 \uc138\ubd84\ud654: \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uacfc \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n4. LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5: \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\uc5d0 \ub300\ud574 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n5. LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778: \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc744 \ubd84\uc11d\ud558\uace0, \uc774\uc5d0 \ub300\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.\n\n6. LLM \uc2dc\uc7a5\uc758 \uae30\ud68c\uc640 \ub3c4\uc804: \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc744 \ub2e4\ub8f9\ub2c8\ub2e4.\n\n7. \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5: \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd \ub4f1 \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc744 \ubd84\uc11d\ud569\ub2c8\ub2e4.\n\n8. \uacb0\ub860: LLM \uc2dc\uc7a5\uc758 \uc804\ub9dd\uacfc \ucd94\uc774\ub97c \uc608\uce21\ud558\uace0, \ubcf4\uace0\uc11c\uc758 \uc694\uc57d\uacfc \uacb0\ub860\uc744 \ub3c4\ucd9c\ud569\ub2c8\ub2e4.\n## LLM\uc758 \uc815\uc758\uc640 \uac1c\ub150\n\nLLM\uc740 Large Language Model\uc758 \uc57d\uc790\ub85c, \uc790\uc5f0\uc5b4 \ucc98\ub9ac\uc640 \uc778\uacf5\uc9c0\ub2a5 \ubd84\uc57c\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \uac70\ub300\ud55c \uc5b8\uc5b4 \ubaa8\ub378\uc744 \uc758\ubbf8\ud569\ub2c8\ub2e4. LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. LLM\uc740 \uc8fc\ub85c \ub525\ub7ec\ub2dd \uc54c\uace0\ub9ac\uc998\uacfc \uc778\uacf5\uc2e0\uacbd\ub9dd\uc744 \uae30\ubc18\uc73c\ub85c \ud558\uba70, \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\nLLM\uc740 \uae30\uc874\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ubaa8\ub378\uacfc \ube44\uad50\ud558\uc5ec \ud070 \uaddc\ubaa8\uc758 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uace0, \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \uc0ac\ub78c\uacfc \uc790\uc5f0\uc2a4\ub7ec\uc6b4 \ub300\ud654\ub97c \ub098\ub20c \uc218 \uc788\ub294 \uc218\uc900\uc758 \uc790\uc5f0\uc5b4 \ucc98\ub9ac \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM\uc740 \ub2e4\uc591\ud55c \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac00\uc9c0\uace0 \uc788\uc73c\uba70, GPT (Generative Pre-trained Transformer)\uc640 BERT (Bidirectional Encoder Representations from Transformers) \ub4f1\uc774 \ub300\ud45c\uc801\uc778 LLM \ubaa8\ub378\uc785\ub2c8\ub2e4. \uc774\ub7ec\ud55c LLM \ubaa8\ub378\uc740 \uc8fc\ub85c \ud14d\uc2a4\ud2b8 \uc0dd\uc131, \uae30\uacc4 \ubc88\uc5ed, \uc9c8\uc758\uc751\ub2f5, \uac10\uc131 \ubd84\uc11d \ub4f1 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ub429\ub2c8\ub2e4.\n\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\n\n![MarketSize](https://github.com/san9min/aaa/blob/main/assets/graph.png?raw=true#500x300)\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \ucd94\uad6c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 ChatGPT \uc5f4\ud48d \uc774\ud6c4\uc5d0 \ube44\uc57d\uc801\uc73c\ub85c \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \ub3d9\ud5a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \ubc29\ud5a5\uc73c\ub85c \uc9c4\ud589\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM \uc2dc\uc7a5\uc740 VLLM (Very Large Language Model), \uc911\uaddc\ubaa8 LLM, Personal LM\uc758 \uc138 \ubd80\ub958\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud2b9\ud788, VLLM \uc2dc\uc7a5\uc740 Big Tech \uac04\uc758 \uacbd\uc7c1\uc73c\ub85c \uc7ac\ud3b8\ub418\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.\n\n\ub458\uc9f8, LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \ud1b5\ud574 \uacc4\uc18d\ud574\uc11c \uc9c4\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ub3d9\ud5a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uac00\uc18d\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \ub610\ud55c, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc751\uc6a9 \ubd84\uc57c\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc740 \ub354\uc6b1 \ub2e4\uc591\ud558\uace0 \uc131\uc7a5\ud558\ub294 \uacbd\ud5a5\uc744 \ubcf4\uc77c \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\n\nLLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \uc8fc\uc694\ud55c \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub4e4\uc774 \ud65c\ub3d9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub4e4\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 LLM \uc81c\uc870\uc5c5\uccb4\uc640 \uacf5\uae09\uc5c5\uccb4\ub85c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uae30\uc5c5\ub4e4\uc774 \uc788\uc2b5\ub2c8\ub2e4:\n\n1. OpenAI: OpenAI\ub294 LLM \ubd84\uc57c\uc5d0\uc11c \uac00\uc7a5 \uc8fc\ubaa9\ubc1b\ub294 \uae30\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. OpenAI\ub294 GPT (Generative Pre-trained Transformer) \uc2dc\ub9ac\uc988\ub97c \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \ucd5c\uadfc\uc5d0\ub294 GPT-3 \ubaa8\ub378\uc744 \uacf5\uac1c\ud558\uc600\uc2b5\ub2c8\ub2e4. OpenAI\ub294 LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc120\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. Google: Google\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uac15\ub825\ud55c \uacbd\uc7c1 \uc5c5\uccb4\ub85c \uc54c\ub824\uc838 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 BERT (Bidirectional Encoder Representations from Transformers) \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Google\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. Microsoft: Microsoft\ub3c4 LLM \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 Turing-NLG\uc640 DALL-E \ub4f1\uc758 LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ud65c\uc6a9\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. Microsoft\ub294 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uc564\ud2b8\ub85c\ud53d (Antropic): \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubd84\uc57c\uc5d0\uc11c \uc8fc\ubaa9\ubc1b\ub294 \uc2a4\ud0c0\ud2b8\uc5c5 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 GPT-3 \ubaa8\ub378\uc744 \uac1c\ubc1c\ud55c \uc7ac\ub7ec\ub4dc \uce74\ud50c\ub780 \uacf5\ub3d9 \ucc3d\uc5c5\uc790\uac00 \uc774\ub044\ub294 \uae30\uc5c5\uc73c\ub85c, LLM \ubaa8\ub378\uc758 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc564\ud2b8\ub85c\ud53d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \uc2dc\uc7a5\uc5d0\uc11c \ud65c\ub3d9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uacbd\uc7c1 \uad6c\ub3c4\ub294 \uacc4\uc18d\ud574\uc11c \ubcc0\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ud604\uc7ac\ub294 \uc8fc\ub85c Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc9c0\ub9cc, \uc55e\uc73c\ub85c\ub294 \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc758 \ud65c\uc57d\uacfc \ud568\uaed8 \uc2dc\uc7a5 \uad6c\ub3c4\uac00 \ub354\uc6b1 \ub2e4\uc591\ud654\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc81c\ud488 \uc720\ud615\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc73c\ub85c \uc138\ubd84\ud654\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc81c\ud488 \uc720\ud615\uc740 \ud2b9\uc815\ud55c \uc6a9\ub3c4\uc640 \uc0b0\uc5c5\uc5d0 \ub9de\uac8c \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc5d0\uc11c \ub2e4\uc591\ud55c \uc218\uc694\ub97c \ucda9\uc871\uc2dc\ud0a4\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc81c\ud488 \uc720\ud615\uacfc \uadf8 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ucc57\ubd07\uc6a9 LLM: \ucc57\ubd07\uc6a9 LLM\uc740 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120\uc744 \uc704\ud574 \uac1c\ubc1c\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uace0\uac1d\uc758 \uc9c8\ubb38\uc5d0 \ub300\ub2f5\ud558\uace0 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucc57\ubd07\uc6a9 LLM\uc740 \uc5f0\uc911\ubb34\ud734 24\uc2dc\uac04 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc73c\uba70, \uace0\uac1d \uc11c\ube44\uc2a4\uc758 \ud488\uc9c8\uacfc \ud6a8\uc728\uc131\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc740\ud589, \ud56d\uacf5\uc0ac, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM: \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uc18c\uc124, \uc2dc\ub098\ub9ac\uc624, \uc74c\uc545 \ub4f1 \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ucf58\ud150\uce20\ub97c \uc0dd\uc131\ud560 \uc218 \uc788\uc73c\uba70, \uc791\uac00\ub098 \uc608\uc220\uac00\uc758 \ucc3d\uc791 \ud65c\ub3d9\uc744 \ubcf4\uc870\ud558\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \ucf58\ud150\uce20 \uc0dd\uc131\uc6a9 LLM\uc740 \ucd9c\ud310\uc0ac, \uc601\ud654 \uc81c\uc791\uc0ac, \uc74c\uc545 \uc0b0\uc5c5 \ub4f1\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ucc3d\uc791 \uacfc\uc815\uc744 \ud6a8\uc728\ud654\ud558\uace0 \ucc3d\uc758\uc131\uc744 \ub192\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM: \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub370\uc774\ud130\ub97c \ubd84\uc11d\ud558\uace0 \ubbf8\ub798 \ud2b8\ub80c\ub4dc\ub97c \uc608\uce21\ud558\ub294 \ub370 \uc0ac\uc6a9\ub429\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uc5c5\uc774 \uc81c\ud488, \ub9c8\ucf00\ud305, \ud22c\uc790 \ub4f1\uc5d0 \ub300\ud55c \ub354 \ub098\uc740 \uc758\uc0ac \uacb0\uc815\uc744 \ub0b4\ub9b4 \uc218 \uc788\ub3c4\ub85d \ub3c4\uc640\uc90d\ub2c8\ub2e4. \ub370\uc774\ud130 \ubd84\uc11d\uc6a9 LLM\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \uc0ac\uc6a9\ub418\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uae08\uc735, \ub9c8\ucf00\ud305, \uc608\uce21 \ubd84\uc11d \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM: \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \ub2e4\uad6d\uc5b4 \uac04\uc758 \uc758\uc0ac\uc18c\ud1b5\uc744 \uc6d0\ud65c\ud558\uac8c \ub3c4\uc640\uc8fc\ub294 \uc5ed\ud560\uc744 \uc218\ud589\ud569\ub2c8\ub2e4. \uc774 \uc81c\ud488\uc740 \uae30\uacc4 \ubc88\uc5ed\uacfc \ub3d9\uc2dc \ud1b5\uc5ed \ub4f1\uc758 \uc791\uc5c5\uc5d0 \uc0ac\uc6a9\ub418\uba70, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc5d0\uc11c \ud65c\ubc1c\ud558\uac8c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubc88\uc5ed \ubc0f \ud1b5\uc5ed\uc6a9 LLM\uc740 \uad6d\uc81c \ube44\uc988\ub2c8\uc2a4, \uc5ec\ud589, \uad6d\uc81c \ud68c\uc758 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ud544\uc218\uc801\uc778 \ub3c4\uad6c\ub85c \uc0ac\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774 \uc678\uc5d0\ub3c4 \ub2e4\uc591\ud55c \uc81c\ud488 \uc720\ud615\uc758 LLM\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc218\uc694\uc640 \uc694\uad6c\uc5d0 \ub530\ub77c \uacc4\uc18d\ud574\uc11c \uc0c8\ub85c\uc6b4 \uc81c\ud488\uc774 \ucd9c\uc2dc\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc81c\ud488\uc758 \ub2e4\uc591\uc131\uacfc \ud2b9\ud654\ub97c \ud1b5\ud574 \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc81c\ud488\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc5ed\ubcc4\ub85c\ub3c4 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uc744 \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc9c0\uc5ed\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ubbf8\uad6d: \ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \uc911\uad6d: \uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \uc720\ub7fd: \uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uac01 \uc9c0\uc5ed\uc740 \uc790\uad6d\uc758 \uc0b0\uc5c5\uacfc \uc2dc\uc7a5 \ud2b9\uc131\uc5d0 \ub9de\uac8c LLM\uc744 \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ubc1c\uc804\uc744 \uc704\ud574 \ub178\ub825\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d, \uc911\uad6d, \uc720\ub7fd\uc744 \ube44\ub86f\ud55c \ub2e4\uc591\ud55c \uc9c0\uc5ed\ub4e4\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4\ub85c\uc11c\uc758 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc8fc\uc694 \ub3d9\ud5a5\n\n### \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc744 \uacbd\ud5d8\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \uacc4\uc18d\ud574\uc11c \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc608\ub97c \ub4e4\uc5b4, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc758\ub8cc \ubd84\uc57c\uc5d0\uc11c \uc9c4\ub2e8\uacfc \uce58\ub8cc\ub97c \uc9c0\uc6d0\ud558\ub294 \uc758\uc0ac \uacb0\uc815 \uc2dc\uc2a4\ud15c\uc774 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uae08\uc735 \ubd84\uc57c\uc5d0\uc11c \ud22c\uc790 \ucd94\ucc9c\uacfc \uae08\uc735 \uc0c1\ud488 \uac1c\ubc1c\uc5d0 \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uacfc \ud655\ub300\ub97c \uc774\ub04c\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ub2e4\uc591\ud55c \uc751\uc6a9 \ubd84\uc57c\uc640 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc758 \ub4f1\uc7a5\uc774 \uc608\uc0c1\ub429\ub2c8\ub2e4.\n\n### \uc2dc\uc7a5 \uaddc\ubaa8\uc640 \uc218\uc694 \uc608\uce21\n\nLLM \uc2dc\uc7a5\uc740 \uc9c0\uc18d\uc801\uc778 \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uc55e\uc73c\ub85c \ub354\uc6b1 \ud655\ub300\ub420 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uc138\ucffc\uc774\uc544 \uce90\ud53c\ud138\uc758 \ubcf4\uace0\uc11c\uc5d0 \ub530\ub974\uba74, \uae30\uc5c5\uc758 LLM \ub3c4\uc785\ub960\uc740 \ucd5c\uadfc \uba87 \ub2ec\uac04 \uae09\uaca9\ud788 \uc0c1\uc2b9\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc0c8\ub85c\uc6b4 LLM\uc744 \uc801\uc6a9\ud55c \uc571\uc744 \ub9cc\ub4e0 \uae30\uc5c5\uc758 \ube44\uc911\uc740 \ub450 \ub2ec \ub9cc\uc5d0 15%\uc5d0\uc11c 65%\ub85c \uae09\ub4f1\ud558\uc600\uc2b5\ub2c8\ub2e4.\n\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc8fc\ub85c \ub2e4\uc74c\uacfc \uac19\uc740 \uc774\uc720\ub85c \uc778\ud574 \ubc1c\uc0dd\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uccab\uc9f8, LLM\uc758 \uc131\ub2a5\uacfc \uc815\ud655\ub3c4\uac00 \ud5a5\uc0c1\ub418\uc5c8\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \ub2e4\uc591\ud55c \uc790\uc5f0\uc5b4 \ucc98\ub9ac \uc791\uc5c5\uc5d0 \ub6f0\uc5b4\ub09c \uacb0\uacfc\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub458\uc9f8, LLM\uc744 \ud65c\uc6a9\ud55c \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc774 \uc778\uc2dd\ub418\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\ub4e4\uc740 \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uaddc\ubaa8\uc640 \uc218\uc694\ub294 \uacc4\uc18d\ud574\uc11c \uc99d\uac00\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4. \uae30\uc5c5\ub4e4\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \ud601\uc2e0\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud558\uae30 \uc704\ud574 \ub178\ub825\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, LLM \uae30\uc220\uc758 \ubc1c\uc804\uacfc \ud568\uaed8 \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\uc640 \uc218\uc694\uac00 \ub4f1\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub429\ub2c8\ub2e4.\n## LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\n\n### \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc694\uc778\uc5d0 \uc758\ud574 \ucd09\uc9c4\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0: LLM \ubaa8\ub378\uc758 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. LLM \ubaa8\ub378\uc758 \ud06c\uae30\uc640 \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc73c\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\uac00 \uac1c\ubc1c\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM\uc740 \ub354\uc6b1 \uc815\uad50\ud55c \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM\uc744 \ud65c\uc6a9\ud55c \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc758 \uc801\uc6a9 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \ub3d9\ub825\uc785\ub2c8\ub2e4.\n\n2. \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654: \ud604\ub300 \uc0b0\uc5c5\uc740 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654\uc758 \ucd94\uc138\ub97c \ubcf4\uc774\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ubcc0\ud654\uc640 \uc694\uad6c\uc5d0 \ubd80\ud569\ud558\ub294 \uae30\uc220\ub85c\uc11c \ud65c\uc6a9\ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uc791\uc5c5 \uc790\ub3d9\ud654\uc640 \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120 \ub4f1\uc758 \uc7a5\uc810\uc744 \uc2e4\ud604\ud560 \uc218 \uc788\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 \uae30\uc5c5\uc740 \ube44\uc988\ub2c8\uc2a4 \ud504\ub85c\uc138\uc2a4\ub97c \uac1c\uc120\ud558\uace0 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ucd94\uc138\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \ucd09\uc9c4\ud558\ub294 \uc8fc\uc694 \uc694\uc778\uc785\ub2c8\ub2e4. \ucd5c\uadfc \uba87 \ub144\uac04 \ub370\uc774\ud130\uc758 \uc591\uacfc \ub2e4\uc591\uc131\uc774 \ud06c\uac8c \uc99d\uac00\ud558\uc600\uc73c\uba70, \uc774\ub97c \ud1b5\ud574 LLM \ubaa8\ub378\uc758 \ud559\uc2b5\uacfc \uc131\ub2a5\uc774 \ud5a5\uc0c1\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ub2e4\uc591\ud55c \ud615\ud0dc\uc758 \ub370\uc774\ud130\uac00 \uc0dd\uc131\ub418\uace0 \uc788\uc73c\uba70, \uc774\ub97c \ud65c\uc6a9\ud558\uc5ec LLM\uc744 \uc801\uc6a9\ud558\ub294 \uc0ac\ub840\uac00 \ub298\uc5b4\ub098\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc5b5\uc81c\uc694\uc778 \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc81c\uc57d\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc8fc\uc694 \uc5b5\uc81c\uc694\uc778\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294\ub370 \uc5b4\ub824\uc6c0\uc744 \uc904 \uc218 \uc788\uc73c\uba70, \ud2b9\ud788 \uc911\uc18c\uae30\uc5c5\uacfc \uc2a4\ud0c0\ud2b8\uc5c5\ub4e4\uc5d0\uac8c\ub294 \ud070 \uc7a5\ubcbd\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM\uc740 \ub300\ub7c9\uc758 \ud14d\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ud559\uc2b5\ud558\uc5ec \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd98 \uc778\uacf5\uc9c0\ub2a5 \ubaa8\ub378\uc744 \uad6c\ucd95\ud558\ub294 \uae30\uc220\uc785\ub2c8\ub2e4. \ub530\ub77c\uc11c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\ub294 LLM \uc2dc\uc7a5\uc5d0\uc11c \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc758 \ubb38\uc81c\ub294 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\n3. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uace0 \uc788\uc9c0\ub9cc, \uc5ec\uc804\ud788 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, LLM \ubaa8\ub378\uc740 \ud2b9\uc815\ud55c \ub370\uc774\ud130\uc5d0 \uacfc\uc801\ud569\ub418\ub294 \uacbd\ud5a5\uc774 \uc788\uc73c\uba70, \uc77c\ubd80 \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc744 \uc5b5\uc81c\ud558\ub294 \uc8fc\uc694 \uc694\uc778 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778\uc5d0 \uc758\ud574 \uc601\ud5a5\uc744 \ubc1b\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc5c5\uacfc \uc870\uc9c1\uc740 \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uc744 \ud65c\uc6a9\ud558\uace0 \uc5b5\uc81c\uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574 \ub178\ub825\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \uc815\ubd80\uc640 \uaddc\uc81c\uae30\uad00\uc740 LLM \uc2dc\uc7a5\uc758 \ubc1c\uc804\uc744 \uc9c0\uc6d0\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc801\uc808\ud788 \ud574\uacb0\ud558\uae30 \uc704\ud55c \uc815\ucc45\uacfc \uaddc\uc81c\ub97c \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4.\n## \uc2dc\uc7a5 \uc9c4\uc785 \uc804\ub7b5\uacfc \uae30\ud68c \ubd84\uc11d\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \ud604\uc7ac Big Tech \uae30\uc5c5\ub4e4\uc774 \uc8fc\ub3c4\ud558\uace0 \uc788\uc73c\uba70, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ub530\ub77c\uc11c, LLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc74c\uacfc \uac19\uc740 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud574\uc57c \ud569\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\uac00 \ud544\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ud2b9\uc815\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc5d0 \ud2b9\ud654\ub41c LLM \ubaa8\ub378\uc744 \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. \uc2e0\uaddc \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\uc740 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\n3. \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95: LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\ub294 \uac83\uc774 \uc911\uc694\ud569\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \uc81c\uc870\uc5c5\uccb4\ub098 \uacf5\uae09\uc5c5\uccb4\uc640 \ud611\ub825\ud558\uc5ec \uae30\uc220\uacfc \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0, \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n4. \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c: LLM\uc740 \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\uc5d0\uc11c\ub3c4 \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud569\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uc5ec \uac1c\uc778 \ub9de\ucda4\ud615 \ud559\uc2b5 \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uac70\ub098, \uad50\uc721 \ucf58\ud150\uce20\ub97c \uc790\ub3d9\uc73c\ub85c \uc0dd\uc131\ud558\ub294 \ub4f1\uc758 \uc11c\ube44\uc2a4\ub97c \uac1c\ubc1c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uad50\uc721 \uc2dc\uc7a5\uc740 LLM\uc758 \uc801\uc6a9 \uac00\ub2a5\uc131\uc774 \ub192\uc740 \ubd84\uc57c \uc911 \ud558\ub098\uc774\uba70, \uc2e0\uaddc \uc9c4\uc785 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub9ce\uc740 \uae30\ud68c\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc2e0\uaddc \uc9c4\uc785\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc704\uc758 \uc804\ub7b5\uacfc \uae30\ud68c\ub97c \uace0\ub824\ud558\uc5ec \uc801\uc808\ud55c \uc9c4\uc785 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \uae30\uc874\uc758 Big Tech \uae30\uc5c5\ub4e4\uacfc\uc758 \uacbd\uc7c1\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uacfc \uc11c\ube44\uc2a4\ub97c \uc81c\uacf5\ud558\uace0, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uba70, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \uad6c\ucd95\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c\uc758 \uacbd\uc7c1\ub825\uc744 \uac15\ud654\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uad50\uc721\uacfc \uad50\uc721 \uc11c\ube44\uc2a4 \ubd84\uc57c\ub85c\uc758 \uc9c4\ucd9c\uc744 \uace0\ub824\ud558\uc5ec \uc0c8\ub85c\uc6b4 \uc2dc\uc7a5\uc744 \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n## \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uc801\uc808\ud55c \ub300\uc751 \uc804\ub7b5\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uc8fc\uc694 \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5\uc740 \ub2e4\uc74c\uacfc \uac19\uc2b5\ub2c8\ub2e4:\n\n1. \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131: LLM\uc740 \ud604\uc7ac\uae4c\uc9c0\ub3c4 \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \ubaa8\ub378\uc740 \uc0ac\ub78c\uacfc \uc644\uc804\ud788 \ub3d9\ub4f1\ud55c \uc218\uc900\uc758 \uc5b8\uc5b4 \uc774\ud574\uc640 \uc0dd\uc131 \ub2a5\ub825\uc744 \uac16\ucd94\uc9c0 \ubabb\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\uc815\ud55c \ub3c4\uba54\uc778\uc5d0\uc11c\ub294 \uc81c\ud55c\ub41c \uc131\ub2a5\uc744 \ubcf4\uc77c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \uae30\uc220\uc801 \ud55c\uacc4\uc640 \ubd88\uc644\uc804\uc131\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc5ec\uc57c \ud558\uba70, \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uacfc \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc131\ub2a5\uc744 \ud5a5\uc0c1\uc2dc\ud0ac \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n2. \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871: LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc5d0\ub294 \uc0c1\ub2f9\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. \ud2b9\ud788, \ub300\uaddc\ubaa8 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \ud559\uc2b5\uc740 \ub9ce\uc740 \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \uc694\uad6c\ud569\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ube44\uc6a9\uacfc \uc790\uc6d0\uc758 \ubd80\uc871\uc740 LLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uae30\uc5c5\ub4e4\uc5d0\uac8c \ub3c4\uc804 \uc694\uc778\uc774 \ub420 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\uc5d0 \ub300\uc751\ud558\uae30 \uc704\ud574\uc11c\ub294 \ud6a8\uc728\uc801\uc778 \uc790\uc6d0 \uad00\ub9ac\uc640 \ube44\uc6a9 \uc808\uac10\uc744 \uc704\ud55c \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed\uc744 \ud1b5\ud574 \uc790\uc6d0\uc744 \uacf5\uc720\ud558\uace0 \ube44\uc6a9\uc744 \ubd84\ub2f4\ud558\ub294 \ubc29\uc548\uc744 \ubaa8\uc0c9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n\n3. \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638: LLM \uc2dc\uc7a5\uc5d0\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uac00 \uc911\uc694\ud55c \uc774\uc288\uc785\ub2c8\ub2e4. LLM\uc744 \ud65c\uc6a9\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub2e4\uc591\ud55c \ub370\uc774\ud130\ub97c \uc218\uc9d1\ud558\uace0 \ud65c\uc6a9\ud574\uc57c \ud558\uc9c0\ub9cc, \uc774\ub294 \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc640 \uad00\ub828\ub41c \ubc95\uc801, \uc724\ub9ac\uc801 \ubb38\uc81c\ub97c \uc57c\uae30\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud574\uc57c \ud569\ub2c8\ub2e4. \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uae30 \uc704\ud574 \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \uac15\ub825\ud55c \uc2dc\uc2a4\ud15c\uacfc \uc815\ucc45\uc744 \uad6c\ucd95\ud574\uc57c \ud569\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc5d0 \uc9c4\uc785\ud558\ub294 \uac83\uc740 \ub2e4\uc591\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uac00\uc9c0\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc774\ub7ec\ud55c \ub3c4\uc804 \uc694\uc778\uc744 \uadf9\ubcf5\ud558\uae30 \uc704\ud574\uc11c\ub294 \uae30\uc220\uc801\uc778 \uc5f0\uad6c\uc640 \uac1c\ubc1c\uc5d0 \ub178\ub825\uc744 \uae30\uc6b8\uc774\uace0, \ube44\uc6a9\uacfc \uc790\uc6d0\uc744 \ud6a8\uc728\uc801\uc73c\ub85c \uad00\ub9ac\ud558\ub294 \uc804\ub7b5\uc744 \uc218\ub9bd\ud574\uc57c \ud569\ub2c8\ub2e4. \ub610\ud55c, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc5d0 \ub300\ud55c \ucca0\uc800\ud55c \ub300\ucc45\uc744 \ub9c8\ub828\ud558\uc5ec \uace0\uac1d\ub4e4\uc758 \uc2e0\ub8b0\ub97c \uc5bb\uc744 \uc218 \uc788\ub3c4\ub85d \ud574\uc57c \ud569\ub2c8\ub2e4. \uc774\ub97c \ud1b5\ud574 LLM \uc2dc\uc7a5\uc5d0 \uc131\uacf5\uc801\uc73c\ub85c \uc9c4\uc785\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n## \uc8fc\uc694 \uad6d\uac00\ubcc4 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n### \ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\ubbf8\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \uac00\uc7a5 \ud070 \uc601\ud5a5\ub825\uc744 \uac00\uc9c0\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \ubbf8\uad6d\uc740 \ub2e4\uc591\ud55c \uae30\uc5c5\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 Big Tech \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc744 \uc8fc\ub3c4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ubbf8\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc790\uc728\uc8fc\ud589, \uc758\ub8cc \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\ubbf8\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc911\uad6d\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc911\uad6d\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c \ube60\ub974\uac8c \uc131\uc7a5\ud558\uace0 \uc788\ub294 \uad6d\uac00 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \uc8fc\ub825\ud558\uace0 \uc788\uc73c\uba70, \uad6d\ub0b4 \uae30\uc5c5\ub4e4\uc774 \uc2dc\uc7a5\uc5d0\uc11c \uc8fc\ub3c4\uc801\uc778 \uc5ed\ud560\uc744 \uc218\ud589\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc911\uad6d\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc778\uacf5\uc9c0\ub2a5, \uc2a4\ub9c8\ud2b8 \uc2dc\ud2f0, \uc804\uc790\uc0c1\uac70\ub798 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc911\uad6d\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n### \uc720\ub7fd\uc758 LLM \uc2dc\uc7a5 \ub3d9\ud5a5\n\n\uc720\ub7fd\uc740 LLM \uc2dc\uc7a5\uc5d0\uc11c\ub3c4 \ud65c\ubc1c\ud55c \ud65c\ub3d9\uc744 \ubcf4\uc774\uace0 \uc788\ub294 \uc9c0\uc5ed \uc911 \ud558\ub098\uc785\ub2c8\ub2e4. \uc720\ub7fd\uc740 \ub2e4\uc591\ud55c \uad6d\uac00\ub4e4\uc774 LLM \ubaa8\ub378\uc758 \uac1c\ubc1c\uacfc \uc81c\uacf5\uc5d0 \ucc38\uc5ec\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc601\uad6d, \ub3c5\uc77c, \ud504\ub791\uc2a4 \ub4f1\uc758 \uad6d\uac00\uc5d0\uc11c \ub192\uc740 \uc218\uc900\uc758 \uae30\uc220\uacfc \uc751\uc6a9\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uc720\ub7fd\uc740 LLM\uc744 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ud558\uace0 \uc788\uc73c\uba70, \ud2b9\ud788 \uc790\ub3d9\ucc28, \uc5d0\ub108\uc9c0, \uae08\uc735 \ub4f1\uc758 \ubd84\uc57c\uc5d0\uc11c \ub192\uc740 \uc131\uacfc\ub97c \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\n\uc720\ub7fd\uc758 LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654\ub97c \ud1b5\ud574 \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uae30\uc874\uc758 LLM \ubaa8\ub378\uacfc\ub294 \ub2e4\ub978 \uc0c8\ub85c\uc6b4 \ubaa8\ub378\uc774\ub098 \uc544\ud0a4\ud14d\ucc98\ub97c \uac1c\ubc1c\ud558\uc5ec \uc2dc\uc7a5\uc5d0\uc11c \ucc28\ubcc4\ud654\ub41c \uc81c\ud488\uc744 \uc81c\uacf5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4. \ub610\ud55c, \uae30\uc5c5\ub4e4\uc740 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uc774\ub098 \ubd84\uc57c\uc758 \ud30c\ud2b8\ub108\uc640 \ud611\ub825\ud558\uc5ec LLM\uc744 \ud65c\uc6a9\ud55c \uc0c8\ub85c\uc6b4 \uc751\uc6a9 \ubd84\uc57c\ub97c \uac1c\ucc99\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\n## \uacb0\ub860\n\nLLM \uc2dc\uc7a5\uc740 \ucd5c\uadfc \uba87 \ub144\uac04 \uae09\uaca9\ud55c \uc131\uc7a5\uc744 \ubcf4\uc5ec\uc8fc\uace0 \uc788\uc73c\uba70, \uae30\uc5c5\uacfc \uc870\uc9c1\uc758 \ub2e4\uc591\ud55c \ubd84\uc57c\uc5d0\uc11c \ud65c\uc6a9\ub418\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM\uc740 \uc791\uc5c5 \uc790\ub3d9\ud654, \uace0\uac1d \uc11c\ube44\uc2a4 \uac1c\uc120, \ucc3d\uc758\uc801\uc778 \ucf58\ud150\uce20 \uc0dd\uc131, \ub354 \ub098\uc740 \ube44\uc988\ub2c8\uc2a4 \uc758\uc0ac \uacb0\uc815 \ub4f1 \ub2e4\uc591\ud55c \uc601\uc5ed\uc5d0\uc11c \ub9ce\uc740 \ud601\uc2e0\uacfc \ud6a8\uc728\uc131\uc744 \uac00\uc838\uc624\uace0 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uae30\uc220\uc801 \ubc1c\uc804\uacfc \ud601\uc2e0, \ub370\uc774\ud130\uc758 \uc99d\uac00\uc640 \ub2e4\uc591\ud654, \uc0b0\uc5c5\uc758 \ub514\uc9c0\ud138\ud654\uc640 \uc790\ub3d9\ud654 \ub4f1\uc758 \uc694\uc778\uc5d0 \uc758\ud574 \uc131\uc7a5\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.\n\nLLM \uc2dc\uc7a5\uc758 \uc131\uc7a5\uc740 \ub2e4\uc591\ud55c \ub3d9\ud5a5\uacfc \uc8fc\uc694 \ud50c\ub808\uc774\uc5b4, \uc81c\ud488 \uc720\ud615\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc9c0\uc5ed\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5, \uc8fc\uc694 \ub3d9\ud5a5, \uc131\uc7a5 \ucd09\uc9c4\uc694\uc778\uacfc \uc5b5\uc81c\uc694\uc778, \uc2dc\uc7a5 \ub3c4\uc804 \uc694\uc778\uacfc \ub300\uc751 \uc804\ub7b5, \uc8fc\uc694 \uad6d\uac00\ubcc4 \uc2dc\uc7a5 \ub3d9\ud5a5 \ub4f1\uc744 \ubd84\uc11d\ud558\uc5ec \uc608\uce21\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. LLM \uc2dc\uc7a5\uc740 \uc55e\uc73c\ub85c \ub354\uc6b1 \uc131\uc7a5\ud560 \uac83\uc73c\ub85c \uc608\uc0c1\ub418\uba70, \uae30\uc5c5\ub4e4\uc740 \uae30\uc220\uc801\uc778 \ud601\uc2e0\uacfc \ucc28\ubcc4\ud654, \ub370\uc774\ud130 \ubcf4\uc548\uacfc \uac1c\uc778\uc815\ubcf4 \ubcf4\ud638, \ud611\ub825\uacfc \ud30c\ud2b8\ub108\uc2ed \uad6c\ucd95 \ub4f1\uc758 \uc804\ub7b5\uc744 \ud1b5\ud574 \uc2dc\uc7a5\uc5d0\uc11c \uacbd\uc7c1\ub825\uc744 \ud655\ubcf4\ud560 \uc218 \uc788\uc744 \uac83\uc73c\ub85c \uae30\ub300\ub429\ub2c8\ub2e4.\n\n"},
 $S:0}
 A.an4.prototype={
 $0(){var s=this.a
@@ -92003,7 +92003,7 @@ H(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=t.w
 if(A.x(a,j,i).w.a.a>1000)s=A.x(a,j,i).w.a.a*0.3
 else s=A.x(a,j,i).w.a.a>700?A.x(a,j,i).w.a.a*0.5:A.x(a,j,i).w.a.a*0.7
 r=A.b2(j,A.x(a,j,i).w.a.b*0.05,j)
-q=A.bz(!1,j,!0,B.kh,j,!0,j,j,j,j,j,j,j,j,j,new A.anO(a),j,j,j,j)
+q=A.bz(!1,j,!0,B.kg,j,!0,j,j,j,j,j,j,j,j,j,new A.anO(a),j,j,j,j)
 p=A.dK(B.u,1)
 o=A.bK(4)
 if(A.x(a,j,i).w.a.a>1000)n=A.x(a,j,i).w.a.a*0.3
@@ -92018,7 +92018,7 @@ p=A.a([r,q,B.C,B.YP,B.ci,n,B.C,A.b2(A.ht(k.f,B.ad,A.ik(j,B.af,j,j,j,j,j,j,!0,B.a
 if(k.r)p.push(B.Qh)
 if(A.x(a,j,i).w.a.a>1000)i=A.x(a,j,i).w.a.a*0.3
 else i=A.x(a,j,i).w.a.a>700?A.x(a,j,i).w.a.a*0.5:A.x(a,j,i).w.a.a*0.7
-p.push(A.bz(!1,j,!0,A.av(j,B.jh,B.i,j,j,new A.aO(B.az,j,j,A.bK(4),j,j,B.t),48,j,j,i),j,!0,j,j,j,j,j,j,j,j,j,new A.anQ(k),j,j,j,j))
+p.push(A.bz(!1,j,!0,A.av(j,B.jg,B.i,j,j,new A.aO(B.az,j,j,A.bK(4),j,j,B.t),48,j,j,i),j,!0,j,j,j,j,j,j,j,j,j,new A.anQ(k),j,j,j,j))
 p.push(B.C)
 p.push(A.ce(A.a([B.B2,A.bz(!1,j,!0,B.B6,j,!0,j,j,j,j,j,j,j,j,j,new A.anR(a),j,j,j,j)],m),B.o,B.dv,B.l,j))
 return A.vE(j,B.cM,A.cq(A.av(B.N,A.bk(p,B.o,B.n,B.l),B.i,j,j,j,j,j,j,s),j,j),j,!0)}}
@@ -92073,7 +92073,7 @@ H(a){var s,r,q,p,o,n,m=this,l=null,k=t.w
 if(A.x(a,l,k).w.a.a>1000)s=A.x(a,l,k).w.a.a*0.3
 else s=A.x(a,l,k).w.a.a>700?A.x(a,l,k).w.a.a*0.5:A.x(a,l,k).w.a.a*0.7
 r=A.b2(l,A.x(a,l,k).w.a.b*0.05,l)
-q=A.bz(!1,l,!0,B.kh,l,!0,l,l,l,l,l,l,l,l,l,new A.aqo(a),l,l,l,l)
+q=A.bz(!1,l,!0,B.kg,l,!0,l,l,l,l,l,l,l,l,l,new A.aqo(a),l,l,l,l)
 p=m.r
 p===$&&A.b()
 p=p?B.B0:B.YG
@@ -92090,7 +92090,7 @@ p.push(B.C)
 if(!m.w)p.push(B.Qk)
 if(A.x(a,l,k).w.a.a>1000)r=A.x(a,l,k).w.a.a*0.3
 else r=A.x(a,l,k).w.a.a>700?A.x(a,l,k).w.a.a*0.5:A.x(a,l,k).w.a.a*0.7
-p.push(A.bz(!1,l,!0,A.av(l,B.jh,B.i,l,l,new A.aO(B.az,l,l,A.bK(4),l,l,B.t),48,l,l,r),l,!0,l,l,l,l,l,l,l,l,l,new A.aqp(m,a),l,l,l,l))
+p.push(A.bz(!1,l,!0,A.av(l,B.jg,B.i,l,l,new A.aO(B.az,l,l,A.bK(4),l,l,B.t),48,l,l,r),l,!0,l,l,l,l,l,l,l,l,l,new A.aqp(m,a),l,l,l,l))
 p.push(B.C)
 p.push(m.r?A.ce(A.a([B.Z1,A.bz(!1,l,!0,B.Z6,l,!0,l,l,l,l,l,l,l,l,l,new A.aqq(m),l,l,l,l)],o),B.o,B.dv,B.l,l):A.ce(A.a([B.B2,A.bz(!1,l,!0,B.B6,l,!0,l,l,l,l,l,l,l,l,l,new A.aqr(m),l,l,l,l)],o),B.o,B.dv,B.l,l))
 p.push(B.ci)
@@ -92140,7 +92140,7 @@ A.aql.prototype={
 $0(){this.a.r=!0},
 $S:0}
 A.aqs.prototype={
-$0(){A.a12(A.eK("https://chat-profile.audrey.kr/api/user/google/login/",0,null),B.oQ,"_self",B.jf)},
+$0(){A.a12(A.eK("https://chat-profile.audrey.kr/api/user/google/login/",0,null),B.oQ,"_self",B.je)},
 $S:0}
 A.qZ.prototype={
 ae(){var s=null,r=t.dr
@@ -92177,7 +92177,7 @@ q.a4$=0}for(o=p.cx,s=o.length,r=0;r<s;++r){q=o[r].e
 q.ad$=n
 q.a4$=0}p.aC()},
 agc(a){A.aJL(new A.ash(),a,t.z)},
-H(a){var s=null,r="LLM Market",q=t.w,p=A.x(a,s,q).w.a.a<700?A.a1E(!1,B.fN,!1,0,new A.f2(new A.asj(),s),A.bz(!1,s,!0,B.ki,s,!0,s,s,s,s,s,s,s,s,s,new A.ask(a),s,s,s,s)):s,o=t.p,n=A.aDK(B.fU,A.bk(A.a([new A.aG(B.em,A.ce(A.a([A.bz(!1,s,!0,B.oJ,s,!0,s,s,s,s,s,s,s,s,s,new A.asl(a),s,s,s,s),B.aA,A.bm(r,s,s,s,B.d5,s,s)],o),B.o,B.n,B.l,s),s),this.WF()],o),B.o,B.n,B.l)),m=A.azc(s,B.nw,B.jT),l=A.ce(A.a([A.bz(!1,s,!0,B.oJ,s,!0,s,s,s,s,s,s,s,s,s,new A.asm(a),s,s,s,s),B.aA,A.bm(r,s,s,s,B.d5,s,s)],o),B.o,B.n,B.l,s),k=A.x(a,s,q).w.a.a<700?A.av(s,s,B.i,s,s,s,s,s,s,s):A.b2(this.WF(),s,224),j=A.x(a,s,q).w.a.a>700?A.x(a,s,q).w.a.a-300:A.x(a,s,q).w.a.a/1
+H(a){var s=null,r="LLM Market",q=t.w,p=A.x(a,s,q).w.a.a<700?A.a1E(!1,B.fN,!1,0,new A.f2(new A.asj(),s),A.bz(!1,s,!0,B.kh,s,!0,s,s,s,s,s,s,s,s,s,new A.ask(a),s,s,s,s)):s,o=t.p,n=A.aDK(B.fU,A.bk(A.a([new A.aG(B.em,A.ce(A.a([A.bz(!1,s,!0,B.oJ,s,!0,s,s,s,s,s,s,s,s,s,new A.asl(a),s,s,s,s),B.aA,A.bm(r,s,s,s,B.d5,s,s)],o),B.o,B.n,B.l,s),s),this.WF()],o),B.o,B.n,B.l)),m=A.azc(s,B.nw,B.jS),l=A.ce(A.a([A.bz(!1,s,!0,B.oJ,s,!0,s,s,s,s,s,s,s,s,s,new A.asm(a),s,s,s,s),B.aA,A.bm(r,s,s,s,B.d5,s,s)],o),B.o,B.n,B.l,s),k=A.x(a,s,q).w.a.a<700?A.av(s,s,B.i,s,s,s,s,s,s,s):A.b2(this.WF(),s,224),j=A.x(a,s,q).w.a.a>700?A.x(a,s,q).w.a.a-300:A.x(a,s,q).w.a.a/1
 q=A.x(a,s,q).w
 return A.vE(p,B.cM,A.azd(A.a([new A.aG(B.em,l,s),A.ce(A.a([k,A.b2(this.anO(),q.a.b,j)],o),B.ae,B.n,B.l,s)],o),m),n,!1)},
 WF(){var s,r,q,p,o,n,m,l=this,k=null,j=l.c
@@ -92197,9 +92197,9 @@ n=t.p
 j=A.av(k,A.ce(A.a([o,A.bm(" Training",k,k,k,A.bp(k,k,q?B.bR:B.fZ,k,k,k,k,k,k,k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)],n),B.o,B.aV,B.l,k),B.i,k,k,new A.aO(k,k,p,j,k,k,B.t),42,k,k,96)
 p=A.bK(12)
 q=l.w
-o=A.dK(q?B.kV:B.bR,1)
-m=A.hf(B.kc,q?B.kV:B.bR,k,k)
-return A.b2(A.bk(A.a([B.C,B.Zb,B.C,A.ce(A.a([B.aA,j,B.aA,A.av(k,A.ce(A.a([m,A.bm(" Trained",k,k,k,A.bp(k,k,q?B.kV:B.bR,k,k,k,k,k,k,k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)],n),B.o,B.aV,B.l,k),B.i,k,k,new A.aO(k,k,o,p,k,k,B.t),42,k,k,96)],n),B.ae,B.aV,B.l,k),B.ln,A.b2(l.w1("Draft Report",0,B.Jc),r,k),A.b2(l.w1("Data Sources",1,B.Jb),r,k),A.b2(l.w1("My Reports",2,B.J5),r,k),A.b2(l.w1("Chat Data",3,B.J1),r,k),A.b2(l.w1("\uc0ad\uc81c\ud558\uae30",4,B.J3),r,k),new A.kj(1,B.es,A.av(k,k,B.i,k,k,k,k,k,k,k),k)],n),B.o,B.n,B.l),s.a.b-128,k)},
+o=A.dK(q?B.kU:B.bR,1)
+m=A.hf(B.kb,q?B.kU:B.bR,k,k)
+return A.b2(A.bk(A.a([B.C,B.Zb,B.C,A.ce(A.a([B.aA,j,B.aA,A.av(k,A.ce(A.a([m,A.bm(" Trained",k,k,k,A.bp(k,k,q?B.kU:B.bR,k,k,k,k,k,k,k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)],n),B.o,B.aV,B.l,k),B.i,k,k,new A.aO(k,k,o,p,k,k,B.t),42,k,k,96)],n),B.ae,B.aV,B.l,k),B.lm,A.b2(l.w1("Draft Report",0,B.Jc),r,k),A.b2(l.w1("Data Sources",1,B.Jb),r,k),A.b2(l.w1("My Reports",2,B.J5),r,k),A.b2(l.w1("Chat Data",3,B.J1),r,k),A.b2(l.w1("\uc0ad\uc81c\ud558\uae30",4,B.J3),r,k),new A.kj(1,B.es,A.av(k,k,B.i,k,k,k,k,k,k,k),k)],n),B.o,B.n,B.l),s.a.b-128,k)},
 w1(a,b,c){var s=null,r=this.d===b,q=r?B.j:B.cN,p=A.av(s,s,B.i,r?B.j:B.u,s,s,s,s,s,1),o=A.hf(c,q,s,24),n=t.p
 return A.bz(!1,s,!0,new A.aG(B.nT,A.av(s,A.jy(B.cs,A.a([A.ce(A.a([p,B.Ta,o,B.T9,A.bm(a,s,s,s,A.bp(s,s,q,s,s,s,s,s,s,s,s,14,s,s,r?B.M:B.hg,s,s,!0,s,s,s,s,s,s,s,s),s,s)],n),B.o,B.n,B.l,s),A.Cb(s,A.hf(B.J_,q,s,18),s,s,s,12,10,s)],n),B.Z,B.bx,s),B.i,s,s,s,s,s,s,s),s),s,!0,s,s,s,s,s,s,s,s,s,new A.at9(this,b),s,B.n9,s,s)},
 anO(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null,a1=a.c
@@ -92383,8 +92383,8 @@ A.ase.prototype={
 $0(){this.a.as=J.te(this.b.a)},
 $S:0}
 A.ash.prototype={
-$1(a){var s=null,r=t.p,q=A.ce(A.a([A.hf(B.Ja,B.jv,s,48),B.Qj],r),B.o,B.n,B.l,s)
-return A.aCK(A.a([A.aiz(A.av(s,B.Zi,B.i,s,s,new A.aO(B.jv,s,s,A.bK(8),s,s,B.t),s,s,B.h8,s),new A.asf(a),s),A.aiz(A.av(s,B.B3,B.i,s,s,new A.aO(B.bR,s,s,A.bK(8),s,s,B.t),s,s,B.h8,s),new A.asg(a),s)],r),B.Z9,q)},
+$1(a){var s=null,r=t.p,q=A.ce(A.a([A.hf(B.Ja,B.ju,s,48),B.Qj],r),B.o,B.n,B.l,s)
+return A.aCK(A.a([A.aiz(A.av(s,B.Zi,B.i,s,s,new A.aO(B.ju,s,s,A.bK(8),s,s,B.t),s,s,B.h8,s),new A.asf(a),s),A.aiz(A.av(s,B.B3,B.i,s,s,new A.aO(B.bR,s,s,A.bK(8),s,s,B.t),s,s,B.h8,s),new A.asg(a),s)],r),B.Z9,q)},
 $S:204}
 A.asf.prototype={
 $0(){A.it(this.a,!1).ea()},
@@ -92658,7 +92658,7 @@ H(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=t.w
 if(A.x(a,h,g).w.a.a>1000)s=A.x(a,h,g).w.a.a*0.35
 else s=A.x(a,h,g).w.a.a>700?A.x(a,h,g).w.a.a*0.6:A.x(a,h,g).w.a.a*0.9
 r=A.b2(h,A.x(a,h,g).w.a.b*0.05,h)
-q=A.bz(!1,h,!0,B.kh,h,!0,h,h,h,h,h,h,h,h,h,new A.atV(a),h,h,h,h)
+q=A.bz(!1,h,!0,B.kg,h,!0,h,h,h,h,h,h,h,h,h,new A.atV(a),h,h,h,h)
 p=A.dK(B.u,1)
 o=A.bK(4)
 if(A.x(a,h,g).w.a.a>1000)n=A.x(a,h,g).w.a.a*0.25
@@ -92701,10 +92701,10 @@ else o=A.x(a,h,g).w.a.a>700?A.x(a,h,g).w.a.a*0.4:A.x(a,h,g).w.a.a*0.7
 n=i.ax
 l=A.bp(h,h,n.gbE()?B.dw:B.U,h,h,h,h,h,h,h,h,h,h,h,h,h,h,!0,h,h,h,h,h,h,h,h)
 r.push(A.ce(A.a([A.av(h,A.ht(i.at,B.ad,A.ik(h,B.af,h,h,h,h,h,h,!0,B.af,h,h,h,h,B.j,!0,h,h,h,h,B.eY,h,h,h,h,h,A.bp(h,h,B.ad,h,h,h,h,h,h,h,h,h,h,h,h,h,h,!0,h,h,h,h,h,h,h,h),h,h,h,h,h,!1,h,h,l,"Password Confirm",h,h,h,h,h,h,h,h,h,h,h,h,h),n,h,1,h,!0,h,h,h),B.i,h,h,new A.aO(B.j,h,q,p,h,h,B.t),48,h,h,o)],m),B.o,B.aV,B.l,h))}if(i.e&&i.f&&!i.z)r.push(B.Qn)
-r.push(B.ln)
+r.push(B.lm)
 if(i.e){if(A.x(a,h,g).w.a.a>1000)g=A.x(a,h,g).w.a.a*0.25
 else g=A.x(a,h,g).w.a.a>700?A.x(a,h,g).w.a.a*0.4:A.x(a,h,g).w.a.a*0.7
-r.push(A.bz(!1,h,!0,A.av(h,B.jh,B.i,h,h,new A.aO(B.az,h,h,A.bK(4),h,h,B.t),48,h,h,g),h,!0,h,h,h,h,h,h,h,h,h,new A.atZ(i),h,h,h,h))}return A.vE(h,B.cM,A.cq(A.av(B.N,A.bk(r,B.o,B.n,B.l),B.i,h,h,h,h,h,h,s),h,h),h,!0)}}
+r.push(A.bz(!1,h,!0,A.av(h,B.jg,B.i,h,h,new A.aO(B.az,h,h,A.bK(4),h,h,B.t),48,h,h,g),h,!0,h,h,h,h,h,h,h,h,h,new A.atZ(i),h,h,h,h))}return A.vE(h,B.cM,A.cq(A.av(B.N,A.bk(r,B.o,B.n,B.l),B.i,h,h,h,h,h,h,s),h,h),h,!0)}}
 A.au2.prototype={
 $0(){this.a.N(new A.au1())},
 $S:0}
@@ -92775,7 +92775,7 @@ $0(){this.a.z=!1},
 $S:0}
 A.vl.prototype={
 H(a){var s=null,r=t.p
-return new A.aG(B.nU,A.b2(A.bk(A.a([A.ce(A.a([B.Jg,B.aA,A.bm(this.c,s,s,s,B.iy,s,s)],r),B.o,B.n,B.l,s),B.nN],r),B.o,B.n,B.l),s,s),s)}}
+return new A.aG(B.nU,A.b2(A.bk(A.a([A.ce(A.a([B.Jg,B.aA,A.bm(this.c,s,s,s,B.ix,s,s)],r),B.o,B.n,B.l,s),B.nN],r),B.o,B.n,B.l),s,s),s)}}
 A.ahH.prototype={
 gq(a){return this.c.length},
 ganC(a){return this.b.length},
@@ -92830,10 +92830,10 @@ gd6(){return this.a.a},
 gq(a){return this.c-this.b},
 gbA(a){return A.az6(this.a,this.b)},
 gb6(a){return A.az6(this.a,this.c)},
-gby(a){return A.jB(B.kX.c0(this.a.c,this.b,this.c),0,null)},
+gby(a){return A.jB(B.kW.c0(this.a.c,this.b,this.c),0,null)},
 gaY(a){var s=this,r=s.a,q=s.c,p=r.rV(q)
-if(r.C0(q)===0&&p!==0){if(q-s.b===0)return p===r.b.length-1?"":A.jB(B.kX.c0(r.c,r.n1(p),r.n1(p+1)),0,null)}else q=p===r.b.length-1?r.c.length:r.n1(p+1)
-return A.jB(B.kX.c0(r.c,r.n1(r.rV(s.b)),q),0,null)},
+if(r.C0(q)===0&&p!==0){if(q-s.b===0)return p===r.b.length-1?"":A.jB(B.kW.c0(r.c,r.n1(p),r.n1(p+1)),0,null)}else q=p===r.b.length-1?r.c.length:r.n1(p+1)
+return A.jB(B.kW.c0(r.c,r.n1(r.rV(s.b)),q),0,null)},
 bf(a,b){var s
 if(!(b instanceof A.FB))return this.a1l(0,b)
 s=B.f.bf(this.b,b.b)
@@ -96041,7 +96041,7 @@ return{Xh:s("@<k>"),vH:s("aNl"),od:s("b7<bi>"),pC:s("oZ"),dq:s("ti"),A_:s("p_"),
 B.oe=A.pK.prototype
 B.ep=A.zZ.prototype
 B.ot=A.km.prototype
-B.kj=A.q7.prototype
+B.ki=A.q7.prototype
 B.JH=J.uC.prototype
 B.b=J.v.prototype
 B.dr=J.AA.prototype
@@ -96054,7 +96054,7 @@ B.vt=A.qr.prototype
 B.hT=A.Bn.prototype
 B.eW=A.Bo.prototype
 B.eX=A.Bp.prototype
-B.kX=A.Bq.prototype
+B.kW=A.Bq.prototype
 B.Y=A.qt.prototype
 B.z7=J.P1.prototype
 B.lJ=J.kX.prototype
@@ -96069,13 +96069,13 @@ B.cs=new A.h8(-1,-1)
 B.N=new A.e4(0,0)
 B.cI=new A.e4(0,1)
 B.BV=new A.e4(0,-1)
-B.j2=new A.e4(1,0)
+B.j1=new A.e4(1,0)
 B.BX=new A.e4(1,-1)
 B.fG=new A.e4(-1,0)
 B.cJ=new A.e4(-1,-1)
 B.e0=new A.Ju(null)
 B.mh=new A.y6(0,"stretch")
-B.j3=new A.y6(1,"glow")
+B.j2=new A.y6(1,"glow")
 B.BY=new A.yh(0,"normal")
 B.BZ=new A.yh(1,"preserve")
 B.P=new A.iS(0,"dismissed")
@@ -96093,8 +96093,8 @@ B.C3=new A.p2(2,"paused")
 B.C4=new A.p2(3,"detached")
 B.mk=new A.JB(!1,127)
 B.ml=new A.JC(127)
-B.j4=new A.tl(0,"polite")
-B.j5=new A.tl(1,"assertive")
+B.j3=new A.tl(0,"polite")
+B.j4=new A.tl(1,"assertive")
 B.C6=new A.p4(null)
 B.bq=A.a(s([]),t.s)
 B.m=new A.wc(1,"downstream")
@@ -96115,8 +96115,8 @@ B.aP=new A.ahR()
 B.mo=new A.n1("flutter/accessibility",B.aP,t.Al)
 B.cL=new A.aa_()
 B.Ca=new A.n1("flutter/keyevent",B.cL,t.Al)
-B.je=new A.ai8()
-B.Cb=new A.n1("flutter/lifecycle",B.je,A.ad("n1<l?>"))
+B.jd=new A.ai8()
+B.Cb=new A.n1("flutter/lifecycle",B.jd,A.ad("n1<l?>"))
 B.Cc=new A.n1("flutter/system",B.cL,t.Al)
 B.hh=new A.pS(2,"previous")
 B.Cd=new A.p7(null,B.hh,0,0)
@@ -96159,21 +96159,21 @@ B.ba=new A.n(4293848814)
 B.nk=new A.n(4292927712)
 B.GC=new A.n(4292269782)
 B.bR=new A.n(4290624957)
-B.jt=new A.n(4288585374)
+B.js=new A.n(4288585374)
 B.ad=new A.n(4285887861)
 B.cN=new A.n(4284572001)
 B.fW=new A.n(4282532418)
 B.c9=new A.n(4281348144)
 B.na=new A.n(4280361249)
-B.Ow=new A.bH([50,B.nq,100,B.no,200,B.ba,300,B.nk,350,B.GC,400,B.bR,500,B.jt,600,B.ad,700,B.cN,800,B.fW,850,B.c9,900,B.na],t.pl)
+B.Ow=new A.bH([50,B.nq,100,B.no,200,B.ba,300,B.nk,350,B.GC,400,B.bR,500,B.js,600,B.ad,700,B.cN,800,B.fW,850,B.c9,900,B.na],t.pl)
 B.U=new A.hR(B.Ow,4288585374)
 B.bO=new A.aU(B.U,1,B.A,-1)
 B.W=new A.n(2315255808)
 B.Ct=new A.aU(B.W,1,B.A,-1)
 B.u=new A.n(0)
-B.j7=new A.aU(B.u,1,B.A,-1)
-B.mr=new A.cY(B.j7,B.p,B.j7,B.p)
-B.j8=new A.cY(B.p,B.p,B.p,B.p)
+B.j6=new A.aU(B.u,1,B.A,-1)
+B.mr=new A.cY(B.j6,B.p,B.j6,B.p)
+B.j7=new A.cY(B.p,B.p,B.p,B.p)
 B.Cz=new A.yy(null,null,null,null,null,null,null)
 B.CA=new A.yz(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.CB=new A.yA(null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -96185,7 +96185,7 @@ B.CD=new A.yB(B.zx,B.i9)
 B.ms=new A.au(40,40,40,40)
 B.mt=new A.au(56,56,56,56)
 B.mu=new A.au(96,96,96,96)
-B.j9=new A.au(1/0,1/0,1/0,1/0)
+B.j8=new A.au(1/0,1/0,1/0,1/0)
 B.CH=new A.au(0,1/0,0,36)
 B.CF=new A.au(0,1/0,48,48)
 B.CE=new A.au(0,1/0,56,56)
@@ -96198,12 +96198,12 @@ B.CJ=new A.au(0,1/0,48,1/0)
 B.CI=new A.au(48,1/0,48,1/0)
 B.t=new A.yF(0,"rectangle")
 B.CL=new A.aO(null,null,null,null,null,null,B.t)
-B.ja=new A.yF(1,"circle")
-B.CM=new A.aO(null,null,null,null,null,null,B.ja)
+B.j9=new A.yF(1,"circle")
+B.CM=new A.aO(null,null,null,null,null,null,B.j9)
 B.Cy=new A.cY(B.p,B.p,B.bO,B.p)
 B.CN=new A.aO(null,null,B.Cy,null,null,null,B.t)
-B.jz=new A.n(452984831)
-B.Cr=new A.aU(B.jz,1,B.A,-1)
+B.jy=new A.n(452984831)
+B.Cr=new A.aU(B.jy,1,B.A,-1)
 B.Cx=new A.cY(B.Cr,B.p,B.p,B.p)
 B.CO=new A.aO(null,null,B.Cx,null,null,null,B.t)
 B.Cs=new A.aU(B.bR,0,B.A,-1)
@@ -96248,7 +96248,7 @@ B.DF=new A.a4Q()
 B.DG=new A.a5N()
 B.DH=new A.zO()
 B.DI=new A.lt(A.ad("lt<dx>"))
-B.jb=new A.M6(A.ad("M6<0&>"))
+B.ja=new A.M6(A.ad("M6<0&>"))
 B.DJ=new A.M9()
 B.aI=new A.M9()
 B.DK=new A.a6j()
@@ -96258,7 +96258,7 @@ B.fK=new A.Mw()
 B.DL=new A.MI()
 B.a1o=new A.MO()
 B.DM=new A.a87()
-B.jc=new A.a8e()
+B.jb=new A.a8e()
 B.DN=new A.MX()
 B.DO=new A.N0()
 B.DP=new A.N2()
@@ -96397,7 +96397,7 @@ B.E_=new A.acH()
 B.E0=new A.acJ()
 B.mK=new A.acL()
 B.E1=new A.acP()
-B.jd=new A.L()
+B.jc=new A.L()
 B.E2=new A.BD()
 B.E3=new A.BE()
 B.E4=new A.Os()
@@ -96448,7 +96448,7 @@ B.fv=new A.Sd(0,0,0,0)
 B.LU=A.a(s([]),A.ad("v<a4C>"))
 B.mS=new A.Sc()
 B.v9=new A.b8(0,{},B.bq,t.li)
-B.jf=new A.ajX()
+B.je=new A.ajX()
 B.e4=new A.Su()
 B.c6=new A.Sv()
 B.Er=new A.SX()
@@ -96460,7 +96460,7 @@ B.a1r=new A.Fb()
 B.c7=new A.U3()
 B.fL=new A.amZ()
 B.mU=new A.anU()
-B.jg=new A.apE()
+B.jf=new A.apE()
 B.Ew=new A.apF()
 B.ai=new A.G2()
 B.Ex=new A.VZ()
@@ -96484,7 +96484,7 @@ B.YJ=new A.b5("3:00",null,B.bA,null,null,null,null,null,null,null)
 B.EJ=new A.ic(B.N,null,null,B.YJ,null)
 B.ft=new A.p(!0,B.j,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Zg=new A.b5("\uacc4\uc18d\ud558\uae30",null,B.ft,null,null,null,null,null,null,null)
-B.jh=new A.ic(B.N,null,null,B.Zg,null)
+B.jg=new A.ic(B.N,null,null,B.Zg,null)
 B.Za=new A.b5("\uc778\uc99d\uc694\uccad",null,B.bA,null,null,null,null,null,null,null)
 B.EK=new A.ic(B.N,null,null,B.Za,null)
 B.aQ=new A.ii(6)
@@ -96494,7 +96494,7 @@ B.EL=new A.ic(B.N,null,null,B.Z2,null)
 B.EM=new A.yP(null)
 B.EN=new A.tt(null,null,null,null,null,null,null,null,null)
 B.EO=new A.yS(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.ji=new A.e5(0,B.p)
+B.jh=new A.e5(0,B.p)
 B.EP=new A.yZ(B.i9)
 B.EQ=new A.yZ(null)
 B.RV=new A.kI(2,"clear")
@@ -96510,7 +96510,7 @@ B.dh=new A.pl(1,"unknown")
 B.ES=new A.pl(2,"notPasteable")
 B.ET=new A.L1(null)
 B.EU=new A.L0(B.ET,null,null,null)
-B.jw=new A.n(4291869951)
+B.jv=new A.n(4291869951)
 B.FK=new A.n(4281867890)
 B.FY=new A.n(4283381643)
 B.nn=new A.n(4293582335)
@@ -96527,13 +96527,13 @@ B.G3=new A.n(4284486672)
 B.Gl=new A.n(4287372568)
 B.np=new A.n(4294565596)
 B.fT=new A.n(4280032031)
-B.jy=new A.n(4293321189)
-B.jq=new A.n(4282991951)
+B.jx=new A.n(4293321189)
+B.jp=new A.n(4282991951)
 B.ni=new A.n(4291478736)
 B.Gn=new A.n(4287860633)
 B.nd=new A.n(4281413683)
-B.jr=new A.n(4284960932)
-B.EV=new A.tC(B.a6,B.jw,B.FK,B.FY,B.nn,B.GA,B.FH,B.FU,B.nm,B.GP,B.FT,B.G6,B.nr,B.GR,B.G3,B.Gl,B.np,B.fT,B.jy,B.fT,B.jy,B.jq,B.ni,B.Gn,B.jq,B.q,B.q,B.jy,B.nd,B.jr,B.jw,null,null)
+B.jq=new A.n(4284960932)
+B.EV=new A.tC(B.a6,B.jv,B.FK,B.FY,B.nn,B.GA,B.FH,B.FU,B.nm,B.GP,B.FT,B.G6,B.nr,B.GR,B.G3,B.Gl,B.np,B.fT,B.jx,B.fT,B.jx,B.jp,B.ni,B.Gn,B.jp,B.q,B.q,B.jx,B.nd,B.jq,B.jv,null,null)
 B.Fy=new A.n(4280352861)
 B.G5=new A.n(4284636017)
 B.Fx=new A.n(4280097067)
@@ -96545,7 +96545,7 @@ B.ns=new A.n(4294966270)
 B.GI=new A.n(4293386476)
 B.Gb=new A.n(4286149758)
 B.GS=new A.n(4294242292)
-B.EW=new A.tC(B.ay,B.jr,B.j,B.nn,B.Fy,B.G5,B.j,B.nm,B.Fx,B.Ge,B.j,B.nr,B.FG,B.Gu,B.j,B.np,B.FP,B.ns,B.fT,B.ns,B.fT,B.GI,B.jq,B.Gb,B.ni,B.q,B.q,B.nd,B.GS,B.jw,B.jr,null,null)
+B.EW=new A.tC(B.ay,B.jq,B.j,B.nn,B.Fy,B.G5,B.j,B.nm,B.Fx,B.Ge,B.j,B.nr,B.FG,B.Gu,B.j,B.np,B.FP,B.ns,B.fT,B.ns,B.fT,B.GI,B.jp,B.Gb,B.ni,B.q,B.q,B.nd,B.GS,B.jv,B.jq,null,null)
 B.EX=new A.n(1059165939)
 B.mY=new A.n(1087163596)
 B.fN=new A.n(1140850688)
@@ -96555,7 +96555,7 @@ B.F_=new A.n(1627389952)
 B.F0=new A.n(1660944383)
 B.n3=new A.n(16777215)
 B.F1=new A.n(167772160)
-B.jl=new A.n(1723645116)
+B.jk=new A.n(1723645116)
 B.F2=new A.n(1724434632)
 B.fO=new A.n(1929379840)
 B.F3=new A.n(2155905152)
@@ -96568,24 +96568,24 @@ B.F8=new A.n(4039164096)
 B.fS=new A.n(4278221567)
 B.Fl=new A.n(4278239141)
 B.Fr=new A.n(4278813951)
-B.jn=new A.n(4279858898)
+B.jm=new A.n(4279858898)
 B.e9=new A.n(4280032286)
 B.cM=new A.n(4280164906)
-B.jo=new A.n(4280191205)
+B.jn=new A.n(4280191205)
 B.n9=new A.n(4280307070)
 B.nb=new A.n(4280391411)
 B.nc=new A.n(4281217588)
-B.jp=new A.n(4281352095)
+B.jo=new A.n(4281352095)
 B.ne=new A.n(4281423318)
 B.nf=new A.n(4282006076)
 B.G_=new A.n(4283520347)
 B.nh=new A.n(4284809178)
-B.js=new A.n(4287679225)
+B.jr=new A.n(4287679225)
 B.eb=new A.n(4289058471)
-B.ju=new A.n(4290502395)
-B.jv=new A.n(4291176488)
+B.jt=new A.n(4290502395)
+B.ju=new A.n(4291176488)
 B.nj=new A.n(4291940822)
-B.jx=new A.n(4292030255)
+B.jw=new A.n(4292030255)
 B.nl=new A.n(4293128957)
 B.fZ=new A.n(4293212469)
 B.h_=new A.n(4294111991)
@@ -96607,18 +96607,18 @@ B.lx=new A.p(!0,B.U,null,null,null,null,12,null,null,null,null,null,null,null,nu
 B.YM=new A.b5("\uc9c0\uc6d0 \ud30c\uc77c \ud615\uc2dd : .png, .jpg",null,B.lx,null,null,null,null,null,null,null)
 B.M6=A.a(s([B.Jp,B.Zk,B.YM]),t.p)
 B.nv=new A.n9(B.V,B.aV,B.l,B.o,null,B.aF,null,B.M6,null)
-B.kT=new A.lR(4,"spaceAround")
+B.kS=new A.lR(4,"spaceAround")
 B.ae=new A.nc(0,"start")
 B.cS=new A.ii(2)
 B.Vx=new A.p(!0,B.j,null,null,null,null,12,B.cS,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Zc=new A.b5(u.J,null,B.Vx,null,null,null,null,null,null,null)
 B.Ln=A.a(s([B.Zc]),t.p)
-B.H0=new A.n9(B.V,B.kT,B.l,B.ae,null,B.aF,null,B.Ln,null)
+B.H0=new A.n9(B.V,B.kS,B.l,B.ae,null,B.aF,null,B.Ln,null)
 B.Fu=new A.n(4279642697)
 B.UC=new A.p(!0,B.Fu,null,null,null,null,12,B.cS,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ze=new A.b5(u.J,null,B.UC,null,null,null,null,null,null,null)
 B.KJ=A.a(s([B.Ze]),t.p)
-B.nw=new A.n9(B.V,B.kT,B.l,B.ae,null,B.aF,null,B.KJ,null)
+B.nw=new A.n9(B.V,B.kS,B.l,B.ae,null,B.aF,null,B.KJ,null)
 B.J6=new A.bD(62584,!1)
 B.Jh=new A.di(B.J6,36,B.U,null,null)
 B.Zh=new A.b5("\ud30c\uc77c\uc744 \ub04c\uc5b4\uc11c \ub193\uac70\ub098 \ud074\ub9ad\ud558\uc5ec \ud30c\uc77c \uc120\ud0dd",null,B.AQ,null,null,null,null,null,null,null)
@@ -96630,9 +96630,9 @@ B.H1=new A.pn(1,"waiting")
 B.nz=new A.pn(2,"active")
 B.H2=new A.pn(3,"done")
 B.nA=new A.pp(0,"cut")
-B.jA=new A.pp(1,"copy")
+B.jz=new A.pp(1,"copy")
 B.nB=new A.pp(2,"paste")
-B.jB=new A.pp(3,"selectAll")
+B.jA=new A.pp(3,"selectAll")
 B.nC=new A.ha(!1)
 B.nD=new A.ha(!0)
 B.h0=new A.nc(1,"end")
@@ -96650,7 +96650,7 @@ B.H5=new A.eE(0.208333,0.82,0.25,1)
 B.aK=new A.eE(0.4,0,0.2,1)
 B.eh=new A.eE(0.35,0.91,0.33,0.97)
 B.ei=new A.eE(0,0,0.58,1)
-B.jC=new A.eE(0.42,0,0.58,1)
+B.jB=new A.eE(0.42,0,0.58,1)
 B.ec=new A.n(4290164406)
 B.fY=new A.n(4286611584)
 B.H6=new A.e7(B.ec,null,null,B.ec,B.fY,B.ec,B.fY,B.ec,B.fY,B.ec,B.fY,0)
@@ -96663,25 +96663,25 @@ B.H9=new A.e7(B.ed,null,null,B.ed,B.fX,B.ed,B.fX,B.ed,B.fX,B.ed,B.fX,0)
 B.e7=new A.n(3958896631)
 B.fQ=new A.n(3944751136)
 B.nH=new A.e7(B.e7,null,null,B.e7,B.fQ,B.e7,B.fQ,B.e7,B.fQ,B.e7,B.fQ,0)
-B.jj=new A.n(1228684355)
+B.ji=new A.n(1228684355)
 B.n4=new A.n(2572440664)
 B.n0=new A.n(1581005891)
 B.n5=new A.n(2907984984)
-B.Ha=new A.e7(B.jj,"separator",null,B.jj,B.n4,B.n0,B.n5,B.jj,B.n4,B.n0,B.n5,0)
+B.Ha=new A.e7(B.ji,"separator",null,B.ji,B.n4,B.n0,B.n5,B.ji,B.n4,B.n0,B.n5,0)
 B.ea=new A.n(4288256409)
 B.ej=new A.e7(B.ea,"inactiveGray",null,B.ea,B.ad,B.ea,B.ad,B.ea,B.ad,B.ea,B.ad,0)
 B.nI=new A.e7(B.q,null,null,B.q,B.j,B.q,B.j,B.q,B.j,B.q,B.j,0)
-B.jk=new A.n(1279016003)
+B.jj=new A.n(1279016003)
 B.n_=new A.n(1290529781)
 B.n1=new A.n(1614560323)
 B.n2=new A.n(1626074101)
-B.Hb=new A.e7(B.jk,"placeholderText",null,B.jk,B.n_,B.n1,B.n2,B.jk,B.n_,B.n1,B.n2,0)
+B.Hb=new A.e7(B.jj,"placeholderText",null,B.jj,B.n_,B.n1,B.n2,B.jj,B.n_,B.n1,B.n2,0)
 B.h3=new A.e7(B.q,"label",null,B.q,B.j,B.q,B.j,B.q,B.j,B.q,B.j,0)
-B.jm=new A.n(343176320)
+B.jl=new A.n(343176320)
 B.nu=new A.n(762738304)
 B.nt=new A.n(678720640)
 B.mZ=new A.n(1115059840)
-B.Hd=new A.e7(B.jm,"quaternarySystemFill",null,B.jm,B.nu,B.nt,B.mZ,B.jm,B.nu,B.nt,B.mZ,0)
+B.Hd=new A.e7(B.jl,"quaternarySystemFill",null,B.jl,B.nu,B.nt,B.mZ,B.jl,B.nu,B.nt,B.mZ,0)
 B.e6=new A.n(1493172224)
 B.fP=new A.n(2164260863)
 B.He=new A.e7(B.e6,null,null,B.e6,B.fP,B.e6,B.fP,B.e6,B.fP,B.e6,B.fP,0)
@@ -96710,18 +96710,18 @@ B.Hm=new A.Lv(1,"traversalOrder")
 B.ca=new A.zj(0,"background")
 B.Hn=new A.zj(1,"foreground")
 B.a16=new A.Wz(null)
-B.jD=new A.tN(null,null,B.a16,null)
+B.jC=new A.tN(null,null,B.a16,null)
 B.fs=new A.p(!0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.c4=new A.wk(0,"clip")
 B.b0=new A.Ea(0,"parent")
 B.a17=new A.WB(null)
 B.Ho=new A.tO(B.fs,null,!0,B.c4,null,B.b0,null,B.a17,null)
-B.jE=new A.pv(!1)
-B.jF=new A.pv(!0)
-B.jG=new A.pw(!1)
-B.jH=new A.pw(!0)
-B.jI=new A.px(!1)
-B.jJ=new A.px(!0)
+B.jD=new A.pv(!1)
+B.jE=new A.pv(!0)
+B.jF=new A.pw(!1)
+B.jG=new A.pw(!0)
+B.jH=new A.px(!1)
+B.jI=new A.px(!0)
 B.bb=new A.tR(3,"info")
 B.Hp=new A.tR(5,"hint")
 B.Hq=new A.tR(6,"summary")
@@ -96729,7 +96729,7 @@ B.a1s=new A.kb(1,"sparse")
 B.Hr=new A.kb(10,"shallow")
 B.Hs=new A.kb(11,"truncateChildren")
 B.Ht=new A.kb(5,"error")
-B.jK=new A.kb(7,"flat")
+B.jJ=new A.kb(7,"flat")
 B.nM=new A.kb(8,"singleLine")
 B.cy=new A.kb(9,"errorProperty")
 B.Hu=new A.tS(null,null,null,null,null,null,null,null,null,null)
@@ -96738,7 +96738,7 @@ B.Hy=new A.tT(2,2,null)
 B.Hz=new A.tT(null,1,null)
 B.nN=new A.tT(null,null,null)
 B.HA=new A.zu(null)
-B.jL=new A.zw(0,"down")
+B.jK=new A.zw(0,"down")
 B.a9=new A.zw(1,"start")
 B.nO=new A.zy(0,"start")
 B.HB=new A.zy(1,"end")
@@ -96768,18 +96768,18 @@ B.cO=new A.b3(3e5)
 B.ek=new A.b3(3e6)
 B.nP=new A.b3(375e3)
 B.HP=new A.b3(4e4)
-B.jM=new A.b3(4e5)
+B.jL=new A.b3(4e5)
 B.HQ=new A.b3(45e3)
 B.h6=new A.b3(5e4)
 B.cz=new A.b3(5e5)
 B.el=new A.b3(6e5)
 B.nQ=new A.b3(7e4)
 B.HR=new A.b3(7e5)
-B.jN=new A.b3(75e3)
+B.jM=new A.b3(75e3)
 B.HS=new A.b3(8e6)
 B.HT=new A.b3(-38e3)
 B.HU=new A.e8(12,0,16,0)
-B.jO=new A.e8(16,0,24,0)
+B.jN=new A.e8(16,0,24,0)
 B.HV=new A.e8(4,0,6,0)
 B.HW=new A.e8(8,0,12,0)
 B.HX=new A.e8(8,0,4,0)
@@ -96797,23 +96797,23 @@ B.I3=new A.aa(12,20,12,12)
 B.I4=new A.aa(12,24,12,16)
 B.nV=new A.aa(12,8,12,8)
 B.I5=new A.aa(15,30,15,30)
-B.jP=new A.aa(16,0,16,0)
+B.jO=new A.aa(16,0,16,0)
 B.h7=new A.aa(16,16,16,16)
 B.I6=new A.aa(16,4,16,4)
 B.nW=new A.aa(16,8,16,8)
 B.I7=new A.aa(18,16,18,16)
 B.nY=new A.aa(20,0,20,3)
 B.I8=new A.aa(20,20,20,20)
-B.jQ=new A.aa(24,0,24,0)
+B.jP=new A.aa(24,0,24,0)
 B.I9=new A.aa(24,0,24,24)
 B.h8=new A.aa(24,12,24,12)
 B.em=new A.aa(24,24,24,24)
-B.jR=new A.aa(30,12,30,12)
+B.jQ=new A.aa(30,12,30,12)
 B.Ia=new A.aa(36,36,36,36)
 B.Ic=new A.aa(40,24,40,24)
-B.jS=new A.aa(4,0,4,0)
+B.jR=new A.aa(4,0,4,0)
 B.a1t=new A.aa(4,4,4,5)
-B.jT=new A.aa(5,5,5,5)
+B.jS=new A.aa(5,5,5,5)
 B.nZ=new A.aa(8,0,8,0)
 B.o_=new A.aa(8,12,8,12)
 B.Id=new A.aa(8,4,8,4)
@@ -96822,16 +96822,16 @@ B.o0=new A.aa(0.5,1,0.5,1)
 B.Ie=new A.zL(null)
 B.If=new A.u5(0,"noOpinion")
 B.Ig=new A.u5(1,"enabled")
-B.jU=new A.u5(2,"disabled")
+B.jT=new A.u5(2,"disabled")
 B.Ih=new A.M8(null)
 B.a1u=new A.u6(0)
-B.jV=new A.nj(!1,!1,!1,!1)
-B.jW=new A.nj(!1,!1,!1,!0)
+B.jU=new A.nj(!1,!1,!1,!1)
+B.jV=new A.nj(!1,!1,!1,!0)
 B.o1=new A.nk(!1,!1,!1,!1)
 B.o2=new A.nk(!1,!1,!1,!0)
 B.Ii=new A.uc(null,null,null,null,null,null,null,null,null,null,null)
-B.jX=new A.kg(!1,!1,!1,!1)
-B.jY=new A.kg(!1,!1,!1,!0)
+B.jW=new A.kg(!1,!1,!1,!1)
+B.jX=new A.kg(!1,!1,!1,!0)
 B.en=new A.kg(!0,!1,!1,!1)
 B.eo=new A.kg(!0,!1,!1,!0)
 B.o4=new A.kh(!1,!1,!1,!1)
@@ -96852,19 +96852,19 @@ B.o8=new A.pJ(!1,!0,!1,!1)
 B.o9=new A.pJ(!1,!0,!1,!0)
 B.Ip=new A.ki(!1,!1,!1,!1)
 B.Iq=new A.ki(!1,!1,!1,!0)
-B.jZ=new A.ki(!0,!1,!1,!1)
-B.k_=new A.ki(!0,!1,!1,!0)
+B.jY=new A.ki(!0,!1,!1,!1)
+B.jZ=new A.ki(!0,!1,!1,!0)
 B.oa=new A.nl(!1,!0,!1,!1)
 B.ob=new A.nl(!1,!0,!1,!0)
-B.k0=new A.lx(!1,!1,!1,!1)
-B.k1=new A.lx(!1,!1,!1,!0)
+B.k_=new A.lx(!1,!1,!1,!1)
+B.k0=new A.lx(!1,!1,!1,!0)
 B.hb=new A.lx(!0,!1,!1,!1)
 B.hc=new A.lx(!0,!1,!1,!0)
-B.k2=new A.ly(!1,!1,!1,!1)
-B.k3=new A.ly(!1,!1,!1,!0)
+B.k1=new A.ly(!1,!1,!1,!1)
+B.k2=new A.ly(!1,!1,!1,!0)
 B.oc=new A.ly(!0,!1,!1,!1)
 B.od=new A.ly(!0,!1,!1,!0)
-B.k4=new A.pL(0)
+B.k3=new A.pL(0)
 B.Ir=new A.pL(1)
 B.Is=new A.pL(2)
 B.It=new A.pL(3)
@@ -96882,11 +96882,11 @@ B.he=new A.A3(0,"tight")
 B.es=new A.A3(1,"loose")
 B.Iy=new A.ue(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.og=new A.uf(0,"Start")
-B.k5=new A.uf(1,"Update")
-B.k6=new A.uf(2,"End")
-B.k7=new A.ug(0,"never")
-B.k8=new A.ug(2,"always")
-B.k9=new A.lC(0,"touch")
+B.k4=new A.uf(1,"Update")
+B.k5=new A.uf(2,"End")
+B.k6=new A.ug(0,"never")
+B.k7=new A.ug(2,"always")
+B.k8=new A.lC(0,"touch")
 B.hf=new A.lC(1,"traditional")
 B.a1w=new A.MB(0,"automatic")
 B.oi=new A.Aa(0,"normal")
@@ -96901,11 +96901,11 @@ B.bm=new A.ij("Message corrupted",null,null)
 B.IC=new A.ij("Invalid envelope",null,null)
 B.dp=new A.pR(0,"formatStartEnd")
 B.om=new A.pR(1,"formatStart")
-B.ka=new A.pR(2,"formatList")
+B.k9=new A.pR(2,"formatList")
 B.ID=new A.pR(3,"formatAddNew")
 B.on=new A.pS(0,"ltr")
 B.oo=new A.pS(1,"rtl")
-B.kb=new A.pS(3,"sandwich")
+B.ka=new A.pS(3,"sandwich")
 B.cc=new A.Af(0,"accepted")
 B.ak=new A.Af(1,"rejected")
 B.op=new A.nr(0,"pointerEvents")
@@ -96926,8 +96926,8 @@ B.IG=new A.a8T("attribute",!0,!0,!1,!1)
 B.os=new A.N3(B.IG)
 B.IH=new A.ns(null)
 B.ou=new A.bD(57490,!0)
-B.kc=new A.bD(57686,!1)
-B.kd=new A.bD(57687,!1)
+B.kb=new A.bD(57686,!1)
+B.kc=new A.bD(57687,!1)
 B.ov=new A.bD(57688,!1)
 B.hk=new A.bD(57699,!1)
 B.II=new A.bD(57706,!1)
@@ -96943,7 +96943,7 @@ B.IS=new A.bD(58047,!1)
 B.IT=new A.bD(58095,!1)
 B.IU=new A.bD(58143,!1)
 B.IV=new A.bD(58240,!1)
-B.ke=new A.bD(58332,!1)
+B.kd=new A.bD(58332,!1)
 B.IX=new A.bD(58372,!1)
 B.oy=new A.bD(58644,!1)
 B.J_=new A.bD(61068,!0)
@@ -96972,7 +96972,7 @@ B.aR=new A.hR(B.Oi,4278238420)
 B.oB=new A.di(B.hk,18,B.aR,null,null)
 B.J2=new A.bD(61267,!1)
 B.Jg=new A.di(B.J2,18,B.U,null,null)
-B.oC=new A.di(B.ke,null,B.U,null,null)
+B.oC=new A.di(B.kd,null,B.U,null,null)
 B.IL=new A.bD(57882,!1)
 B.Ji=new A.di(B.IL,22,B.j,null,null)
 B.Jj=new A.di(B.oy,24,B.j,null,null)
@@ -96991,12 +96991,12 @@ B.GO=new A.n(4293892762)
 B.GH=new A.n(4293227379)
 B.GN=new A.n(4293874512)
 B.Gw=new A.n(4290190364)
-B.Oq=new A.bH([50,B.GV,100,B.GU,200,B.GO,300,B.GH,400,B.GN,500,B.ef,600,B.fZ,700,B.jx,800,B.jv,900,B.Gw],t.pl)
+B.Oq=new A.bH([50,B.GV,100,B.GU,200,B.GO,300,B.GH,400,B.GN,500,B.ef,600,B.fZ,700,B.jw,800,B.ju,900,B.Gw],t.pl)
 B.hP=new A.hR(B.Oq,4294198070)
 B.oE=new A.di(B.oz,36,B.hP,null,null)
 B.IY=new A.bD(58727,!1)
 B.Jq=new A.di(B.IY,null,null,null,null)
-B.Jr=new A.di(B.kc,22,B.j,null,null)
+B.Jr=new A.di(B.kb,22,B.j,null,null)
 B.J7=new A.bD(63126,!1)
 B.hl=new A.di(B.J7,null,null,null,null)
 B.IZ=new A.bD(58737,!0)
@@ -97014,18 +97014,18 @@ B.Fm=new A.n(4278278043)
 B.Ol=new A.bH([50,B.GG,100,B.Gv,200,B.Gj,300,B.FZ,400,B.FE,500,B.Fq,600,B.Fp,700,B.Fo,800,B.Fn,900,B.Fm],t.pl)
 B.Pg=new A.hR(B.Ol,4278430196)
 B.oG=new A.di(B.hk,18,B.Pg,null,null)
-B.kg=new A.q3(0,"repeat")
+B.kf=new A.q3(0,"repeat")
 B.oH=new A.q3(1,"repeatX")
 B.oI=new A.q3(2,"repeatY")
 B.et=new A.q3(3,"noRepeat")
 B.mm=new A.mZ("assets/images/logo.png",null,null)
 B.e2=new A.to(1,"contain")
 B.oJ=new A.hg(B.mm,null,48,B.e2,null)
-B.kh=new A.hg(B.mm,128,128,B.e2,null)
-B.j6=new A.mZ("assets/images/weblogo.png",null,null)
-B.JA=new A.hg(B.j6,null,null,B.mx,null)
-B.ki=new A.hg(B.j6,null,32,B.e2,null)
-B.JC=new A.hg(B.j6,null,36,B.e2,null)
+B.kg=new A.hg(B.mm,128,128,B.e2,null)
+B.j5=new A.mZ("assets/images/weblogo.png",null,null)
+B.JA=new A.hg(B.j5,null,null,B.mx,null)
+B.kh=new A.hg(B.j5,null,32,B.e2,null)
+B.JC=new A.hg(B.j5,null,36,B.e2,null)
 B.aL=A.a(s([]),t.oU)
 B.JD=new A.lJ("\ufffc",null,null,!0,!0,B.aL)
 B.nX=new A.aa(18,18,18,18)
@@ -97071,41 +97071,41 @@ B.cV=new A.lO(0,"opportunity")
 B.z=new A.lO(1,"prohibited")
 B.cB=new A.lO(2,"mandatory")
 B.cC=new A.lO(3,"endOfText")
-B.kk=new A.bS(0,"CM")
+B.kj=new A.bS(0,"CM")
 B.hp=new A.bS(1,"BA")
 B.cW=new A.bS(10,"PO")
 B.ew=new A.bS(11,"OP")
 B.ex=new A.bS(12,"CP")
 B.hq=new A.bS(13,"IS")
 B.ey=new A.bS(14,"HY")
-B.kl=new A.bS(15,"SY")
+B.kk=new A.bS(15,"SY")
 B.cD=new A.bS(16,"NU")
-B.km=new A.bS(17,"CL")
-B.kn=new A.bS(18,"GL")
+B.kl=new A.bS(17,"CL")
+B.km=new A.bS(18,"GL")
 B.oR=new A.bS(19,"BB")
 B.ez=new A.bS(2,"LF")
 B.bo=new A.bS(20,"HL")
 B.hr=new A.bS(21,"JL")
 B.eA=new A.bS(22,"JV")
 B.eB=new A.bS(23,"JT")
-B.ko=new A.bS(24,"NS")
-B.kp=new A.bS(25,"ZW")
-B.kq=new A.bS(26,"ZWJ")
-B.kr=new A.bS(27,"B2")
+B.kn=new A.bS(24,"NS")
+B.ko=new A.bS(25,"ZW")
+B.kp=new A.bS(26,"ZWJ")
+B.kq=new A.bS(27,"B2")
 B.oS=new A.bS(28,"IN")
-B.ks=new A.bS(29,"WJ")
+B.kr=new A.bS(29,"WJ")
 B.hs=new A.bS(3,"BK")
-B.kt=new A.bS(30,"ID")
+B.ks=new A.bS(30,"ID")
 B.ht=new A.bS(31,"EB")
 B.eC=new A.bS(32,"H2")
 B.eD=new A.bS(33,"H3")
-B.ku=new A.bS(34,"CB")
+B.kt=new A.bS(34,"CB")
 B.hu=new A.bS(35,"RI")
 B.hv=new A.bS(36,"EM")
 B.hw=new A.bS(4,"CR")
 B.dt=new A.bS(5,"SP")
 B.oT=new A.bS(6,"EX")
-B.kv=new A.bS(7,"QU")
+B.ku=new A.bS(7,"QU")
 B.bp=new A.bS(8,"AL")
 B.hx=new A.bS(9,"PR")
 B.BW=new A.e4(1,1)
@@ -97119,7 +97119,7 @@ B.FN=new A.n(4282339765)
 B.FM=new A.n(4281944491)
 B.FD=new A.n(4280825235)
 B.Fv=new A.n(4279903102)
-B.Oo=new A.bH([50,B.GK,100,B.Gx,200,B.Gp,300,B.Gc,400,B.G2,500,B.FN,600,B.FM,700,B.jp,800,B.FD,900,B.Fv],t.pl)
+B.Oo=new A.bH([50,B.GK,100,B.Gx,200,B.Gp,300,B.Gc,400,B.G2,500,B.FN,600,B.FM,700,B.jo,800,B.FD,900,B.Fv],t.pl)
 B.hO=new A.hR(B.Oo,4282339765)
 B.Lf=A.a(s([B.hO,B.aR]),t.t_)
 B.hy=new A.uK(B.cJ,B.BW,B.cH,B.Lf,null,null)
@@ -97154,7 +97154,7 @@ B.ED=new A.pe(0,"auto")
 B.EE=new A.pe(1,"full")
 B.EF=new A.pe(2,"chromium")
 B.KI=A.a(s([B.ED,B.EE,B.EF]),A.ad("v<pe>"))
-B.oV=A.a(s([B.kk,B.hp,B.ez,B.hs,B.hw,B.dt,B.oT,B.kv,B.bp,B.hx,B.cW,B.ew,B.ex,B.hq,B.ey,B.kl,B.cD,B.km,B.kn,B.oR,B.bo,B.hr,B.eA,B.eB,B.ko,B.kp,B.kq,B.kr,B.oS,B.ks,B.kt,B.ht,B.eC,B.eD,B.ku,B.hu,B.hv]),A.ad("v<bS>"))
+B.oV=A.a(s([B.kj,B.hp,B.ez,B.hs,B.hw,B.dt,B.oT,B.ku,B.bp,B.hx,B.cW,B.ew,B.ex,B.hq,B.ey,B.kk,B.cD,B.kl,B.km,B.oR,B.bo,B.hr,B.eA,B.eB,B.kn,B.ko,B.kp,B.kq,B.oS,B.kr,B.ks,B.ht,B.eC,B.eD,B.kt,B.hu,B.hv]),A.ad("v<bS>"))
 B.a0x=new A.hv(0,1)
 B.a0D=new A.hv(0.5,1)
 B.a0E=new A.hv(0.5375,0.75)
@@ -97167,12 +97167,12 @@ B.a0z=new A.hv(0.925,0.5)
 B.a0A=new A.hv(0.9625,0.75)
 B.a0y=new A.hv(1,1)
 B.KL=A.a(s([B.a0x,B.a0D,B.a0E,B.a0C,B.a0G,B.a0H,B.a0F,B.a0B,B.a0z,B.a0A,B.a0y]),A.ad("v<hv>"))
-B.KM=A.a(s([B.j4,B.j5]),A.ad("v<tl>"))
+B.KM=A.a(s([B.j3,B.j4]),A.ad("v<tl>"))
 B.KN=A.a(s(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]),t.s)
 B.oW=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.KO=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
 B.KW=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.c)
-B.kw=A.a(s(["p","h1","h2","h3","h4","h5","h6","li","blockquote","pre","ol","ul","hr","table","thead","tbody","tr"]),t.s)
+B.kv=A.a(s(["p","h1","h2","h3","h4","h5","h6","li","blockquote","pre","ol","ul","hr","table","thead","tbody","tr"]),t.s)
 B.MC=new A.nK("en","US")
 B.oX=A.a(s([B.MC]),t.ss)
 B.hz=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
@@ -97240,7 +97240,7 @@ B.p9=A.a(s([]),t.wi)
 B.LB=A.a(s([]),t.jT)
 B.LT=A.a(s([]),A.ad("v<azH<@>>"))
 B.LV=A.a(s([]),t.D1)
-B.kx=A.a(s([]),t.QF)
+B.kw=A.a(s([]),t.QF)
 B.a1z=A.a(s([]),t.nk)
 B.LN=A.a(s([]),t.Lx)
 B.LC=A.a(s([]),t.fm)
@@ -97259,17 +97259,17 @@ B.fl=new A.kV(1,"right")
 B.c3=new A.kV(2,"center")
 B.dS=new A.kV(3,"justify")
 B.bh=new A.kV(4,"start")
-B.lq=new A.kV(5,"end")
-B.M8=A.a(s([B.cm,B.fl,B.c3,B.dS,B.bh,B.lq]),A.ad("v<kV>"))
+B.lp=new A.kV(5,"end")
+B.M8=A.a(s([B.cm,B.fl,B.c3,B.dS,B.bh,B.lp]),A.ad("v<kV>"))
 B.cZ=new A.j(1,0)
 B.PM=new A.j(1,1)
 B.b6=new A.j(0,1)
 B.Q6=new A.j(-1,1)
-B.l_=new A.j(-1,0)
+B.kZ=new A.j(-1,0)
 B.Q7=new A.j(-1,-1)
 B.vx=new A.j(0,-1)
 B.PN=new A.j(1,-1)
-B.hB=A.a(s([B.cZ,B.PM,B.b6,B.Q6,B.l_,B.Q7,B.vx,B.PN]),t.yv)
+B.hB=A.a(s([B.cZ,B.PM,B.b6,B.Q6,B.kZ,B.Q7,B.vx,B.PN]),t.yv)
 B.Mh=A.a(s(["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]),t.s)
 B.eF=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.eS=new A.hl(0,"controlModifier")
@@ -97288,14 +97288,14 @@ B.c2=new A.dX(1,"fuchsia")
 B.ck=new A.dX(3,"linux")
 B.cl=new A.dX(5,"windows")
 B.Mq=A.a(s([B.aM,B.c2,B.aB,B.ck,B.bz,B.cl]),t.r6)
-B.ky=A.a(s([!0,!1]),t.HZ)
+B.kx=A.a(s([!0,!1]),t.HZ)
 B.pc=A.a(s(["ul","ol"]),t.s)
 B.Mt=A.a(s(["ul","ol","p","br"]),t.s)
 B.lL=new A.dv(0,"DoubleQuote")
 B.dW=new A.dv(1,"SingleQuote")
 B.b1=new A.dv(2,"HebrewLetter")
-B.iH=new A.dv(3,"CR")
-B.iI=new A.dv(4,"LF")
+B.iG=new A.dv(3,"CR")
+B.iH=new A.dv(4,"LF")
 B.lP=new A.dv(5,"Newline")
 B.fz=new A.dv(6,"Extend")
 B.a00=new A.dv(7,"RegionalIndicator")
@@ -97306,11 +97306,11 @@ B.lM=new A.dv(11,"MidLetter")
 B.lN=new A.dv(12,"MidNum")
 B.fx=new A.dv(13,"MidNumLet")
 B.cp=new A.dv(14,"Numeric")
-B.iG=new A.dv(15,"ExtendNumLet")
+B.iF=new A.dv(15,"ExtendNumLet")
 B.fy=new A.dv(16,"ZWJ")
 B.lO=new A.dv(17,"WSegSpace")
 B.Bz=new A.dv(18,"Unknown")
-B.Mu=A.a(s([B.lL,B.dW,B.b1,B.iH,B.iI,B.lP,B.fz,B.a00,B.fA,B.fB,B.bM,B.lM,B.lN,B.fx,B.cp,B.iG,B.fy,B.lO,B.Bz]),A.ad("v<dv>"))
+B.Mu=A.a(s([B.lL,B.dW,B.b1,B.iG,B.iH,B.lP,B.fz,B.a00,B.fA,B.fB,B.bM,B.lM,B.lN,B.fx,B.cp,B.iF,B.fy,B.lO,B.Bz]),A.ad("v<dv>"))
 B.bB=new A.iH(0,"leading")
 B.bi=new A.iH(1,"title")
 B.bj=new A.iH(2,"subtitle")
@@ -97324,7 +97324,7 @@ B.MA=A.a(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.c)
 B.br=new A.f(4294967304)
 B.eI=new A.f(4294967323)
 B.bd=new A.f(4294967423)
-B.kB=new A.f(4294967558)
+B.kA=new A.f(4294967558)
 B.eM=new A.f(8589934848)
 B.hH=new A.f(8589934849)
 B.bs=new A.f(8589934850)
@@ -97341,7 +97341,7 @@ B.O9=new A.uT(B.h,B.h)
 B.Oa=new A.jf(B.h,B.K,B.K,B.K)
 B.n=new A.lR(0,"start")
 B.hK=new A.lR(1,"end")
-B.kS=new A.lR(3,"spaceBetween")
+B.kR=new A.lR(3,"spaceBetween")
 B.dv=new A.lR(5,"spaceEvenly")
 B.cE=new A.B2(0,"min")
 B.Ku=A.a(s(["&AElig;","&AMP;","&Aacute;","&Abreve;","&Acirc;","&Acy;","&Afr;","&Agrave;","&Alpha;","&Amacr;","&And;","&Aogon;","&Aopf;","&ApplyFunction;","&Aring;","&Ascr;","&Assign;","&Atilde;","&Auml;","&Backslash;","&Barv;","&Barwed;","&Bcy;","&Because;","&Bernoullis;","&Beta;","&Bfr;","&Bopf;","&Breve;","&Bscr;","&Bumpeq;","&CHcy;","&COPY;","&Cacute;","&Cap;","&CapitalDifferentialD;","&Cayleys;","&Ccaron;","&Ccedil;","&Ccirc;","&Cconint;","&Cdot;","&Cedilla;","&CenterDot;","&Cfr;","&Chi;","&CircleDot;","&CircleMinus;","&CirclePlus;","&CircleTimes;","&ClockwiseContourIntegral;","&CloseCurlyDoubleQuote;","&CloseCurlyQuote;","&Colon;","&Colone;","&Congruent;","&Conint;","&ContourIntegral;","&Copf;","&Coproduct;","&CounterClockwiseContourIntegral;","&Cross;","&Cscr;","&Cup;","&CupCap;","&DD;","&DDotrahd;","&DJcy;","&DScy;","&DZcy;","&Dagger;","&Darr;","&Dashv;","&Dcaron;","&Dcy;","&Del;","&Delta;","&Dfr;","&DiacriticalAcute;","&DiacriticalDot;","&DiacriticalDoubleAcute;","&DiacriticalGrave;","&DiacriticalTilde;","&Diamond;","&DifferentialD;","&Dopf;","&Dot;","&DotDot;","&DotEqual;","&DoubleContourIntegral;","&DoubleDot;","&DoubleDownArrow;","&DoubleLeftArrow;","&DoubleLeftRightArrow;","&DoubleLeftTee;","&DoubleLongLeftArrow;","&DoubleLongLeftRightArrow;","&DoubleLongRightArrow;","&DoubleRightArrow;","&DoubleRightTee;","&DoubleUpArrow;","&DoubleUpDownArrow;","&DoubleVerticalBar;","&DownArrow;","&DownArrowBar;","&DownArrowUpArrow;","&DownBreve;","&DownLeftRightVector;","&DownLeftTeeVector;","&DownLeftVector;","&DownLeftVectorBar;","&DownRightTeeVector;","&DownRightVector;","&DownRightVectorBar;","&DownTee;","&DownTeeArrow;","&Downarrow;","&Dscr;","&Dstrok;","&ENG;","&ETH;","&Eacute;","&Ecaron;","&Ecirc;","&Ecy;","&Edot;","&Efr;","&Egrave;","&Element;","&Emacr;","&EmptySmallSquare;","&EmptyVerySmallSquare;","&Eogon;","&Eopf;","&Epsilon;","&Equal;","&EqualTilde;","&Equilibrium;","&Escr;","&Esim;","&Eta;","&Euml;","&Exists;","&ExponentialE;","&Fcy;","&Ffr;","&FilledSmallSquare;","&FilledVerySmallSquare;","&Fopf;","&ForAll;","&Fouriertrf;","&Fscr;","&GJcy;","&GT;","&Gamma;","&Gammad;","&Gbreve;","&Gcedil;","&Gcirc;","&Gcy;","&Gdot;","&Gfr;","&Gg;","&Gopf;","&GreaterEqual;","&GreaterEqualLess;","&GreaterFullEqual;","&GreaterGreater;","&GreaterLess;","&GreaterSlantEqual;","&GreaterTilde;","&Gscr;","&Gt;","&HARDcy;","&Hacek;","&Hat;","&Hcirc;","&Hfr;","&HilbertSpace;","&Hopf;","&HorizontalLine;","&Hscr;","&Hstrok;","&HumpDownHump;","&HumpEqual;","&IEcy;","&IJlig;","&IOcy;","&Iacute;","&Icirc;","&Icy;","&Idot;","&Ifr;","&Igrave;","&Im;","&Imacr;","&ImaginaryI;","&Implies;","&Int;","&Integral;","&Intersection;","&InvisibleComma;","&InvisibleTimes;","&Iogon;","&Iopf;","&Iota;","&Iscr;","&Itilde;","&Iukcy;","&Iuml;","&Jcirc;","&Jcy;","&Jfr;","&Jopf;","&Jscr;","&Jsercy;","&Jukcy;","&KHcy;","&KJcy;","&Kappa;","&Kcedil;","&Kcy;","&Kfr;","&Kopf;","&Kscr;","&LJcy;","&LT;","&Lacute;","&Lambda;","&Lang;","&Laplacetrf;","&Larr;","&Lcaron;","&Lcedil;","&Lcy;","&LeftAngleBracket;","&LeftArrow;","&LeftArrowBar;","&LeftArrowRightArrow;","&LeftCeiling;","&LeftDoubleBracket;","&LeftDownTeeVector;","&LeftDownVector;","&LeftDownVectorBar;","&LeftFloor;","&LeftRightArrow;","&LeftRightVector;","&LeftTee;","&LeftTeeArrow;","&LeftTeeVector;","&LeftTriangle;","&LeftTriangleBar;","&LeftTriangleEqual;","&LeftUpDownVector;","&LeftUpTeeVector;","&LeftUpVector;","&LeftUpVectorBar;","&LeftVector;","&LeftVectorBar;","&Leftarrow;","&Leftrightarrow;","&LessEqualGreater;","&LessFullEqual;","&LessGreater;","&LessLess;","&LessSlantEqual;","&LessTilde;","&Lfr;","&Ll;","&Lleftarrow;","&Lmidot;","&LongLeftArrow;","&LongLeftRightArrow;","&LongRightArrow;","&Longleftarrow;","&Longleftrightarrow;","&Longrightarrow;","&Lopf;","&LowerLeftArrow;","&LowerRightArrow;","&Lscr;","&Lsh;","&Lstrok;","&Lt;","&Map;","&Mcy;","&MediumSpace;","&Mellintrf;","&Mfr;","&MinusPlus;","&Mopf;","&Mscr;","&Mu;","&NJcy;","&Nacute;","&Ncaron;","&Ncedil;","&Ncy;","&NegativeMediumSpace;","&NegativeThickSpace;","&NegativeThinSpace;","&NegativeVeryThinSpace;","&NestedGreaterGreater;","&NestedLessLess;","&NewLine;","&Nfr;","&NoBreak;","&NonBreakingSpace;","&Nopf;","&Not;","&NotCongruent;","&NotCupCap;","&NotDoubleVerticalBar;","&NotElement;","&NotEqual;","&NotEqualTilde;","&NotExists;","&NotGreater;","&NotGreaterEqual;","&NotGreaterFullEqual;","&NotGreaterGreater;","&NotGreaterLess;","&NotGreaterSlantEqual;","&NotGreaterTilde;","&NotHumpDownHump;","&NotHumpEqual;","&NotLeftTriangle;","&NotLeftTriangleBar;","&NotLeftTriangleEqual;","&NotLess;","&NotLessEqual;","&NotLessGreater;","&NotLessLess;","&NotLessSlantEqual;","&NotLessTilde;","&NotNestedGreaterGreater;","&NotNestedLessLess;","&NotPrecedes;","&NotPrecedesEqual;","&NotPrecedesSlantEqual;","&NotReverseElement;","&NotRightTriangle;","&NotRightTriangleBar;","&NotRightTriangleEqual;","&NotSquareSubset;","&NotSquareSubsetEqual;","&NotSquareSuperset;","&NotSquareSupersetEqual;","&NotSubset;","&NotSubsetEqual;","&NotSucceeds;","&NotSucceedsEqual;","&NotSucceedsSlantEqual;","&NotSucceedsTilde;","&NotSuperset;","&NotSupersetEqual;","&NotTilde;","&NotTildeEqual;","&NotTildeFullEqual;","&NotTildeTilde;","&NotVerticalBar;","&Nscr;","&Ntilde;","&Nu;","&OElig;","&Oacute;","&Ocirc;","&Ocy;","&Odblac;","&Ofr;","&Ograve;","&Omacr;","&Omega;","&Omicron;","&Oopf;","&OpenCurlyDoubleQuote;","&OpenCurlyQuote;","&Or;","&Oscr;","&Oslash;","&Otilde;","&Otimes;","&Ouml;","&OverBar;","&OverBrace;","&OverBracket;","&OverParenthesis;","&PartialD;","&Pcy;","&Pfr;","&Phi;","&Pi;","&PlusMinus;","&Poincareplane;","&Popf;","&Pr;","&Precedes;","&PrecedesEqual;","&PrecedesSlantEqual;","&PrecedesTilde;","&Prime;","&Product;","&Proportion;","&Proportional;","&Pscr;","&Psi;","&QUOT;","&Qfr;","&Qopf;","&Qscr;","&RBarr;","&REG;","&Racute;","&Rang;","&Rarr;","&Rarrtl;","&Rcaron;","&Rcedil;","&Rcy;","&Re;","&ReverseElement;","&ReverseEquilibrium;","&ReverseUpEquilibrium;","&Rfr;","&Rho;","&RightAngleBracket;","&RightArrow;","&RightArrowBar;","&RightArrowLeftArrow;","&RightCeiling;","&RightDoubleBracket;","&RightDownTeeVector;","&RightDownVector;","&RightDownVectorBar;","&RightFloor;","&RightTee;","&RightTeeArrow;","&RightTeeVector;","&RightTriangle;","&RightTriangleBar;","&RightTriangleEqual;","&RightUpDownVector;","&RightUpTeeVector;","&RightUpVector;","&RightUpVectorBar;","&RightVector;","&RightVectorBar;","&Rightarrow;","&Ropf;","&RoundImplies;","&Rrightarrow;","&Rscr;","&Rsh;","&RuleDelayed;","&SHCHcy;","&SHcy;","&SOFTcy;","&Sacute;","&Sc;","&Scaron;","&Scedil;","&Scirc;","&Scy;","&Sfr;","&ShortDownArrow;","&ShortLeftArrow;","&ShortRightArrow;","&ShortUpArrow;","&Sigma;","&SmallCircle;","&Sopf;","&Sqrt;","&Square;","&SquareIntersection;","&SquareSubset;","&SquareSubsetEqual;","&SquareSuperset;","&SquareSupersetEqual;","&SquareUnion;","&Sscr;","&Star;","&Sub;","&Subset;","&SubsetEqual;","&Succeeds;","&SucceedsEqual;","&SucceedsSlantEqual;","&SucceedsTilde;","&SuchThat;","&Sum;","&Sup;","&Superset;","&SupersetEqual;","&Supset;","&THORN;","&TRADE;","&TSHcy;","&TScy;","&Tab;","&Tau;","&Tcaron;","&Tcedil;","&Tcy;","&Tfr;","&Therefore;","&Theta;","&ThickSpace;","&ThinSpace;","&Tilde;","&TildeEqual;","&TildeFullEqual;","&TildeTilde;","&Topf;","&TripleDot;","&Tscr;","&Tstrok;","&Uacute;","&Uarr;","&Uarrocir;","&Ubrcy;","&Ubreve;","&Ucirc;","&Ucy;","&Udblac;","&Ufr;","&Ugrave;","&Umacr;","&UnderBar;","&UnderBrace;","&UnderBracket;","&UnderParenthesis;","&Union;","&UnionPlus;","&Uogon;","&Uopf;","&UpArrow;","&UpArrowBar;","&UpArrowDownArrow;","&UpDownArrow;","&UpEquilibrium;","&UpTee;","&UpTeeArrow;","&Uparrow;","&Updownarrow;","&UpperLeftArrow;","&UpperRightArrow;","&Upsi;","&Upsilon;","&Uring;","&Uscr;","&Utilde;","&Uuml;","&VDash;","&Vbar;","&Vcy;","&Vdash;","&Vdashl;","&Vee;","&Verbar;","&Vert;","&VerticalBar;","&VerticalLine;","&VerticalSeparator;","&VerticalTilde;","&VeryThinSpace;","&Vfr;","&Vopf;","&Vscr;","&Vvdash;","&Wcirc;","&Wedge;","&Wfr;","&Wopf;","&Wscr;","&Xfr;","&Xi;","&Xopf;","&Xscr;","&YAcy;","&YIcy;","&YUcy;","&Yacute;","&Ycirc;","&Ycy;","&Yfr;","&Yopf;","&Yscr;","&Yuml;","&ZHcy;","&Zacute;","&Zcaron;","&Zcy;","&Zdot;","&ZeroWidthSpace;","&Zeta;","&Zfr;","&Zopf;","&Zscr;","&aacute;","&abreve;","&ac;","&acE;","&acd;","&acirc;","&acute;","&acy;","&aelig;","&af;","&afr;","&agrave;","&alefsym;","&aleph;","&alpha;","&amacr;","&amalg;","&amp;","&and;","&andand;","&andd;","&andslope;","&andv;","&ang;","&ange;","&angle;","&angmsd;","&angmsdaa;","&angmsdab;","&angmsdac;","&angmsdad;","&angmsdae;","&angmsdaf;","&angmsdag;","&angmsdah;","&angrt;","&angrtvb;","&angrtvbd;","&angsph;","&angst;","&angzarr;","&aogon;","&aopf;","&ap;","&apE;","&apacir;","&ape;","&apid;","&apos;","&approx;","&approxeq;","&aring;","&ascr;","&ast;","&asymp;","&asympeq;","&atilde;","&auml;","&awconint;","&awint;","&bNot;","&backcong;","&backepsilon;","&backprime;","&backsim;","&backsimeq;","&barvee;","&barwed;","&barwedge;","&bbrk;","&bbrktbrk;","&bcong;","&bcy;","&bdquo;","&becaus;","&because;","&bemptyv;","&bepsi;","&bernou;","&beta;","&beth;","&between;","&bfr;","&bigcap;","&bigcirc;","&bigcup;","&bigodot;","&bigoplus;","&bigotimes;","&bigsqcup;","&bigstar;","&bigtriangledown;","&bigtriangleup;","&biguplus;","&bigvee;","&bigwedge;","&bkarow;","&blacklozenge;","&blacksquare;","&blacktriangle;","&blacktriangledown;","&blacktriangleleft;","&blacktriangleright;","&blank;","&blk12;","&blk14;","&blk34;","&block;","&bne;","&bnequiv;","&bnot;","&bopf;","&bot;","&bottom;","&bowtie;","&boxDL;","&boxDR;","&boxDl;","&boxDr;","&boxH;","&boxHD;","&boxHU;","&boxHd;","&boxHu;","&boxUL;","&boxUR;","&boxUl;","&boxUr;","&boxV;","&boxVH;","&boxVL;","&boxVR;","&boxVh;","&boxVl;","&boxVr;","&boxbox;","&boxdL;","&boxdR;","&boxdl;","&boxdr;","&boxh;","&boxhD;","&boxhU;","&boxhd;","&boxhu;","&boxminus;","&boxplus;","&boxtimes;","&boxuL;","&boxuR;","&boxul;","&boxur;","&boxv;","&boxvH;","&boxvL;","&boxvR;","&boxvh;","&boxvl;","&boxvr;","&bprime;","&breve;","&brvbar;","&bscr;","&bsemi;","&bsim;","&bsime;","&bsol;","&bsolb;","&bsolhsub;","&bull;","&bullet;","&bump;","&bumpE;","&bumpe;","&bumpeq;","&cacute;","&cap;","&capand;","&capbrcup;","&capcap;","&capcup;","&capdot;","&caps;","&caret;","&caron;","&ccaps;","&ccaron;","&ccedil;","&ccirc;","&ccups;","&ccupssm;","&cdot;","&cedil;","&cemptyv;","&cent;","&centerdot;","&cfr;","&chcy;","&check;","&checkmark;","&chi;","&cir;","&cirE;","&circ;","&circeq;","&circlearrowleft;","&circlearrowright;","&circledR;","&circledS;","&circledast;","&circledcirc;","&circleddash;","&cire;","&cirfnint;","&cirmid;","&cirscir;","&clubs;","&clubsuit;","&colon;","&colone;","&coloneq;","&comma;","&commat;","&comp;","&compfn;","&complement;","&complexes;","&cong;","&congdot;","&conint;","&copf;","&coprod;","&copy;","&copysr;","&crarr;","&cross;","&cscr;","&csub;","&csube;","&csup;","&csupe;","&ctdot;","&cudarrl;","&cudarrr;","&cuepr;","&cuesc;","&cularr;","&cularrp;","&cup;","&cupbrcap;","&cupcap;","&cupcup;","&cupdot;","&cupor;","&cups;","&curarr;","&curarrm;","&curlyeqprec;","&curlyeqsucc;","&curlyvee;","&curlywedge;","&curren;","&curvearrowleft;","&curvearrowright;","&cuvee;","&cuwed;","&cwconint;","&cwint;","&cylcty;","&dArr;","&dHar;","&dagger;","&daleth;","&darr;","&dash;","&dashv;","&dbkarow;","&dblac;","&dcaron;","&dcy;","&dd;","&ddagger;","&ddarr;","&ddotseq;","&deg;","&delta;","&demptyv;","&dfisht;","&dfr;","&dharl;","&dharr;","&diam;","&diamond;","&diamondsuit;","&diams;","&die;","&digamma;","&disin;","&div;","&divide;","&divideontimes;","&divonx;","&djcy;","&dlcorn;","&dlcrop;","&dollar;","&dopf;","&dot;","&doteq;","&doteqdot;","&dotminus;","&dotplus;","&dotsquare;","&doublebarwedge;","&downarrow;","&downdownarrows;","&downharpoonleft;","&downharpoonright;","&drbkarow;","&drcorn;","&drcrop;","&dscr;","&dscy;","&dsol;","&dstrok;","&dtdot;","&dtri;","&dtrif;","&duarr;","&duhar;","&dwangle;","&dzcy;","&dzigrarr;","&eDDot;","&eDot;","&eacute;","&easter;","&ecaron;","&ecir;","&ecirc;","&ecolon;","&ecy;","&edot;","&ee;","&efDot;","&efr;","&eg;","&egrave;","&egs;","&egsdot;","&el;","&elinters;","&ell;","&els;","&elsdot;","&emacr;","&empty;","&emptyset;","&emptyv;","&emsp13;","&emsp14;","&emsp;","&eng;","&ensp;","&eogon;","&eopf;","&epar;","&eparsl;","&eplus;","&epsi;","&epsilon;","&epsiv;","&eqcirc;","&eqcolon;","&eqsim;","&eqslantgtr;","&eqslantless;","&equals;","&equest;","&equiv;","&equivDD;","&eqvparsl;","&erDot;","&erarr;","&escr;","&esdot;","&esim;","&eta;","&eth;","&euml;","&euro;","&excl;","&exist;","&expectation;","&exponentiale;","&fallingdotseq;","&fcy;","&female;","&ffilig;","&fflig;","&ffllig;","&ffr;","&filig;","&fjlig;","&flat;","&fllig;","&fltns;","&fnof;","&fopf;","&forall;","&fork;","&forkv;","&fpartint;","&frac12;","&frac13;","&frac14;","&frac15;","&frac16;","&frac18;","&frac23;","&frac25;","&frac34;","&frac35;","&frac38;","&frac45;","&frac56;","&frac58;","&frac78;","&frasl;","&frown;","&fscr;","&gE;","&gEl;","&gacute;","&gamma;","&gammad;","&gap;","&gbreve;","&gcirc;","&gcy;","&gdot;","&ge;","&gel;","&geq;","&geqq;","&geqslant;","&ges;","&gescc;","&gesdot;","&gesdoto;","&gesdotol;","&gesl;","&gesles;","&gfr;","&gg;","&ggg;","&gimel;","&gjcy;","&gl;","&glE;","&gla;","&glj;","&gnE;","&gnap;","&gnapprox;","&gne;","&gneq;","&gneqq;","&gnsim;","&gopf;","&grave;","&gscr;","&gsim;","&gsime;","&gsiml;","&gt;","&gtcc;","&gtcir;","&gtdot;","&gtlPar;","&gtquest;","&gtrapprox;","&gtrarr;","&gtrdot;","&gtreqless;","&gtreqqless;","&gtrless;","&gtrsim;","&gvertneqq;","&gvnE;","&hArr;","&hairsp;","&half;","&hamilt;","&hardcy;","&harr;","&harrcir;","&harrw;","&hbar;","&hcirc;","&hearts;","&heartsuit;","&hellip;","&hercon;","&hfr;","&hksearow;","&hkswarow;","&hoarr;","&homtht;","&hookleftarrow;","&hookrightarrow;","&hopf;","&horbar;","&hscr;","&hslash;","&hstrok;","&hybull;","&hyphen;","&iacute;","&ic;","&icirc;","&icy;","&iecy;","&iexcl;","&iff;","&ifr;","&igrave;","&ii;","&iiiint;","&iiint;","&iinfin;","&iiota;","&ijlig;","&imacr;","&image;","&imagline;","&imagpart;","&imath;","&imof;","&imped;","&in;","&incare;","&infin;","&infintie;","&inodot;","&int;","&intcal;","&integers;","&intercal;","&intlarhk;","&intprod;","&iocy;","&iogon;","&iopf;","&iota;","&iprod;","&iquest;","&iscr;","&isin;","&isinE;","&isindot;","&isins;","&isinsv;","&isinv;","&it;","&itilde;","&iukcy;","&iuml;","&jcirc;","&jcy;","&jfr;","&jmath;","&jopf;","&jscr;","&jsercy;","&jukcy;","&kappa;","&kappav;","&kcedil;","&kcy;","&kfr;","&kgreen;","&khcy;","&kjcy;","&kopf;","&kscr;","&lAarr;","&lArr;","&lAtail;","&lBarr;","&lE;","&lEg;","&lHar;","&lacute;","&laemptyv;","&lagran;","&lambda;","&lang;","&langd;","&langle;","&lap;","&laquo;","&larr;","&larrb;","&larrbfs;","&larrfs;","&larrhk;","&larrlp;","&larrpl;","&larrsim;","&larrtl;","&lat;","&latail;","&late;","&lates;","&lbarr;","&lbbrk;","&lbrace;","&lbrack;","&lbrke;","&lbrksld;","&lbrkslu;","&lcaron;","&lcedil;","&lceil;","&lcub;","&lcy;","&ldca;","&ldquo;","&ldquor;","&ldrdhar;","&ldrushar;","&ldsh;","&le;","&leftarrow;","&leftarrowtail;","&leftharpoondown;","&leftharpoonup;","&leftleftarrows;","&leftrightarrow;","&leftrightarrows;","&leftrightharpoons;","&leftrightsquigarrow;","&leftthreetimes;","&leg;","&leq;","&leqq;","&leqslant;","&les;","&lescc;","&lesdot;","&lesdoto;","&lesdotor;","&lesg;","&lesges;","&lessapprox;","&lessdot;","&lesseqgtr;","&lesseqqgtr;","&lessgtr;","&lesssim;","&lfisht;","&lfloor;","&lfr;","&lg;","&lgE;","&lhard;","&lharu;","&lharul;","&lhblk;","&ljcy;","&ll;","&llarr;","&llcorner;","&llhard;","&lltri;","&lmidot;","&lmoust;","&lmoustache;","&lnE;","&lnap;","&lnapprox;","&lne;","&lneq;","&lneqq;","&lnsim;","&loang;","&loarr;","&lobrk;","&longleftarrow;","&longleftrightarrow;","&longmapsto;","&longrightarrow;","&looparrowleft;","&looparrowright;","&lopar;","&lopf;","&loplus;","&lotimes;","&lowast;","&lowbar;","&loz;","&lozenge;","&lozf;","&lpar;","&lparlt;","&lrarr;","&lrcorner;","&lrhar;","&lrhard;","&lrm;","&lrtri;","&lsaquo;","&lscr;","&lsh;","&lsim;","&lsime;","&lsimg;","&lsqb;","&lsquo;","&lsquor;","&lstrok;","&lt;","&ltcc;","&ltcir;","&ltdot;","&lthree;","&ltimes;","&ltlarr;","&ltquest;","&ltrPar;","&ltri;","&ltrie;","&ltrif;","&lurdshar;","&luruhar;","&lvertneqq;","&lvnE;","&mDDot;","&macr;","&male;","&malt;","&maltese;","&map;","&mapsto;","&mapstodown;","&mapstoleft;","&mapstoup;","&marker;","&mcomma;","&mcy;","&mdash;","&measuredangle;","&mfr;","&mho;","&micro;","&mid;","&midast;","&midcir;","&middot;","&minus;","&minusb;","&minusd;","&minusdu;","&mlcp;","&mldr;","&mnplus;","&models;","&mopf;","&mp;","&mscr;","&mstpos;","&mu;","&multimap;","&mumap;","&nGg;","&nGt;","&nGtv;","&nLeftarrow;","&nLeftrightarrow;","&nLl;","&nLt;","&nLtv;","&nRightarrow;","&nVDash;","&nVdash;","&nabla;","&nacute;","&nang;","&nap;","&napE;","&napid;","&napos;","&napprox;","&natur;","&natural;","&naturals;","&nbsp;","&nbump;","&nbumpe;","&ncap;","&ncaron;","&ncedil;","&ncong;","&ncongdot;","&ncup;","&ncy;","&ndash;","&ne;","&neArr;","&nearhk;","&nearr;","&nearrow;","&nedot;","&nequiv;","&nesear;","&nesim;","&nexist;","&nexists;","&nfr;","&ngE;","&nge;","&ngeq;","&ngeqq;","&ngeqslant;","&nges;","&ngsim;","&ngt;","&ngtr;","&nhArr;","&nharr;","&nhpar;","&ni;","&nis;","&nisd;","&niv;","&njcy;","&nlArr;","&nlE;","&nlarr;","&nldr;","&nle;","&nleftarrow;","&nleftrightarrow;","&nleq;","&nleqq;","&nleqslant;","&nles;","&nless;","&nlsim;","&nlt;","&nltri;","&nltrie;","&nmid;","&nopf;","&not;","&notin;","&notinE;","&notindot;","&notinva;","&notinvb;","&notinvc;","&notni;","&notniva;","&notnivb;","&notnivc;","&npar;","&nparallel;","&nparsl;","&npart;","&npolint;","&npr;","&nprcue;","&npre;","&nprec;","&npreceq;","&nrArr;","&nrarr;","&nrarrc;","&nrarrw;","&nrightarrow;","&nrtri;","&nrtrie;","&nsc;","&nsccue;","&nsce;","&nscr;","&nshortmid;","&nshortparallel;","&nsim;","&nsime;","&nsimeq;","&nsmid;","&nspar;","&nsqsube;","&nsqsupe;","&nsub;","&nsubE;","&nsube;","&nsubset;","&nsubseteq;","&nsubseteqq;","&nsucc;","&nsucceq;","&nsup;","&nsupE;","&nsupe;","&nsupset;","&nsupseteq;","&nsupseteqq;","&ntgl;","&ntilde;","&ntlg;","&ntriangleleft;","&ntrianglelefteq;","&ntriangleright;","&ntrianglerighteq;","&nu;","&num;","&numero;","&numsp;","&nvDash;","&nvHarr;","&nvap;","&nvdash;","&nvge;","&nvgt;","&nvinfin;","&nvlArr;","&nvle;","&nvlt;","&nvltrie;","&nvrArr;","&nvrtrie;","&nvsim;","&nwArr;","&nwarhk;","&nwarr;","&nwarrow;","&nwnear;","&oS;","&oacute;","&oast;","&ocir;","&ocirc;","&ocy;","&odash;","&odblac;","&odiv;","&odot;","&odsold;","&oelig;","&ofcir;","&ofr;","&ogon;","&ograve;","&ogt;","&ohbar;","&ohm;","&oint;","&olarr;","&olcir;","&olcross;","&oline;","&olt;","&omacr;","&omega;","&omicron;","&omid;","&ominus;","&oopf;","&opar;","&operp;","&oplus;","&or;","&orarr;","&ord;","&order;","&orderof;","&ordf;","&ordm;","&origof;","&oror;","&orslope;","&orv;","&oscr;","&oslash;","&osol;","&otilde;","&otimes;","&otimesas;","&ouml;","&ovbar;","&par;","&para;","&parallel;","&parsim;","&parsl;","&part;","&pcy;","&percnt;","&period;","&permil;","&perp;","&pertenk;","&pfr;","&phi;","&phiv;","&phmmat;","&phone;","&pi;","&pitchfork;","&piv;","&planck;","&planckh;","&plankv;","&plus;","&plusacir;","&plusb;","&pluscir;","&plusdo;","&plusdu;","&pluse;","&plusmn;","&plussim;","&plustwo;","&pm;","&pointint;","&popf;","&pound;","&pr;","&prE;","&prap;","&prcue;","&pre;","&prec;","&precapprox;","&preccurlyeq;","&preceq;","&precnapprox;","&precneqq;","&precnsim;","&precsim;","&prime;","&primes;","&prnE;","&prnap;","&prnsim;","&prod;","&profalar;","&profline;","&profsurf;","&prop;","&propto;","&prsim;","&prurel;","&pscr;","&psi;","&puncsp;","&qfr;","&qint;","&qopf;","&qprime;","&qscr;","&quaternions;","&quatint;","&quest;","&questeq;","&quot;","&rAarr;","&rArr;","&rAtail;","&rBarr;","&rHar;","&race;","&racute;","&radic;","&raemptyv;","&rang;","&rangd;","&range;","&rangle;","&raquo;","&rarr;","&rarrap;","&rarrb;","&rarrbfs;","&rarrc;","&rarrfs;","&rarrhk;","&rarrlp;","&rarrpl;","&rarrsim;","&rarrtl;","&rarrw;","&ratail;","&ratio;","&rationals;","&rbarr;","&rbbrk;","&rbrace;","&rbrack;","&rbrke;","&rbrksld;","&rbrkslu;","&rcaron;","&rcedil;","&rceil;","&rcub;","&rcy;","&rdca;","&rdldhar;","&rdquo;","&rdquor;","&rdsh;","&real;","&realine;","&realpart;","&reals;","&rect;","&reg;","&rfisht;","&rfloor;","&rfr;","&rhard;","&rharu;","&rharul;","&rho;","&rhov;","&rightarrow;","&rightarrowtail;","&rightharpoondown;","&rightharpoonup;","&rightleftarrows;","&rightleftharpoons;","&rightrightarrows;","&rightsquigarrow;","&rightthreetimes;","&ring;","&risingdotseq;","&rlarr;","&rlhar;","&rlm;","&rmoust;","&rmoustache;","&rnmid;","&roang;","&roarr;","&robrk;","&ropar;","&ropf;","&roplus;","&rotimes;","&rpar;","&rpargt;","&rppolint;","&rrarr;","&rsaquo;","&rscr;","&rsh;","&rsqb;","&rsquo;","&rsquor;","&rthree;","&rtimes;","&rtri;","&rtrie;","&rtrif;","&rtriltri;","&ruluhar;","&rx;","&sacute;","&sbquo;","&sc;","&scE;","&scap;","&scaron;","&sccue;","&sce;","&scedil;","&scirc;","&scnE;","&scnap;","&scnsim;","&scpolint;","&scsim;","&scy;","&sdot;","&sdotb;","&sdote;","&seArr;","&searhk;","&searr;","&searrow;","&sect;","&semi;","&seswar;","&setminus;","&setmn;","&sext;","&sfr;","&sfrown;","&sharp;","&shchcy;","&shcy;","&shortmid;","&shortparallel;","&shy;","&sigma;","&sigmaf;","&sigmav;","&sim;","&simdot;","&sime;","&simeq;","&simg;","&simgE;","&siml;","&simlE;","&simne;","&simplus;","&simrarr;","&slarr;","&smallsetminus;","&smashp;","&smeparsl;","&smid;","&smile;","&smt;","&smte;","&smtes;","&softcy;","&sol;","&solb;","&solbar;","&sopf;","&spades;","&spadesuit;","&spar;","&sqcap;","&sqcaps;","&sqcup;","&sqcups;","&sqsub;","&sqsube;","&sqsubset;","&sqsubseteq;","&sqsup;","&sqsupe;","&sqsupset;","&sqsupseteq;","&squ;","&square;","&squarf;","&squf;","&srarr;","&sscr;","&ssetmn;","&ssmile;","&sstarf;","&star;","&starf;","&straightepsilon;","&straightphi;","&strns;","&sub;","&subE;","&subdot;","&sube;","&subedot;","&submult;","&subnE;","&subne;","&subplus;","&subrarr;","&subset;","&subseteq;","&subseteqq;","&subsetneq;","&subsetneqq;","&subsim;","&subsub;","&subsup;","&succ;","&succapprox;","&succcurlyeq;","&succeq;","&succnapprox;","&succneqq;","&succnsim;","&succsim;","&sum;","&sung;","&sup1;","&sup2;","&sup3;","&sup;","&supE;","&supdot;","&supdsub;","&supe;","&supedot;","&suphsol;","&suphsub;","&suplarr;","&supmult;","&supnE;","&supne;","&supplus;","&supset;","&supseteq;","&supseteqq;","&supsetneq;","&supsetneqq;","&supsim;","&supsub;","&supsup;","&swArr;","&swarhk;","&swarr;","&swarrow;","&swnwar;","&szlig;","&target;","&tau;","&tbrk;","&tcaron;","&tcedil;","&tcy;","&tdot;","&telrec;","&tfr;","&there4;","&therefore;","&theta;","&thetasym;","&thetav;","&thickapprox;","&thicksim;","&thinsp;","&thkap;","&thksim;","&thorn;","&tilde;","&times;","&timesb;","&timesbar;","&timesd;","&tint;","&toea;","&top;","&topbot;","&topcir;","&topf;","&topfork;","&tosa;","&tprime;","&trade;","&triangle;","&triangledown;","&triangleleft;","&trianglelefteq;","&triangleq;","&triangleright;","&trianglerighteq;","&tridot;","&trie;","&triminus;","&triplus;","&trisb;","&tritime;","&trpezium;","&tscr;","&tscy;","&tshcy;","&tstrok;","&twixt;","&twoheadleftarrow;","&twoheadrightarrow;","&uArr;","&uHar;","&uacute;","&uarr;","&ubrcy;","&ubreve;","&ucirc;","&ucy;","&udarr;","&udblac;","&udhar;","&ufisht;","&ufr;","&ugrave;","&uharl;","&uharr;","&uhblk;","&ulcorn;","&ulcorner;","&ulcrop;","&ultri;","&umacr;","&uml;","&uogon;","&uopf;","&uparrow;","&updownarrow;","&upharpoonleft;","&upharpoonright;","&uplus;","&upsi;","&upsih;","&upsilon;","&upuparrows;","&urcorn;","&urcorner;","&urcrop;","&uring;","&urtri;","&uscr;","&utdot;","&utilde;","&utri;","&utrif;","&uuarr;","&uuml;","&uwangle;","&vArr;","&vBar;","&vBarv;","&vDash;","&vangrt;","&varepsilon;","&varkappa;","&varnothing;","&varphi;","&varpi;","&varpropto;","&varr;","&varrho;","&varsigma;","&varsubsetneq;","&varsubsetneqq;","&varsupsetneq;","&varsupsetneqq;","&vartheta;","&vartriangleleft;","&vartriangleright;","&vcy;","&vdash;","&vee;","&veebar;","&veeeq;","&vellip;","&verbar;","&vert;","&vfr;","&vltri;","&vnsub;","&vnsup;","&vopf;","&vprop;","&vrtri;","&vscr;","&vsubnE;","&vsubne;","&vsupnE;","&vsupne;","&vzigzag;","&wcirc;","&wedbar;","&wedge;","&wedgeq;","&weierp;","&wfr;","&wopf;","&wp;","&wr;","&wreath;","&wscr;","&xcap;","&xcirc;","&xcup;","&xdtri;","&xfr;","&xhArr;","&xharr;","&xi;","&xlArr;","&xlarr;","&xmap;","&xnis;","&xodot;","&xopf;","&xoplus;","&xotime;","&xrArr;","&xrarr;","&xscr;","&xsqcup;","&xuplus;","&xutri;","&xvee;","&xwedge;","&yacute;","&yacy;","&ycirc;","&ycy;","&yen;","&yfr;","&yicy;","&yopf;","&yscr;","&yucy;","&yuml;","&zacute;","&zcaron;","&zcy;","&zdot;","&zeetrf;","&zeta;","&zfr;","&zhcy;","&zigrarr;","&zopf;","&zscr;","&zwj;","&zwnj;"]),t.s)
@@ -97430,7 +97430,7 @@ B.wP=new A.q(458789)
 B.wQ=new A.q(458790)
 B.wR=new A.q(458791)
 B.wS=new A.q(458792)
-B.l1=new A.q(458793)
+B.l0=new A.q(458793)
 B.wT=new A.q(458794)
 B.wU=new A.q(458795)
 B.wV=new A.q(458796)
@@ -97615,7 +97615,7 @@ B.z3=new A.q(787083)
 B.z4=new A.q(787084)
 B.z5=new A.q(787101)
 B.z6=new A.q(787103)
-B.Od=new A.bH([16,B.vG,17,B.vH,18,B.eZ,19,B.vI,20,B.vJ,21,B.vK,22,B.vL,23,B.vM,24,B.vN,65666,B.yy,65667,B.yz,65717,B.yA,392961,B.vO,392962,B.vP,392963,B.vQ,392964,B.vR,392965,B.vS,392966,B.vT,392967,B.vU,392968,B.vV,392969,B.vW,392970,B.vX,392971,B.vY,392972,B.vZ,392973,B.w_,392974,B.w0,392975,B.w1,392976,B.w2,392977,B.w3,392978,B.w4,392979,B.w5,392980,B.w6,392981,B.w7,392982,B.w8,392983,B.w9,392984,B.wa,392985,B.wb,392986,B.wc,392987,B.wd,392988,B.we,392989,B.wf,392990,B.wg,392991,B.wh,458752,B.Qt,458753,B.Qu,458754,B.Qv,458755,B.Qw,458756,B.wi,458757,B.wj,458758,B.wk,458759,B.wl,458760,B.wm,458761,B.wn,458762,B.wo,458763,B.wp,458764,B.wq,458765,B.wr,458766,B.ws,458767,B.wt,458768,B.wu,458769,B.wv,458770,B.ww,458771,B.wx,458772,B.wy,458773,B.wz,458774,B.wA,458775,B.wB,458776,B.wC,458777,B.wD,458778,B.wE,458779,B.wF,458780,B.wG,458781,B.wH,458782,B.wI,458783,B.wJ,458784,B.wK,458785,B.wL,458786,B.wM,458787,B.wN,458788,B.wO,458789,B.wP,458790,B.wQ,458791,B.wR,458792,B.wS,458793,B.l1,458794,B.wT,458795,B.wU,458796,B.wV,458797,B.wW,458798,B.wX,458799,B.wY,458800,B.wZ,458801,B.x_,458803,B.x0,458804,B.x1,458805,B.x2,458806,B.x3,458807,B.x4,458808,B.x5,458809,B.d_,458810,B.x6,458811,B.x7,458812,B.x8,458813,B.x9,458814,B.xa,458815,B.xb,458816,B.xc,458817,B.xd,458818,B.xe,458819,B.xf,458820,B.xg,458821,B.xh,458822,B.xi,458823,B.i_,458824,B.xj,458825,B.xk,458826,B.xl,458827,B.xm,458828,B.xn,458829,B.xo,458830,B.xp,458831,B.xq,458832,B.xr,458833,B.xs,458834,B.xt,458835,B.i0,458836,B.xu,458837,B.xv,458838,B.xw,458839,B.xx,458840,B.xy,458841,B.xz,458842,B.xA,458843,B.xB,458844,B.xC,458845,B.xD,458846,B.xE,458847,B.xF,458848,B.xG,458849,B.xH,458850,B.xI,458851,B.xJ,458852,B.xK,458853,B.xL,458854,B.xM,458855,B.xN,458856,B.xO,458857,B.xP,458858,B.xQ,458859,B.xR,458860,B.xS,458861,B.xT,458862,B.xU,458863,B.xV,458864,B.xW,458865,B.xX,458866,B.xY,458867,B.xZ,458868,B.y_,458869,B.y0,458871,B.y1,458873,B.y2,458874,B.y3,458875,B.y4,458876,B.y5,458877,B.y6,458878,B.y7,458879,B.y8,458880,B.y9,458881,B.ya,458885,B.yb,458887,B.yc,458888,B.yd,458889,B.ye,458890,B.yf,458891,B.yg,458896,B.yh,458897,B.yi,458898,B.yj,458899,B.yk,458900,B.yl,458907,B.ym,458915,B.yn,458934,B.yo,458935,B.yp,458939,B.yq,458960,B.yr,458961,B.ys,458962,B.yt,458963,B.yu,458964,B.yv,458967,B.Qx,458968,B.yw,458969,B.yx,458976,B.dE,458977,B.dF,458978,B.dG,458979,B.dH,458980,B.f_,458981,B.f0,458982,B.dI,458983,B.f1,786528,B.Qy,786529,B.Qz,786543,B.yB,786544,B.yC,786546,B.QA,786547,B.QB,786548,B.QC,786549,B.QD,786553,B.QE,786554,B.QF,786563,B.QG,786572,B.QH,786573,B.QI,786580,B.QJ,786588,B.QK,786589,B.QL,786608,B.yD,786609,B.yE,786610,B.yF,786611,B.yG,786612,B.yH,786613,B.yI,786614,B.yJ,786615,B.yK,786616,B.yL,786637,B.yM,786639,B.QM,786661,B.QN,786819,B.yN,786820,B.QO,786822,B.QP,786826,B.yO,786829,B.QQ,786830,B.QR,786834,B.yP,786836,B.yQ,786838,B.QS,786844,B.QT,786846,B.QU,786847,B.yR,786850,B.yS,786855,B.QV,786859,B.QW,786862,B.QX,786865,B.yT,786871,B.QY,786891,B.yU,786945,B.QZ,786947,B.R_,786951,B.R0,786952,B.R1,786977,B.yV,786979,B.yW,786980,B.yX,786981,B.yY,786982,B.yZ,786983,B.z_,786986,B.z0,786989,B.R2,786990,B.R3,786994,B.z1,787065,B.R4,787081,B.z2,787083,B.z3,787084,B.z4,787101,B.z5,787103,B.z6],A.ad("bH<k,q>"))
+B.Od=new A.bH([16,B.vG,17,B.vH,18,B.eZ,19,B.vI,20,B.vJ,21,B.vK,22,B.vL,23,B.vM,24,B.vN,65666,B.yy,65667,B.yz,65717,B.yA,392961,B.vO,392962,B.vP,392963,B.vQ,392964,B.vR,392965,B.vS,392966,B.vT,392967,B.vU,392968,B.vV,392969,B.vW,392970,B.vX,392971,B.vY,392972,B.vZ,392973,B.w_,392974,B.w0,392975,B.w1,392976,B.w2,392977,B.w3,392978,B.w4,392979,B.w5,392980,B.w6,392981,B.w7,392982,B.w8,392983,B.w9,392984,B.wa,392985,B.wb,392986,B.wc,392987,B.wd,392988,B.we,392989,B.wf,392990,B.wg,392991,B.wh,458752,B.Qt,458753,B.Qu,458754,B.Qv,458755,B.Qw,458756,B.wi,458757,B.wj,458758,B.wk,458759,B.wl,458760,B.wm,458761,B.wn,458762,B.wo,458763,B.wp,458764,B.wq,458765,B.wr,458766,B.ws,458767,B.wt,458768,B.wu,458769,B.wv,458770,B.ww,458771,B.wx,458772,B.wy,458773,B.wz,458774,B.wA,458775,B.wB,458776,B.wC,458777,B.wD,458778,B.wE,458779,B.wF,458780,B.wG,458781,B.wH,458782,B.wI,458783,B.wJ,458784,B.wK,458785,B.wL,458786,B.wM,458787,B.wN,458788,B.wO,458789,B.wP,458790,B.wQ,458791,B.wR,458792,B.wS,458793,B.l0,458794,B.wT,458795,B.wU,458796,B.wV,458797,B.wW,458798,B.wX,458799,B.wY,458800,B.wZ,458801,B.x_,458803,B.x0,458804,B.x1,458805,B.x2,458806,B.x3,458807,B.x4,458808,B.x5,458809,B.d_,458810,B.x6,458811,B.x7,458812,B.x8,458813,B.x9,458814,B.xa,458815,B.xb,458816,B.xc,458817,B.xd,458818,B.xe,458819,B.xf,458820,B.xg,458821,B.xh,458822,B.xi,458823,B.i_,458824,B.xj,458825,B.xk,458826,B.xl,458827,B.xm,458828,B.xn,458829,B.xo,458830,B.xp,458831,B.xq,458832,B.xr,458833,B.xs,458834,B.xt,458835,B.i0,458836,B.xu,458837,B.xv,458838,B.xw,458839,B.xx,458840,B.xy,458841,B.xz,458842,B.xA,458843,B.xB,458844,B.xC,458845,B.xD,458846,B.xE,458847,B.xF,458848,B.xG,458849,B.xH,458850,B.xI,458851,B.xJ,458852,B.xK,458853,B.xL,458854,B.xM,458855,B.xN,458856,B.xO,458857,B.xP,458858,B.xQ,458859,B.xR,458860,B.xS,458861,B.xT,458862,B.xU,458863,B.xV,458864,B.xW,458865,B.xX,458866,B.xY,458867,B.xZ,458868,B.y_,458869,B.y0,458871,B.y1,458873,B.y2,458874,B.y3,458875,B.y4,458876,B.y5,458877,B.y6,458878,B.y7,458879,B.y8,458880,B.y9,458881,B.ya,458885,B.yb,458887,B.yc,458888,B.yd,458889,B.ye,458890,B.yf,458891,B.yg,458896,B.yh,458897,B.yi,458898,B.yj,458899,B.yk,458900,B.yl,458907,B.ym,458915,B.yn,458934,B.yo,458935,B.yp,458939,B.yq,458960,B.yr,458961,B.ys,458962,B.yt,458963,B.yu,458964,B.yv,458967,B.Qx,458968,B.yw,458969,B.yx,458976,B.dE,458977,B.dF,458978,B.dG,458979,B.dH,458980,B.f_,458981,B.f0,458982,B.dI,458983,B.f1,786528,B.Qy,786529,B.Qz,786543,B.yB,786544,B.yC,786546,B.QA,786547,B.QB,786548,B.QC,786549,B.QD,786553,B.QE,786554,B.QF,786563,B.QG,786572,B.QH,786573,B.QI,786580,B.QJ,786588,B.QK,786589,B.QL,786608,B.yD,786609,B.yE,786610,B.yF,786611,B.yG,786612,B.yH,786613,B.yI,786614,B.yJ,786615,B.yK,786616,B.yL,786637,B.yM,786639,B.QM,786661,B.QN,786819,B.yN,786820,B.QO,786822,B.QP,786826,B.yO,786829,B.QQ,786830,B.QR,786834,B.yP,786836,B.yQ,786838,B.QS,786844,B.QT,786846,B.QU,786847,B.yR,786850,B.yS,786855,B.QV,786859,B.QW,786862,B.QX,786865,B.yT,786871,B.QY,786891,B.yU,786945,B.QZ,786947,B.R_,786951,B.R0,786952,B.R1,786977,B.yV,786979,B.yW,786980,B.yX,786981,B.yY,786982,B.yZ,786983,B.z_,786986,B.z0,786989,B.R2,786990,B.R3,786994,B.z1,787065,B.R4,787081,B.z2,787083,B.z3,787084,B.z4,787101,B.z5,787103,B.z6],A.ad("bH<k,q>"))
 B.Of=new A.bH([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"FontWeight.w400",4,"FontWeight.w500",5,"FontWeight.w600",6,"FontWeight.w700",7,"FontWeight.w800",8,"FontWeight.w900"],A.ad("bH<k,l>"))
 B.KY=A.a(s(["BU","DD","FX","TP","YD","ZR"]),t.s)
 B.cg=new A.b8(6,{BU:"MM",DD:"DE",FX:"FR",TP:"TL",YD:"YE",ZR:"CD"},B.KY,t.li)
@@ -97666,7 +97666,7 @@ B.uc=new A.f(4294971395)
 B.pF=new A.f(4294968580)
 B.rJ=new A.f(4294970634)
 B.rK=new A.f(4294970635)
-B.kC=new A.f(4294968321)
+B.kB=new A.f(4294968321)
 B.qZ=new A.f(4294969857)
 B.rR=new A.f(4294970642)
 B.q2=new A.f(4294969091)
@@ -97753,7 +97753,7 @@ B.qm=new A.f(4294969111)
 B.cY=new A.f(4294968070)
 B.pp=new A.f(4294967560)
 B.t9=new A.f(4294970661)
-B.kD=new A.f(4294968327)
+B.kC=new A.f(4294968327)
 B.ta=new A.f(4294970662)
 B.qi=new A.f(4294969107)
 B.qn=new A.f(4294969112)
@@ -97917,7 +97917,7 @@ B.qs=new A.f(4294969117)
 B.pO=new A.f(4294968589)
 B.pP=new A.f(4294968590)
 B.tO=new A.f(4294970702)
-B.Oy=new A.b8(301,{AVRInput:B.rH,AVRPower:B.rI,Accel:B.pn,Accept:B.pC,Again:B.pD,AllCandidates:B.q0,Alphanumeric:B.q1,AltGraph:B.hE,AppSwitch:B.ua,ArrowDown:B.bV,ArrowLeft:B.bF,ArrowRight:B.bG,ArrowUp:B.bW,Attn:B.pE,AudioBalanceLeft:B.rA,AudioBalanceRight:B.rB,AudioBassBoostDown:B.rC,AudioBassBoostToggle:B.u1,AudioBassBoostUp:B.rD,AudioFaderFront:B.rE,AudioFaderRear:B.rF,AudioSurroundModeNext:B.rG,AudioTrebleDown:B.u2,AudioTrebleUp:B.u3,AudioVolumeDown:B.rb,AudioVolumeMute:B.rd,AudioVolumeUp:B.rc,Backspace:B.br,BrightnessDown:B.pQ,BrightnessUp:B.pR,BrowserBack:B.rt,BrowserFavorites:B.ru,BrowserForward:B.rv,BrowserHome:B.rw,BrowserRefresh:B.rx,BrowserSearch:B.ry,BrowserStop:B.rz,Call:B.ub,Camera:B.pS,CameraFocus:B.uc,Cancel:B.pF,CapsLock:B.eJ,ChannelDown:B.rJ,ChannelUp:B.rK,Clear:B.kC,Close:B.qZ,ClosedCaptionToggle:B.rR,CodeInput:B.q2,ColorF0Red:B.rL,ColorF1Green:B.rM,ColorF2Yellow:B.rN,ColorF3Blue:B.rO,ColorF4Grey:B.rP,ColorF5Brown:B.rQ,Compose:B.q3,ContextMenu:B.pG,Convert:B.q4,Copy:B.pu,CrSel:B.pv,Cut:B.pw,DVR:B.tP,Delete:B.bd,Dimmer:B.rS,DisplaySwap:B.rT,Eisu:B.qj,Eject:B.pT,End:B.cX,EndCall:B.ud,Enter:B.hD,EraseEof:B.px,Esc:B.eI,Escape:B.eI,ExSel:B.py,Execute:B.pH,Exit:B.rU,F1:B.qt,F10:B.qC,F11:B.qD,F12:B.qE,F13:B.qF,F14:B.qG,F15:B.qH,F16:B.qI,F17:B.qJ,F18:B.qK,F19:B.qL,F2:B.qu,F20:B.qM,F21:B.qN,F22:B.qO,F23:B.qP,F24:B.qQ,F3:B.qv,F4:B.qw,F5:B.qx,F6:B.qy,F7:B.qz,F8:B.qA,F9:B.qB,FavoriteClear0:B.rV,FavoriteClear1:B.rW,FavoriteClear2:B.rX,FavoriteClear3:B.rY,FavoriteRecall0:B.rZ,FavoriteRecall1:B.t_,FavoriteRecall2:B.t0,FavoriteRecall3:B.t1,FavoriteStore0:B.t2,FavoriteStore1:B.t3,FavoriteStore2:B.t4,FavoriteStore3:B.t5,FinalMode:B.q5,Find:B.pI,Fn:B.kB,FnLock:B.po,GoBack:B.ue,GoHome:B.uf,GroupFirst:B.q6,GroupLast:B.q7,GroupNext:B.q8,GroupPrevious:B.q9,Guide:B.t6,GuideNextDay:B.t7,GuidePreviousDay:B.t8,HangulMode:B.qg,HanjaMode:B.qh,Hankaku:B.qk,HeadsetHook:B.ug,Help:B.pJ,Hibernate:B.pY,Hiragana:B.ql,HiraganaKatakana:B.qm,Home:B.cY,Hyper:B.pp,Info:B.t9,Insert:B.kD,InstantReplay:B.ta,JunjaMode:B.qi,KanaMode:B.qn,KanjiMode:B.qo,Katakana:B.qp,Key11:B.uM,Key12:B.uN,LastNumberRedial:B.uh,LaunchApplication1:B.rj,LaunchApplication2:B.re,LaunchAssistant:B.rr,LaunchCalendar:B.rf,LaunchContacts:B.rp,LaunchControlPanel:B.rs,LaunchMail:B.rg,LaunchMediaPlayer:B.rh,LaunchMusicPlayer:B.ri,LaunchPhone:B.rq,LaunchScreenSaver:B.rk,LaunchSpreadsheet:B.rl,LaunchWebBrowser:B.rm,LaunchWebCam:B.rn,LaunchWordProcessor:B.ro,Link:B.tb,ListProgram:B.tc,LiveContent:B.td,Lock:B.te,LogOff:B.pU,MailForward:B.r_,MailReply:B.r0,MailSend:B.r1,MannerMode:B.uj,MediaApps:B.tf,MediaAudioTrack:B.tQ,MediaClose:B.u0,MediaFastForward:B.tg,MediaLast:B.th,MediaPause:B.ti,MediaPlay:B.tj,MediaPlayPause:B.r2,MediaRecord:B.tk,MediaRewind:B.tl,MediaSkip:B.tm,MediaSkipBackward:B.tR,MediaSkipForward:B.tS,MediaStepBackward:B.tT,MediaStepForward:B.tU,MediaStop:B.r3,MediaTopMenu:B.tV,MediaTrackNext:B.r4,MediaTrackPrevious:B.r5,MicrophoneToggle:B.u4,MicrophoneVolumeDown:B.u5,MicrophoneVolumeMute:B.u7,MicrophoneVolumeUp:B.u6,ModeChange:B.qa,NavigateIn:B.tW,NavigateNext:B.tX,NavigateOut:B.tY,NavigatePrevious:B.tZ,New:B.r6,NextCandidate:B.qb,NextFavoriteChannel:B.tn,NextUserProfile:B.to,NonConvert:B.qc,Notification:B.ui,NumLock:B.hF,OnDemand:B.tp,Open:B.r7,PageDown:B.eK,PageUp:B.eL,Pairing:B.u_,Paste:B.pz,Pause:B.pK,PinPDown:B.tq,PinPMove:B.tr,PinPToggle:B.ts,PinPUp:B.tt,Play:B.pL,PlaySpeedDown:B.tu,PlaySpeedReset:B.tv,PlaySpeedUp:B.tw,Power:B.pV,PowerOff:B.pW,PreviousCandidate:B.qd,Print:B.r8,PrintScreen:B.pX,Process:B.qe,Props:B.pM,RandomToggle:B.tx,RcLowBattery:B.ty,RecordSpeedNext:B.tz,Redo:B.pA,RfBypass:B.tA,Romaji:B.qq,STBInput:B.tF,STBPower:B.tG,Save:B.r9,ScanChannelsToggle:B.tB,ScreenModeNext:B.tC,ScrollLock:B.hG,Select:B.pN,Settings:B.tD,ShiftLevel5:B.pt,SingleCandidate:B.qf,Soft1:B.qR,Soft2:B.qS,Soft3:B.qT,Soft4:B.qU,Soft5:B.qV,Soft6:B.qW,Soft7:B.qX,Soft8:B.qY,SpeechCorrectionList:B.u8,SpeechInputToggle:B.u9,SpellCheck:B.ra,SplitScreenToggle:B.tE,Standby:B.pZ,Subtitle:B.tH,Super:B.pq,Symbol:B.pr,SymbolLock:B.ps,TV:B.tJ,TV3DMode:B.ul,TVAntennaCable:B.um,TVAudioDescription:B.un,TVAudioDescriptionMixDown:B.uo,TVAudioDescriptionMixUp:B.up,TVContentsMenu:B.uq,TVDataService:B.ur,TVInput:B.tK,TVInputComponent1:B.us,TVInputComponent2:B.ut,TVInputComposite1:B.uu,TVInputComposite2:B.uv,TVInputHDMI1:B.uw,TVInputHDMI2:B.ux,TVInputHDMI3:B.uy,TVInputHDMI4:B.uz,TVInputVGA1:B.uA,TVMediaContext:B.uB,TVNetwork:B.uC,TVNumberEntry:B.uD,TVPower:B.tL,TVRadioService:B.uE,TVSatellite:B.uF,TVSatelliteBS:B.uG,TVSatelliteCS:B.uH,TVSatelliteToggle:B.uI,TVTerrestrialAnalog:B.uJ,TVTerrestrialDigital:B.uK,TVTimer:B.uL,Tab:B.hC,Teletext:B.tI,Undo:B.pB,Unidentified:B.pm,VideoModeNext:B.tM,VoiceDial:B.uk,WakeUp:B.q_,Wink:B.tN,Zenkaku:B.qr,ZenkakuHankaku:B.qs,ZoomIn:B.pO,ZoomOut:B.pP,ZoomToggle:B.tO},B.p_,A.ad("b8<l,f>"))
+B.Oy=new A.b8(301,{AVRInput:B.rH,AVRPower:B.rI,Accel:B.pn,Accept:B.pC,Again:B.pD,AllCandidates:B.q0,Alphanumeric:B.q1,AltGraph:B.hE,AppSwitch:B.ua,ArrowDown:B.bV,ArrowLeft:B.bF,ArrowRight:B.bG,ArrowUp:B.bW,Attn:B.pE,AudioBalanceLeft:B.rA,AudioBalanceRight:B.rB,AudioBassBoostDown:B.rC,AudioBassBoostToggle:B.u1,AudioBassBoostUp:B.rD,AudioFaderFront:B.rE,AudioFaderRear:B.rF,AudioSurroundModeNext:B.rG,AudioTrebleDown:B.u2,AudioTrebleUp:B.u3,AudioVolumeDown:B.rb,AudioVolumeMute:B.rd,AudioVolumeUp:B.rc,Backspace:B.br,BrightnessDown:B.pQ,BrightnessUp:B.pR,BrowserBack:B.rt,BrowserFavorites:B.ru,BrowserForward:B.rv,BrowserHome:B.rw,BrowserRefresh:B.rx,BrowserSearch:B.ry,BrowserStop:B.rz,Call:B.ub,Camera:B.pS,CameraFocus:B.uc,Cancel:B.pF,CapsLock:B.eJ,ChannelDown:B.rJ,ChannelUp:B.rK,Clear:B.kB,Close:B.qZ,ClosedCaptionToggle:B.rR,CodeInput:B.q2,ColorF0Red:B.rL,ColorF1Green:B.rM,ColorF2Yellow:B.rN,ColorF3Blue:B.rO,ColorF4Grey:B.rP,ColorF5Brown:B.rQ,Compose:B.q3,ContextMenu:B.pG,Convert:B.q4,Copy:B.pu,CrSel:B.pv,Cut:B.pw,DVR:B.tP,Delete:B.bd,Dimmer:B.rS,DisplaySwap:B.rT,Eisu:B.qj,Eject:B.pT,End:B.cX,EndCall:B.ud,Enter:B.hD,EraseEof:B.px,Esc:B.eI,Escape:B.eI,ExSel:B.py,Execute:B.pH,Exit:B.rU,F1:B.qt,F10:B.qC,F11:B.qD,F12:B.qE,F13:B.qF,F14:B.qG,F15:B.qH,F16:B.qI,F17:B.qJ,F18:B.qK,F19:B.qL,F2:B.qu,F20:B.qM,F21:B.qN,F22:B.qO,F23:B.qP,F24:B.qQ,F3:B.qv,F4:B.qw,F5:B.qx,F6:B.qy,F7:B.qz,F8:B.qA,F9:B.qB,FavoriteClear0:B.rV,FavoriteClear1:B.rW,FavoriteClear2:B.rX,FavoriteClear3:B.rY,FavoriteRecall0:B.rZ,FavoriteRecall1:B.t_,FavoriteRecall2:B.t0,FavoriteRecall3:B.t1,FavoriteStore0:B.t2,FavoriteStore1:B.t3,FavoriteStore2:B.t4,FavoriteStore3:B.t5,FinalMode:B.q5,Find:B.pI,Fn:B.kA,FnLock:B.po,GoBack:B.ue,GoHome:B.uf,GroupFirst:B.q6,GroupLast:B.q7,GroupNext:B.q8,GroupPrevious:B.q9,Guide:B.t6,GuideNextDay:B.t7,GuidePreviousDay:B.t8,HangulMode:B.qg,HanjaMode:B.qh,Hankaku:B.qk,HeadsetHook:B.ug,Help:B.pJ,Hibernate:B.pY,Hiragana:B.ql,HiraganaKatakana:B.qm,Home:B.cY,Hyper:B.pp,Info:B.t9,Insert:B.kC,InstantReplay:B.ta,JunjaMode:B.qi,KanaMode:B.qn,KanjiMode:B.qo,Katakana:B.qp,Key11:B.uM,Key12:B.uN,LastNumberRedial:B.uh,LaunchApplication1:B.rj,LaunchApplication2:B.re,LaunchAssistant:B.rr,LaunchCalendar:B.rf,LaunchContacts:B.rp,LaunchControlPanel:B.rs,LaunchMail:B.rg,LaunchMediaPlayer:B.rh,LaunchMusicPlayer:B.ri,LaunchPhone:B.rq,LaunchScreenSaver:B.rk,LaunchSpreadsheet:B.rl,LaunchWebBrowser:B.rm,LaunchWebCam:B.rn,LaunchWordProcessor:B.ro,Link:B.tb,ListProgram:B.tc,LiveContent:B.td,Lock:B.te,LogOff:B.pU,MailForward:B.r_,MailReply:B.r0,MailSend:B.r1,MannerMode:B.uj,MediaApps:B.tf,MediaAudioTrack:B.tQ,MediaClose:B.u0,MediaFastForward:B.tg,MediaLast:B.th,MediaPause:B.ti,MediaPlay:B.tj,MediaPlayPause:B.r2,MediaRecord:B.tk,MediaRewind:B.tl,MediaSkip:B.tm,MediaSkipBackward:B.tR,MediaSkipForward:B.tS,MediaStepBackward:B.tT,MediaStepForward:B.tU,MediaStop:B.r3,MediaTopMenu:B.tV,MediaTrackNext:B.r4,MediaTrackPrevious:B.r5,MicrophoneToggle:B.u4,MicrophoneVolumeDown:B.u5,MicrophoneVolumeMute:B.u7,MicrophoneVolumeUp:B.u6,ModeChange:B.qa,NavigateIn:B.tW,NavigateNext:B.tX,NavigateOut:B.tY,NavigatePrevious:B.tZ,New:B.r6,NextCandidate:B.qb,NextFavoriteChannel:B.tn,NextUserProfile:B.to,NonConvert:B.qc,Notification:B.ui,NumLock:B.hF,OnDemand:B.tp,Open:B.r7,PageDown:B.eK,PageUp:B.eL,Pairing:B.u_,Paste:B.pz,Pause:B.pK,PinPDown:B.tq,PinPMove:B.tr,PinPToggle:B.ts,PinPUp:B.tt,Play:B.pL,PlaySpeedDown:B.tu,PlaySpeedReset:B.tv,PlaySpeedUp:B.tw,Power:B.pV,PowerOff:B.pW,PreviousCandidate:B.qd,Print:B.r8,PrintScreen:B.pX,Process:B.qe,Props:B.pM,RandomToggle:B.tx,RcLowBattery:B.ty,RecordSpeedNext:B.tz,Redo:B.pA,RfBypass:B.tA,Romaji:B.qq,STBInput:B.tF,STBPower:B.tG,Save:B.r9,ScanChannelsToggle:B.tB,ScreenModeNext:B.tC,ScrollLock:B.hG,Select:B.pN,Settings:B.tD,ShiftLevel5:B.pt,SingleCandidate:B.qf,Soft1:B.qR,Soft2:B.qS,Soft3:B.qT,Soft4:B.qU,Soft5:B.qV,Soft6:B.qW,Soft7:B.qX,Soft8:B.qY,SpeechCorrectionList:B.u8,SpeechInputToggle:B.u9,SpellCheck:B.ra,SplitScreenToggle:B.tE,Standby:B.pZ,Subtitle:B.tH,Super:B.pq,Symbol:B.pr,SymbolLock:B.ps,TV:B.tJ,TV3DMode:B.ul,TVAntennaCable:B.um,TVAudioDescription:B.un,TVAudioDescriptionMixDown:B.uo,TVAudioDescriptionMixUp:B.up,TVContentsMenu:B.uq,TVDataService:B.ur,TVInput:B.tK,TVInputComponent1:B.us,TVInputComponent2:B.ut,TVInputComposite1:B.uu,TVInputComposite2:B.uv,TVInputHDMI1:B.uw,TVInputHDMI2:B.ux,TVInputHDMI3:B.uy,TVInputHDMI4:B.uz,TVInputVGA1:B.uA,TVMediaContext:B.uB,TVNetwork:B.uC,TVNumberEntry:B.uD,TVPower:B.tL,TVRadioService:B.uE,TVSatellite:B.uF,TVSatelliteBS:B.uG,TVSatelliteCS:B.uH,TVSatelliteToggle:B.uI,TVTerrestrialAnalog:B.uJ,TVTerrestrialDigital:B.uK,TVTimer:B.uL,Tab:B.hC,Teletext:B.tI,Undo:B.pB,Unidentified:B.pm,VideoModeNext:B.tM,VoiceDial:B.uk,WakeUp:B.q_,Wink:B.tN,Zenkaku:B.qr,ZenkakuHankaku:B.qs,ZoomIn:B.pO,ZoomOut:B.pP,ZoomToggle:B.tO},B.p_,A.ad("b8<l,f>"))
 B.Oz=new A.b8(301,{AVRInput:4294970632,AVRPower:4294970633,Accel:4294967553,Accept:4294968577,Again:4294968578,AllCandidates:4294969089,Alphanumeric:4294969090,AltGraph:4294967555,AppSwitch:4294971393,ArrowDown:4294968065,ArrowLeft:4294968066,ArrowRight:4294968067,ArrowUp:4294968068,Attn:4294968579,AudioBalanceLeft:4294970625,AudioBalanceRight:4294970626,AudioBassBoostDown:4294970627,AudioBassBoostToggle:4294970882,AudioBassBoostUp:4294970628,AudioFaderFront:4294970629,AudioFaderRear:4294970630,AudioSurroundModeNext:4294970631,AudioTrebleDown:4294970884,AudioTrebleUp:4294970885,AudioVolumeDown:4294969871,AudioVolumeMute:4294969873,AudioVolumeUp:4294969872,Backspace:4294967304,BrightnessDown:4294968833,BrightnessUp:4294968834,BrowserBack:4294970369,BrowserFavorites:4294970370,BrowserForward:4294970371,BrowserHome:4294970372,BrowserRefresh:4294970373,BrowserSearch:4294970374,BrowserStop:4294970375,Call:4294971394,Camera:4294968835,CameraFocus:4294971395,Cancel:4294968580,CapsLock:4294967556,ChannelDown:4294970634,ChannelUp:4294970635,Clear:4294968321,Close:4294969857,ClosedCaptionToggle:4294970642,CodeInput:4294969091,ColorF0Red:4294970636,ColorF1Green:4294970637,ColorF2Yellow:4294970638,ColorF3Blue:4294970639,ColorF4Grey:4294970640,ColorF5Brown:4294970641,Compose:4294969092,ContextMenu:4294968581,Convert:4294969093,Copy:4294968322,CrSel:4294968323,Cut:4294968324,DVR:4294970703,Delete:4294967423,Dimmer:4294970643,DisplaySwap:4294970644,Eisu:4294969108,Eject:4294968836,End:4294968069,EndCall:4294971396,Enter:4294967309,EraseEof:4294968325,Esc:4294967323,Escape:4294967323,ExSel:4294968326,Execute:4294968582,Exit:4294970645,F1:4294969345,F10:4294969354,F11:4294969355,F12:4294969356,F13:4294969357,F14:4294969358,F15:4294969359,F16:4294969360,F17:4294969361,F18:4294969362,F19:4294969363,F2:4294969346,F20:4294969364,F21:4294969365,F22:4294969366,F23:4294969367,F24:4294969368,F3:4294969347,F4:4294969348,F5:4294969349,F6:4294969350,F7:4294969351,F8:4294969352,F9:4294969353,FavoriteClear0:4294970646,FavoriteClear1:4294970647,FavoriteClear2:4294970648,FavoriteClear3:4294970649,FavoriteRecall0:4294970650,FavoriteRecall1:4294970651,FavoriteRecall2:4294970652,FavoriteRecall3:4294970653,FavoriteStore0:4294970654,FavoriteStore1:4294970655,FavoriteStore2:4294970656,FavoriteStore3:4294970657,FinalMode:4294969094,Find:4294968583,Fn:4294967558,FnLock:4294967559,GoBack:4294971397,GoHome:4294971398,GroupFirst:4294969095,GroupLast:4294969096,GroupNext:4294969097,GroupPrevious:4294969098,Guide:4294970658,GuideNextDay:4294970659,GuidePreviousDay:4294970660,HangulMode:4294969105,HanjaMode:4294969106,Hankaku:4294969109,HeadsetHook:4294971399,Help:4294968584,Hibernate:4294968841,Hiragana:4294969110,HiraganaKatakana:4294969111,Home:4294968070,Hyper:4294967560,Info:4294970661,Insert:4294968327,InstantReplay:4294970662,JunjaMode:4294969107,KanaMode:4294969112,KanjiMode:4294969113,Katakana:4294969114,Key11:4294971905,Key12:4294971906,LastNumberRedial:4294971400,LaunchApplication1:4294970118,LaunchApplication2:4294970113,LaunchAssistant:4294970126,LaunchCalendar:4294970114,LaunchContacts:4294970124,LaunchControlPanel:4294970127,LaunchMail:4294970115,LaunchMediaPlayer:4294970116,LaunchMusicPlayer:4294970117,LaunchPhone:4294970125,LaunchScreenSaver:4294970119,LaunchSpreadsheet:4294970120,LaunchWebBrowser:4294970121,LaunchWebCam:4294970122,LaunchWordProcessor:4294970123,Link:4294970663,ListProgram:4294970664,LiveContent:4294970665,Lock:4294970666,LogOff:4294968837,MailForward:4294969858,MailReply:4294969859,MailSend:4294969860,MannerMode:4294971402,MediaApps:4294970667,MediaAudioTrack:4294970704,MediaClose:4294970715,MediaFastForward:4294970668,MediaLast:4294970669,MediaPause:4294970670,MediaPlay:4294970671,MediaPlayPause:4294969861,MediaRecord:4294970672,MediaRewind:4294970673,MediaSkip:4294970674,MediaSkipBackward:4294970705,MediaSkipForward:4294970706,MediaStepBackward:4294970707,MediaStepForward:4294970708,MediaStop:4294969863,MediaTopMenu:4294970709,MediaTrackNext:4294969864,MediaTrackPrevious:4294969865,MicrophoneToggle:4294970886,MicrophoneVolumeDown:4294970887,MicrophoneVolumeMute:4294970889,MicrophoneVolumeUp:4294970888,ModeChange:4294969099,NavigateIn:4294970710,NavigateNext:4294970711,NavigateOut:4294970712,NavigatePrevious:4294970713,New:4294969866,NextCandidate:4294969100,NextFavoriteChannel:4294970675,NextUserProfile:4294970676,NonConvert:4294969101,Notification:4294971401,NumLock:4294967562,OnDemand:4294970677,Open:4294969867,PageDown:4294968071,PageUp:4294968072,Pairing:4294970714,Paste:4294968328,Pause:4294968585,PinPDown:4294970678,PinPMove:4294970679,PinPToggle:4294970680,PinPUp:4294970681,Play:4294968586,PlaySpeedDown:4294970682,PlaySpeedReset:4294970683,PlaySpeedUp:4294970684,Power:4294968838,PowerOff:4294968839,PreviousCandidate:4294969102,Print:4294969868,PrintScreen:4294968840,Process:4294969103,Props:4294968587,RandomToggle:4294970685,RcLowBattery:4294970686,RecordSpeedNext:4294970687,Redo:4294968329,RfBypass:4294970688,Romaji:4294969115,STBInput:4294970693,STBPower:4294970694,Save:4294969869,ScanChannelsToggle:4294970689,ScreenModeNext:4294970690,ScrollLock:4294967564,Select:4294968588,Settings:4294970691,ShiftLevel5:4294967569,SingleCandidate:4294969104,Soft1:4294969601,Soft2:4294969602,Soft3:4294969603,Soft4:4294969604,Soft5:4294969605,Soft6:4294969606,Soft7:4294969607,Soft8:4294969608,SpeechCorrectionList:4294971137,SpeechInputToggle:4294971138,SpellCheck:4294969870,SplitScreenToggle:4294970692,Standby:4294968842,Subtitle:4294970695,Super:4294967566,Symbol:4294967567,SymbolLock:4294967568,TV:4294970697,TV3DMode:4294971649,TVAntennaCable:4294971650,TVAudioDescription:4294971651,TVAudioDescriptionMixDown:4294971652,TVAudioDescriptionMixUp:4294971653,TVContentsMenu:4294971654,TVDataService:4294971655,TVInput:4294970698,TVInputComponent1:4294971656,TVInputComponent2:4294971657,TVInputComposite1:4294971658,TVInputComposite2:4294971659,TVInputHDMI1:4294971660,TVInputHDMI2:4294971661,TVInputHDMI3:4294971662,TVInputHDMI4:4294971663,TVInputVGA1:4294971664,TVMediaContext:4294971665,TVNetwork:4294971666,TVNumberEntry:4294971667,TVPower:4294970699,TVRadioService:4294971668,TVSatellite:4294971669,TVSatelliteBS:4294971670,TVSatelliteCS:4294971671,TVSatelliteToggle:4294971672,TVTerrestrialAnalog:4294971673,TVTerrestrialDigital:4294971674,TVTimer:4294971675,Tab:4294967305,Teletext:4294970696,Undo:4294968330,Unidentified:4294967297,VideoModeNext:4294970700,VoiceDial:4294971403,WakeUp:4294968843,Wink:4294970701,Zenkaku:4294969116,ZenkakuHankaku:4294969117,ZoomIn:4294968589,ZoomOut:4294968590,ZoomToggle:4294970702},B.p_,t.eL)
 B.fh=new A.aR(B.bV,!1,!1,!1,!1)
 B.fg=new A.aR(B.bW,!1,!1,!1,!1)
@@ -97931,16 +97931,16 @@ B.OB=new A.b8(231,{Abort:458907,Again:458873,AltLeft:458978,AltRight:458982,Arro
 B.Le=A.a(s(["deleteBackward:","deleteWordBackward:","deleteToBeginningOfLine:","deleteForward:","deleteWordForward:","deleteToEndOfLine:","moveLeft:","moveRight:","moveForward:","moveBackward:","moveUp:","moveDown:","moveLeftAndModifySelection:","moveRightAndModifySelection:","moveUpAndModifySelection:","moveDownAndModifySelection:","moveWordLeft:","moveWordRight:","moveToBeginningOfParagraph:","moveToEndOfParagraph:","moveWordLeftAndModifySelection:","moveWordRightAndModifySelection:","moveParagraphBackwardAndModifySelection:","moveParagraphForwardAndModifySelection:","moveToLeftEndOfLine:","moveToRightEndOfLine:","moveToBeginningOfDocument:","moveToEndOfDocument:","moveToLeftEndOfLineAndModifySelection:","moveToRightEndOfLineAndModifySelection:","moveToBeginningOfDocumentAndModifySelection:","moveToEndOfDocumentAndModifySelection:","transpose:","scrollToBeginningOfDocument:","scrollToEndOfDocument:","scrollPageUp:","scrollPageDown:","pageUpAndModifySelection:","pageDownAndModifySelection:","cancelOperation:","insertTab:","insertBacktab:"]),t.s)
 B.zy=new A.m5(!1)
 B.zz=new A.m5(!0)
-B.la=new A.eU(B.O,B.f7)
+B.l9=new A.eU(B.O,B.f7)
 B.mD=new A.hb()
 B.mJ=new A.qv()
 B.mN=new A.qN()
-B.OC=new A.b8(42,{"deleteBackward:":B.jE,"deleteWordBackward:":B.jI,"deleteToBeginningOfLine:":B.jG,"deleteForward:":B.jF,"deleteWordForward:":B.jJ,"deleteToEndOfLine:":B.jH,"moveLeft:":B.en,"moveRight:":B.eo,"moveForward:":B.eo,"moveBackward:":B.en,"moveUp:":B.hb,"moveDown:":B.hc,"moveLeftAndModifySelection:":B.jX,"moveRightAndModifySelection:":B.jY,"moveUpAndModifySelection:":B.k0,"moveDownAndModifySelection:":B.k1,"moveWordLeft:":B.jZ,"moveWordRight:":B.k_,"moveToBeginningOfParagraph:":B.cP,"moveToEndOfParagraph:":B.cQ,"moveWordLeftAndModifySelection:":B.oa,"moveWordRightAndModifySelection:":B.ob,"moveParagraphBackwardAndModifySelection:":B.o8,"moveParagraphForwardAndModifySelection:":B.o9,"moveToLeftEndOfLine:":B.cP,"moveToRightEndOfLine:":B.cQ,"moveToBeginningOfDocument:":B.h9,"moveToEndOfDocument:":B.ha,"moveToLeftEndOfLineAndModifySelection:":B.o1,"moveToRightEndOfLineAndModifySelection:":B.o2,"moveToBeginningOfDocumentAndModifySelection:":B.jV,"moveToEndOfDocumentAndModifySelection:":B.jW,"transpose:":B.mQ,"scrollToBeginningOfDocument:":B.zy,"scrollToEndOfDocument:":B.zz,"scrollPageUp:":B.la,"scrollPageDown:":B.ig,"pageUpAndModifySelection:":B.k2,"pageDownAndModifySelection:":B.k3,"cancelOperation:":B.mD,"insertTab:":B.mJ,"insertBacktab:":B.mN},B.Le,A.ad("b8<l,bi>"))
+B.OC=new A.b8(42,{"deleteBackward:":B.jD,"deleteWordBackward:":B.jH,"deleteToBeginningOfLine:":B.jF,"deleteForward:":B.jE,"deleteWordForward:":B.jI,"deleteToEndOfLine:":B.jG,"moveLeft:":B.en,"moveRight:":B.eo,"moveForward:":B.eo,"moveBackward:":B.en,"moveUp:":B.hb,"moveDown:":B.hc,"moveLeftAndModifySelection:":B.jW,"moveRightAndModifySelection:":B.jX,"moveUpAndModifySelection:":B.k_,"moveDownAndModifySelection:":B.k0,"moveWordLeft:":B.jY,"moveWordRight:":B.jZ,"moveToBeginningOfParagraph:":B.cP,"moveToEndOfParagraph:":B.cQ,"moveWordLeftAndModifySelection:":B.oa,"moveWordRightAndModifySelection:":B.ob,"moveParagraphBackwardAndModifySelection:":B.o8,"moveParagraphForwardAndModifySelection:":B.o9,"moveToLeftEndOfLine:":B.cP,"moveToRightEndOfLine:":B.cQ,"moveToBeginningOfDocument:":B.h9,"moveToEndOfDocument:":B.ha,"moveToLeftEndOfLineAndModifySelection:":B.o1,"moveToRightEndOfLineAndModifySelection:":B.o2,"moveToBeginningOfDocumentAndModifySelection:":B.jU,"moveToEndOfDocumentAndModifySelection:":B.jV,"transpose:":B.mQ,"scrollToBeginningOfDocument:":B.zy,"scrollToEndOfDocument:":B.zz,"scrollPageUp:":B.l9,"scrollPageDown:":B.ig,"pageUpAndModifySelection:":B.k1,"pageDownAndModifySelection:":B.k2,"cancelOperation:":B.mD,"insertTab:":B.mJ,"insertBacktab:":B.mN},B.Le,A.ad("b8<l,bi>"))
 B.pk=new A.f(32)
 B.it=new A.aR(B.pk,!1,!1,!1,!1)
 B.il=new A.aR(B.hD,!1,!1,!1,!1)
-B.kE=new A.f(8589935117)
-B.SZ=new A.aR(B.kE,!1,!1,!1,!1)
+B.kD=new A.f(8589935117)
+B.SZ=new A.aR(B.kD,!1,!1,!1,!1)
 B.SE=new A.aR(B.eI,!1,!1,!1,!1)
 B.SF=new A.aR(B.hC,!1,!1,!1,!1)
 B.SG=new A.aR(B.hC,!1,!0,!1,!1)
@@ -97955,7 +97955,7 @@ B.RJ=new A.eU(B.O,B.ie)
 B.RH=new A.eU(B.L,B.ie)
 B.RI=new A.eU(B.aD,B.ie)
 B.RK=new A.eU(B.aO,B.ie)
-B.OE=new A.bH([B.it,B.Ea,B.il,B.mB,B.SZ,B.mB,B.SE,B.mD,B.SF,B.mJ,B.SG,B.mN,B.fg,B.RJ,B.fh,B.RH,B.ir,B.RI,B.is,B.RK,B.fe,B.la,B.ff,B.ig],t.Fp)
+B.OE=new A.bH([B.it,B.Ea,B.il,B.mB,B.SZ,B.mB,B.SE,B.mD,B.SF,B.mJ,B.SG,B.mN,B.fg,B.RJ,B.fh,B.RH,B.ir,B.RI,B.is,B.RK,B.fe,B.l9,B.ff,B.ig],t.Fp)
 B.MW=new A.f(33)
 B.MX=new A.f(34)
 B.MY=new A.f(35)
@@ -97994,9 +97994,9 @@ B.O2=new A.f(93)
 B.O3=new A.f(94)
 B.O4=new A.f(95)
 B.O5=new A.f(96)
-B.kQ=new A.f(97)
+B.kP=new A.f(97)
 B.v5=new A.f(98)
-B.kR=new A.f(99)
+B.kQ=new A.f(99)
 B.MD=new A.f(100)
 B.pf=new A.f(101)
 B.pg=new A.f(102)
@@ -98015,9 +98015,9 @@ B.MN=new A.f(114)
 B.MO=new A.f(115)
 B.pj=new A.f(116)
 B.MP=new A.f(117)
-B.kz=new A.f(118)
+B.ky=new A.f(118)
 B.MQ=new A.f(119)
-B.kA=new A.f(120)
+B.kz=new A.f(120)
 B.MR=new A.f(121)
 B.eH=new A.f(122)
 B.MS=new A.f(123)
@@ -98046,18 +98046,18 @@ B.v1=new A.f(8589935146)
 B.v2=new A.f(8589935147)
 B.Nu=new A.f(8589935148)
 B.v3=new A.f(8589935149)
-B.kF=new A.f(8589935150)
+B.kE=new A.f(8589935150)
 B.v4=new A.f(8589935151)
-B.kG=new A.f(8589935152)
-B.kH=new A.f(8589935153)
-B.kI=new A.f(8589935154)
-B.kJ=new A.f(8589935155)
-B.kK=new A.f(8589935156)
-B.kL=new A.f(8589935157)
-B.kM=new A.f(8589935158)
-B.kN=new A.f(8589935159)
-B.kO=new A.f(8589935160)
-B.kP=new A.f(8589935161)
+B.kF=new A.f(8589935152)
+B.kG=new A.f(8589935153)
+B.kH=new A.f(8589935154)
+B.kI=new A.f(8589935155)
+B.kJ=new A.f(8589935156)
+B.kK=new A.f(8589935157)
+B.kL=new A.f(8589935158)
+B.kM=new A.f(8589935159)
+B.kN=new A.f(8589935160)
+B.kO=new A.f(8589935161)
 B.Nv=new A.f(8589935165)
 B.Nw=new A.f(8589935361)
 B.Nx=new A.f(8589935362)
@@ -98090,13 +98090,13 @@ B.NX=new A.f(8589935388)
 B.NY=new A.f(8589935389)
 B.NZ=new A.f(8589935390)
 B.O_=new A.f(8589935391)
-B.OG=new A.bH([32,B.pk,33,B.MW,34,B.MX,35,B.MY,36,B.MZ,37,B.N_,38,B.N0,39,B.N1,40,B.N2,41,B.N3,42,B.pl,43,B.uO,44,B.N4,45,B.uP,46,B.uQ,47,B.uR,48,B.uS,49,B.uT,50,B.uU,51,B.uV,52,B.uW,53,B.uX,54,B.uY,55,B.uZ,56,B.v_,57,B.v0,58,B.N5,59,B.N6,60,B.N7,61,B.N8,62,B.N9,63,B.Na,64,B.Nb,91,B.O0,92,B.O1,93,B.O2,94,B.O3,95,B.O4,96,B.O5,97,B.kQ,98,B.v5,99,B.kR,100,B.MD,101,B.pf,102,B.pg,103,B.ME,104,B.MF,105,B.MG,106,B.MH,107,B.MI,108,B.MJ,109,B.MK,110,B.ph,111,B.ML,112,B.pi,113,B.MM,114,B.MN,115,B.MO,116,B.pj,117,B.MP,118,B.kz,119,B.MQ,120,B.kA,121,B.MR,122,B.eH,123,B.MS,124,B.MT,125,B.MU,126,B.MV,4294967297,B.pm,4294967304,B.br,4294967305,B.hC,4294967309,B.hD,4294967323,B.eI,4294967423,B.bd,4294967553,B.pn,4294967555,B.hE,4294967556,B.eJ,4294967558,B.kB,4294967559,B.po,4294967560,B.pp,4294967562,B.hF,4294967564,B.hG,4294967566,B.pq,4294967567,B.pr,4294967568,B.ps,4294967569,B.pt,4294968065,B.bV,4294968066,B.bF,4294968067,B.bG,4294968068,B.bW,4294968069,B.cX,4294968070,B.cY,4294968071,B.eK,4294968072,B.eL,4294968321,B.kC,4294968322,B.pu,4294968323,B.pv,4294968324,B.pw,4294968325,B.px,4294968326,B.py,4294968327,B.kD,4294968328,B.pz,4294968329,B.pA,4294968330,B.pB,4294968577,B.pC,4294968578,B.pD,4294968579,B.pE,4294968580,B.pF,4294968581,B.pG,4294968582,B.pH,4294968583,B.pI,4294968584,B.pJ,4294968585,B.pK,4294968586,B.pL,4294968587,B.pM,4294968588,B.pN,4294968589,B.pO,4294968590,B.pP,4294968833,B.pQ,4294968834,B.pR,4294968835,B.pS,4294968836,B.pT,4294968837,B.pU,4294968838,B.pV,4294968839,B.pW,4294968840,B.pX,4294968841,B.pY,4294968842,B.pZ,4294968843,B.q_,4294969089,B.q0,4294969090,B.q1,4294969091,B.q2,4294969092,B.q3,4294969093,B.q4,4294969094,B.q5,4294969095,B.q6,4294969096,B.q7,4294969097,B.q8,4294969098,B.q9,4294969099,B.qa,4294969100,B.qb,4294969101,B.qc,4294969102,B.qd,4294969103,B.qe,4294969104,B.qf,4294969105,B.qg,4294969106,B.qh,4294969107,B.qi,4294969108,B.qj,4294969109,B.qk,4294969110,B.ql,4294969111,B.qm,4294969112,B.qn,4294969113,B.qo,4294969114,B.qp,4294969115,B.qq,4294969116,B.qr,4294969117,B.qs,4294969345,B.qt,4294969346,B.qu,4294969347,B.qv,4294969348,B.qw,4294969349,B.qx,4294969350,B.qy,4294969351,B.qz,4294969352,B.qA,4294969353,B.qB,4294969354,B.qC,4294969355,B.qD,4294969356,B.qE,4294969357,B.qF,4294969358,B.qG,4294969359,B.qH,4294969360,B.qI,4294969361,B.qJ,4294969362,B.qK,4294969363,B.qL,4294969364,B.qM,4294969365,B.qN,4294969366,B.qO,4294969367,B.qP,4294969368,B.qQ,4294969601,B.qR,4294969602,B.qS,4294969603,B.qT,4294969604,B.qU,4294969605,B.qV,4294969606,B.qW,4294969607,B.qX,4294969608,B.qY,4294969857,B.qZ,4294969858,B.r_,4294969859,B.r0,4294969860,B.r1,4294969861,B.r2,4294969863,B.r3,4294969864,B.r4,4294969865,B.r5,4294969866,B.r6,4294969867,B.r7,4294969868,B.r8,4294969869,B.r9,4294969870,B.ra,4294969871,B.rb,4294969872,B.rc,4294969873,B.rd,4294970113,B.re,4294970114,B.rf,4294970115,B.rg,4294970116,B.rh,4294970117,B.ri,4294970118,B.rj,4294970119,B.rk,4294970120,B.rl,4294970121,B.rm,4294970122,B.rn,4294970123,B.ro,4294970124,B.rp,4294970125,B.rq,4294970126,B.rr,4294970127,B.rs,4294970369,B.rt,4294970370,B.ru,4294970371,B.rv,4294970372,B.rw,4294970373,B.rx,4294970374,B.ry,4294970375,B.rz,4294970625,B.rA,4294970626,B.rB,4294970627,B.rC,4294970628,B.rD,4294970629,B.rE,4294970630,B.rF,4294970631,B.rG,4294970632,B.rH,4294970633,B.rI,4294970634,B.rJ,4294970635,B.rK,4294970636,B.rL,4294970637,B.rM,4294970638,B.rN,4294970639,B.rO,4294970640,B.rP,4294970641,B.rQ,4294970642,B.rR,4294970643,B.rS,4294970644,B.rT,4294970645,B.rU,4294970646,B.rV,4294970647,B.rW,4294970648,B.rX,4294970649,B.rY,4294970650,B.rZ,4294970651,B.t_,4294970652,B.t0,4294970653,B.t1,4294970654,B.t2,4294970655,B.t3,4294970656,B.t4,4294970657,B.t5,4294970658,B.t6,4294970659,B.t7,4294970660,B.t8,4294970661,B.t9,4294970662,B.ta,4294970663,B.tb,4294970664,B.tc,4294970665,B.td,4294970666,B.te,4294970667,B.tf,4294970668,B.tg,4294970669,B.th,4294970670,B.ti,4294970671,B.tj,4294970672,B.tk,4294970673,B.tl,4294970674,B.tm,4294970675,B.tn,4294970676,B.to,4294970677,B.tp,4294970678,B.tq,4294970679,B.tr,4294970680,B.ts,4294970681,B.tt,4294970682,B.tu,4294970683,B.tv,4294970684,B.tw,4294970685,B.tx,4294970686,B.ty,4294970687,B.tz,4294970688,B.tA,4294970689,B.tB,4294970690,B.tC,4294970691,B.tD,4294970692,B.tE,4294970693,B.tF,4294970694,B.tG,4294970695,B.tH,4294970696,B.tI,4294970697,B.tJ,4294970698,B.tK,4294970699,B.tL,4294970700,B.tM,4294970701,B.tN,4294970702,B.tO,4294970703,B.tP,4294970704,B.tQ,4294970705,B.tR,4294970706,B.tS,4294970707,B.tT,4294970708,B.tU,4294970709,B.tV,4294970710,B.tW,4294970711,B.tX,4294970712,B.tY,4294970713,B.tZ,4294970714,B.u_,4294970715,B.u0,4294970882,B.u1,4294970884,B.u2,4294970885,B.u3,4294970886,B.u4,4294970887,B.u5,4294970888,B.u6,4294970889,B.u7,4294971137,B.u8,4294971138,B.u9,4294971393,B.ua,4294971394,B.ub,4294971395,B.uc,4294971396,B.ud,4294971397,B.ue,4294971398,B.uf,4294971399,B.ug,4294971400,B.uh,4294971401,B.ui,4294971402,B.uj,4294971403,B.uk,4294971649,B.ul,4294971650,B.um,4294971651,B.un,4294971652,B.uo,4294971653,B.up,4294971654,B.uq,4294971655,B.ur,4294971656,B.us,4294971657,B.ut,4294971658,B.uu,4294971659,B.uv,4294971660,B.uw,4294971661,B.ux,4294971662,B.uy,4294971663,B.uz,4294971664,B.uA,4294971665,B.uB,4294971666,B.uC,4294971667,B.uD,4294971668,B.uE,4294971669,B.uF,4294971670,B.uG,4294971671,B.uH,4294971672,B.uI,4294971673,B.uJ,4294971674,B.uK,4294971675,B.uL,4294971905,B.uM,4294971906,B.uN,8589934592,B.Nc,8589934593,B.Nd,8589934594,B.Ne,8589934595,B.Nf,8589934608,B.Ng,8589934609,B.Nh,8589934610,B.Ni,8589934611,B.Nj,8589934612,B.Nk,8589934624,B.Nl,8589934625,B.Nm,8589934626,B.Nn,8589934848,B.eM,8589934849,B.hH,8589934850,B.bs,8589934851,B.bH,8589934852,B.eN,8589934853,B.hI,8589934854,B.eO,8589934855,B.hJ,8589935088,B.No,8589935090,B.Np,8589935092,B.Nq,8589935094,B.Nr,8589935117,B.kE,8589935144,B.Ns,8589935145,B.Nt,8589935146,B.v1,8589935147,B.v2,8589935148,B.Nu,8589935149,B.v3,8589935150,B.kF,8589935151,B.v4,8589935152,B.kG,8589935153,B.kH,8589935154,B.kI,8589935155,B.kJ,8589935156,B.kK,8589935157,B.kL,8589935158,B.kM,8589935159,B.kN,8589935160,B.kO,8589935161,B.kP,8589935165,B.Nv,8589935361,B.Nw,8589935362,B.Nx,8589935363,B.Ny,8589935364,B.Nz,8589935365,B.NA,8589935366,B.NB,8589935367,B.NC,8589935368,B.ND,8589935369,B.NE,8589935370,B.NF,8589935371,B.NG,8589935372,B.NH,8589935373,B.NI,8589935374,B.NJ,8589935375,B.NK,8589935376,B.NL,8589935377,B.NM,8589935378,B.NN,8589935379,B.NO,8589935380,B.NP,8589935381,B.NQ,8589935382,B.NR,8589935383,B.NS,8589935384,B.NT,8589935385,B.NU,8589935386,B.NV,8589935387,B.NW,8589935388,B.NX,8589935389,B.NY,8589935390,B.NZ,8589935391,B.O_],A.ad("bH<k,f>"))
+B.OG=new A.bH([32,B.pk,33,B.MW,34,B.MX,35,B.MY,36,B.MZ,37,B.N_,38,B.N0,39,B.N1,40,B.N2,41,B.N3,42,B.pl,43,B.uO,44,B.N4,45,B.uP,46,B.uQ,47,B.uR,48,B.uS,49,B.uT,50,B.uU,51,B.uV,52,B.uW,53,B.uX,54,B.uY,55,B.uZ,56,B.v_,57,B.v0,58,B.N5,59,B.N6,60,B.N7,61,B.N8,62,B.N9,63,B.Na,64,B.Nb,91,B.O0,92,B.O1,93,B.O2,94,B.O3,95,B.O4,96,B.O5,97,B.kP,98,B.v5,99,B.kQ,100,B.MD,101,B.pf,102,B.pg,103,B.ME,104,B.MF,105,B.MG,106,B.MH,107,B.MI,108,B.MJ,109,B.MK,110,B.ph,111,B.ML,112,B.pi,113,B.MM,114,B.MN,115,B.MO,116,B.pj,117,B.MP,118,B.ky,119,B.MQ,120,B.kz,121,B.MR,122,B.eH,123,B.MS,124,B.MT,125,B.MU,126,B.MV,4294967297,B.pm,4294967304,B.br,4294967305,B.hC,4294967309,B.hD,4294967323,B.eI,4294967423,B.bd,4294967553,B.pn,4294967555,B.hE,4294967556,B.eJ,4294967558,B.kA,4294967559,B.po,4294967560,B.pp,4294967562,B.hF,4294967564,B.hG,4294967566,B.pq,4294967567,B.pr,4294967568,B.ps,4294967569,B.pt,4294968065,B.bV,4294968066,B.bF,4294968067,B.bG,4294968068,B.bW,4294968069,B.cX,4294968070,B.cY,4294968071,B.eK,4294968072,B.eL,4294968321,B.kB,4294968322,B.pu,4294968323,B.pv,4294968324,B.pw,4294968325,B.px,4294968326,B.py,4294968327,B.kC,4294968328,B.pz,4294968329,B.pA,4294968330,B.pB,4294968577,B.pC,4294968578,B.pD,4294968579,B.pE,4294968580,B.pF,4294968581,B.pG,4294968582,B.pH,4294968583,B.pI,4294968584,B.pJ,4294968585,B.pK,4294968586,B.pL,4294968587,B.pM,4294968588,B.pN,4294968589,B.pO,4294968590,B.pP,4294968833,B.pQ,4294968834,B.pR,4294968835,B.pS,4294968836,B.pT,4294968837,B.pU,4294968838,B.pV,4294968839,B.pW,4294968840,B.pX,4294968841,B.pY,4294968842,B.pZ,4294968843,B.q_,4294969089,B.q0,4294969090,B.q1,4294969091,B.q2,4294969092,B.q3,4294969093,B.q4,4294969094,B.q5,4294969095,B.q6,4294969096,B.q7,4294969097,B.q8,4294969098,B.q9,4294969099,B.qa,4294969100,B.qb,4294969101,B.qc,4294969102,B.qd,4294969103,B.qe,4294969104,B.qf,4294969105,B.qg,4294969106,B.qh,4294969107,B.qi,4294969108,B.qj,4294969109,B.qk,4294969110,B.ql,4294969111,B.qm,4294969112,B.qn,4294969113,B.qo,4294969114,B.qp,4294969115,B.qq,4294969116,B.qr,4294969117,B.qs,4294969345,B.qt,4294969346,B.qu,4294969347,B.qv,4294969348,B.qw,4294969349,B.qx,4294969350,B.qy,4294969351,B.qz,4294969352,B.qA,4294969353,B.qB,4294969354,B.qC,4294969355,B.qD,4294969356,B.qE,4294969357,B.qF,4294969358,B.qG,4294969359,B.qH,4294969360,B.qI,4294969361,B.qJ,4294969362,B.qK,4294969363,B.qL,4294969364,B.qM,4294969365,B.qN,4294969366,B.qO,4294969367,B.qP,4294969368,B.qQ,4294969601,B.qR,4294969602,B.qS,4294969603,B.qT,4294969604,B.qU,4294969605,B.qV,4294969606,B.qW,4294969607,B.qX,4294969608,B.qY,4294969857,B.qZ,4294969858,B.r_,4294969859,B.r0,4294969860,B.r1,4294969861,B.r2,4294969863,B.r3,4294969864,B.r4,4294969865,B.r5,4294969866,B.r6,4294969867,B.r7,4294969868,B.r8,4294969869,B.r9,4294969870,B.ra,4294969871,B.rb,4294969872,B.rc,4294969873,B.rd,4294970113,B.re,4294970114,B.rf,4294970115,B.rg,4294970116,B.rh,4294970117,B.ri,4294970118,B.rj,4294970119,B.rk,4294970120,B.rl,4294970121,B.rm,4294970122,B.rn,4294970123,B.ro,4294970124,B.rp,4294970125,B.rq,4294970126,B.rr,4294970127,B.rs,4294970369,B.rt,4294970370,B.ru,4294970371,B.rv,4294970372,B.rw,4294970373,B.rx,4294970374,B.ry,4294970375,B.rz,4294970625,B.rA,4294970626,B.rB,4294970627,B.rC,4294970628,B.rD,4294970629,B.rE,4294970630,B.rF,4294970631,B.rG,4294970632,B.rH,4294970633,B.rI,4294970634,B.rJ,4294970635,B.rK,4294970636,B.rL,4294970637,B.rM,4294970638,B.rN,4294970639,B.rO,4294970640,B.rP,4294970641,B.rQ,4294970642,B.rR,4294970643,B.rS,4294970644,B.rT,4294970645,B.rU,4294970646,B.rV,4294970647,B.rW,4294970648,B.rX,4294970649,B.rY,4294970650,B.rZ,4294970651,B.t_,4294970652,B.t0,4294970653,B.t1,4294970654,B.t2,4294970655,B.t3,4294970656,B.t4,4294970657,B.t5,4294970658,B.t6,4294970659,B.t7,4294970660,B.t8,4294970661,B.t9,4294970662,B.ta,4294970663,B.tb,4294970664,B.tc,4294970665,B.td,4294970666,B.te,4294970667,B.tf,4294970668,B.tg,4294970669,B.th,4294970670,B.ti,4294970671,B.tj,4294970672,B.tk,4294970673,B.tl,4294970674,B.tm,4294970675,B.tn,4294970676,B.to,4294970677,B.tp,4294970678,B.tq,4294970679,B.tr,4294970680,B.ts,4294970681,B.tt,4294970682,B.tu,4294970683,B.tv,4294970684,B.tw,4294970685,B.tx,4294970686,B.ty,4294970687,B.tz,4294970688,B.tA,4294970689,B.tB,4294970690,B.tC,4294970691,B.tD,4294970692,B.tE,4294970693,B.tF,4294970694,B.tG,4294970695,B.tH,4294970696,B.tI,4294970697,B.tJ,4294970698,B.tK,4294970699,B.tL,4294970700,B.tM,4294970701,B.tN,4294970702,B.tO,4294970703,B.tP,4294970704,B.tQ,4294970705,B.tR,4294970706,B.tS,4294970707,B.tT,4294970708,B.tU,4294970709,B.tV,4294970710,B.tW,4294970711,B.tX,4294970712,B.tY,4294970713,B.tZ,4294970714,B.u_,4294970715,B.u0,4294970882,B.u1,4294970884,B.u2,4294970885,B.u3,4294970886,B.u4,4294970887,B.u5,4294970888,B.u6,4294970889,B.u7,4294971137,B.u8,4294971138,B.u9,4294971393,B.ua,4294971394,B.ub,4294971395,B.uc,4294971396,B.ud,4294971397,B.ue,4294971398,B.uf,4294971399,B.ug,4294971400,B.uh,4294971401,B.ui,4294971402,B.uj,4294971403,B.uk,4294971649,B.ul,4294971650,B.um,4294971651,B.un,4294971652,B.uo,4294971653,B.up,4294971654,B.uq,4294971655,B.ur,4294971656,B.us,4294971657,B.ut,4294971658,B.uu,4294971659,B.uv,4294971660,B.uw,4294971661,B.ux,4294971662,B.uy,4294971663,B.uz,4294971664,B.uA,4294971665,B.uB,4294971666,B.uC,4294971667,B.uD,4294971668,B.uE,4294971669,B.uF,4294971670,B.uG,4294971671,B.uH,4294971672,B.uI,4294971673,B.uJ,4294971674,B.uK,4294971675,B.uL,4294971905,B.uM,4294971906,B.uN,8589934592,B.Nc,8589934593,B.Nd,8589934594,B.Ne,8589934595,B.Nf,8589934608,B.Ng,8589934609,B.Nh,8589934610,B.Ni,8589934611,B.Nj,8589934612,B.Nk,8589934624,B.Nl,8589934625,B.Nm,8589934626,B.Nn,8589934848,B.eM,8589934849,B.hH,8589934850,B.bs,8589934851,B.bH,8589934852,B.eN,8589934853,B.hI,8589934854,B.eO,8589934855,B.hJ,8589935088,B.No,8589935090,B.Np,8589935092,B.Nq,8589935094,B.Nr,8589935117,B.kD,8589935144,B.Ns,8589935145,B.Nt,8589935146,B.v1,8589935147,B.v2,8589935148,B.Nu,8589935149,B.v3,8589935150,B.kE,8589935151,B.v4,8589935152,B.kF,8589935153,B.kG,8589935154,B.kH,8589935155,B.kI,8589935156,B.kJ,8589935157,B.kK,8589935158,B.kL,8589935159,B.kM,8589935160,B.kN,8589935161,B.kO,8589935165,B.Nv,8589935361,B.Nw,8589935362,B.Nx,8589935363,B.Ny,8589935364,B.Nz,8589935365,B.NA,8589935366,B.NB,8589935367,B.NC,8589935368,B.ND,8589935369,B.NE,8589935370,B.NF,8589935371,B.NG,8589935372,B.NH,8589935373,B.NI,8589935374,B.NJ,8589935375,B.NK,8589935376,B.NL,8589935377,B.NM,8589935378,B.NN,8589935379,B.NO,8589935380,B.NP,8589935381,B.NQ,8589935382,B.NR,8589935383,B.NS,8589935384,B.NT,8589935385,B.NU,8589935386,B.NV,8589935387,B.NW,8589935388,B.NX,8589935389,B.NY,8589935390,B.NZ,8589935391,B.O_],A.ad("bH<k,f>"))
 B.dz=new A.lS(0,"canvas")
 B.eQ=new A.lS(1,"card")
 B.Pm=new A.lS(2,"circle")
-B.kW=new A.lS(3,"button")
+B.kV=new A.lS(3,"button")
 B.eR=new A.lS(4,"transparency")
-B.OH=new A.bH([B.dz,null,B.eQ,B.fJ,B.Pm,null,B.kW,B.fJ,B.eR,null],A.ad("bH<lS,ck?>"))
+B.OH=new A.bH([B.dz,null,B.eQ,B.fJ,B.Pm,null,B.kV,B.fJ,B.eR,null],A.ad("bH<lS,ck?>"))
 B.vc=new A.b8(0,{},B.eE,A.ad("b8<L,x8>"))
 B.LK=A.a(s([]),t.cD)
 B.OO=new A.b8(0,{},B.LK,A.ad("b8<dA,dA>"))
@@ -98112,16 +98112,16 @@ B.v7=new A.b8(0,{},B.LM,A.ad("b8<rj,@>"))
 B.p8=A.a(s([]),A.ad("v<eY>"))
 B.OJ=new A.b8(0,{},B.p8,A.ad("b8<eY,d1>"))
 B.vb=new A.b8(0,{},B.p8,A.ad("b8<eY,pU<d1>>"))
-B.lj=new A.aR(B.bV,!1,!1,!0,!1)
-B.lg=new A.aR(B.bF,!1,!1,!0,!1)
-B.lh=new A.aR(B.bG,!1,!1,!0,!1)
-B.li=new A.aR(B.bW,!1,!1,!0,!1)
+B.li=new A.aR(B.bV,!1,!1,!0,!1)
+B.lf=new A.aR(B.bF,!1,!1,!0,!1)
+B.lg=new A.aR(B.bG,!1,!1,!0,!1)
+B.lh=new A.aR(B.bW,!1,!1,!0,!1)
 B.Ag=new A.aR(B.bV,!1,!1,!1,!0)
 B.Ad=new A.aR(B.bF,!1,!1,!1,!0)
 B.Ae=new A.aR(B.bG,!1,!1,!1,!0)
 B.Af=new A.aR(B.bW,!1,!1,!1,!0)
-B.lf=new A.aR(B.eL,!1,!0,!1,!1)
-B.lk=new A.aR(B.eK,!1,!0,!1,!1)
+B.le=new A.aR(B.eL,!1,!0,!1,!1)
+B.lj=new A.aR(B.eK,!1,!0,!1,!1)
 B.iq=new A.aR(B.cX,!1,!0,!1,!1)
 B.ip=new A.aR(B.cY,!1,!0,!1,!1)
 B.A9=new A.aR(B.bF,!0,!1,!1,!1)
@@ -98132,13 +98132,13 @@ B.io=new A.aR(B.cX,!1,!1,!1,!1)
 B.im=new A.aR(B.cY,!1,!1,!1,!1)
 B.Ai=new A.aR(B.cX,!0,!1,!1,!1)
 B.Ah=new A.aR(B.cY,!0,!1,!1,!1)
-B.OS=new A.bH([B.lj,B.B,B.lg,B.B,B.lh,B.B,B.li,B.B,B.Ag,B.B,B.Ad,B.B,B.Ae,B.B,B.Af,B.B,B.lf,B.B,B.lk,B.B,B.iq,B.B,B.ip,B.B,B.fh,B.B,B.ir,B.B,B.is,B.B,B.fg,B.B,B.A9,B.B,B.Aa,B.B,B.Ab,B.B,B.Ac,B.B,B.fe,B.B,B.ff,B.B,B.io,B.B,B.im,B.B,B.Ai,B.B,B.Ah,B.B,B.it,B.B,B.il,B.B],t.Fp)
+B.OS=new A.bH([B.li,B.B,B.lf,B.B,B.lg,B.B,B.lh,B.B,B.Ag,B.B,B.Ad,B.B,B.Ae,B.B,B.Af,B.B,B.le,B.B,B.lj,B.B,B.iq,B.B,B.ip,B.B,B.fh,B.B,B.ir,B.B,B.is,B.B,B.fg,B.B,B.A9,B.B,B.Aa,B.B,B.Ab,B.B,B.Ac,B.B,B.fe,B.B,B.ff,B.B,B.io,B.B,B.im,B.B,B.Ai,B.B,B.Ah,B.B,B.it,B.B,B.il,B.B],t.Fp)
 B.Ml=A.a(s(["in","iw","ji","jw","mo","aam","adp","aue","ayx","bgm","bjd","ccq","cjr","cka","cmk","coy","cqu","drh","drw","gav","gfx","ggn","gti","guv","hrr","ibi","ilw","jeg","kgc","kgh","koj","krm","ktr","kvs","kwq","kxe","kzj","kzt","lii","lmm","meg","mst","mwj","myt","nad","ncp","nnx","nts","oun","pcr","pmc","pmu","ppa","ppr","pry","puz","sca","skk","tdu","thc","thx","tie","tkk","tlw","tmp","tne","tnf","tsf","uok","xba","xia","xkh","xsj","ybd","yma","ymt","yos","yuu"]),t.s)
 B.bX=new A.b8(78,{in:"id",iw:"he",ji:"yi",jw:"jv",mo:"ro",aam:"aas",adp:"dz",aue:"ktz",ayx:"nun",bgm:"bcg",bjd:"drl",ccq:"rki",cjr:"mom",cka:"cmr",cmk:"xch",coy:"pij",cqu:"quh",drh:"khk",drw:"prs",gav:"dev",gfx:"vaj",ggn:"gvr",gti:"nyc",guv:"duz",hrr:"jal",ibi:"opa",ilw:"gal",jeg:"oyb",kgc:"tdf",kgh:"kml",koj:"kwv",krm:"bmf",ktr:"dtp",kvs:"gdj",kwq:"yam",kxe:"tvd",kzj:"dtp",kzt:"dtp",lii:"raq",lmm:"rmx",meg:"cir",mst:"mry",mwj:"vaj",myt:"mry",nad:"xny",ncp:"kdz",nnx:"ngv",nts:"pij",oun:"vaj",pcr:"adx",pmc:"huw",pmu:"phr",ppa:"bfy",ppr:"lcq",pry:"prt",puz:"pub",sca:"hle",skk:"oyb",tdu:"dtp",thc:"tpo",thx:"oyb",tie:"ras",tkk:"twm",tlw:"weo",tmp:"tyj",tne:"kak",tnf:"prs",tsf:"taj",uok:"ema",xba:"cax",xia:"acn",xkh:"waw",xsj:"suj",ybd:"rki",yma:"lrr",ymt:"mtm",yos:"zom",yuu:"yug"},B.Ml,t.li)
 B.Mn=A.a(s(["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","\xc0","\xc1","\xc2","\xc3","\xc4","\xc5","\xc6","\xc7","\xc8","\xc9","\xca","\xcb","\xcc","\xcd","\xce","\xcf","\xd0","\xd1","\xd2","\xd3","\xd4","\xd5","\xd6","\xd8","\xd9","\xda","\xdb","\xdc","\xdd","\xde","\u0100","\u0102","\u0104","\u0106","\u0108","\u010a","\u010c","\u010e","\u0110","\u0112","\u0114","\u0116","\u0118","\u011a","\u011c","\u011e","\u0120","\u0122","\u0124","\u0126","\u0128","\u012a","\u012c","\u012e","\u0130","\u0134","\u0136","\u0139","\u013b","\u013d","\u013f","\u0141","\u0143","\u0145","\u0147","\u014a","\u014c","\u014e","\u0150","\u0154","\u0156","\u0158","\u015a","\u015c","\u015e","\u0160","\u0162","\u0164","\u0166","\u0168","\u016a","\u016c","\u016e","\u0170","\u0172","\u0174","\u0176","\u0178","\u0179","\u017b","\u017d","\u0181","\u0182","\u0184","\u0186","\u0187","\u0189","\u018a","\u018b","\u018e","\u018f","\u0190","\u0191","\u0193","\u0194","\u0196","\u0197","\u0198","\u019c","\u019d","\u019f","\u01a0","\u01a2","\u01a4","\u01a7","\u01a9","\u01ac","\u01ae","\u01af","\u01b1","\u01b2","\u01b3","\u01b5","\u01b7","\u01b8","\u01bc","\u01c4","\u01c5","\u01c7","\u01c8","\u01ca","\u01cb","\u01cd","\u01cf","\u01d1","\u01d3","\u01d5","\u01d7","\u01d9","\u01db","\u01de","\u01e0","\u01e2","\u01e4","\u01e6","\u01e8","\u01ea","\u01ec","\u01ee","\u01f1","\u01f2","\u01f4","\u01f6","\u01f7","\u01f8","\u01fa","\u01fc","\u01fe","\u0200","\u0202","\u0204","\u0206","\u0208","\u020a","\u020c","\u020e","\u0210","\u0212","\u0214","\u0216","\u0218","\u021a","\u021c","\u021e","\u0220","\u0222","\u0224","\u0226","\u0228","\u022a","\u022c","\u022e","\u0230","\u0232","\u023a","\u023b","\u023d","\u023e","\u0241","\u0243","\u0244","\u0245","\u0246","\u0248","\u024a","\u024c","\u024e","\u0370","\u0372","\u0376","\u037f","\u0386","\u0388","\u0389","\u038a","\u038c","\u038e","\u038f","\u0391","\u0392","\u0393","\u0394","\u0395","\u0396","\u0397","\u0398","\u0399","\u039a","\u039b","\u039c","\u039d","\u039e","\u039f","\u03a0","\u03a1","\u03a3","\u03a4","\u03a5","\u03a6","\u03a7","\u03a8","\u03a9","\u03aa","\u03ab","\u03e2","\u03e4","\u03e6","\u03e8","\u03ea","\u03ec","\u03ee","\u03f7","\u03fa","\u0400","\u0401","\u0402","\u0403","\u0404","\u0405","\u0406","\u0407","\u0408","\u0409","\u040a","\u040b","\u040c","\u040d","\u040e","\u040f","\u0410","\u0411","\u0412","\u0413","\u0414","\u0415","\u0416","\u0417","\u0418","\u0419","\u041a","\u041b","\u041c","\u041d","\u041e","\u041f","\u0420","\u0421","\u0422","\u0423","\u0424","\u0425","\u0426","\u0427","\u0428","\u0429","\u042a","\u042b","\u042c","\u042d","\u042e","\u042f","\u0460","\u0462","\u0464","\u0466","\u0468","\u046a","\u046c","\u046e","\u0470","\u0472","\u0474","\u0476","\u0478","\u047a","\u047c","\u047e","\u0480","\u048a","\u048c","\u048e","\u0490","\u0492","\u0494","\u0496","\u0498","\u049a","\u049c","\u049e","\u04a0","\u04a2","\u04a6","\u04a8","\u04aa","\u04ac","\u04ae","\u04b0","\u04b2","\u04b6","\u04b8","\u04ba","\u04bc","\u04be","\u04c1","\u04c3","\u04c5","\u04c7","\u04c9","\u04cb","\u04cd","\u04d0","\u04d2","\u04d6","\u04d8","\u04da","\u04dc","\u04de","\u04e0","\u04e2","\u04e4","\u04e6","\u04e8","\u04ea","\u04ec","\u04ee","\u04f0","\u04f2","\u04f4","\u04f6","\u04f8","\u04fa","\u04fc","\u04fe","\u0500","\u0502","\u0504","\u0506","\u0508","\u050a","\u050c","\u050e","\u0510","\u0512","\u0514","\u0516","\u0518","\u051a","\u051c","\u051e","\u0520","\u0522","\u0524","\u0526","\u0528","\u052a","\u052c","\u052e","\u0531","\u0532","\u0533","\u0534","\u0535","\u0536","\u0537","\u0538","\u0539","\u053a","\u053b","\u053c","\u053d","\u053e","\u053f","\u0540","\u0541","\u0542","\u0543","\u0544","\u0545","\u0546","\u0547","\u0548","\u0549","\u054a","\u054b","\u054c","\u054d","\u054e","\u054f","\u0550","\u0551","\u0552","\u0553","\u0554","\u0555","\u0556","\u10a0","\u10a1","\u10a2","\u10a3","\u10a4","\u10a5","\u10a6","\u10a7","\u10a8","\u10a9","\u10aa","\u10ab","\u10ac","\u10ad","\u10ae","\u10af","\u10b0","\u10b1","\u10b2","\u10b3","\u10b4","\u10b5","\u10b6","\u10b7","\u10b8","\u10b9","\u10ba","\u10bb","\u10bc","\u10bd","\u10be","\u10bf","\u10c0","\u10c1","\u10c2","\u10c3","\u10c4","\u10c5","\u10c7","\u10cd","\u1c90","\u1c91","\u1c92","\u1c93","\u1c94","\u1c95","\u1c96","\u1c97","\u1c98","\u1c99","\u1c9a","\u1c9b","\u1c9c","\u1c9d","\u1c9e","\u1c9f","\u1ca0","\u1ca1","\u1ca2","\u1ca3","\u1ca4","\u1ca5","\u1ca6","\u1ca7","\u1ca8","\u1ca9","\u1caa","\u1cab","\u1cac","\u1cad","\u1cae","\u1caf","\u1cb0","\u1cb1","\u1cb2","\u1cb3","\u1cb4","\u1cb5","\u1cb6","\u1cb7","\u1cb8","\u1cb9","\u1cba","\u1cbd","\u1cbe","\u1cbf","\u1e00","\u1e02","\u1e04","\u1e06","\u1e08","\u1e0a","\u1e0c","\u1e0e","\u1e10","\u1e12","\u1e14","\u1e16","\u1e18","\u1e1a","\u1e1c","\u1e1e","\u1e20","\u1e22","\u1e24","\u1e26","\u1e28","\u1e2a","\u1e2c","\u1e2e","\u1e30","\u1e32","\u1e34","\u1e36","\u1e38","\u1e3a","\u1e3c","\u1e3e","\u1e40","\u1e42","\u1e44","\u1e46","\u1e48","\u1e4a","\u1e4c","\u1e4e","\u1e50","\u1e52","\u1e54","\u1e56","\u1e58","\u1e5a","\u1e5c","\u1e5e","\u1e60","\u1e62","\u1e64","\u1e66","\u1e68","\u1e6a","\u1e6c","\u1e6e","\u1e70","\u1e72","\u1e74","\u1e76","\u1e78","\u1e7a","\u1e7c","\u1e7e","\u1e80","\u1e82","\u1e84","\u1e86","\u1e88","\u1e8a","\u1e8c","\u1e8e","\u1e90","\u1e92","\u1e94","\u1e9e","\u1ea0","\u1ea2","\u1ea4","\u1ea6","\u1ea8","\u1eaa","\u1eac","\u1eae","\u1eb0","\u1eb2","\u1eb4","\u1eb6","\u1eb8","\u1eba","\u1ebc","\u1ebe","\u1ec0","\u1ec2","\u1ec4","\u1ec6","\u1ec8","\u1eca","\u1ecc","\u1ece","\u1ed0","\u1ed2","\u1ed4","\u1ed6","\u1ed8","\u1eda","\u1edc","\u1ede","\u1ee0","\u1ee2","\u1ee4","\u1ee6","\u1ee8","\u1eea","\u1eec","\u1eee","\u1ef0","\u1ef2","\u1ef4","\u1ef6","\u1ef8","\u1efa","\u1efc","\u1efe","\u1f08","\u1f09","\u1f0a","\u1f0b","\u1f0c","\u1f0d","\u1f0e","\u1f0f","\u1f18","\u1f19","\u1f1a","\u1f1b","\u1f1c","\u1f1d","\u1f28","\u1f29","\u1f2a","\u1f2b","\u1f2c","\u1f2d","\u1f2e","\u1f2f","\u1f38","\u1f39","\u1f3a","\u1f3b","\u1f3c","\u1f3d","\u1f3e","\u1f3f","\u1f48","\u1f49","\u1f4a","\u1f4b","\u1f4c","\u1f4d","\u1f59","\u1f5b","\u1f5d","\u1f5f","\u1f68","\u1f69","\u1f6a","\u1f6b","\u1f6c","\u1f6d","\u1f6e","\u1f6f","\u1f88","\u1f89","\u1f8a","\u1f8b","\u1f8c","\u1f8d","\u1f8e","\u1f8f","\u1f98","\u1f99","\u1f9a","\u1f9b","\u1f9c","\u1f9d","\u1f9e","\u1f9f","\u1fa8","\u1fa9","\u1faa","\u1fab","\u1fac","\u1fad","\u1fae","\u1faf","\u1fb8","\u1fb9","\u1fba","\u1fbb","\u1fbc","\u1fc8","\u1fc9","\u1fca","\u1fcb","\u1fcc","\u1fd8","\u1fd9","\u1fda","\u1fdb","\u1fe8","\u1fe9","\u1fea","\u1feb","\u1fec","\u1ff8","\u1ff9","\u1ffa","\u1ffb","\u1ffc","\u24b6","\u24b7","\u24b8","\u24b9","\u24ba","\u24bb","\u24bc","\u24bd","\u24be","\u24bf","\u24c0","\u24c1","\u24c2","\u24c3","\u24c4","\u24c5","\u24c6","\u24c7","\u24c8","\u24c9","\u24ca","\u24cb","\u24cc","\u24cd","\u24ce","\u24cf","\u2c00","\u2c01","\u2c02","\u2c03","\u2c04","\u2c05","\u2c06","\u2c07","\u2c08","\u2c09","\u2c0a","\u2c0b","\u2c0c","\u2c0d","\u2c0e","\u2c0f","\u2c10","\u2c11","\u2c12","\u2c13","\u2c14","\u2c15","\u2c16","\u2c17","\u2c18","\u2c19","\u2c1a","\u2c1b","\u2c1c","\u2c1d","\u2c1e","\u2c1f","\u2c20","\u2c21","\u2c22","\u2c23","\u2c24","\u2c25","\u2c26","\u2c27","\u2c28","\u2c29","\u2c2a","\u2c2b","\u2c2c","\u2c2d","\u2c2e","\u2c2f","\u2c60","\u2c62","\u2c63","\u2c64","\u2c67","\u2c69","\u2c6b","\u2c6d","\u2c6e","\u2c6f","\u2c70","\u2c72","\u2c75","\u2c7e","\u2c7f","\u2c80","\u2c82","\u2c84","\u2c86","\u2c88","\u2c8a","\u2c8c","\u2c8e","\u2c90","\u2c92","\u2c94","\u2c96","\u2c98","\u2c9a","\u2c9c","\u2c9e","\u2ca0","\u2ca2","\u2ca4","\u2ca6","\u2ca8","\u2caa","\u2cac","\u2cae","\u2cb0","\u2cb2","\u2cb4","\u2cb6","\u2cb8","\u2cba","\u2cbc","\u2cbe","\u2cc0","\u2cc2","\u2cc4","\u2cc6","\u2cc8","\u2cca","\u2ccc","\u2cce","\u2cd0","\u2cd2","\u2cd4","\u2cd6","\u2cd8","\u2cda","\u2cdc","\u2cde","\u2ce0","\u2ce2","\u2ceb","\u2ced","\u2cf2","\ua640","\ua642","\ua644","\ua646","\ua648","\ua64a","\ua64c","\ua64e","\ua650","\ua652","\ua654","\ua656","\ua658","\ua65a","\ua65c","\ua65e","\ua660","\ua662","\ua664","\ua666","\ua668","\ua66a","\ua66c","\ua680","\ua682","\ua684","\ua686","\ua688","\ua68a","\ua68c","\ua68e","\ua690","\ua692","\ua694","\ua696","\ua698","\ua69a","\ua722","\ua724","\ua726","\ua728","\ua72a","\ua72c","\ua72e","\ua732","\ua734","\ua736","\ua738","\ua73a","\ua73c","\ua73e","\ua740","\ua742","\ua744","\ua746","\ua748","\ua74a","\ua74c","\ua74e","\ua750","\ua752","\ua754","\ua756","\ua758","\ua75a","\ua75c","\ua75e","\ua760","\ua762","\ua764","\ua766","\ua768","\ua76a","\ua76c","\ua76e","\ua779","\ua77b","\ua77d","\ua77e","\ua780","\ua782","\ua784","\ua786","\ua78b","\ua78d","\ua790","\ua792","\ua796","\ua798","\ua79a","\ua79c","\ua79e","\ua7a0","\ua7a2","\ua7a4","\ua7a6","\ua7a8","\ua7aa","\ua7ab","\ua7ac","\ua7ad","\ua7ae","\ua7b0","\ua7b1","\ua7b2","\ua7b3","\ua7b4","\ua7b6","\ua7b8","\ua7ba","\ua7bc","\ua7be","\ua7c0","\ua7c2","\ua7c4","\ua7c5","\ua7c6","\ua7c7","\ua7c9","\ua7d0","\ua7d6","\ua7d8","\ua7f5","\uff21","\uff22","\uff23","\uff24","\uff25","\uff26","\uff27","\uff28","\uff29","\uff2a","\uff2b","\uff2c","\uff2d","\uff2e","\uff2f","\uff30","\uff31","\uff32","\uff33","\uff34","\uff35","\uff36","\uff37","\uff38","\uff39","\uff3a","\ud801\udc00","\ud801\udc01","\ud801\udc02","\ud801\udc03","\ud801\udc04","\ud801\udc05","\ud801\udc06","\ud801\udc07","\ud801\udc08","\ud801\udc09","\ud801\udc0a","\ud801\udc0b","\ud801\udc0c","\ud801\udc0d","\ud801\udc0e","\ud801\udc0f","\ud801\udc10","\ud801\udc11","\ud801\udc12","\ud801\udc13","\ud801\udc14","\ud801\udc15","\ud801\udc16","\ud801\udc17","\ud801\udc18","\ud801\udc19","\ud801\udc1a","\ud801\udc1b","\ud801\udc1c","\ud801\udc1d","\ud801\udc1e","\ud801\udc1f","\ud801\udc20","\ud801\udc21","\ud801\udc22","\ud801\udc23","\ud801\udc24","\ud801\udc25","\ud801\udc26","\ud801\udc27","\ud801\udcb0","\ud801\udcb1","\ud801\udcb2","\ud801\udcb3","\ud801\udcb4","\ud801\udcb5","\ud801\udcb6","\ud801\udcb7","\ud801\udcb8","\ud801\udcb9","\ud801\udcba","\ud801\udcbb","\ud801\udcbc","\ud801\udcbd","\ud801\udcbe","\ud801\udcbf","\ud801\udcc0","\ud801\udcc1","\ud801\udcc2","\ud801\udcc3","\ud801\udcc4","\ud801\udcc5","\ud801\udcc6","\ud801\udcc7","\ud801\udcc8","\ud801\udcc9","\ud801\udcca","\ud801\udccb","\ud801\udccc","\ud801\udccd","\ud801\udcce","\ud801\udccf","\ud801\udcd0","\ud801\udcd1","\ud801\udcd2","\ud801\udcd3","\ud801\udd70","\ud801\udd71","\ud801\udd72","\ud801\udd73","\ud801\udd74","\ud801\udd75","\ud801\udd76","\ud801\udd77","\ud801\udd78","\ud801\udd79","\ud801\udd7a","\ud801\udd7c","\ud801\udd7d","\ud801\udd7e","\ud801\udd7f","\ud801\udd80","\ud801\udd81","\ud801\udd82","\ud801\udd83","\ud801\udd84","\ud801\udd85","\ud801\udd86","\ud801\udd87","\ud801\udd88","\ud801\udd89","\ud801\udd8a","\ud801\udd8c","\ud801\udd8d","\ud801\udd8e","\ud801\udd8f","\ud801\udd90","\ud801\udd91","\ud801\udd92","\ud801\udd94","\ud801\udd95","\ud803\udc80","\ud803\udc81","\ud803\udc82","\ud803\udc83","\ud803\udc84","\ud803\udc85","\ud803\udc86","\ud803\udc87","\ud803\udc88","\ud803\udc89","\ud803\udc8a","\ud803\udc8b","\ud803\udc8c","\ud803\udc8d","\ud803\udc8e","\ud803\udc8f","\ud803\udc90","\ud803\udc91","\ud803\udc92","\ud803\udc93","\ud803\udc94","\ud803\udc95","\ud803\udc96","\ud803\udc97","\ud803\udc98","\ud803\udc99","\ud803\udc9a","\ud803\udc9b","\ud803\udc9c","\ud803\udc9d","\ud803\udc9e","\ud803\udc9f","\ud803\udca0","\ud803\udca1","\ud803\udca2","\ud803\udca3","\ud803\udca4","\ud803\udca5","\ud803\udca6","\ud803\udca7","\ud803\udca8","\ud803\udca9","\ud803\udcaa","\ud803\udcab","\ud803\udcac","\ud803\udcad","\ud803\udcae","\ud803\udcaf","\ud803\udcb0","\ud803\udcb1","\ud803\udcb2","\ud806\udca0","\ud806\udca1","\ud806\udca2","\ud806\udca3","\ud806\udca4","\ud806\udca5","\ud806\udca6","\ud806\udca7","\ud806\udca8","\ud806\udca9","\ud806\udcaa","\ud806\udcab","\ud806\udcac","\ud806\udcad","\ud806\udcae","\ud806\udcaf","\ud806\udcb0","\ud806\udcb1","\ud806\udcb2","\ud806\udcb3","\ud806\udcb4","\ud806\udcb5","\ud806\udcb6","\ud806\udcb7","\ud806\udcb8","\ud806\udcb9","\ud806\udcba","\ud806\udcbb","\ud806\udcbc","\ud806\udcbd","\ud806\udcbe","\ud806\udcbf","\ud81b\ude40","\ud81b\ude41","\ud81b\ude42","\ud81b\ude43","\ud81b\ude44","\ud81b\ude45","\ud81b\ude46","\ud81b\ude47","\ud81b\ude48","\ud81b\ude49","\ud81b\ude4a","\ud81b\ude4b","\ud81b\ude4c","\ud81b\ude4d","\ud81b\ude4e","\ud81b\ude4f","\ud81b\ude50","\ud81b\ude51","\ud81b\ude52","\ud81b\ude53","\ud81b\ude54","\ud81b\ude55","\ud81b\ude56","\ud81b\ude57","\ud81b\ude58","\ud81b\ude59","\ud81b\ude5a","\ud81b\ude5b","\ud81b\ude5c","\ud81b\ude5d","\ud81b\ude5e","\ud81b\ude5f","\ud83a\udd00","\ud83a\udd01","\ud83a\udd02","\ud83a\udd03","\ud83a\udd04","\ud83a\udd05","\ud83a\udd06","\ud83a\udd07","\ud83a\udd08","\ud83a\udd09","\ud83a\udd0a","\ud83a\udd0b","\ud83a\udd0c","\ud83a\udd0d","\ud83a\udd0e","\ud83a\udd0f","\ud83a\udd10","\ud83a\udd11","\ud83a\udd12","\ud83a\udd13","\ud83a\udd14","\ud83a\udd15","\ud83a\udd16","\ud83a\udd17","\ud83a\udd18","\ud83a\udd19","\ud83a\udd1a","\ud83a\udd1b","\ud83a\udd1c","\ud83a\udd1d","\ud83a\udd1e","\ud83a\udd1f","\ud83a\udd20","\ud83a\udd21"]),t.s)
 B.OW=new A.b8(1308,{A:"a",B:"b",C:"c",D:"d",E:"e",F:"f",G:"g",H:"h",I:"i",J:"j",K:"k",L:"l",M:"m",N:"n",O:"o",P:"p",Q:"q",R:"r",S:"s",T:"t",U:"u",V:"v",W:"w",X:"x",Y:"y",Z:"z","\xc0":"\xe0","\xc1":"\xe1","\xc2":"\xe2","\xc3":"\xe3","\xc4":"\xe4","\xc5":"\xe5","\xc6":"\xe6","\xc7":"\xe7","\xc8":"\xe8","\xc9":"\xe9","\xca":"\xea","\xcb":"\xeb","\xcc":"\xec","\xcd":"\xed","\xce":"\xee","\xcf":"\xef","\xd0":"\xf0","\xd1":"\xf1","\xd2":"\xf2","\xd3":"\xf3","\xd4":"\xf4","\xd5":"\xf5","\xd6":"\xf6","\xd8":"\xf8","\xd9":"\xf9","\xda":"\xfa","\xdb":"\xfb","\xdc":"\xfc","\xdd":"\xfd","\xde":"\xfe","\u0100":"\u0101","\u0102":"\u0103","\u0104":"\u0105","\u0106":"\u0107","\u0108":"\u0109","\u010a":"\u010b","\u010c":"\u010d","\u010e":"\u010f","\u0110":"\u0111","\u0112":"\u0113","\u0114":"\u0115","\u0116":"\u0117","\u0118":"\u0119","\u011a":"\u011b","\u011c":"\u011d","\u011e":"\u011f","\u0120":"\u0121","\u0122":"\u0123","\u0124":"\u0125","\u0126":"\u0127","\u0128":"\u0129","\u012a":"\u012b","\u012c":"\u012d","\u012e":"\u012f","\u0130":"i\u0307","\u0134":"\u0135","\u0136":"\u0137","\u0139":"\u013a","\u013b":"\u013c","\u013d":"\u013e","\u013f":"\u0140","\u0141":"\u0142","\u0143":"\u0144","\u0145":"\u0146","\u0147":"\u0148","\u014a":"\u014b","\u014c":"\u014d","\u014e":"\u014f","\u0150":"\u0151","\u0154":"\u0155","\u0156":"\u0157","\u0158":"\u0159","\u015a":"\u015b","\u015c":"\u015d","\u015e":"\u015f","\u0160":"\u0161","\u0162":"\u0163","\u0164":"\u0165","\u0166":"\u0167","\u0168":"\u0169","\u016a":"\u016b","\u016c":"\u016d","\u016e":"\u016f","\u0170":"\u0171","\u0172":"\u0173","\u0174":"\u0175","\u0176":"\u0177","\u0178":"\xff","\u0179":"\u017a","\u017b":"\u017c","\u017d":"\u017e","\u0181":"\u0253","\u0182":"\u0183","\u0184":"\u0185","\u0186":"\u0254","\u0187":"\u0188","\u0189":"\u0256","\u018a":"\u0257","\u018b":"\u018c","\u018e":"\u01dd","\u018f":"\u0259","\u0190":"\u025b","\u0191":"\u0192","\u0193":"\u0260","\u0194":"\u0263","\u0196":"\u0269","\u0197":"\u0268","\u0198":"\u0199","\u019c":"\u026f","\u019d":"\u0272","\u019f":"\u0275","\u01a0":"\u01a1","\u01a2":"\u01a3","\u01a4":"\u01a5","\u01a7":"\u01a8","\u01a9":"\u0283","\u01ac":"\u01ad","\u01ae":"\u0288","\u01af":"\u01b0","\u01b1":"\u028a","\u01b2":"\u028b","\u01b3":"\u01b4","\u01b5":"\u01b6","\u01b7":"\u0292","\u01b8":"\u01b9","\u01bc":"\u01bd","\u01c4":"\u01c6","\u01c5":"\u01c6","\u01c7":"\u01c9","\u01c8":"\u01c9","\u01ca":"\u01cc","\u01cb":"\u01cc","\u01cd":"\u01ce","\u01cf":"\u01d0","\u01d1":"\u01d2","\u01d3":"\u01d4","\u01d5":"\u01d6","\u01d7":"\u01d8","\u01d9":"\u01da","\u01db":"\u01dc","\u01de":"\u01df","\u01e0":"\u01e1","\u01e2":"\u01e3","\u01e4":"\u01e5","\u01e6":"\u01e7","\u01e8":"\u01e9","\u01ea":"\u01eb","\u01ec":"\u01ed","\u01ee":"\u01ef","\u01f1":"\u01f3","\u01f2":"\u01f3","\u01f4":"\u01f5","\u01f6":"\u0195","\u01f7":"\u01bf","\u01f8":"\u01f9","\u01fa":"\u01fb","\u01fc":"\u01fd","\u01fe":"\u01ff","\u0200":"\u0201","\u0202":"\u0203","\u0204":"\u0205","\u0206":"\u0207","\u0208":"\u0209","\u020a":"\u020b","\u020c":"\u020d","\u020e":"\u020f","\u0210":"\u0211","\u0212":"\u0213","\u0214":"\u0215","\u0216":"\u0217","\u0218":"\u0219","\u021a":"\u021b","\u021c":"\u021d","\u021e":"\u021f","\u0220":"\u019e","\u0222":"\u0223","\u0224":"\u0225","\u0226":"\u0227","\u0228":"\u0229","\u022a":"\u022b","\u022c":"\u022d","\u022e":"\u022f","\u0230":"\u0231","\u0232":"\u0233","\u023a":"\u2c65","\u023b":"\u023c","\u023d":"\u019a","\u023e":"\u2c66","\u0241":"\u0242","\u0243":"\u0180","\u0244":"\u0289","\u0245":"\u028c","\u0246":"\u0247","\u0248":"\u0249","\u024a":"\u024b","\u024c":"\u024d","\u024e":"\u024f","\u0370":"\u0371","\u0372":"\u0373","\u0376":"\u0377","\u037f":"\u03f3","\u0386":"\u03ac","\u0388":"\u03ad","\u0389":"\u03ae","\u038a":"\u03af","\u038c":"\u03cc","\u038e":"\u03cd","\u038f":"\u03ce","\u0391":"\u03b1","\u0392":"\u03b2","\u0393":"\u03b3","\u0394":"\u03b4","\u0395":"\u03b5","\u0396":"\u03b6","\u0397":"\u03b7","\u0398":"\u03b8","\u0399":"\u03b9","\u039a":"\u03ba","\u039b":"\u03bb","\u039c":"\u03bc","\u039d":"\u03bd","\u039e":"\u03be","\u039f":"\u03bf","\u03a0":"\u03c0","\u03a1":"\u03c1","\u03a3":"\u03c3","\u03a4":"\u03c4","\u03a5":"\u03c5","\u03a6":"\u03c6","\u03a7":"\u03c7","\u03a8":"\u03c8","\u03a9":"\u03c9","\u03aa":"\u03ca","\u03ab":"\u03cb","\u03e2":"\u03e3","\u03e4":"\u03e5","\u03e6":"\u03e7","\u03e8":"\u03e9","\u03ea":"\u03eb","\u03ec":"\u03ed","\u03ee":"\u03ef","\u03f7":"\u03f8","\u03fa":"\u03fb","\u0400":"\u0450","\u0401":"\u0451","\u0402":"\u0452","\u0403":"\u0453","\u0404":"\u0454","\u0405":"\u0455","\u0406":"\u0456","\u0407":"\u0457","\u0408":"\u0458","\u0409":"\u0459","\u040a":"\u045a","\u040b":"\u045b","\u040c":"\u045c","\u040d":"\u045d","\u040e":"\u045e","\u040f":"\u045f","\u0410":"\u0430","\u0411":"\u0431","\u0412":"\u0432","\u0413":"\u0433","\u0414":"\u0434","\u0415":"\u0435","\u0416":"\u0436","\u0417":"\u0437","\u0418":"\u0438","\u0419":"\u0439","\u041a":"\u043a","\u041b":"\u043b","\u041c":"\u043c","\u041d":"\u043d","\u041e":"\u043e","\u041f":"\u043f","\u0420":"\u0440","\u0421":"\u0441","\u0422":"\u0442","\u0423":"\u0443","\u0424":"\u0444","\u0425":"\u0445","\u0426":"\u0446","\u0427":"\u0447","\u0428":"\u0448","\u0429":"\u0449","\u042a":"\u044a","\u042b":"\u044b","\u042c":"\u044c","\u042d":"\u044d","\u042e":"\u044e","\u042f":"\u044f","\u0460":"\u0461","\u0462":"\u0463","\u0464":"\u0465","\u0466":"\u0467","\u0468":"\u0469","\u046a":"\u046b","\u046c":"\u046d","\u046e":"\u046f","\u0470":"\u0471","\u0472":"\u0473","\u0474":"\u0475","\u0476":"\u0477","\u0478":"\u0479","\u047a":"\u047b","\u047c":"\u047d","\u047e":"\u047f","\u0480":"\u0481","\u048a":"\u048b","\u048c":"\u048d","\u048e":"\u048f","\u0490":"\u0491","\u0492":"\u0493","\u0494":"\u0495","\u0496":"\u0497","\u0498":"\u0499","\u049a":"\u049b","\u049c":"\u049d","\u049e":"\u049f","\u04a0":"\u04a1","\u04a2":"\u04a3","\u04a6":"\u04a7","\u04a8":"\u04a9","\u04aa":"\u04ab","\u04ac":"\u04ad","\u04ae":"\u04af","\u04b0":"\u04b1","\u04b2":"\u04b3","\u04b6":"\u04b7","\u04b8":"\u04b9","\u04ba":"\u04bb","\u04bc":"\u04bd","\u04be":"\u04bf","\u04c1":"\u04c2","\u04c3":"\u04c4","\u04c5":"\u04c6","\u04c7":"\u04c8","\u04c9":"\u04ca","\u04cb":"\u04cc","\u04cd":"\u04ce","\u04d0":"\u04d1","\u04d2":"\u04d3","\u04d6":"\u04d7","\u04d8":"\u04d9","\u04da":"\u04db","\u04dc":"\u04dd","\u04de":"\u04df","\u04e0":"\u04e1","\u04e2":"\u04e3","\u04e4":"\u04e5","\u04e6":"\u04e7","\u04e8":"\u04e9","\u04ea":"\u04eb","\u04ec":"\u04ed","\u04ee":"\u04ef","\u04f0":"\u04f1","\u04f2":"\u04f3","\u04f4":"\u04f5","\u04f6":"\u04f7","\u04f8":"\u04f9","\u04fa":"\u04fb","\u04fc":"\u04fd","\u04fe":"\u04ff","\u0500":"\u0501","\u0502":"\u0503","\u0504":"\u0505","\u0506":"\u0507","\u0508":"\u0509","\u050a":"\u050b","\u050c":"\u050d","\u050e":"\u050f","\u0510":"\u0511","\u0512":"\u0513","\u0514":"\u0515","\u0516":"\u0517","\u0518":"\u0519","\u051a":"\u051b","\u051c":"\u051d","\u051e":"\u051f","\u0520":"\u0521","\u0522":"\u0523","\u0524":"\u0525","\u0526":"\u0527","\u0528":"\u0529","\u052a":"\u052b","\u052c":"\u052d","\u052e":"\u052f","\u0531":"\u0561","\u0532":"\u0562","\u0533":"\u0563","\u0534":"\u0564","\u0535":"\u0565","\u0536":"\u0566","\u0537":"\u0567","\u0538":"\u0568","\u0539":"\u0569","\u053a":"\u056a","\u053b":"\u056b","\u053c":"\u056c","\u053d":"\u056d","\u053e":"\u056e","\u053f":"\u056f","\u0540":"\u0570","\u0541":"\u0571","\u0542":"\u0572","\u0543":"\u0573","\u0544":"\u0574","\u0545":"\u0575","\u0546":"\u0576","\u0547":"\u0577","\u0548":"\u0578","\u0549":"\u0579","\u054a":"\u057a","\u054b":"\u057b","\u054c":"\u057c","\u054d":"\u057d","\u054e":"\u057e","\u054f":"\u057f","\u0550":"\u0580","\u0551":"\u0581","\u0552":"\u0582","\u0553":"\u0583","\u0554":"\u0584","\u0555":"\u0585","\u0556":"\u0586","\u10a0":"\u2d00","\u10a1":"\u2d01","\u10a2":"\u2d02","\u10a3":"\u2d03","\u10a4":"\u2d04","\u10a5":"\u2d05","\u10a6":"\u2d06","\u10a7":"\u2d07","\u10a8":"\u2d08","\u10a9":"\u2d09","\u10aa":"\u2d0a","\u10ab":"\u2d0b","\u10ac":"\u2d0c","\u10ad":"\u2d0d","\u10ae":"\u2d0e","\u10af":"\u2d0f","\u10b0":"\u2d10","\u10b1":"\u2d11","\u10b2":"\u2d12","\u10b3":"\u2d13","\u10b4":"\u2d14","\u10b5":"\u2d15","\u10b6":"\u2d16","\u10b7":"\u2d17","\u10b8":"\u2d18","\u10b9":"\u2d19","\u10ba":"\u2d1a","\u10bb":"\u2d1b","\u10bc":"\u2d1c","\u10bd":"\u2d1d","\u10be":"\u2d1e","\u10bf":"\u2d1f","\u10c0":"\u2d20","\u10c1":"\u2d21","\u10c2":"\u2d22","\u10c3":"\u2d23","\u10c4":"\u2d24","\u10c5":"\u2d25","\u10c7":"\u2d27","\u10cd":"\u2d2d","\u1c90":"\u10d0","\u1c91":"\u10d1","\u1c92":"\u10d2","\u1c93":"\u10d3","\u1c94":"\u10d4","\u1c95":"\u10d5","\u1c96":"\u10d6","\u1c97":"\u10d7","\u1c98":"\u10d8","\u1c99":"\u10d9","\u1c9a":"\u10da","\u1c9b":"\u10db","\u1c9c":"\u10dc","\u1c9d":"\u10dd","\u1c9e":"\u10de","\u1c9f":"\u10df","\u1ca0":"\u10e0","\u1ca1":"\u10e1","\u1ca2":"\u10e2","\u1ca3":"\u10e3","\u1ca4":"\u10e4","\u1ca5":"\u10e5","\u1ca6":"\u10e6","\u1ca7":"\u10e7","\u1ca8":"\u10e8","\u1ca9":"\u10e9","\u1caa":"\u10ea","\u1cab":"\u10eb","\u1cac":"\u10ec","\u1cad":"\u10ed","\u1cae":"\u10ee","\u1caf":"\u10ef","\u1cb0":"\u10f0","\u1cb1":"\u10f1","\u1cb2":"\u10f2","\u1cb3":"\u10f3","\u1cb4":"\u10f4","\u1cb5":"\u10f5","\u1cb6":"\u10f6","\u1cb7":"\u10f7","\u1cb8":"\u10f8","\u1cb9":"\u10f9","\u1cba":"\u10fa","\u1cbd":"\u10fd","\u1cbe":"\u10fe","\u1cbf":"\u10ff","\u1e00":"\u1e01","\u1e02":"\u1e03","\u1e04":"\u1e05","\u1e06":"\u1e07","\u1e08":"\u1e09","\u1e0a":"\u1e0b","\u1e0c":"\u1e0d","\u1e0e":"\u1e0f","\u1e10":"\u1e11","\u1e12":"\u1e13","\u1e14":"\u1e15","\u1e16":"\u1e17","\u1e18":"\u1e19","\u1e1a":"\u1e1b","\u1e1c":"\u1e1d","\u1e1e":"\u1e1f","\u1e20":"\u1e21","\u1e22":"\u1e23","\u1e24":"\u1e25","\u1e26":"\u1e27","\u1e28":"\u1e29","\u1e2a":"\u1e2b","\u1e2c":"\u1e2d","\u1e2e":"\u1e2f","\u1e30":"\u1e31","\u1e32":"\u1e33","\u1e34":"\u1e35","\u1e36":"\u1e37","\u1e38":"\u1e39","\u1e3a":"\u1e3b","\u1e3c":"\u1e3d","\u1e3e":"\u1e3f","\u1e40":"\u1e41","\u1e42":"\u1e43","\u1e44":"\u1e45","\u1e46":"\u1e47","\u1e48":"\u1e49","\u1e4a":"\u1e4b","\u1e4c":"\u1e4d","\u1e4e":"\u1e4f","\u1e50":"\u1e51","\u1e52":"\u1e53","\u1e54":"\u1e55","\u1e56":"\u1e57","\u1e58":"\u1e59","\u1e5a":"\u1e5b","\u1e5c":"\u1e5d","\u1e5e":"\u1e5f","\u1e60":"\u1e61","\u1e62":"\u1e63","\u1e64":"\u1e65","\u1e66":"\u1e67","\u1e68":"\u1e69","\u1e6a":"\u1e6b","\u1e6c":"\u1e6d","\u1e6e":"\u1e6f","\u1e70":"\u1e71","\u1e72":"\u1e73","\u1e74":"\u1e75","\u1e76":"\u1e77","\u1e78":"\u1e79","\u1e7a":"\u1e7b","\u1e7c":"\u1e7d","\u1e7e":"\u1e7f","\u1e80":"\u1e81","\u1e82":"\u1e83","\u1e84":"\u1e85","\u1e86":"\u1e87","\u1e88":"\u1e89","\u1e8a":"\u1e8b","\u1e8c":"\u1e8d","\u1e8e":"\u1e8f","\u1e90":"\u1e91","\u1e92":"\u1e93","\u1e94":"\u1e95","\u1e9e":"ss","\u1ea0":"\u1ea1","\u1ea2":"\u1ea3","\u1ea4":"\u1ea5","\u1ea6":"\u1ea7","\u1ea8":"\u1ea9","\u1eaa":"\u1eab","\u1eac":"\u1ead","\u1eae":"\u1eaf","\u1eb0":"\u1eb1","\u1eb2":"\u1eb3","\u1eb4":"\u1eb5","\u1eb6":"\u1eb7","\u1eb8":"\u1eb9","\u1eba":"\u1ebb","\u1ebc":"\u1ebd","\u1ebe":"\u1ebf","\u1ec0":"\u1ec1","\u1ec2":"\u1ec3","\u1ec4":"\u1ec5","\u1ec6":"\u1ec7","\u1ec8":"\u1ec9","\u1eca":"\u1ecb","\u1ecc":"\u1ecd","\u1ece":"\u1ecf","\u1ed0":"\u1ed1","\u1ed2":"\u1ed3","\u1ed4":"\u1ed5","\u1ed6":"\u1ed7","\u1ed8":"\u1ed9","\u1eda":"\u1edb","\u1edc":"\u1edd","\u1ede":"\u1edf","\u1ee0":"\u1ee1","\u1ee2":"\u1ee3","\u1ee4":"\u1ee5","\u1ee6":"\u1ee7","\u1ee8":"\u1ee9","\u1eea":"\u1eeb","\u1eec":"\u1eed","\u1eee":"\u1eef","\u1ef0":"\u1ef1","\u1ef2":"\u1ef3","\u1ef4":"\u1ef5","\u1ef6":"\u1ef7","\u1ef8":"\u1ef9","\u1efa":"\u1efb","\u1efc":"\u1efd","\u1efe":"\u1eff","\u1f08":"\u1f00","\u1f09":"\u1f01","\u1f0a":"\u1f02","\u1f0b":"\u1f03","\u1f0c":"\u1f04","\u1f0d":"\u1f05","\u1f0e":"\u1f06","\u1f0f":"\u1f07","\u1f18":"\u1f10","\u1f19":"\u1f11","\u1f1a":"\u1f12","\u1f1b":"\u1f13","\u1f1c":"\u1f14","\u1f1d":"\u1f15","\u1f28":"\u1f20","\u1f29":"\u1f21","\u1f2a":"\u1f22","\u1f2b":"\u1f23","\u1f2c":"\u1f24","\u1f2d":"\u1f25","\u1f2e":"\u1f26","\u1f2f":"\u1f27","\u1f38":"\u1f30","\u1f39":"\u1f31","\u1f3a":"\u1f32","\u1f3b":"\u1f33","\u1f3c":"\u1f34","\u1f3d":"\u1f35","\u1f3e":"\u1f36","\u1f3f":"\u1f37","\u1f48":"\u1f40","\u1f49":"\u1f41","\u1f4a":"\u1f42","\u1f4b":"\u1f43","\u1f4c":"\u1f44","\u1f4d":"\u1f45","\u1f59":"\u1f51","\u1f5b":"\u1f53","\u1f5d":"\u1f55","\u1f5f":"\u1f57","\u1f68":"\u1f60","\u1f69":"\u1f61","\u1f6a":"\u1f62","\u1f6b":"\u1f63","\u1f6c":"\u1f64","\u1f6d":"\u1f65","\u1f6e":"\u1f66","\u1f6f":"\u1f67","\u1f88":"\u1f00\u03b9","\u1f89":"\u1f01\u03b9","\u1f8a":"\u1f02\u03b9","\u1f8b":"\u1f03\u03b9","\u1f8c":"\u1f04\u03b9","\u1f8d":"\u1f05\u03b9","\u1f8e":"\u1f06\u03b9","\u1f8f":"\u1f07\u03b9","\u1f98":"\u1f20\u03b9","\u1f99":"\u1f21\u03b9","\u1f9a":"\u1f22\u03b9","\u1f9b":"\u1f23\u03b9","\u1f9c":"\u1f24\u03b9","\u1f9d":"\u1f25\u03b9","\u1f9e":"\u1f26\u03b9","\u1f9f":"\u1f27\u03b9","\u1fa8":"\u1f60\u03b9","\u1fa9":"\u1f61\u03b9","\u1faa":"\u1f62\u03b9","\u1fab":"\u1f63\u03b9","\u1fac":"\u1f64\u03b9","\u1fad":"\u1f65\u03b9","\u1fae":"\u1f66\u03b9","\u1faf":"\u1f67\u03b9","\u1fb8":"\u1fb0","\u1fb9":"\u1fb1","\u1fba":"\u1f70","\u1fbb":"\u1f71","\u1fbc":"\u03b1\u03b9","\u1fc8":"\u1f72","\u1fc9":"\u1f73","\u1fca":"\u1f74","\u1fcb":"\u1f75","\u1fcc":"\u03b7\u03b9","\u1fd8":"\u1fd0","\u1fd9":"\u1fd1","\u1fda":"\u1f76","\u1fdb":"\u1f77","\u1fe8":"\u1fe0","\u1fe9":"\u1fe1","\u1fea":"\u1f7a","\u1feb":"\u1f7b","\u1fec":"\u1fe5","\u1ff8":"\u1f78","\u1ff9":"\u1f79","\u1ffa":"\u1f7c","\u1ffb":"\u1f7d","\u1ffc":"\u03c9\u03b9","\u24b6":"\u24d0","\u24b7":"\u24d1","\u24b8":"\u24d2","\u24b9":"\u24d3","\u24ba":"\u24d4","\u24bb":"\u24d5","\u24bc":"\u24d6","\u24bd":"\u24d7","\u24be":"\u24d8","\u24bf":"\u24d9","\u24c0":"\u24da","\u24c1":"\u24db","\u24c2":"\u24dc","\u24c3":"\u24dd","\u24c4":"\u24de","\u24c5":"\u24df","\u24c6":"\u24e0","\u24c7":"\u24e1","\u24c8":"\u24e2","\u24c9":"\u24e3","\u24ca":"\u24e4","\u24cb":"\u24e5","\u24cc":"\u24e6","\u24cd":"\u24e7","\u24ce":"\u24e8","\u24cf":"\u24e9","\u2c00":"\u2c30","\u2c01":"\u2c31","\u2c02":"\u2c32","\u2c03":"\u2c33","\u2c04":"\u2c34","\u2c05":"\u2c35","\u2c06":"\u2c36","\u2c07":"\u2c37","\u2c08":"\u2c38","\u2c09":"\u2c39","\u2c0a":"\u2c3a","\u2c0b":"\u2c3b","\u2c0c":"\u2c3c","\u2c0d":"\u2c3d","\u2c0e":"\u2c3e","\u2c0f":"\u2c3f","\u2c10":"\u2c40","\u2c11":"\u2c41","\u2c12":"\u2c42","\u2c13":"\u2c43","\u2c14":"\u2c44","\u2c15":"\u2c45","\u2c16":"\u2c46","\u2c17":"\u2c47","\u2c18":"\u2c48","\u2c19":"\u2c49","\u2c1a":"\u2c4a","\u2c1b":"\u2c4b","\u2c1c":"\u2c4c","\u2c1d":"\u2c4d","\u2c1e":"\u2c4e","\u2c1f":"\u2c4f","\u2c20":"\u2c50","\u2c21":"\u2c51","\u2c22":"\u2c52","\u2c23":"\u2c53","\u2c24":"\u2c54","\u2c25":"\u2c55","\u2c26":"\u2c56","\u2c27":"\u2c57","\u2c28":"\u2c58","\u2c29":"\u2c59","\u2c2a":"\u2c5a","\u2c2b":"\u2c5b","\u2c2c":"\u2c5c","\u2c2d":"\u2c5d","\u2c2e":"\u2c5e","\u2c2f":"\u2c5f","\u2c60":"\u2c61","\u2c62":"\u026b","\u2c63":"\u1d7d","\u2c64":"\u027d","\u2c67":"\u2c68","\u2c69":"\u2c6a","\u2c6b":"\u2c6c","\u2c6d":"\u0251","\u2c6e":"\u0271","\u2c6f":"\u0250","\u2c70":"\u0252","\u2c72":"\u2c73","\u2c75":"\u2c76","\u2c7e":"\u023f","\u2c7f":"\u0240","\u2c80":"\u2c81","\u2c82":"\u2c83","\u2c84":"\u2c85","\u2c86":"\u2c87","\u2c88":"\u2c89","\u2c8a":"\u2c8b","\u2c8c":"\u2c8d","\u2c8e":"\u2c8f","\u2c90":"\u2c91","\u2c92":"\u2c93","\u2c94":"\u2c95","\u2c96":"\u2c97","\u2c98":"\u2c99","\u2c9a":"\u2c9b","\u2c9c":"\u2c9d","\u2c9e":"\u2c9f","\u2ca0":"\u2ca1","\u2ca2":"\u2ca3","\u2ca4":"\u2ca5","\u2ca6":"\u2ca7","\u2ca8":"\u2ca9","\u2caa":"\u2cab","\u2cac":"\u2cad","\u2cae":"\u2caf","\u2cb0":"\u2cb1","\u2cb2":"\u2cb3","\u2cb4":"\u2cb5","\u2cb6":"\u2cb7","\u2cb8":"\u2cb9","\u2cba":"\u2cbb","\u2cbc":"\u2cbd","\u2cbe":"\u2cbf","\u2cc0":"\u2cc1","\u2cc2":"\u2cc3","\u2cc4":"\u2cc5","\u2cc6":"\u2cc7","\u2cc8":"\u2cc9","\u2cca":"\u2ccb","\u2ccc":"\u2ccd","\u2cce":"\u2ccf","\u2cd0":"\u2cd1","\u2cd2":"\u2cd3","\u2cd4":"\u2cd5","\u2cd6":"\u2cd7","\u2cd8":"\u2cd9","\u2cda":"\u2cdb","\u2cdc":"\u2cdd","\u2cde":"\u2cdf","\u2ce0":"\u2ce1","\u2ce2":"\u2ce3","\u2ceb":"\u2cec","\u2ced":"\u2cee","\u2cf2":"\u2cf3","\ua640":"\ua641","\ua642":"\ua643","\ua644":"\ua645","\ua646":"\ua647","\ua648":"\ua649","\ua64a":"\ua64b","\ua64c":"\ua64d","\ua64e":"\ua64f","\ua650":"\ua651","\ua652":"\ua653","\ua654":"\ua655","\ua656":"\ua657","\ua658":"\ua659","\ua65a":"\ua65b","\ua65c":"\ua65d","\ua65e":"\ua65f","\ua660":"\ua661","\ua662":"\ua663","\ua664":"\ua665","\ua666":"\ua667","\ua668":"\ua669","\ua66a":"\ua66b","\ua66c":"\ua66d","\ua680":"\ua681","\ua682":"\ua683","\ua684":"\ua685","\ua686":"\ua687","\ua688":"\ua689","\ua68a":"\ua68b","\ua68c":"\ua68d","\ua68e":"\ua68f","\ua690":"\ua691","\ua692":"\ua693","\ua694":"\ua695","\ua696":"\ua697","\ua698":"\ua699","\ua69a":"\ua69b","\ua722":"\ua723","\ua724":"\ua725","\ua726":"\ua727","\ua728":"\ua729","\ua72a":"\ua72b","\ua72c":"\ua72d","\ua72e":"\ua72f","\ua732":"\ua733","\ua734":"\ua735","\ua736":"\ua737","\ua738":"\ua739","\ua73a":"\ua73b","\ua73c":"\ua73d","\ua73e":"\ua73f","\ua740":"\ua741","\ua742":"\ua743","\ua744":"\ua745","\ua746":"\ua747","\ua748":"\ua749","\ua74a":"\ua74b","\ua74c":"\ua74d","\ua74e":"\ua74f","\ua750":"\ua751","\ua752":"\ua753","\ua754":"\ua755","\ua756":"\ua757","\ua758":"\ua759","\ua75a":"\ua75b","\ua75c":"\ua75d","\ua75e":"\ua75f","\ua760":"\ua761","\ua762":"\ua763","\ua764":"\ua765","\ua766":"\ua767","\ua768":"\ua769","\ua76a":"\ua76b","\ua76c":"\ua76d","\ua76e":"\ua76f","\ua779":"\ua77a","\ua77b":"\ua77c","\ua77d":"\u1d79","\ua77e":"\ua77f","\ua780":"\ua781","\ua782":"\ua783","\ua784":"\ua785","\ua786":"\ua787","\ua78b":"\ua78c","\ua78d":"\u0265","\ua790":"\ua791","\ua792":"\ua793","\ua796":"\ua797","\ua798":"\ua799","\ua79a":"\ua79b","\ua79c":"\ua79d","\ua79e":"\ua79f","\ua7a0":"\ua7a1","\ua7a2":"\ua7a3","\ua7a4":"\ua7a5","\ua7a6":"\ua7a7","\ua7a8":"\ua7a9","\ua7aa":"\u0266","\ua7ab":"\u025c","\ua7ac":"\u0261","\ua7ad":"\u026c","\ua7ae":"\u026a","\ua7b0":"\u029e","\ua7b1":"\u0287","\ua7b2":"\u029d","\ua7b3":"\uab53","\ua7b4":"\ua7b5","\ua7b6":"\ua7b7","\ua7b8":"\ua7b9","\ua7ba":"\ua7bb","\ua7bc":"\ua7bd","\ua7be":"\ua7bf","\ua7c0":"\ua7c1","\ua7c2":"\ua7c3","\ua7c4":"\ua794","\ua7c5":"\u0282","\ua7c6":"\u1d8e","\ua7c7":"\ua7c8","\ua7c9":"\ua7ca","\ua7d0":"\ua7d1","\ua7d6":"\ua7d7","\ua7d8":"\ua7d9","\ua7f5":"\ua7f6","\uff21":"\uff41","\uff22":"\uff42","\uff23":"\uff43","\uff24":"\uff44","\uff25":"\uff45","\uff26":"\uff46","\uff27":"\uff47","\uff28":"\uff48","\uff29":"\uff49","\uff2a":"\uff4a","\uff2b":"\uff4b","\uff2c":"\uff4c","\uff2d":"\uff4d","\uff2e":"\uff4e","\uff2f":"\uff4f","\uff30":"\uff50","\uff31":"\uff51","\uff32":"\uff52","\uff33":"\uff53","\uff34":"\uff54","\uff35":"\uff55","\uff36":"\uff56","\uff37":"\uff57","\uff38":"\uff58","\uff39":"\uff59","\uff3a":"\uff5a","\ud801\udc00":"\ud801\udc28","\ud801\udc01":"\ud801\udc29","\ud801\udc02":"\ud801\udc2a","\ud801\udc03":"\ud801\udc2b","\ud801\udc04":"\ud801\udc2c","\ud801\udc05":"\ud801\udc2d","\ud801\udc06":"\ud801\udc2e","\ud801\udc07":"\ud801\udc2f","\ud801\udc08":"\ud801\udc30","\ud801\udc09":"\ud801\udc31","\ud801\udc0a":"\ud801\udc32","\ud801\udc0b":"\ud801\udc33","\ud801\udc0c":"\ud801\udc34","\ud801\udc0d":"\ud801\udc35","\ud801\udc0e":"\ud801\udc36","\ud801\udc0f":"\ud801\udc37","\ud801\udc10":"\ud801\udc38","\ud801\udc11":"\ud801\udc39","\ud801\udc12":"\ud801\udc3a","\ud801\udc13":"\ud801\udc3b","\ud801\udc14":"\ud801\udc3c","\ud801\udc15":"\ud801\udc3d","\ud801\udc16":"\ud801\udc3e","\ud801\udc17":"\ud801\udc3f","\ud801\udc18":"\ud801\udc40","\ud801\udc19":"\ud801\udc41","\ud801\udc1a":"\ud801\udc42","\ud801\udc1b":"\ud801\udc43","\ud801\udc1c":"\ud801\udc44","\ud801\udc1d":"\ud801\udc45","\ud801\udc1e":"\ud801\udc46","\ud801\udc1f":"\ud801\udc47","\ud801\udc20":"\ud801\udc48","\ud801\udc21":"\ud801\udc49","\ud801\udc22":"\ud801\udc4a","\ud801\udc23":"\ud801\udc4b","\ud801\udc24":"\ud801\udc4c","\ud801\udc25":"\ud801\udc4d","\ud801\udc26":"\ud801\udc4e","\ud801\udc27":"\ud801\udc4f","\ud801\udcb0":"\ud801\udcd8","\ud801\udcb1":"\ud801\udcd9","\ud801\udcb2":"\ud801\udcda","\ud801\udcb3":"\ud801\udcdb","\ud801\udcb4":"\ud801\udcdc","\ud801\udcb5":"\ud801\udcdd","\ud801\udcb6":"\ud801\udcde","\ud801\udcb7":"\ud801\udcdf","\ud801\udcb8":"\ud801\udce0","\ud801\udcb9":"\ud801\udce1","\ud801\udcba":"\ud801\udce2","\ud801\udcbb":"\ud801\udce3","\ud801\udcbc":"\ud801\udce4","\ud801\udcbd":"\ud801\udce5","\ud801\udcbe":"\ud801\udce6","\ud801\udcbf":"\ud801\udce7","\ud801\udcc0":"\ud801\udce8","\ud801\udcc1":"\ud801\udce9","\ud801\udcc2":"\ud801\udcea","\ud801\udcc3":"\ud801\udceb","\ud801\udcc4":"\ud801\udcec","\ud801\udcc5":"\ud801\udced","\ud801\udcc6":"\ud801\udcee","\ud801\udcc7":"\ud801\udcef","\ud801\udcc8":"\ud801\udcf0","\ud801\udcc9":"\ud801\udcf1","\ud801\udcca":"\ud801\udcf2","\ud801\udccb":"\ud801\udcf3","\ud801\udccc":"\ud801\udcf4","\ud801\udccd":"\ud801\udcf5","\ud801\udcce":"\ud801\udcf6","\ud801\udccf":"\ud801\udcf7","\ud801\udcd0":"\ud801\udcf8","\ud801\udcd1":"\ud801\udcf9","\ud801\udcd2":"\ud801\udcfa","\ud801\udcd3":"\ud801\udcfb","\ud801\udd70":"\ud801\udd97","\ud801\udd71":"\ud801\udd98","\ud801\udd72":"\ud801\udd99","\ud801\udd73":"\ud801\udd9a","\ud801\udd74":"\ud801\udd9b","\ud801\udd75":"\ud801\udd9c","\ud801\udd76":"\ud801\udd9d","\ud801\udd77":"\ud801\udd9e","\ud801\udd78":"\ud801\udd9f","\ud801\udd79":"\ud801\udda0","\ud801\udd7a":"\ud801\udda1","\ud801\udd7c":"\ud801\udda3","\ud801\udd7d":"\ud801\udda4","\ud801\udd7e":"\ud801\udda5","\ud801\udd7f":"\ud801\udda6","\ud801\udd80":"\ud801\udda7","\ud801\udd81":"\ud801\udda8","\ud801\udd82":"\ud801\udda9","\ud801\udd83":"\ud801\uddaa","\ud801\udd84":"\ud801\uddab","\ud801\udd85":"\ud801\uddac","\ud801\udd86":"\ud801\uddad","\ud801\udd87":"\ud801\uddae","\ud801\udd88":"\ud801\uddaf","\ud801\udd89":"\ud801\uddb0","\ud801\udd8a":"\ud801\uddb1","\ud801\udd8c":"\ud801\uddb3","\ud801\udd8d":"\ud801\uddb4","\ud801\udd8e":"\ud801\uddb5","\ud801\udd8f":"\ud801\uddb6","\ud801\udd90":"\ud801\uddb7","\ud801\udd91":"\ud801\uddb8","\ud801\udd92":"\ud801\uddb9","\ud801\udd94":"\ud801\uddbb","\ud801\udd95":"\ud801\uddbc","\ud803\udc80":"\ud803\udcc0","\ud803\udc81":"\ud803\udcc1","\ud803\udc82":"\ud803\udcc2","\ud803\udc83":"\ud803\udcc3","\ud803\udc84":"\ud803\udcc4","\ud803\udc85":"\ud803\udcc5","\ud803\udc86":"\ud803\udcc6","\ud803\udc87":"\ud803\udcc7","\ud803\udc88":"\ud803\udcc8","\ud803\udc89":"\ud803\udcc9","\ud803\udc8a":"\ud803\udcca","\ud803\udc8b":"\ud803\udccb","\ud803\udc8c":"\ud803\udccc","\ud803\udc8d":"\ud803\udccd","\ud803\udc8e":"\ud803\udcce","\ud803\udc8f":"\ud803\udccf","\ud803\udc90":"\ud803\udcd0","\ud803\udc91":"\ud803\udcd1","\ud803\udc92":"\ud803\udcd2","\ud803\udc93":"\ud803\udcd3","\ud803\udc94":"\ud803\udcd4","\ud803\udc95":"\ud803\udcd5","\ud803\udc96":"\ud803\udcd6","\ud803\udc97":"\ud803\udcd7","\ud803\udc98":"\ud803\udcd8","\ud803\udc99":"\ud803\udcd9","\ud803\udc9a":"\ud803\udcda","\ud803\udc9b":"\ud803\udcdb","\ud803\udc9c":"\ud803\udcdc","\ud803\udc9d":"\ud803\udcdd","\ud803\udc9e":"\ud803\udcde","\ud803\udc9f":"\ud803\udcdf","\ud803\udca0":"\ud803\udce0","\ud803\udca1":"\ud803\udce1","\ud803\udca2":"\ud803\udce2","\ud803\udca3":"\ud803\udce3","\ud803\udca4":"\ud803\udce4","\ud803\udca5":"\ud803\udce5","\ud803\udca6":"\ud803\udce6","\ud803\udca7":"\ud803\udce7","\ud803\udca8":"\ud803\udce8","\ud803\udca9":"\ud803\udce9","\ud803\udcaa":"\ud803\udcea","\ud803\udcab":"\ud803\udceb","\ud803\udcac":"\ud803\udcec","\ud803\udcad":"\ud803\udced","\ud803\udcae":"\ud803\udcee","\ud803\udcaf":"\ud803\udcef","\ud803\udcb0":"\ud803\udcf0","\ud803\udcb1":"\ud803\udcf1","\ud803\udcb2":"\ud803\udcf2","\ud806\udca0":"\ud806\udcc0","\ud806\udca1":"\ud806\udcc1","\ud806\udca2":"\ud806\udcc2","\ud806\udca3":"\ud806\udcc3","\ud806\udca4":"\ud806\udcc4","\ud806\udca5":"\ud806\udcc5","\ud806\udca6":"\ud806\udcc6","\ud806\udca7":"\ud806\udcc7","\ud806\udca8":"\ud806\udcc8","\ud806\udca9":"\ud806\udcc9","\ud806\udcaa":"\ud806\udcca","\ud806\udcab":"\ud806\udccb","\ud806\udcac":"\ud806\udccc","\ud806\udcad":"\ud806\udccd","\ud806\udcae":"\ud806\udcce","\ud806\udcaf":"\ud806\udccf","\ud806\udcb0":"\ud806\udcd0","\ud806\udcb1":"\ud806\udcd1","\ud806\udcb2":"\ud806\udcd2","\ud806\udcb3":"\ud806\udcd3","\ud806\udcb4":"\ud806\udcd4","\ud806\udcb5":"\ud806\udcd5","\ud806\udcb6":"\ud806\udcd6","\ud806\udcb7":"\ud806\udcd7","\ud806\udcb8":"\ud806\udcd8","\ud806\udcb9":"\ud806\udcd9","\ud806\udcba":"\ud806\udcda","\ud806\udcbb":"\ud806\udcdb","\ud806\udcbc":"\ud806\udcdc","\ud806\udcbd":"\ud806\udcdd","\ud806\udcbe":"\ud806\udcde","\ud806\udcbf":"\ud806\udcdf","\ud81b\ude40":"\ud81b\ude60","\ud81b\ude41":"\ud81b\ude61","\ud81b\ude42":"\ud81b\ude62","\ud81b\ude43":"\ud81b\ude63","\ud81b\ude44":"\ud81b\ude64","\ud81b\ude45":"\ud81b\ude65","\ud81b\ude46":"\ud81b\ude66","\ud81b\ude47":"\ud81b\ude67","\ud81b\ude48":"\ud81b\ude68","\ud81b\ude49":"\ud81b\ude69","\ud81b\ude4a":"\ud81b\ude6a","\ud81b\ude4b":"\ud81b\ude6b","\ud81b\ude4c":"\ud81b\ude6c","\ud81b\ude4d":"\ud81b\ude6d","\ud81b\ude4e":"\ud81b\ude6e","\ud81b\ude4f":"\ud81b\ude6f","\ud81b\ude50":"\ud81b\ude70","\ud81b\ude51":"\ud81b\ude71","\ud81b\ude52":"\ud81b\ude72","\ud81b\ude53":"\ud81b\ude73","\ud81b\ude54":"\ud81b\ude74","\ud81b\ude55":"\ud81b\ude75","\ud81b\ude56":"\ud81b\ude76","\ud81b\ude57":"\ud81b\ude77","\ud81b\ude58":"\ud81b\ude78","\ud81b\ude59":"\ud81b\ude79","\ud81b\ude5a":"\ud81b\ude7a","\ud81b\ude5b":"\ud81b\ude7b","\ud81b\ude5c":"\ud81b\ude7c","\ud81b\ude5d":"\ud81b\ude7d","\ud81b\ude5e":"\ud81b\ude7e","\ud81b\ude5f":"\ud81b\ude7f","\ud83a\udd00":"\ud83a\udd22","\ud83a\udd01":"\ud83a\udd23","\ud83a\udd02":"\ud83a\udd24","\ud83a\udd03":"\ud83a\udd25","\ud83a\udd04":"\ud83a\udd26","\ud83a\udd05":"\ud83a\udd27","\ud83a\udd06":"\ud83a\udd28","\ud83a\udd07":"\ud83a\udd29","\ud83a\udd08":"\ud83a\udd2a","\ud83a\udd09":"\ud83a\udd2b","\ud83a\udd0a":"\ud83a\udd2c","\ud83a\udd0b":"\ud83a\udd2d","\ud83a\udd0c":"\ud83a\udd2e","\ud83a\udd0d":"\ud83a\udd2f","\ud83a\udd0e":"\ud83a\udd30","\ud83a\udd0f":"\ud83a\udd31","\ud83a\udd10":"\ud83a\udd32","\ud83a\udd11":"\ud83a\udd33","\ud83a\udd12":"\ud83a\udd34","\ud83a\udd13":"\ud83a\udd35","\ud83a\udd14":"\ud83a\udd36","\ud83a\udd15":"\ud83a\udd37","\ud83a\udd16":"\ud83a\udd38","\ud83a\udd17":"\ud83a\udd39","\ud83a\udd18":"\ud83a\udd3a","\ud83a\udd19":"\ud83a\udd3b","\ud83a\udd1a":"\ud83a\udd3c","\ud83a\udd1b":"\ud83a\udd3d","\ud83a\udd1c":"\ud83a\udd3e","\ud83a\udd1d":"\ud83a\udd3f","\ud83a\udd1e":"\ud83a\udd40","\ud83a\udd1f":"\ud83a\udd41","\ud83a\udd20":"\ud83a\udd42","\ud83a\udd21":"\ud83a\udd43"},B.Mn,t.li)
 B.Mo=A.a(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BracketLeft","BracketRight","BrightnessDown","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Escape","Esc","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchControlPanel","LaunchMail","LaunchScreenSaver","MailForward","MailReply","MailSend","MediaFastForward","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","MicrophoneMuteToggle","Minus","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","PrintScreen","PrivacyScreenToggle","Props","Quote","Resume","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","Super","Suspend","Tab","Turbo","Undo","WakeUp","ZoomToggle"]),t.s)
-B.vd=new A.b8(231,{Abort:B.ym,Again:B.y2,AltLeft:B.dG,AltRight:B.dI,ArrowDown:B.xs,ArrowLeft:B.xr,ArrowRight:B.xq,ArrowUp:B.xt,AudioVolumeDown:B.ya,AudioVolumeMute:B.y8,AudioVolumeUp:B.y9,Backquote:B.x2,Backslash:B.x_,Backspace:B.wT,BracketLeft:B.wY,BracketRight:B.wZ,BrightnessDown:B.yC,BrightnessUp:B.yB,BrowserBack:B.yX,BrowserFavorites:B.z0,BrowserForward:B.yY,BrowserHome:B.yW,BrowserRefresh:B.z_,BrowserSearch:B.yV,BrowserStop:B.yZ,CapsLock:B.d_,Comma:B.x3,ContextMenu:B.xL,ControlLeft:B.dE,ControlRight:B.f_,Convert:B.yf,Copy:B.y5,Cut:B.y4,Delete:B.xn,Digit0:B.wR,Digit1:B.wI,Digit2:B.wJ,Digit3:B.wK,Digit4:B.wL,Digit5:B.wM,Digit6:B.wN,Digit7:B.wO,Digit8:B.wP,Digit9:B.wQ,DisplayToggleIntExt:B.yA,Eject:B.yL,End:B.xo,Enter:B.wS,Equal:B.wX,Escape:B.l1,Esc:B.l1,F1:B.x6,F10:B.xf,F11:B.xg,F12:B.xh,F13:B.xO,F14:B.xP,F15:B.xQ,F16:B.xR,F17:B.xS,F18:B.xT,F19:B.xU,F2:B.x7,F20:B.xV,F21:B.xW,F22:B.xX,F23:B.xY,F24:B.xZ,F3:B.x8,F4:B.x9,F5:B.xa,F6:B.xb,F7:B.xc,F8:B.xd,F9:B.xe,Find:B.y7,Fn:B.eZ,FnLock:B.vI,GameButton1:B.vO,GameButton10:B.vX,GameButton11:B.vY,GameButton12:B.vZ,GameButton13:B.w_,GameButton14:B.w0,GameButton15:B.w1,GameButton16:B.w2,GameButton2:B.vP,GameButton3:B.vQ,GameButton4:B.vR,GameButton5:B.vS,GameButton6:B.vT,GameButton7:B.vU,GameButton8:B.vV,GameButton9:B.vW,GameButtonA:B.w3,GameButtonB:B.w4,GameButtonC:B.w5,GameButtonLeft1:B.w6,GameButtonLeft2:B.w7,GameButtonMode:B.w8,GameButtonRight1:B.w9,GameButtonRight2:B.wa,GameButtonSelect:B.wb,GameButtonStart:B.wc,GameButtonThumbLeft:B.wd,GameButtonThumbRight:B.we,GameButtonX:B.wf,GameButtonY:B.wg,GameButtonZ:B.wh,Help:B.y0,Home:B.xl,Hyper:B.vG,Insert:B.xk,IntlBackslash:B.xK,IntlRo:B.yc,IntlYen:B.ye,KanaMode:B.yd,KeyA:B.wi,KeyB:B.wj,KeyC:B.wk,KeyD:B.wl,KeyE:B.wm,KeyF:B.wn,KeyG:B.wo,KeyH:B.wp,KeyI:B.wq,KeyJ:B.wr,KeyK:B.ws,KeyL:B.wt,KeyM:B.wu,KeyN:B.wv,KeyO:B.ww,KeyP:B.wx,KeyQ:B.wy,KeyR:B.wz,KeyS:B.wA,KeyT:B.wB,KeyU:B.wC,KeyV:B.wD,KeyW:B.wE,KeyX:B.wF,KeyY:B.wG,KeyZ:B.wH,KeyboardLayoutSelect:B.z5,Lang1:B.yh,Lang2:B.yi,Lang3:B.yj,Lang4:B.yk,Lang5:B.yl,LaunchApp1:B.yQ,LaunchApp2:B.yP,LaunchAssistant:B.yU,LaunchControlPanel:B.yR,LaunchMail:B.yO,LaunchScreenSaver:B.yT,MailForward:B.z3,MailReply:B.z2,MailSend:B.z4,MediaFastForward:B.yG,MediaPause:B.yE,MediaPlay:B.yD,MediaPlayPause:B.yM,MediaRecord:B.yF,MediaRewind:B.yH,MediaSelect:B.yN,MediaStop:B.yK,MediaTrackNext:B.yI,MediaTrackPrevious:B.yJ,MetaLeft:B.dH,MetaRight:B.f1,MicrophoneMuteToggle:B.vN,Minus:B.wW,NonConvert:B.yg,NumLock:B.i0,Numpad0:B.xI,Numpad1:B.xz,Numpad2:B.xA,Numpad3:B.xB,Numpad4:B.xC,Numpad5:B.xD,Numpad6:B.xE,Numpad7:B.xF,Numpad8:B.xG,Numpad9:B.xH,NumpadAdd:B.xx,NumpadBackspace:B.yq,NumpadClear:B.yw,NumpadClearEntry:B.yx,NumpadComma:B.yb,NumpadDecimal:B.xJ,NumpadDivide:B.xu,NumpadEnter:B.xy,NumpadEqual:B.xN,NumpadMemoryAdd:B.yu,NumpadMemoryClear:B.yt,NumpadMemoryRecall:B.ys,NumpadMemoryStore:B.yr,NumpadMemorySubtract:B.yv,NumpadMultiply:B.xv,NumpadParenLeft:B.yo,NumpadParenRight:B.yp,NumpadSubtract:B.xw,Open:B.y_,PageDown:B.xp,PageUp:B.xm,Paste:B.y6,Pause:B.xj,Period:B.x4,Power:B.xM,PrintScreen:B.xi,PrivacyScreenToggle:B.vM,Props:B.yn,Quote:B.x1,Resume:B.vK,ScrollLock:B.i_,Select:B.y1,SelectTask:B.yS,Semicolon:B.x0,ShiftLeft:B.dF,ShiftRight:B.f0,ShowAllWindows:B.z6,Slash:B.x5,Sleep:B.yy,Space:B.wV,Super:B.vH,Suspend:B.vJ,Tab:B.wU,Turbo:B.vL,Undo:B.y3,WakeUp:B.yz,ZoomToggle:B.z1},B.Mo,A.ad("b8<l,q>"))
+B.vd=new A.b8(231,{Abort:B.ym,Again:B.y2,AltLeft:B.dG,AltRight:B.dI,ArrowDown:B.xs,ArrowLeft:B.xr,ArrowRight:B.xq,ArrowUp:B.xt,AudioVolumeDown:B.ya,AudioVolumeMute:B.y8,AudioVolumeUp:B.y9,Backquote:B.x2,Backslash:B.x_,Backspace:B.wT,BracketLeft:B.wY,BracketRight:B.wZ,BrightnessDown:B.yC,BrightnessUp:B.yB,BrowserBack:B.yX,BrowserFavorites:B.z0,BrowserForward:B.yY,BrowserHome:B.yW,BrowserRefresh:B.z_,BrowserSearch:B.yV,BrowserStop:B.yZ,CapsLock:B.d_,Comma:B.x3,ContextMenu:B.xL,ControlLeft:B.dE,ControlRight:B.f_,Convert:B.yf,Copy:B.y5,Cut:B.y4,Delete:B.xn,Digit0:B.wR,Digit1:B.wI,Digit2:B.wJ,Digit3:B.wK,Digit4:B.wL,Digit5:B.wM,Digit6:B.wN,Digit7:B.wO,Digit8:B.wP,Digit9:B.wQ,DisplayToggleIntExt:B.yA,Eject:B.yL,End:B.xo,Enter:B.wS,Equal:B.wX,Escape:B.l0,Esc:B.l0,F1:B.x6,F10:B.xf,F11:B.xg,F12:B.xh,F13:B.xO,F14:B.xP,F15:B.xQ,F16:B.xR,F17:B.xS,F18:B.xT,F19:B.xU,F2:B.x7,F20:B.xV,F21:B.xW,F22:B.xX,F23:B.xY,F24:B.xZ,F3:B.x8,F4:B.x9,F5:B.xa,F6:B.xb,F7:B.xc,F8:B.xd,F9:B.xe,Find:B.y7,Fn:B.eZ,FnLock:B.vI,GameButton1:B.vO,GameButton10:B.vX,GameButton11:B.vY,GameButton12:B.vZ,GameButton13:B.w_,GameButton14:B.w0,GameButton15:B.w1,GameButton16:B.w2,GameButton2:B.vP,GameButton3:B.vQ,GameButton4:B.vR,GameButton5:B.vS,GameButton6:B.vT,GameButton7:B.vU,GameButton8:B.vV,GameButton9:B.vW,GameButtonA:B.w3,GameButtonB:B.w4,GameButtonC:B.w5,GameButtonLeft1:B.w6,GameButtonLeft2:B.w7,GameButtonMode:B.w8,GameButtonRight1:B.w9,GameButtonRight2:B.wa,GameButtonSelect:B.wb,GameButtonStart:B.wc,GameButtonThumbLeft:B.wd,GameButtonThumbRight:B.we,GameButtonX:B.wf,GameButtonY:B.wg,GameButtonZ:B.wh,Help:B.y0,Home:B.xl,Hyper:B.vG,Insert:B.xk,IntlBackslash:B.xK,IntlRo:B.yc,IntlYen:B.ye,KanaMode:B.yd,KeyA:B.wi,KeyB:B.wj,KeyC:B.wk,KeyD:B.wl,KeyE:B.wm,KeyF:B.wn,KeyG:B.wo,KeyH:B.wp,KeyI:B.wq,KeyJ:B.wr,KeyK:B.ws,KeyL:B.wt,KeyM:B.wu,KeyN:B.wv,KeyO:B.ww,KeyP:B.wx,KeyQ:B.wy,KeyR:B.wz,KeyS:B.wA,KeyT:B.wB,KeyU:B.wC,KeyV:B.wD,KeyW:B.wE,KeyX:B.wF,KeyY:B.wG,KeyZ:B.wH,KeyboardLayoutSelect:B.z5,Lang1:B.yh,Lang2:B.yi,Lang3:B.yj,Lang4:B.yk,Lang5:B.yl,LaunchApp1:B.yQ,LaunchApp2:B.yP,LaunchAssistant:B.yU,LaunchControlPanel:B.yR,LaunchMail:B.yO,LaunchScreenSaver:B.yT,MailForward:B.z3,MailReply:B.z2,MailSend:B.z4,MediaFastForward:B.yG,MediaPause:B.yE,MediaPlay:B.yD,MediaPlayPause:B.yM,MediaRecord:B.yF,MediaRewind:B.yH,MediaSelect:B.yN,MediaStop:B.yK,MediaTrackNext:B.yI,MediaTrackPrevious:B.yJ,MetaLeft:B.dH,MetaRight:B.f1,MicrophoneMuteToggle:B.vN,Minus:B.wW,NonConvert:B.yg,NumLock:B.i0,Numpad0:B.xI,Numpad1:B.xz,Numpad2:B.xA,Numpad3:B.xB,Numpad4:B.xC,Numpad5:B.xD,Numpad6:B.xE,Numpad7:B.xF,Numpad8:B.xG,Numpad9:B.xH,NumpadAdd:B.xx,NumpadBackspace:B.yq,NumpadClear:B.yw,NumpadClearEntry:B.yx,NumpadComma:B.yb,NumpadDecimal:B.xJ,NumpadDivide:B.xu,NumpadEnter:B.xy,NumpadEqual:B.xN,NumpadMemoryAdd:B.yu,NumpadMemoryClear:B.yt,NumpadMemoryRecall:B.ys,NumpadMemoryStore:B.yr,NumpadMemorySubtract:B.yv,NumpadMultiply:B.xv,NumpadParenLeft:B.yo,NumpadParenRight:B.yp,NumpadSubtract:B.xw,Open:B.y_,PageDown:B.xp,PageUp:B.xm,Paste:B.y6,Pause:B.xj,Period:B.x4,Power:B.xM,PrintScreen:B.xi,PrivacyScreenToggle:B.vM,Props:B.yn,Quote:B.x1,Resume:B.vK,ScrollLock:B.i_,Select:B.y1,SelectTask:B.yS,Semicolon:B.x0,ShiftLeft:B.dF,ShiftRight:B.f0,ShowAllWindows:B.z6,Slash:B.x5,Sleep:B.yy,Space:B.wV,Super:B.vH,Suspend:B.vJ,Tab:B.wU,Turbo:B.vL,Undo:B.y3,WakeUp:B.yz,ZoomToggle:B.z1},B.Mo,A.ad("b8<l,q>"))
 B.LO=A.a(s([]),t.F)
 B.bT=new A.n(855638016)
 B.CT=new A.by(-1,B.S,B.bT,B.hU,1)
@@ -98165,13 +98165,13 @@ B.vv=new A.j(0,6)
 B.Dg=new A.by(0,B.S,B.bS,B.vv,10)
 B.Dh=new A.by(0,B.S,B.bE,B.b6,18)
 B.Mk=A.a(s([B.CV,B.Dg,B.Dh]),t.F)
-B.kY=new A.j(0,5)
-B.CW=new A.by(-3,B.S,B.bT,B.kY,5)
-B.kZ=new A.j(0,8)
-B.Di=new A.by(1,B.S,B.bS,B.kZ,10)
+B.kX=new A.j(0,5)
+B.CW=new A.by(-3,B.S,B.bT,B.kX,5)
+B.kY=new A.j(0,8)
+B.Di=new A.by(1,B.S,B.bS,B.kY,10)
 B.D2=new A.by(2,B.S,B.bE,B.dB,14)
 B.L_=A.a(s([B.CW,B.Di,B.D2]),t.F)
-B.CX=new A.by(-3,B.S,B.bT,B.kY,6)
+B.CX=new A.by(-3,B.S,B.bT,B.kX,6)
 B.vw=new A.j(0,9)
 B.D3=new A.by(1,B.S,B.bS,B.vw,12)
 B.D4=new A.by(2,B.S,B.bE,B.dB,16)
@@ -98180,9 +98180,9 @@ B.PK=new A.j(0,7)
 B.CR=new A.by(-4,B.S,B.bT,B.PK,8)
 B.PE=new A.j(0,12)
 B.D5=new A.by(2,B.S,B.bS,B.PE,17)
-B.D6=new A.by(4,B.S,B.bE,B.kY,22)
+B.D6=new A.by(4,B.S,B.bE,B.kX,22)
 B.Ls=A.a(s([B.CR,B.D5,B.D6]),t.F)
-B.CS=new A.by(-5,B.S,B.bT,B.kZ,10)
+B.CS=new A.by(-5,B.S,B.bT,B.kY,10)
 B.PF=new A.j(0,16)
 B.D7=new A.by(2,B.S,B.bS,B.PF,24)
 B.D8=new A.by(5,B.S,B.bE,B.vv,30)
@@ -98195,7 +98195,7 @@ B.Da=new A.by(8,B.S,B.bE,B.vw,46)
 B.Lu=A.a(s([B.Dj,B.D9,B.Da]),t.F)
 B.OX=new A.bH([0,B.LO,1,B.Mi,2,B.M_,3,B.M0,4,B.Mj,6,B.Mk,8,B.L_,9,B.L0,12,B.Ls,16,B.M5,24,B.Lu],A.ad("bH<k,C<by>>"))
 B.Mr=A.a(s(["KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","Digit0","Minus","Equal","BracketLeft","BracketRight","Backslash","Semicolon","Quote","Backquote","Comma","Period","Slash"]),t.s)
-B.kU=new A.b8(47,{KeyA:"a",KeyB:"b",KeyC:"c",KeyD:"d",KeyE:"e",KeyF:"f",KeyG:"g",KeyH:"h",KeyI:"i",KeyJ:"j",KeyK:"k",KeyL:"l",KeyM:"m",KeyN:"n",KeyO:"o",KeyP:"p",KeyQ:"q",KeyR:"r",KeyS:"s",KeyT:"t",KeyU:"u",KeyV:"v",KeyW:"w",KeyX:"x",KeyY:"y",KeyZ:"z",Digit1:"1",Digit2:"2",Digit3:"3",Digit4:"4",Digit5:"5",Digit6:"6",Digit7:"7",Digit8:"8",Digit9:"9",Digit0:"0",Minus:"-",Equal:"=",BracketLeft:"[",BracketRight:"]",Backslash:"\\",Semicolon:";",Quote:"'",Backquote:"`",Comma:",",Period:".",Slash:"/"},B.Mr,t.li)
+B.kT=new A.b8(47,{KeyA:"a",KeyB:"b",KeyC:"c",KeyD:"d",KeyE:"e",KeyF:"f",KeyG:"g",KeyH:"h",KeyI:"i",KeyJ:"j",KeyK:"k",KeyL:"l",KeyM:"m",KeyN:"n",KeyO:"o",KeyP:"p",KeyQ:"q",KeyR:"r",KeyS:"s",KeyT:"t",KeyU:"u",KeyV:"v",KeyW:"w",KeyX:"x",KeyY:"y",KeyZ:"z",Digit1:"1",Digit2:"2",Digit3:"3",Digit4:"4",Digit5:"5",Digit6:"6",Digit7:"7",Digit8:"8",Digit9:"9",Digit0:"0",Minus:"-",Equal:"=",BracketLeft:"[",BracketRight:"]",Backslash:"\\",Semicolon:";",Quote:"'",Backquote:"`",Comma:",",Period:".",Slash:"/"},B.Mr,t.li)
 B.pd=A.a(s(["*","+","-",".","/","0","1","2","3","4","5","6","7","8","9","Alt","AltGraph","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","Clear","Control","Delete","End","Enter","Home","Insert","Meta","PageDown","PageUp","Shift"]),t.s)
 B.Km=A.a(s([42,null,null,8589935146]),t.Z)
 B.Kn=A.a(s([43,null,null,8589935147]),t.Z)
@@ -98233,34 +98233,34 @@ B.ve=new A.b8(32,{"*":B.Km,"+":B.Kn,"-":B.Ko,".":B.Kp,"/":B.Kr,"0":B.Ks,"1":B.Kt
 B.Ma=A.a(s([B.pl,null,null,B.v1]),t.L)
 B.Mb=A.a(s([B.uO,null,null,B.v2]),t.L)
 B.Mc=A.a(s([B.uP,null,null,B.v3]),t.L)
-B.Md=A.a(s([B.uQ,null,null,B.kF]),t.L)
+B.Md=A.a(s([B.uQ,null,null,B.kE]),t.L)
 B.Me=A.a(s([B.uR,null,null,B.v4]),t.L)
-B.L1=A.a(s([B.uS,null,null,B.kG]),t.L)
-B.L2=A.a(s([B.uT,null,null,B.kH]),t.L)
-B.L3=A.a(s([B.uU,null,null,B.kI]),t.L)
-B.L4=A.a(s([B.uV,null,null,B.kJ]),t.L)
-B.L5=A.a(s([B.uW,null,null,B.kK]),t.L)
-B.L6=A.a(s([B.uX,null,null,B.kL]),t.L)
-B.L7=A.a(s([B.uY,null,null,B.kM]),t.L)
-B.L8=A.a(s([B.uZ,null,null,B.kN]),t.L)
-B.Mx=A.a(s([B.v_,null,null,B.kO]),t.L)
-B.My=A.a(s([B.v0,null,null,B.kP]),t.L)
+B.L1=A.a(s([B.uS,null,null,B.kF]),t.L)
+B.L2=A.a(s([B.uT,null,null,B.kG]),t.L)
+B.L3=A.a(s([B.uU,null,null,B.kH]),t.L)
+B.L4=A.a(s([B.uV,null,null,B.kI]),t.L)
+B.L5=A.a(s([B.uW,null,null,B.kJ]),t.L)
+B.L6=A.a(s([B.uX,null,null,B.kK]),t.L)
+B.L7=A.a(s([B.uY,null,null,B.kL]),t.L)
+B.L8=A.a(s([B.uZ,null,null,B.kM]),t.L)
+B.Mx=A.a(s([B.v_,null,null,B.kN]),t.L)
+B.My=A.a(s([B.v0,null,null,B.kO]),t.L)
 B.M1=A.a(s([B.eN,B.eN,B.hI,null]),t.L)
 B.Mz=A.a(s([B.hE,null,B.hE,null]),t.L)
-B.Lh=A.a(s([B.bV,null,null,B.kI]),t.L)
-B.Li=A.a(s([B.bF,null,null,B.kK]),t.L)
-B.Lj=A.a(s([B.bG,null,null,B.kM]),t.L)
-B.Ly=A.a(s([B.bW,null,null,B.kO]),t.L)
-B.LW=A.a(s([B.kC,null,null,B.kL]),t.L)
+B.Lh=A.a(s([B.bV,null,null,B.kH]),t.L)
+B.Li=A.a(s([B.bF,null,null,B.kJ]),t.L)
+B.Lj=A.a(s([B.bG,null,null,B.kL]),t.L)
+B.Ly=A.a(s([B.bW,null,null,B.kN]),t.L)
+B.LW=A.a(s([B.kB,null,null,B.kK]),t.L)
 B.M2=A.a(s([B.eM,B.eM,B.hH,null]),t.L)
-B.KX=A.a(s([B.bd,null,null,B.kF]),t.L)
-B.Lk=A.a(s([B.cX,null,null,B.kH]),t.L)
-B.Mf=A.a(s([B.hD,null,null,B.kE]),t.L)
-B.Ll=A.a(s([B.cY,null,null,B.kN]),t.L)
-B.LX=A.a(s([B.kD,null,null,B.kG]),t.L)
+B.KX=A.a(s([B.bd,null,null,B.kE]),t.L)
+B.Lk=A.a(s([B.cX,null,null,B.kG]),t.L)
+B.Mf=A.a(s([B.hD,null,null,B.kD]),t.L)
+B.Ll=A.a(s([B.cY,null,null,B.kM]),t.L)
+B.LX=A.a(s([B.kC,null,null,B.kF]),t.L)
 B.M3=A.a(s([B.eO,B.eO,B.hJ,null]),t.L)
-B.Lm=A.a(s([B.eK,null,null,B.kJ]),t.L)
-B.LY=A.a(s([B.eL,null,null,B.kP]),t.L)
+B.Lm=A.a(s([B.eK,null,null,B.kI]),t.L)
+B.LY=A.a(s([B.eL,null,null,B.kO]),t.L)
 B.M4=A.a(s([B.bs,B.bs,B.bH,null]),t.L)
 B.P_=new A.b8(32,{"*":B.Ma,"+":B.Mb,"-":B.Mc,".":B.Md,"/":B.Me,"0":B.L1,"1":B.L2,"2":B.L3,"3":B.L4,"4":B.L5,"5":B.L6,"6":B.L7,"7":B.L8,"8":B.Mx,"9":B.My,Alt:B.M1,AltGraph:B.Mz,ArrowDown:B.Lh,ArrowLeft:B.Li,ArrowRight:B.Lj,ArrowUp:B.Ly,Clear:B.LW,Control:B.M2,Delete:B.KX,End:B.Lk,Enter:B.Mf,Home:B.Ll,Insert:B.LX,Meta:B.M3,PageDown:B.Lm,PageUp:B.LY,Shift:B.M4},B.pd,A.ad("b8<l,C<f?>>"))
 B.P0=new A.B5(0,"baseline")
@@ -98291,7 +98291,7 @@ B.G7=new A.n(4284790262)
 B.FQ=new A.n(4282557941)
 B.Ft=new A.n(4279592384)
 B.Fs=new A.n(4279060385)
-B.Oj=new A.bH([50,B.nl,100,B.ju,200,B.js,300,B.G7,400,B.FQ,500,B.nb,600,B.jo,700,B.jn,800,B.Ft,900,B.Fs],t.pl)
+B.Oj=new A.bH([50,B.nl,100,B.jt,200,B.jr,300,B.G7,400,B.FQ,500,B.nb,600,B.jn,700,B.jm,800,B.Ft,900,B.Fs],t.pl)
 B.az=new A.hR(B.Oj,4280391411)
 B.GE=new A.n(4292932337)
 B.Gs=new A.n(4289912795)
@@ -98316,7 +98316,7 @@ B.G9=new A.n(4285046584)
 B.G1=new A.n(4283796271)
 B.FI=new A.n(4281559326)
 B.Op=new A.bH([50,B.GQ,100,B.GD,200,B.Gy,300,B.Gq,400,B.Go,500,B.Gk,600,B.Gd,700,B.G9,800,B.G1,900,B.FI],t.pl)
-B.kV=new A.hR(B.Op,4287349578)
+B.kU=new A.hR(B.Op,4287349578)
 B.eP=new A.bL(0,t.QL)
 B.hQ=new A.bL(24,t.QL)
 B.bI=new A.bL(B.u,t.h9)
@@ -98328,8 +98328,8 @@ B.vh=new A.bL(B.T4,t.iL)
 B.Ay=new A.fU(B.p)
 B.dx=new A.bL(B.Ay,t.kU)
 B.hS=new A.bL(B.at,t.Ak)
-B.lm=new A.I(1/0,1/0)
-B.dy=new A.bL(B.lm,t.iL)
+B.ll=new A.I(1/0,1/0)
+B.dy=new A.bL(B.ll,t.iL)
 B.H=new A.ca(0,"hovered")
 B.D=new A.ca(1,"focused")
 B.X=new A.ca(2,"pressed")
@@ -98392,22 +98392,22 @@ B.vD=new A.kz("flutter/textinput",B.e3,null)
 B.Qc=new A.kz("flutter/undomanager",B.e3,null)
 B.hW=new A.kz("flutter/navigation",B.e3,null)
 B.Qd=new A.kz("flutter/spellcheck",B.bC,null)
-B.l0=new A.kz("flutter/restoration",B.bC,null)
+B.l_=new A.kz("flutter/restoration",B.bC,null)
 B.Qe=new A.qw(0,null)
 B.vE=new A.qw(1,null)
 B.hX=new A.BF(0,"portrait")
 B.hY=new A.BF(1,"landscape")
-B.af=new A.es(4,B.cK,B.j7)
+B.af=new A.es(4,B.cK,B.j6)
 B.Cv=new A.aU(B.aR,1,B.A,-1)
 B.eY=new A.es(4,B.cK,B.Cv)
 B.Qf=new A.BG(null)
 B.a1B=new A.BH(0,"start")
 B.Qg=new A.BH(1,"end")
 B.J9=new A.bD(983712,!1)
-B.kf=new A.di(B.J9,null,B.hP,null,null)
+B.ke=new A.di(B.J9,null,B.hP,null,null)
 B.lz=new A.p(!0,B.hP,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.YR=new A.b5("\ube44\ubc00\ubc88\ud638\uac00 \uc62c\ubc14\ub974\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4",null,B.lz,null,null,null,null,null,null,null)
-B.Lg=A.a(s([B.kf,B.YR]),t.p)
+B.Lg=A.a(s([B.ke,B.YR]),t.p)
 B.Rx=new A.kG(B.ap,B.aV,B.l,B.o,null,B.aF,null,B.Lg,null)
 B.Qh=new A.aG(B.at,B.Rx,null)
 B.Ib=new A.aa(36,8,36,8)
@@ -98423,7 +98423,7 @@ B.Qi=new A.aG(B.Ib,B.RA,null)
 B.Z7=new A.b5("\uc0ad\uc81c\ud558\uae30",null,null,null,null,null,null,null,null,null)
 B.Qj=new A.aG(B.at,B.Z7,null)
 B.Z5=new A.b5("\uc774\uba54\uc77c \ud615\uc2dd\uc774 \uc62c\ubc14\ub974\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4",null,B.lz,null,null,null,null,null,null,null)
-B.KK=A.a(s([B.kf,B.Z5]),t.p)
+B.KK=A.a(s([B.ke,B.Z5]),t.p)
 B.Rw=new A.kG(B.ap,B.aV,B.l,B.o,null,B.aF,null,B.KK,null)
 B.Qk=new A.aG(B.nR,B.Rw,null)
 B.GM=new A.n(4293718001)
@@ -98440,10 +98440,10 @@ B.On=new A.bH([50,B.GM,100,B.GB,200,B.Gr,300,B.Gm,400,B.Ga,500,B.G4,600,B.G0,700
 B.Pi=new A.hR(B.On,4284513675)
 B.WS=new A.p(!0,B.Pi,null,null,null,null,18,B.aQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.YI=new A.b5("Demo",null,B.WS,null,null,null,null,null,null,null)
-B.Qm=new A.aG(B.jQ,B.YI,null)
+B.Qm=new A.aG(B.jP,B.YI,null)
 B.I0=new A.aa(0,8,0,0)
 B.Zm=new A.b5("\ube44\ubc00\ubc88\ud638\uac00 \uc77c\uce58\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4",null,B.lz,null,null,null,null,null,null,null)
-B.Lb=A.a(s([B.kf,B.Zm]),t.p)
+B.Lb=A.a(s([B.ke,B.Zm]),t.p)
 B.Ry=new A.kG(B.ap,B.aV,B.l,B.o,null,B.aF,null,B.Lb,null)
 B.Qn=new A.aG(B.I0,B.Ry,null)
 B.Qo=new A.BL(null)
@@ -98463,13 +98463,13 @@ B.i1=new A.P0(4,"bottom")
 B.f2=new A.jl(B.r,B.i1,null,null)
 B.z8=new A.C6(0,"opaque")
 B.z9=new A.C6(2,"transparent")
-B.l2=new A.kC(0,"cancel")
-B.l3=new A.kC(1,"add")
+B.l1=new A.kC(0,"cancel")
+B.l2=new A.kC(1,"add")
 B.R5=new A.kC(2,"remove")
 B.d0=new A.kC(3,"hover")
 B.za=new A.kC(4,"down")
 B.f3=new A.kC(5,"move")
-B.l4=new A.kC(6,"up")
+B.l3=new A.kC(6,"up")
 B.aY=new A.iu(0,"touch")
 B.bv=new A.iu(1,"mouse")
 B.bZ=new A.iu(2,"stylus")
@@ -98495,7 +98495,7 @@ B.FF=new A.n(4281236786)
 B.Fw=new A.n(4279983648)
 B.Om=new A.bH([50,B.GL,100,B.Gz,200,B.eb,300,B.Gi,400,B.G8,500,B.FV,600,B.FR,700,B.FL,800,B.FF,900,B.Fw],t.pl)
 B.Ph=new A.hR(B.Om,4283215696)
-B.Js=new A.di(B.kc,null,B.Ph,null,null)
+B.Js=new A.di(B.kb,null,B.Ph,null,null)
 B.Rb=new A.m0(null,12,12,null,null,null,B.Js,null)
 B.zb=new A.qM(0,"platformDefault")
 B.zc=new A.qM(1,"inAppWebView")
@@ -98511,7 +98511,7 @@ B.zg=new A.rU(20,5e4)
 B.Rg=new A.w(-1/0,-1/0,1/0,1/0)
 B.f5=new A.w(-1e9,-1e9,1e9,1e9)
 B.zh=new A.qR(0,"start")
-B.l5=new A.qR(1,"stable")
+B.l4=new A.qR(1,"stable")
 B.Rh=new A.qR(2,"changed")
 B.Ri=new A.qR(3,"unstable")
 B.cG=new A.qS(0,"identical")
@@ -98540,7 +98540,7 @@ B.zq=new A.cd(B.Ck,B.p)
 B.i4=new A.aW(28,28)
 B.Cl=new A.ck(B.i4,B.i4,B.i4,B.i4)
 B.zr=new A.cd(B.Cl,B.p)
-B.l6=new A.CU(0,"none")
+B.l5=new A.CU(0,"none")
 B.Ro=new A.CU(1,"neglect")
 B.Rp=new A.vA(0,"visual")
 B.Rq=new A.vA(1,"nonVisual")
@@ -98552,15 +98552,15 @@ B.Ru=new A.ef(null,!1)
 B.ic=new A.ef(null,null)
 B.zu=new A.ef(null,!0)
 B.zv=new A.CV(0,"component")
-B.l7=new A.CV(1,"parameter")
+B.l6=new A.CV(1,"parameter")
 B.C5=new A.mZ("assets/images/google.png",null,null)
 B.JB=new A.hg(B.C5,24,24,B.e2,null)
 B.Mm=A.a(s([B.JB,B.Av]),t.p)
 B.Rv=new A.kG(B.ap,B.n,B.l,B.o,null,B.aF,null,B.Mm,null)
 B.o3=new A.zW(1,B.he,B.nN,null)
 B.I1=new A.aa(10,0,10,0)
-B.iw=new A.p(!0,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.YS=new A.b5("OR",null,B.iw,null,null,null,null,null,null,null)
+B.iv=new A.p(!0,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.YS=new A.b5("OR",null,B.iv,null,null,null,null,null,null,null)
 B.Ql=new A.aG(B.I1,B.YS,null)
 B.Mp=A.a(s([B.o3,B.Ql,B.o3]),t.p)
 B.Rz=new A.kG(B.ap,B.n,B.l,B.o,null,B.aF,null,B.Mp,null)
@@ -98573,8 +98573,8 @@ B.id=new A.o8(3,"persistentCallbacks")
 B.RF=new A.o8(4,"postFrameCallbacks")
 B.zw=new A.Qf(0,"englishLike")
 B.f6=new A.vG(0,"idle")
-B.l8=new A.vG(1,"forward")
-B.l9=new A.vG(2,"reverse")
+B.l7=new A.vG(1,"forward")
+B.l8=new A.vG(2,"reverse")
 B.RL=new A.vH(0,"explicit")
 B.dO=new A.vH(1,"keepVisibleAtEnd")
 B.dP=new A.vH(2,"keepVisibleAtStart")
@@ -98613,7 +98613,7 @@ B.c1=new A.m6(1,"previous")
 B.b7=new A.m6(2,"end")
 B.f9=new A.m6(3,"pending")
 B.dR=new A.m6(4,"none")
-B.lb=new A.vN(0,"uncollapsed")
+B.la=new A.vN(0,"uncollapsed")
 B.S0=new A.vN(1,"collapsed")
 B.d3=new A.dj(1)
 B.S1=new A.dj(1024)
@@ -98649,12 +98649,12 @@ B.zP=new A.d2(2048)
 B.zQ=new A.d2(2097152)
 B.Sg=new A.d2(256)
 B.Sh=new A.d2(262144)
-B.lc=new A.d2(32)
+B.lb=new A.d2(32)
 B.zR=new A.d2(32768)
 B.zS=new A.d2(33554432)
 B.zT=new A.d2(4)
 B.zU=new A.d2(4096)
-B.ld=new A.d2(4194304)
+B.lc=new A.d2(4194304)
 B.zV=new A.d2(512)
 B.zW=new A.d2(524288)
 B.zX=new A.d2(64)
@@ -98715,7 +98715,7 @@ B.La=A.a(s(["serif","sans-serif","monospace","cursive","fantasy","system-ui","ma
 B.Ov=new A.b8(9,{serif:null,"sans-serif":null,monospace:null,cursive:null,fantasy:null,"system-ui":null,math:null,emoji:null,fangsong:null},B.La,t.uf)
 B.SD=new A.cM(B.Ov,t.XI)
 B.Oe=new A.bH([B.bY,null,B.vA,null,B.vB,null],A.ad("bH<jj,aP>"))
-B.le=new A.cM(B.Oe,A.ad("cM<jj>"))
+B.ld=new A.cM(B.Oe,A.ad("cM<jj>"))
 B.A4=new A.aR(B.bV,!1,!0,!1,!1)
 B.A1=new A.aR(B.bF,!1,!0,!1,!1)
 B.A2=new A.aR(B.bG,!1,!0,!1,!1)
@@ -98732,22 +98732,22 @@ B.A8=new A.aR(B.bV,!1,!0,!0,!1)
 B.A5=new A.aR(B.bF,!1,!0,!0,!1)
 B.A6=new A.aR(B.bG,!1,!0,!0,!1)
 B.A7=new A.aR(B.bW,!1,!0,!0,!1)
-B.Am=new A.aR(B.kQ,!1,!1,!1,!0)
-B.Ao=new A.aR(B.kR,!1,!1,!1,!0)
-B.Ap=new A.aR(B.kz,!1,!1,!1,!0)
-B.An=new A.aR(B.kA,!1,!1,!1,!0)
+B.Am=new A.aR(B.kP,!1,!1,!1,!0)
+B.Ao=new A.aR(B.kQ,!1,!1,!1,!0)
+B.Ap=new A.aR(B.ky,!1,!1,!1,!0)
+B.An=new A.aR(B.kz,!1,!1,!1,!0)
 B.SP=new A.aR(B.eH,!1,!1,!1,!0)
 B.SQ=new A.aR(B.eH,!1,!0,!1,!0)
-B.ll=new A.aR(B.kQ,!0,!1,!1,!1)
+B.lk=new A.aR(B.kP,!0,!1,!1,!1)
 B.ST=new A.aR(B.v5,!0,!1,!1,!1)
-B.Ak=new A.aR(B.kR,!0,!1,!1,!1)
+B.Ak=new A.aR(B.kQ,!0,!1,!1,!1)
 B.SR=new A.aR(B.pf,!0,!1,!1,!1)
 B.SS=new A.aR(B.pg,!0,!1,!1,!1)
 B.SU=new A.aR(B.ph,!0,!1,!1,!1)
 B.SV=new A.aR(B.pi,!0,!1,!1,!1)
 B.SY=new A.aR(B.pj,!0,!1,!1,!1)
-B.Al=new A.aR(B.kz,!0,!1,!1,!1)
-B.Aj=new A.aR(B.kA,!0,!1,!1,!1)
+B.Al=new A.aR(B.ky,!0,!1,!1,!1)
+B.Aj=new A.aR(B.kz,!0,!1,!1,!1)
 B.SW=new A.aR(B.eH,!0,!1,!1,!1)
 B.SX=new A.aR(B.eH,!0,!0,!1,!1)
 B.T_=new A.I(1e5,1e5)
@@ -98767,11 +98767,11 @@ B.Au=new A.dD(15,null,null,null)
 B.T9=new A.dD(16,null,null,null)
 B.Ta=new A.dD(32,null,null,null)
 B.C=new A.dD(null,12,null,null)
-B.ln=new A.dD(null,18,null,null)
+B.lm=new A.dD(null,18,null,null)
 B.iu=new A.dD(null,20,null,null)
 B.ci=new A.dD(null,24,null,null)
 B.fi=new A.dD(null,8,null,null)
-B.lo=new A.dD(null,null,null,null)
+B.ln=new A.dD(null,null,null,null)
 B.Tb=new A.dD(1/0,1/0,null,null)
 B.Tc=new A.Ds(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Aw=new A.QK(0,0,0,0,0,0,!1,!1,null,0)
@@ -98834,7 +98834,7 @@ B.TV=new A.kQ(B.q,null,B.ay,null,null,B.a6,B.ay,null)
 B.TW=new A.kQ(B.q,null,B.ay,null,null,B.ay,B.a6,null)
 B.TX=new A.DQ(null,null,null,null,null,null,null,null,null,null,null,null)
 B.a1F=new A.DS(0,"top")
-B.lp=new A.DS(1,"middle")
+B.lo=new A.DS(1,"middle")
 B.AA=new A.aiw("tap")
 B.AB=new A.DZ(0,"checked")
 B.TY=new A.DZ(1,"unchecked")
@@ -98845,8 +98845,8 @@ B.fn=new A.wd(1,"outsideSelectionHasCharacter")
 B.fo=new A.wd(2,"noneAddNew")
 B.w=new A.we(0,"alphabetic")
 B.TZ=new A.E_(null)
-B.lr=new A.rl(3,"none")
-B.AE=new A.E0(B.lr)
+B.lq=new A.rl(3,"none")
+B.AE=new A.E0(B.lq)
 B.AF=new A.rl(0,"words")
 B.AG=new A.rl(1,"sentences")
 B.AH=new A.rl(2,"characters")
@@ -98854,7 +98854,7 @@ B.U_=new A.Rt(3,"none")
 B.e=new A.wf(0)
 B.AJ=new A.wf(4)
 B.lw=new A.fW(0,0,B.m,!1,0,0)
-B.ls=new A.db("",B.lw,B.b8)
+B.lr=new A.db("",B.lw,B.b8)
 B.U1=new A.db("_",B.fr,B.b8)
 B.U2=new A.rm(0,"character")
 B.AL=new A.rm(1,"word")
@@ -98867,8 +98867,8 @@ B.U4=new A.fm(1,"unspecified")
 B.U5=new A.fm(10,"route")
 B.U6=new A.fm(11,"emergencyCall")
 B.AP=new A.fm(12,"newline")
-B.lt=new A.fm(2,"done")
-B.lu=new A.fm(3,"go")
+B.ls=new A.fm(2,"done")
+B.lt=new A.fm(3,"go")
 B.U7=new A.fm(4,"search")
 B.U8=new A.fm(5,"send")
 B.U9=new A.fm(6,"next")
@@ -98876,7 +98876,7 @@ B.Ua=new A.fm(7,"previous")
 B.Ub=new A.fm(8,"continueAction")
 B.Uc=new A.fm(9,"join")
 B.Ud=new A.wj(0,null,null)
-B.iv=new A.wj(1,null,null)
+B.lu=new A.wj(1,null,null)
 B.Ue=new A.wj(5,null,null)
 B.F=new A.E5(1,"even")
 B.Uf=new A.RD(null,!0)
@@ -98890,7 +98890,7 @@ B.Ui=new A.wn(B.h,null)
 B.Uj=new A.fW(0,1,B.m,!1,0,1)
 B.Uk=new A.fW(1,1,B.m,!1,1,1)
 B.Ul=new A.i4("\n",null,null,B.c7,null,null)
-B.ix=new A.p(!0,B.R,null,null,null,null,14,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.iw=new A.p(!0,B.R,null,null,null,null,14,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.F6=new A.n(3506372608)
 B.AI=new A.wf(1)
 B.GW=new A.n(4294967040)
@@ -98904,10 +98904,10 @@ B.VX=new A.p(!0,null,null,null,null,null,null,null,B.oj,null,null,null,null,null
 B.lA=new A.p(!1,null,null,null,null,null,14,B.v,null,-0.15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.AU=new A.p(!1,B.h3,null,".SF Pro Text",null,null,17,null,null,-0.41,null,null,null,null,null,null,null,B.e,null,null,null,null,null,null,null,null)
 B.X2=new A.p(!0,B.j,null,null,null,null,15,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.iy=new A.p(!0,B.j,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.ix=new A.p(!0,B.j,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.AV=new A.p(!0,B.az,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.aS)
 B.Xi=new A.p(!0,null,null,null,null,null,null,B.dn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.iz=new A.p(!0,null,null,null,null,null,null,B.aQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.iy=new A.p(!0,null,null,null,null,null,null,B.aQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.XH=new A.p(!0,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.aS)
 B.AX=new A.p(!0,B.az,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.lB=new A.p(!0,B.aR,null,null,null,null,18,B.aQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -99185,29 +99185,29 @@ B.YK=new A.b5("\uad6c\uae00 \uacc4\uc815\uc73c\ub85c \uc2dc\uc791\ud558\uae30",n
 B.YL=new A.b5("My Projects",null,B.d5,null,null,null,null,null,null,null)
 B.B1=new A.b5("Youtube Links",null,B.ft,null,null,null,null,null,null,null)
 B.YN=new A.b5("Continue",null,B.ly,null,null,null,null,null,null,null)
-B.YO=new A.b5("Assistant\uac00 \ud559\uc2b5\ud560 \uc790\ub8cc\ub97c \ucd94\uac00\ud574\uc8fc\uc138\uc694!\n\ucd94\uac00\ud558\uc2e0 \uc790\ub8cc\ub97c \ud559\uc2b5\ud574 \ub354 \uc815\ud655\ud55c \uc791\uc131\uc744 \ub3c4\uc640\ub4dc\ub824\uc694.",null,B.ix,B.c3,null,null,null,null,null,null)
+B.YO=new A.b5("Assistant\uac00 \ud559\uc2b5\ud560 \uc790\ub8cc\ub97c \ucd94\uac00\ud574\uc8fc\uc138\uc694!\n\ucd94\uac00\ud558\uc2e0 \uc790\ub8cc\ub97c \ud559\uc2b5\ud574 \ub354 \uc815\ud655\ud55c \uc791\uc131\uc744 \ub3c4\uc640\ub4dc\ub824\uc694.",null,B.iw,B.c3,null,null,null,null,null,null)
 B.YP=new A.b5("\ub85c\uadf8\uc778",null,B.d5,null,null,null,null,null,null,null)
 B.YQ=new A.b5("Edit",null,B.AX,null,null,null,null,null,null,null)
-B.B2=new A.b5("\uacc4\uc815\uc774 \uc5c6\uc73c\uc2e0\uac00\uc694?",null,B.iw,null,null,null,null,null,null,null)
-B.YT=new A.b5("\ub2e4\uc74c\uacfc \uac19\uc774 \uc790\ub8cc\ub97c \ucc3e\uc544\ubd24\uc5b4\uc694!\n \uc6d0\ud558\uc2dc\ub294 \uc790\ub8cc\ub97c \uc120\ud0dd\ud574\uc8fc\uc2dc\uba74 \uc120\ud0dd\ud558\uc2e0 \uc790\ub8cc\ub97c Assistant\uac00 \ud559\uc2b5\ud574 \ubcf4\uace0\uc11c \uc791\uc131\uc744 \ub3c4\uc640\ub4dc\ub824\uc694",null,B.ix,B.c3,null,null,null,null,null,null)
+B.B2=new A.b5("\uacc4\uc815\uc774 \uc5c6\uc73c\uc2e0\uac00\uc694?",null,B.iv,null,null,null,null,null,null,null)
+B.YT=new A.b5("\ub2e4\uc74c\uacfc \uac19\uc774 \uc790\ub8cc\ub97c \ucc3e\uc544\ubd24\uc5b4\uc694!\n \uc6d0\ud558\uc2dc\ub294 \uc790\ub8cc\ub97c \uc120\ud0dd\ud574\uc8fc\uc2dc\uba74 \uc120\ud0dd\ud558\uc2e0 \uc790\ub8cc\ub97c Assistant\uac00 \ud559\uc2b5\ud574 \ubcf4\uace0\uc11c \uc791\uc131\uc744 \ub3c4\uc640\ub4dc\ub824\uc694",null,B.iw,B.c3,null,null,null,null,null,null)
 B.YU=new A.b5("Project Name",null,B.lB,null,null,null,null,null,null,null)
 B.AS=new A.p(!0,B.j,null,null,null,null,18,B.aQ,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.YV=new A.b5("Suggested Data",null,B.AS,null,null,null,null,null,null,null)
-B.YW=new A.b5("\ubaa9\ucc28",null,B.iy,B.cm,null,null,null,null,null,null)
-B.YZ=new A.b5("My Reports",null,B.iy,null,null,null,null,null,null,null)
+B.YW=new A.b5("\ubaa9\ucc28",null,B.ix,B.cm,null,null,null,null,null,null)
+B.YZ=new A.b5("My Reports",null,B.ix,null,null,null,null,null,null,null)
 B.AT=new A.p(!0,B.j,null,null,null,null,null,B.dn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Z_=new A.b5("Sign up",null,B.AT,null,null,null,null,null,null,null)
 B.Z0=new A.b5("Add Data Sources",null,B.AS,null,null,null,null,null,null,null)
 B.B3=new A.b5("\ucde8\uc18c",null,B.bA,null,null,null,null,null,null,null)
-B.Z1=new A.b5("\uacc4\uc815\uc774 \uc774\ubbf8 \uc788\uc73c\uc2e0\uac00\uc694?",null,B.iw,null,null,null,null,null,null,null)
-B.Z3=new A.b5("\ud504\ub85c\uc81d\ud2b8 \uc774\ub984\uc744 \uc815\ud574\uc8fc\uc138\uc694",null,B.ix,null,null,null,null,null,null,null)
+B.Z1=new A.b5("\uacc4\uc815\uc774 \uc774\ubbf8 \uc788\uc73c\uc2e0\uac00\uc694?",null,B.iv,null,null,null,null,null,null,null)
+B.Z3=new A.b5("\ud504\ub85c\uc81d\ud2b8 \uc774\ub984\uc744 \uc815\ud574\uc8fc\uc138\uc694",null,B.iw,null,null,null,null,null,null,null)
 B.Z4=new A.b5("Log in",null,B.AT,null,null,null,null,null,null,null)
 B.AW=new A.p(!0,B.az,null,null,null,null,null,B.dn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Z6=new A.b5("\ub85c\uadf8\uc778",null,B.AW,null,null,null,null,null,null,null)
 B.Z8=new A.b5("\xa9 2023 audery.AI. All Rights Reserved.",null,B.lx,null,null,null,null,null,null,null)
 B.Z9=new A.b5("\ud504\ub85c\uc81d\ud2b8\ub97c \uc0ad\uc81c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c? \uc774 \uc791\uc5c5\uc740 \ucde8\uc18c\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.",null,null,null,null,null,null,null,null,null)
-B.B5=new A.b5("\uac00\uc785 \uc2dc \uc774\uba54\uc77c \uc778\uc99d\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.\n\ubcf4\uc548\uc744 \uc704\ud574 \ubcf8\uc778 \ud655\uc778\uc6a9\uc73c\ub85c\ub9cc \uc0ac\uc6a9\ub429\ub2c8\ub2e4.",null,B.iw,B.c3,null,null,null,null,null,null)
-B.Zb=new A.b5("Assistant State",null,B.iy,null,null,null,null,null,null,null)
+B.B5=new A.b5("\uac00\uc785 \uc2dc \uc774\uba54\uc77c \uc778\uc99d\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.\n\ubcf4\uc548\uc744 \uc704\ud574 \ubcf8\uc778 \ud655\uc778\uc6a9\uc73c\ub85c\ub9cc \uc0ac\uc6a9\ub429\ub2c8\ub2e4.",null,B.iv,B.c3,null,null,null,null,null,null)
+B.Zb=new A.b5("Assistant State",null,B.ix,null,null,null,null,null,null,null)
 B.B6=new A.b5("\ud68c\uc6d0\uac00\uc785",null,B.AW,null,null,null,null,null,null,null)
 B.Zd=new A.b5("Suggestion",null,B.lB,null,null,null,null,null,null,null)
 B.B7=new A.b5("Upload Files",null,B.ft,null,null,null,null,null,null,null)
@@ -99230,9 +99230,9 @@ B.Zn=new A.Eb(B.PT,B.Q3,B.PR,B.PX,B.Q2)
 B.Ba=new A.Ec(0)
 B.Zo=new A.Ec(0.5)
 B.Zp=new A.Ed(null)
-B.iA=new A.rs(1,"repeated")
-B.iB=new A.rs(2,"mirror")
-B.iC=new A.rs(3,"decal")
+B.iz=new A.rs(1,"repeated")
+B.iA=new A.rs(2,"mirror")
+B.iB=new A.rs(3,"decal")
 B.Zq=new A.Ee(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Zr=new A.Ef(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.cn=new A.Ei(0.001,0.001)
@@ -99245,7 +99245,7 @@ B.lC=new A.Em(1,"longPress")
 B.Zw=new A.Em(2,"tap")
 B.Bc=new A.ws(0,"identity")
 B.Bd=new A.ws(1,"transform2d")
-B.iD=new A.ws(2,"complex")
+B.iC=new A.ws(2,"complex")
 B.Be=new A.fp(0,"native")
 B.Bf=new A.fp(1,"nativeModal")
 B.Zx=new A.fp(10,"cupertino")
@@ -99293,7 +99293,7 @@ B.ZZ=A.aM("a9T")
 B.a__=A.aM("ac")
 B.a_0=A.aM("bI<ab<a5>>")
 B.a_1=A.aM("jc")
-B.iE=A.aM("hk")
+B.iD=A.aM("hk")
 B.lF=A.aM("aEA")
 B.a_2=A.aM("qk")
 B.aZ=A.aM("qm")
@@ -99313,7 +99313,7 @@ B.a_c=A.aM("oe")
 B.a_d=A.aM("rf")
 B.a_e=A.aM("l")
 B.a_f=A.aM("kU")
-B.iF=A.aM("hr")
+B.iE=A.aM("hr")
 B.a_g=A.aM("on")
 B.a_h=A.aM("ajA")
 B.a_i=A.aM("wv")
@@ -99378,7 +99378,7 @@ B.a01=new A.EB(1,"end")
 B.BA=new A.EC(0,"start")
 B.a02=new A.EC(2,"center")
 B.aT=new A.EG(0,"forward")
-B.iJ=new A.EG(1,"reverse")
+B.iI=new A.EG(1,"reverse")
 B.a03=new A.wK(0,"checkbox")
 B.a04=new A.wK(1,"radio")
 B.a05=new A.wK(2,"toggle")
@@ -99397,8 +99397,8 @@ B.d8=new A.wS(0,"ready")
 B.fC=new A.wT(0,"ready")
 B.a0g=new A.wS(1,"possible")
 B.lU=new A.wT(1,"possible")
-B.iK=new A.wS(2,"accepted")
-B.iL=new A.wT(2,"accepted")
+B.iJ=new A.wS(2,"accepted")
+B.iK=new A.wT(2,"accepted")
 B.lV=new A.wU(0,"enter")
 B.BF=new A.wU(1,"update")
 B.d9=new A.wU(2,"idle")
@@ -99415,13 +99415,13 @@ B.a0r=new A.x0(1,"small")
 B.a0s=new A.x0(2,"large")
 B.lW=new A.x0(3,"extended")
 B.lX=new A.ow(0,"ready")
-B.iM=new A.ow(1,"possible")
+B.iL=new A.ow(1,"possible")
 B.BI=new A.ow(2,"accepted")
-B.iN=new A.ow(3,"started")
+B.iM=new A.ow(3,"started")
 B.a0t=new A.ow(4,"peaked")
-B.iO=new A.rM(0,"idle")
+B.iN=new A.rM(0,"idle")
 B.a0u=new A.rM(1,"absorb")
-B.iP=new A.rM(2,"pull")
+B.iO=new A.rM(2,"pull")
 B.BJ=new A.rM(3,"recede")
 B.dX=new A.mz(0,"pressed")
 B.dY=new A.mz(1,"hover")
@@ -99432,7 +99432,7 @@ B.a4=new A.rR(1,"maxWidth")
 B.ah=new A.rR(2,"minHeight")
 B.aN=new A.rR(3,"maxHeight")
 B.a0w=new A.xd(null,2)
-B.iQ=new A.ek(0,"size")
+B.iP=new A.ek(0,"size")
 B.lY=new A.ek(1,"orientation")
 B.BL=new A.ek(10,"accessibleNavigation")
 B.a0I=new A.ek(11,"invertColors")
@@ -99444,7 +99444,7 @@ B.cr=new A.ek(2,"devicePixelRatio")
 B.bN=new A.ek(3,"textScaleFactor")
 B.m_=new A.ek(4,"platformBrightness")
 B.bk=new A.ek(5,"padding")
-B.iR=new A.ek(6,"viewInsets")
+B.iQ=new A.ek(6,"viewInsets")
 B.a0J=new A.ek(8,"viewPadding")
 B.m0=new A.oy(1/0,1/0,1/0,1/0,1/0,1/0)
 B.a0K=new A.dk(B.eS,B.ds)
@@ -99486,18 +99486,18 @@ B.BQ=new A.fu(5,"pushing")
 B.a1c=new A.fu(6,"replace")
 B.dZ=new A.fu(7,"idle")
 B.m5=new A.fu(8,"pop")
-B.iS=new A.h3(0,"body")
-B.iT=new A.h3(1,"appBar")
+B.iR=new A.h3(0,"body")
+B.iS=new A.h3(1,"appBar")
 B.m7=new A.h3(10,"endDrawer")
-B.iU=new A.h3(11,"statusBar")
-B.iV=new A.h3(2,"bodyScrim")
-B.iW=new A.h3(3,"bottomSheet")
+B.iT=new A.h3(11,"statusBar")
+B.iU=new A.h3(2,"bodyScrim")
+B.iV=new A.h3(3,"bottomSheet")
 B.e_=new A.h3(4,"snackBar")
-B.iX=new A.h3(5,"materialBanner")
+B.iW=new A.h3(5,"materialBanner")
 B.m8=new A.h3(6,"persistentFooter")
 B.m9=new A.h3(7,"bottomNavigationBar")
-B.iY=new A.h3(8,"floatingActionButton")
-B.iZ=new A.h3(9,"drawer")
+B.iX=new A.h3(8,"floatingActionButton")
+B.iY=new A.h3(9,"drawer")
 B.a1e=new A.rV(B.r,B.ar,B.i1,null,null)
 B.T0=new A.I(100,0)
 B.a1f=new A.rV(B.T0,B.ar,B.i1,null,null)
@@ -99513,9 +99513,9 @@ B.a1h=new A.t0(1,"middle")
 B.BT=new A.t0(2,"last")
 B.md=new A.t0(3,"only")
 B.a1i=new A.HR(B.h3,B.ej)
-B.j_=new A.xN(0,"leading")
-B.j0=new A.xN(1,"middle")
-B.j1=new A.xN(2,"trailing")
+B.iZ=new A.xN(0,"leading")
+B.j_=new A.xN(1,"middle")
+B.j0=new A.xN(2,"trailing")
 B.a1j=new A.HX(0,"minimize")
 B.a1k=new A.HX(1,"maximize")})();(function staticFields(){$.f0=null
 $.bF=A.bg("canvasKit")
@@ -100060,7 +100060,7 @@ s($,"b_U","aKw",()=>{var q=t.v3
 return A.aw([B.a0T,A.cD([B.dG],q),B.a0U,A.cD([B.dI],q),B.a0V,A.cD([B.dG,B.dI],q),B.a0S,A.cD([B.dG],q),B.a0P,A.cD([B.dF],q),B.a0Q,A.cD([B.f0],q),B.a0R,A.cD([B.dF,B.f0],q),B.a0O,A.cD([B.dF],q),B.a0L,A.cD([B.dE],q),B.a0M,A.cD([B.f_],q),B.a0N,A.cD([B.dE,B.f_],q),B.a0K,A.cD([B.dE],q),B.a0X,A.cD([B.dH],q),B.a0Y,A.cD([B.f1],q),B.a0Z,A.cD([B.dH,B.f1],q),B.a0W,A.cD([B.dH],q),B.a1_,A.cD([B.d_],q),B.a10,A.cD([B.i0],q),B.a11,A.cD([B.i_],q),B.a12,A.cD([B.eZ],q)],A.ad("dk"),A.ad("bW<q>"))})
 s($,"b_T","aBM",()=>A.aw([B.dG,B.eN,B.dI,B.hI,B.dF,B.bs,B.f0,B.bH,B.dE,B.eM,B.f_,B.hH,B.dH,B.eO,B.f1,B.hJ,B.d_,B.eJ,B.i0,B.hF,B.i_,B.hG],t.v3,t.bd))
 s($,"b_S","aKv",()=>{var q=A.t(t.v3,t.bd)
-q.n(0,B.eZ,B.kB)
+q.n(0,B.eZ,B.kA)
 q.M(0,$.aBM())
 return q})
 s($,"b_4","aK9",()=>new A.Mr("\n",!1,""))
@@ -100078,37 +100078,37 @@ r($,"b_J","aKs",()=>$.aCk().gapE())
 r($,"b0F","aL_",()=>{var q=A.ad("~(b7<bi>)")
 return A.aw([B.ZQ,A.aDs(!0),B.a_w,A.aDs(!1),B.a_b,new A.PX(A.BA(q)),B.a_3,new A.Og(A.BA(q)),B.a_7,new A.Pf(A.BA(q)),B.Bq,new A.zn(!1,A.BA(q)),B.lG,A.aSf(),B.a_8,new A.Pg(A.BA(q)),B.a_n,new A.Sh(A.BA(q))],t.n,t.od)})
 s($,"aZL","axY",()=>{var q,p,o,n=t.vz,m=A.t(t.Vz,n)
-for(q=A.ad("aR"),p=0;p<2;++p){o=B.ky[p]
-m.M(0,A.aw([A.ev(B.br,!1,!1,!1,o),B.jE,A.ev(B.br,!1,!0,!1,o),B.jI,A.ev(B.br,!0,!1,!1,o),B.jG,A.ev(B.bd,!1,!1,!1,o),B.jF,A.ev(B.bd,!1,!0,!1,o),B.jJ,A.ev(B.bd,!0,!1,!1,o),B.jH],q,n))}m.n(0,B.ir,B.en)
+for(q=A.ad("aR"),p=0;p<2;++p){o=B.kx[p]
+m.M(0,A.aw([A.ev(B.br,!1,!1,!1,o),B.jD,A.ev(B.br,!1,!0,!1,o),B.jH,A.ev(B.br,!0,!1,!1,o),B.jF,A.ev(B.bd,!1,!1,!1,o),B.jE,A.ev(B.bd,!1,!0,!1,o),B.jI,A.ev(B.bd,!0,!1,!1,o),B.jG],q,n))}m.n(0,B.ir,B.en)
 m.n(0,B.is,B.eo)
 m.n(0,B.fg,B.hb)
 m.n(0,B.fh,B.hc)
-m.n(0,B.A1,B.jX)
-m.n(0,B.A2,B.jY)
-m.n(0,B.A3,B.k0)
-m.n(0,B.A4,B.k1)
-m.n(0,B.lg,B.cP)
-m.n(0,B.lh,B.cQ)
-m.n(0,B.li,B.h9)
-m.n(0,B.lj,B.ha)
+m.n(0,B.A1,B.jW)
+m.n(0,B.A2,B.jX)
+m.n(0,B.A3,B.k_)
+m.n(0,B.A4,B.k0)
+m.n(0,B.lf,B.cP)
+m.n(0,B.lg,B.cQ)
+m.n(0,B.lh,B.h9)
+m.n(0,B.li,B.ha)
 m.n(0,B.A5,B.o6)
 m.n(0,B.A6,B.o7)
 m.n(0,B.A7,B.o4)
 m.n(0,B.A8,B.o5)
-m.n(0,B.A9,B.jZ)
-m.n(0,B.Aa,B.k_)
+m.n(0,B.A9,B.jY)
+m.n(0,B.Aa,B.jZ)
 m.n(0,B.Ab,B.Ip)
 m.n(0,B.Ac,B.Iq)
 m.n(0,B.SH,B.In)
 m.n(0,B.SI,B.Io)
 m.n(0,B.fe,B.oc)
 m.n(0,B.ff,B.od)
-m.n(0,B.lf,B.k2)
-m.n(0,B.lk,B.k3)
+m.n(0,B.le,B.k1)
+m.n(0,B.lj,B.k2)
 m.n(0,B.Aj,B.nD)
 m.n(0,B.Ak,B.nC)
 m.n(0,B.Al,B.mM)
-m.n(0,B.ll,B.mP)
+m.n(0,B.lk,B.mP)
 m.n(0,B.SW,B.mR)
 m.n(0,B.SX,B.mO)
 m.n(0,B.it,B.B)
@@ -100123,19 +100123,19 @@ q.n(0,B.ip,B.o6)
 q.n(0,B.iq,B.o7)
 return q})
 s($,"aZP","aBH",()=>{var q,p,o,n=t.vz,m=A.t(t.Vz,n)
-for(q=A.ad("aR"),p=0;p<2;++p){o=B.ky[p]
-m.M(0,A.aw([A.ev(B.br,!1,!1,!1,o),B.jE,A.ev(B.br,!0,!1,!1,o),B.jI,A.ev(B.br,!1,!1,!0,o),B.jG,A.ev(B.bd,!1,!1,!1,o),B.jF,A.ev(B.bd,!0,!1,!1,o),B.jJ,A.ev(B.bd,!1,!1,!0,o),B.jH],q,n))}m.n(0,B.ir,B.en)
+for(q=A.ad("aR"),p=0;p<2;++p){o=B.kx[p]
+m.M(0,A.aw([A.ev(B.br,!1,!1,!1,o),B.jD,A.ev(B.br,!0,!1,!1,o),B.jH,A.ev(B.br,!1,!1,!0,o),B.jF,A.ev(B.bd,!1,!1,!1,o),B.jE,A.ev(B.bd,!0,!1,!1,o),B.jI,A.ev(B.bd,!1,!1,!0,o),B.jG],q,n))}m.n(0,B.ir,B.en)
 m.n(0,B.is,B.eo)
 m.n(0,B.fg,B.hb)
 m.n(0,B.fh,B.hc)
-m.n(0,B.A1,B.jX)
-m.n(0,B.A2,B.jY)
-m.n(0,B.A3,B.k0)
-m.n(0,B.A4,B.k1)
+m.n(0,B.A1,B.jW)
+m.n(0,B.A2,B.jX)
+m.n(0,B.A3,B.k_)
+m.n(0,B.A4,B.k0)
+m.n(0,B.lf,B.jY)
 m.n(0,B.lg,B.jZ)
-m.n(0,B.lh,B.k_)
-m.n(0,B.li,B.cP)
-m.n(0,B.lj,B.cQ)
+m.n(0,B.lh,B.cP)
+m.n(0,B.li,B.cQ)
 m.n(0,B.A5,B.oa)
 m.n(0,B.A6,B.ob)
 m.n(0,B.A7,B.o8)
@@ -100146,17 +100146,17 @@ m.n(0,B.Af,B.h9)
 m.n(0,B.Ag,B.ha)
 m.n(0,B.SJ,B.o1)
 m.n(0,B.SK,B.o2)
-m.n(0,B.SL,B.jV)
-m.n(0,B.SM,B.jW)
+m.n(0,B.SL,B.jU)
+m.n(0,B.SM,B.jV)
 m.n(0,B.SY,B.mQ)
 m.n(0,B.im,B.zy)
 m.n(0,B.io,B.zz)
-m.n(0,B.ip,B.jV)
-m.n(0,B.iq,B.jW)
-m.n(0,B.fe,B.la)
+m.n(0,B.ip,B.jU)
+m.n(0,B.iq,B.jV)
+m.n(0,B.fe,B.l9)
 m.n(0,B.ff,B.ig)
-m.n(0,B.lf,B.k2)
-m.n(0,B.lk,B.k3)
+m.n(0,B.le,B.k1)
+m.n(0,B.lj,B.k2)
 m.n(0,B.An,B.nD)
 m.n(0,B.Ao,B.nC)
 m.n(0,B.Ap,B.mM)
@@ -100164,7 +100164,7 @@ m.n(0,B.Am,B.mP)
 m.n(0,B.SP,B.mR)
 m.n(0,B.SQ,B.mO)
 m.n(0,B.SR,B.cQ)
-m.n(0,B.ll,B.cP)
+m.n(0,B.lk,B.cP)
 m.n(0,B.SS,B.eo)
 m.n(0,B.ST,B.en)
 m.n(0,B.SU,B.hc)
@@ -100186,7 +100186,7 @@ q.n(0,B.SN,B.o4)
 q.n(0,B.SO,B.o5)
 return q})
 s($,"aZQ","aK2",()=>{var q,p,o,n=t.vz,m=A.t(t.Vz,n)
-for(q=A.ad("aR"),p=0;p<2;++p){o=B.ky[p]
+for(q=A.ad("aR"),p=0;p<2;++p){o=B.kx[p]
 m.M(0,A.aw([A.ev(B.br,!1,!1,!1,o),B.B,A.ev(B.bd,!1,!1,!1,o),B.B,A.ev(B.br,!0,!1,!1,o),B.B,A.ev(B.bd,!0,!1,!1,o),B.B,A.ev(B.br,!1,!0,!1,o),B.B,A.ev(B.bd,!1,!0,!1,o),B.B,A.ev(B.br,!1,!1,!0,o),B.B,A.ev(B.bd,!1,!1,!0,o),B.B],q,n))}m.M(0,B.OS)
 m.n(0,B.Aj,B.B)
 m.n(0,B.An,B.B)
@@ -100194,7 +100194,7 @@ m.n(0,B.Ak,B.B)
 m.n(0,B.Ao,B.B)
 m.n(0,B.Al,B.B)
 m.n(0,B.Ap,B.B)
-m.n(0,B.ll,B.B)
+m.n(0,B.lk,B.B)
 m.n(0,B.Am,B.B)
 return m})
 r($,"b10","aBU",()=>new A.Wv(B.a13,B.ac))
