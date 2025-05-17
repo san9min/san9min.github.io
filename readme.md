@@ -7,6 +7,7 @@ date: 2023-02-17
 readingTime: 20 
 thumbnail: images/post-001-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
+category : [Paper Reivew, Project, Business Insights, Tech Trend]
 ---
 
 

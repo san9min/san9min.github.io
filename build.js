@@ -20,25 +20,32 @@ const formatDate = iso =>
 await fse.remove(DIST);
 await mkdir(join(DIST, 'posts'), { recursive: true });
 
-/* 1. posts → HTML + 카드 + 카테고리 수집 */
-let cardsHTML = '';
-const cats = new Set();
+const posts = [];
 
 for (const file of readdirSync(join(SRC, 'posts'))) {
   if (!file.endsWith('.md')) continue;
-
-  const raw  = readFileSync(join(SRC, 'posts', file), 'utf-8');
+  const raw = readFileSync(join(SRC, 'posts', file), 'utf-8');
   const { data: attr, content } = matter(raw);
-  const htmlBody      = marked.parse(content);
+  posts.push({ file, attr, content });          // ★ collect
+}
 
-  const slug          = file.replace(/\.md$/, '');
-  const postDir       = join(DIST, 'posts', slug);
+/* 1-b. ★ 날짜(내림차순) 정렬 */
+posts.sort((a, b) => new Date(b.attr.date) - new Date(a.attr.date));
+
+/* 1-c. HTML 생성 */
+let cardsHTML = '';
+const cats = new Set();
+for (const { file, attr, content } of posts) {   // ← 여기만 변경
+  const htmlBody = marked.parse(content);
+
+  const slug     = file.replace(/\.md$/, '');
+  const postDir  = join(DIST, 'posts', slug);
   await mkdir(postDir, { recursive: true });
-  const outPath       = join(postDir, 'index.html');
+  const outPath  = join(postDir, 'index.html');
 
   const formattedDate = formatDate(attr.date);
-  const category      = Array.isArray(attr.category)
-                          ? attr.category[0] : attr.category || 'Misc';
+  const category = Array.isArray(attr.category)
+                     ? attr.category[0] : attr.category || 'Misc';
   cats.add(category);
 
   const root = '../../';
@@ -48,7 +55,7 @@ for (const file of readdirSync(join(SRC, 'posts'))) {
 <html lang="ko"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>${attr.title}</title>
+  <title>Sangmin Blog | ${attr.title}</title>
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="${root}assets/styles/main.css">
@@ -91,8 +98,8 @@ for (const file of readdirSync(join(SRC, 'posts'))) {
     </a>`;
 }
 
-/* 2. 카테고리 Chip 네비 생성 */
 const catButtons = [...cats]
+  .sort()
   .map(c => `<button class="chip" data-filter="${c}">${c}</button>`)
   .join('');
 const categoryNav =

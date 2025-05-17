@@ -4,6 +4,7 @@ date: 2023-02-17
 readingTime: 20 
 thumbnail: images/post-001-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
+category : [Paper Reivew]
 ---
 
 Genetraion은 크게 두가지 framework으로 나뉜다.

@@ -1,6 +1,6 @@
 ---
 title: "latent diffusion"
-date: 2023-02-17
+date: 2024-02-17
 readingTime: 20 
 thumbnail: images/latentdiffusion.webp
 tags: [Generative AI, Diffusion, DDPM]

@@ -1,9 +1,10 @@
 ---
 title: "Diffusion Model : DDIM 정리"
-date: 2023-02-17
+date: 2025-02-17
 readingTime: 20 
 thumbnail: images/post-002-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
+category : [Paper Reivew]
 ---
 
 # **Denoising Diffusion Implicit Models**
@@ -11,8 +12,6 @@ tags: [Generative AI, Diffusion, DDPM]
 ## DDIM
 
 [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
-
-[DDIM_상민.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/127bdc0a-f594-4263-994d-5199b5d86f72/DDIM_%EC%83%81%EB%AF%BC.pdf)
 
 - Deterministic sampling
 - `Fast sampling`
