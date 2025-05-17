@@ -1,30 +1,60 @@
 /* ───── 컬러 & 타이포 테마 ───── */
 :root{
-  --accent:#e96443;
-  --accent2:#904e95;
+  /* 브랜드 */
+  --accent : #e96443;
+  --accent2: #904e95;
 
-  --bg:#ffffff;
-  --fg:#272a2f;
-  --fg-soft:#5f6368;
+  /* Light palette */
+  --bg      : #ffffff;
+  --fg      : #272a2f;
+  --fg-soft : #5f6368;
+  --card    : #ffffff;
+  --border  : #e5e5e5;
+  --badge-bg: #0D1320c0;
+  --chip-bg : #fff;
+  --chip-fg : #333;
+  --chip-hover:#f0f0f0;
 
-  --code-bg:#f6f8fa;
-  --shadow:0 6px 18px rgba(0,0,0,.06);
-  --radius:18px;
+  --code-bg : #f6f8fa;
+  --shadow  : 0 6px 18px rgba(0,0,0,.06);
 
-  
-  
+  --radius  : 18px;
+
   --font-main:"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
   --font-head:"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
-  
-  --font-code:"SFMono-Regular",Consolas,monospace;
+  --font-code:"SFMono-Regular",Consolas,monospace; --footer-bg : #fafbfc;   /* 라이트용 밝은 회색 */
+  --footer-fg : #5f6368;   /* 텍스트·아이콘 기본색 */
+  --footer-ic : #555;      /* 아이콘 기본 */
 }
 
+/* ───── Dark palette (auto) ───── */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg      : #0f1117;
+    --fg      : #e6e7e9;
+    --fg-soft : #a0a4ac;
+    --card    : #181b23;
+    --border  : #2a2d36;
+    --badge-bg: #ffffff33;
+    --chip-bg : #181b23;
+    --chip-fg : #e6e7e9;
+    --chip-hover:#2a2d36;
+    --accent  : #ff8a57;
+
+    --code-bg : #1c1f24;
+    --shadow  : 0 4px 12px rgba(0,0,0,.6);   
+    --footer-bg : #181b23; /* 다크용 카드 배경과 맞춤 */
+    --footer-fg : #a0a4ac;
+    --footer-ic : #d4d4d4; /* 아이콘 더 밝게 */
+  }
+}
 /* ───── 리셋 ───── */
 *{box-sizing:border-box;margin:0;padding:0;}
 body{
   font-family:var(--font-main);
   color:var(--fg);background:var(--bg);
   line-height:1.75;
+  padding-top:48px;
   -webkit-font-smoothing:antialiased;
 }
 a{color:var(--fg);text-decoration:none;}
@@ -52,13 +82,45 @@ a{color:var(--fg);text-decoration:none;}
 
 /* ───── 카드 ───── */
 .card{
-  display:flex;flex-direction:column;background:#fff;border:1px solid #eee;
+  display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);
   border-radius:var(--radius);box-shadow:var(--shadow);transition:.25s cubic-bezier(.22,1,.36,1);
 }
 .card:hover{transform:translateY(-8px);box-shadow:0 10px 26px rgba(0,0,0,.1);}
+.thumb-wrap{
+  position:relative;
+}
+
+/* 기본 썸네일 이미지 */
 .thumb{
-  width:100%;aspect-ratio:16/9;object-fit:cover;
-  border-top-left-radius:var(--radius);border-top-right-radius:var(--radius);
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  border-top-left-radius:var(--radius);
+  border-top-right-radius:var(--radius);
+  transition: .3s ease-in-out;
+}
+
+/* 카테고리 뱃지 (처음엔 투명) */
+.badge{
+  position:absolute;
+  top:12px; left:12px;
+  padding:4px 12px;
+  font-size:.7rem;
+  font-weight:600;
+  color:#fff;
+  background:var(--badge-bg);
+  border-radius:12px;
+  opacity:0;                 /* 기본: 숨김 */
+  transition:.3s ease-in-out;
+  pointer-events:none;
+}
+
+/* ───────── Hover 효과 ───────── */
+.card:hover .thumb{
+  filter:brightness(.55);    /* 썸네일 어둡게 */
+}
+.card:hover .badge{
+  opacity:1;                 /* 라벨 나타남 */
 }
 .card-body{padding:24px 24px 30px;display:flex;flex-direction:column;flex:1;}
 .card-title{
@@ -122,14 +184,7 @@ table{
 th,td{padding:10px 14px;border:1px solid #e1e4e8;text-align:left;}
 th{background:#fafafa;font-weight:600;}
 
-.site-footer{
-  margin:80px 0 0;
-  text-align:center;
-  font-size:.85rem;
-  color:var(--fg-soft);
- background:#0D1320;   /* ← 추가 */
- padding:40px 0;       /* 배경이 보이도록 여백도 살짝 */
-}
+
 
 /* ───── 모바일 폰트·여백 최적화 ───── */
 @media(max-width:520px){
@@ -137,6 +192,7 @@ th{background:#fafafa;font-weight:600;}
   .avatar{width:96px;height:96px;}
   .article{padding:0 20px;}
   .article h1{font-size:1.6rem;}
+  .site-footer{flex-direction:column;align-items:flex-start;}
 }
 @media (prefers-color-scheme:dark){
   :root{ --bg:#101214; --fg:#e6e7e9; --fg-soft:#a0a4ac;
@@ -152,6 +208,93 @@ mjx-container {
 .divider{
   border:0;
   height:1px;
-  background:#e5e5e5;   /* 선 색상 */
+  background:var(--border);
   margin:0 32px 48px;   /* 좌우·아래 여백 */
 }
+
+.card{
+  position:relative;          /* 뱃지 포지셔닝 기준 */
+}
+
+/* ─ 카테고리 뱃지 ─ */
+.badge{
+  position:absolute;
+  top:12px; left:12px;
+  padding:3px 10px 4px;
+  font-size:.7rem;
+  font-weight:600;
+  color:#fff;
+  background:#0D1320;         /* 원하는 색 */
+  border-radius:12px;
+  box-shadow:0 1px 3px rgba(0,0,0,.25);
+  pointer-events:none;        /* 클릭 방해 X */
+}
+
+.cat-filter{
+  display:flex;flex-wrap:wrap;gap:10px;
+  justify-content:center;padding:0 32px 24px;
+}
+.chip{
+  padding:6px 14px;font-size:.8rem;font-weight:600;
+  border-radius:16px;
+  background:var(--chip-bg);color:var(--chip-fg);border:1px solid var(--border);cursor:pointer;
+  transition:.25s;
+}
+.chip:hover{background:var(--chip-hover);}
+.chip.active{background:var(--fg);color:var(--bg);border-color:var(--fg);}
+.divider{background:var(--border);}
+/* social 아이콘 리스트 */
+.site-footer{
+  background:var(--footer-bg);
+  color:var(--footer-fg);
+  padding:40px 24px;
+  display:flex;                 /* 좌: 카피 | 우: 아이콘 */
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;               /* 모바일 한 줄 → 두 줄 */
+  gap:12px;
+}
+
+.footer-copy{font-size:.85rem;}
+
+/* ─────────  소셜 아이콘  ───────── */
+.social{
+  display:flex;gap:24px;
+  list-style:none;margin:0;padding:0;
+}
+.social li{line-height:0;}      /* 세로 중앙정렬 깔끔 */
+.social a{
+  font-size:1.15rem;
+  color:var(--footer-ic);       /* 다크/라이트 모두 가독 */
+  transition:.25s;
+}
+.social a:hover{color:var(--accent);}
+/* ── 고정 Topbar (48 px) ───────────────────────── */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:48px;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:.95rem;
+  backdrop-filter:saturate(180%) blur(12px);
+  background:rgba(255,255,255,.7);          /* 라이트 */
+  transition:background .25s;
+}
+@media (prefers-color-scheme: dark){
+  .topbar{background:rgba(16,18,20,.85);}   /* 다크 */
+}
+.topbar .logo{font-weight:700;color:var(--fg);}
+.topbar i{font-size:1rem;color:var(--fg);transition:.25s;}
+.topbar i:hover{color:var(--accent);}
+/* Topbar 안 네비게이션 */
+.top-nav{
+  display:flex;            /* gap 사용 가능 */
+  gap:24px;                /* ← 링크 사이 24 px 간격 */
+}
+
+/* 기존 색·폰트는 그대로 */
+.top-nav a{
+  font-size:.9rem;
+  color:var(--fg-soft);
+  transition:.25s;
+}
+.top-nav a:hover{color:var(--fg);}
