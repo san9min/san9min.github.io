@@ -9,28 +9,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/main.css">
   <script src="assets/js/main.js" defer></script>
+  
+  
+
   <!-- Pretendard Variable CDN -->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<!-- head 맨 아래 -->
+<!-- head 하단 ─ kit 대신 CDN CSS 하나만 추가 -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 
 </head>
 <body>
 
-<header class="site-header">
-        <!-- 🔄 프사 + 그RADIENT 테두리  -->
-        <div class="avatar-wrap">
-          <img src="https://avatars.githubusercontent.com/u/92682815?v=4"
-               alt="GitHub Avatar" class="avatar">
-        </div>
-      
-        <h1 class="title">Sangmin Lee</h1>
-        <p class="subtitle">Blog</p>
-      </header>
-      <hr class="divider"><!-- 구분선 -->
-<main class="site-main">
-        <section class="post-list">
-          
-    <a class="card" href="posts/latent-diffusion/">
+  <!-- ■■■ ① 고정 Top Bar(48 px) ■■■ -->
+  <header class="topbar">
+    <a class="logo" href="/">Sangmin&nbsp;Lee</a>
+    <nav class="top-nav">
+      <a href="/">Bio</a>
+      <a href="/about/">About</a>
+      <!-- 다크토글·검색 버튼도 추후 넣을 수 있음 -->
+    </nav>
+  </header>
+  
+  <!-- ② 기존 Hero 헤더(아바타)는 그대로 ↓ -->
+  <header class="site-header">
+    <div class="avatar-wrap">
+      <img src="https://avatars.githubusercontent.com/u/92682815?v=4"
+           alt="GitHub Avatar" class="avatar">
+    </div>
+    <h1 class="title">Sangmin Lee</h1>
+    <p class="subtitle">Blog</p>
+  </header>
+  
+  <nav class="cat-filter"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="Paper Reivew">Paper Reivew</button><button class="chip" data-filter="Misc">Misc</button></nav>
+  <hr class="divider">
+  
+  <main class="site-main">
+    <section class="post-list">
+    <a class="card" data-cat="Paper Reivew" href="posts/latent-diffusion/">
       <div class="thumb-wrap">
         <img src="images/latentdiffusion.webp" class="thumb" alt="">
         <span class="badge">Paper Reivew</span>
@@ -40,29 +59,36 @@
         <div class="meta">Feb 17, 2023 · 20 min read</div>
       </div>
     </a>
-    <a class="card" href="posts/post-001/">
+    <a class="card" data-cat="Misc" href="posts/post-001/">
       <div class="thumb-wrap">
         <img src="images/post-001-thumb.jpg" class="thumb" alt="">
-        <span class="badge">undefined</span>
+        <span class="badge">Misc</span>
       </div>
       <div class="card-body">
         <h2 class="card-title">Diffusion Model : DDPM 정리</h2>
         <div class="meta">Feb 17, 2023 · 20 min read</div>
       </div>
     </a>
-    <a class="card" href="posts/post-002/">
+    <a class="card" data-cat="Misc" href="posts/post-002/">
       <div class="thumb-wrap">
         <img src="images/post-002-thumb.jpg" class="thumb" alt="">
-        <span class="badge">undefined</span>
+        <span class="badge">Misc</span>
       </div>
       <div class="card-body">
         <h2 class="card-title">Diffusion Model : DDIM 정리</h2>
         <div class="meta">Feb 17, 2023 · 20 min read</div>
       </div>
-    </a>
-        </section>
-</main>
-
-<footer class="site-footer">© 2025 Sangmin Lee. All rights reserved.</footer>
-</body>
+    </a></section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-copy">© 2025 Sangmin Lee</div>
+    <ul class="social">
+      <li><a href="https://linkedin.com/in/your-id" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/san9min" aria-label="GitHub">
+            <i class="fab fa-github"></i></a></li>
+    </ul>
+  </footer>
+  </body>
 </html>
