@@ -1,0 +1,28 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]   # main 브랜치에 MD 추가될 때마다
+
+permissions:
+  contents: write      # gh-pages 브랜치에 푸시
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm ci       # 패키지 설치
+      - run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

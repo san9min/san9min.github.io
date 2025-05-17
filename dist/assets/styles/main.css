@@ -1,0 +1,157 @@
+/* ───── 컬러 & 타이포 테마 ───── */
+:root{
+  --accent:#e96443;
+  --accent2:#904e95;
+
+  --bg:#ffffff;
+  --fg:#272a2f;
+  --fg-soft:#5f6368;
+
+  --code-bg:#f6f8fa;
+  --shadow:0 6px 18px rgba(0,0,0,.06);
+  --radius:18px;
+
+  
+  
+  --font-main:"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  --font-head:"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  
+  --font-code:"SFMono-Regular",Consolas,monospace;
+}
+
+/* ───── 리셋 ───── */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:var(--font-main);
+  color:var(--fg);background:var(--bg);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--fg);text-decoration:none;}
+
+
+/* ───── 헤더 ───── */
+.site-header{
+  text-align:center;padding:64px 24px 56px;
+}
+.avatar-wrap{
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%);
+  padding:4px;border-radius:50%;display:inline-block;box-shadow:var(--shadow);
+}
+.avatar{display:block;width:124px;height:124px;border-radius:50%;object-fit:cover;}
+.title{font-family:var(--font-head);font-size:2.4rem;font-weight:700;margin-top:18px;}
+.subtitle{color:var(--fg-soft);font-size:1rem;margin-top:4px;}
+
+/* ───── 메인 영역 ───── */
+.site-main{max-width:1120px;margin:0 auto;padding:0 32px;}
+.post-list{
+  display:grid;gap:36px;
+}
+@media(min-width:700px){.post-list{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1080px){.post-list{grid-template-columns:repeat(3,1fr);}}
+
+/* ───── 카드 ───── */
+.card{
+  display:flex;flex-direction:column;background:#fff;border:1px solid #eee;
+  border-radius:var(--radius);box-shadow:var(--shadow);transition:.25s cubic-bezier(.22,1,.36,1);
+}
+.card:hover{transform:translateY(-8px);box-shadow:0 10px 26px rgba(0,0,0,.1);}
+.thumb{
+  width:100%;aspect-ratio:16/9;object-fit:cover;
+  border-top-left-radius:var(--radius);border-top-right-radius:var(--radius);
+}
+.card-body{padding:24px 24px 30px;display:flex;flex-direction:column;flex:1;}
+.card-title{
+  font-size:1.125rem;font-weight:700;line-height:1.45;margin-bottom:8px;
+}
+.meta{margin-top:auto;font-size:.85rem;color:var(--fg-soft);}
+
+/* ───── 글 페이지 ───── */
+.article{
+  max-width:780px;
+  margin:0 auto;padding:0 32px 120px;
+}
+.article h1{
+  font-size:3rem;          /* 더 크게 */
+  font-weight:800;
+  line-height:1.25;
+  text-align:center;       /* 가운데 */
+  margin:24px 0 12px;
+}
+.article .meta{
+  text-align:center;       /* 가운데 */
+  color:var(--fg-soft);
+  font-size:.9rem;
+  margin-bottom:32px;
+}
+.article h2{
+  font-size:1.4rem;font-weight:700;margin:56px 0 20px;
+}
+.article h3{font-size:1.2rem;font-weight:700;margin:40px 0 16px;}
+.article p{margin:18px 0;font-size:1.02rem;}
+.article ul, .article ol{margin:18px 0 18px 26px;}
+.article li{margin:6px 0;}
+.article img{
+  max-width:100%;display:block;margin:32px auto;border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.hero{
+  width:100%;
+  max-width:960px;         /* 필요 시 제한폭 */
+  display:block;
+  margin:0 auto 48px;      /* 위아래 여백 */
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  object-fit:cover;
+}
+pre{
+  background:var(--code-bg);padding:18px;border-radius:var(--radius);
+  overflow:auto;margin:24px 0;font-size:.9rem;
+}
+code{font-family:var(--font-code);}
+
+blockquote{
+  margin:32px 0;padding:20px 28px;font-style:italic;color:var(--fg);
+  background:#fafbfc;border-left:4px solid var(--accent);
+  border-radius:var(--radius);
+}
+
+table{
+  width:100%;border-collapse:collapse;margin:32px 0;font-size:.92rem;
+}
+th,td{padding:10px 14px;border:1px solid #e1e4e8;text-align:left;}
+th{background:#fafafa;font-weight:600;}
+
+.site-footer{
+  margin:80px 0 0;
+  text-align:center;
+  font-size:.85rem;
+  color:var(--fg-soft);
+ background:#0D1320;   /* ← 추가 */
+ padding:40px 0;       /* 배경이 보이도록 여백도 살짝 */
+}
+
+/* ───── 모바일 폰트·여백 최적화 ───── */
+@media(max-width:520px){
+  .title{font-size:1.8rem;}
+  .avatar{width:96px;height:96px;}
+  .article{padding:0 20px;}
+  .article h1{font-size:1.6rem;}
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#101214; --fg:#e6e7e9; --fg-soft:#a0a4ac;
+         --code-bg:#1c1f24; --shadow:0 4px 12px rgba(0,0,0,.6); }
+  .card{border-color:#222;}
+}
+
+
+mjx-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.divider{
+  border:0;
+  height:1px;
+  background:#e5e5e5;   /* 선 색상 */
+  margin:0 32px 48px;   /* 좌우·아래 여백 */
+}
