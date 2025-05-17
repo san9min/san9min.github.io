@@ -98,9 +98,9 @@ $$
 
 $q^*(z)  = argmin_{q(z) \in Q} D_{KL}(q(z)||p(z|x))$
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F98c4b35f-863d-4745-8c79-8c9a250b4771%2FUntitled.png?table=block&id=1163df0e-ec45-8154-83a1-d09295997c34&spaceId=14f1eeea-15e5-42e2-b9d5-486040ff5c3d&width=2000&userId=df45ccee-de8f-4276-80c1-4933eb8b1e4d&cache=v2)
+![Untitled](/images/Diffusion_DDPM/02.png)
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F352292aa-6636-477f-8882-03efc1290c91%2FUntitled.png?table=block&id=1163df0e-ec45-810c-b21f-c7cac87b18e3&spaceId=14f1eeea-15e5-42e2-b9d5-486040ff5c3d&width=2000&userId=df45ccee-de8f-4276-80c1-4933eb8b1e4d&cache=v2)
+![Untitled](/images/Diffusion_DDPM/03.png)
 
 그러므로 KL divergence를 이용해 이를 식으로 표현하면
 
