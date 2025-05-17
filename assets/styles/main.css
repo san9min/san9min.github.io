@@ -223,3 +223,77 @@ th{background:#fafafa;font-weight:600;}
  12.  MathJax 컨테이너
 ─────────────────────────────────────────────────*/
 mjx-container{overflow-x:auto;max-width:100%;}
+
+
+.related{margin:96px 0 0}
+.related-head{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:36px;gap:24px;flex-wrap:wrap;
+}
+.related-head h2{
+  font-size:2.4rem;font-weight:800;line-height:1.2;margin:0;
+}
+.related-head .all-link{
+  font-size:.9rem;font-weight:600;white-space:nowrap;
+  padding:10px 18px;border:1px solid var(--border);
+  border-radius:24px;color:var(--accent);transition:.25s;
+}
+.related-head .all-link:hover{
+  background:var(--accent);color:#fff;border-color:var(--accent);
+}
+
+.related-list{
+  display:grid;gap:32px;
+}
+@media(min-width:700px){.related-list{grid-template-columns:repeat(3,1fr);}}
+.card.mini        {border:none;box-shadow:none;background:transparent;padding:0;max-width:240px}
+.card.mini .thumb {border-radius:12px;margin-bottom:10px;aspect-ratio:16/9;object-fit:cover}
+.card.mini .card-body{padding:0}
+.card.mini .card-title{
+  font-size:1.05rem;font-weight:700;line-height:1.35;
+  background:none;color:var(--fg);text-decoration:none
+}
+.card.mini .meta{font-size:.8rem;color:var(--fg-soft);margin-top:2px}
+/* ───── 카드 안 ‘↗’ 아이콘 ───── */
+.card.mini .card-body{
+  position:relative;          /* 화살표 기준점 */
+  padding-right:28px;         /* 아이콘 들어갈 자리 확보 */
+}
+
+.card.mini .arrow{
+  position:absolute;
+  top:0;                      /* 타이틀 상단 */
+  right:0;                    /* 타이틀 우측 */
+  font-size:.85rem;           /* 조금 더 작게 */
+  line-height:1;
+  color:var(--fg-soft);
+  transition:.25s;
+}
+
+.card.mini:hover .arrow{
+  color:var(--accent);
+  transform:translate(2px,-2px);
+}
+
+.article aside{
+  position:relative;
+  margin:32px 0;
+  padding:22px 28px 22px 56px;   /* 좌측 아이콘 자리 확보 */
+  background:var(--chip-hover);  /* 연한 회색 (다크·라이트 자동) */
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  color:var(--fg);
+  font-size:.97rem;
+  line-height:1.68;
+}
+
+/* 💡 전구 아이콘 */
+.article aside::before{
+  content:'\f0eb';              /* Font-Awesome 'fa-lightbulb' */
+  font-family:'Font Awesome 6 Free';
+  font-weight:900;
+  position:absolute;left:22px;top:22px;
+  color:var(--accent);
+  font-size:1.05rem;
+}

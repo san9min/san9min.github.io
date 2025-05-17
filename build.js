@@ -49,6 +49,37 @@ for (const { file, attr, content } of posts) {   // ← 여기만 변경
   cats.add(category);
 
   const root = '../../';
+  const relatedCards = posts
+  /* 같은 카테고리(첫 번째 값 기준)면서, slug 가 다른 글만 */
+  .filter(p =>
+      p.file !== file &&
+      (Array.isArray(p.attr.category) ? p.attr.category[0] : p.attr.category)
+      === category)
+  .slice(0, 3)           // 최대 3개
+  .map(p => {
+    const relSlug  = p.file.replace(/\.md$/, '');
+    const relDate  = formatDate(p.attr.date);
+    return `
+      <a class="card mini" href="${root}posts/${relSlug}/">
+        <img class="thumb" src="${root}${p.attr.thumbnail}" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">${p.attr.title}</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">${relDate} · ${p.attr.readingTime} min</div>
+        </div>
+      </a>`;
+  })
+  .join('');
+
+   const relatedSection = relatedCards
+   ? `<section class="related">
+        <div class="related-head">
+          <h2>Related posts</h2>
+          <a class="all-link" href="${root}">Browse all articles&nbsp;→</a>
+        </div>
+        <div class="related-list">${relatedCards}</div>
+      </section>` : '';
 
   /* 글 페이지 작성 */
   writeFileSync(outPath, `<!DOCTYPE html>
@@ -70,6 +101,7 @@ for (const { file, attr, content } of posts) {   // ← 여기만 변경
     <div class="meta">${formattedDate} · ${attr.readingTime} min read</div>
     <img class="hero" src="${root}${attr.thumbnail}" alt="cover image">
     ${htmlBody}
+    ${relatedSection} 
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>

@@ -1,5 +1,5 @@
 ---
-title: "latent diffusion"
+title: "Difussion : Latent Diffusion"
 date: 2024-02-17
 readingTime: 20 
 thumbnail: images/latentdiffusion.webp

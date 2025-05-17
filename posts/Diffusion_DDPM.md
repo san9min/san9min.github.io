@@ -1,28 +1,28 @@
 ---
-title: "Diffusion Model : DDPM 정리"
+title: "Diffusion : DDPM"
 date: 2023-02-17
 readingTime: 20 
-thumbnail: images/post-001-thumb.jpg
+thumbnail: images/Diffusion_DDPM/thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
 category : [Paper Reivew]
 ---
-
+## Genetrative Model Framework
 Genetraion은 크게 두가지 framework으로 나뉜다.
 - **Likelihood-based**
     - autoregressive models
     - variational autoencoders
     - flow-based models
-    - `diffusion models`
+    - **`diffusion models`**
 - **Implicit model**
     - generative adversarial networks(GAN)
 
 likelihood based 인 diffusion model에 관해 알아보자
 
-![B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3e5087f5-76a0-438f-bc01-8e3253104282%2FB948109D-1EBD-4BF6-B739-FB8EF24AE95E.png?table=block&id=1163df0e-ec45-81a6-be3d-d2267660b541&spaceId=14f1eeea-15e5-42e2-b9d5-486040ff5c3d&width=2000&userId=df45ccee-de8f-4276-80c1-4933eb8b1e4d&cache=v2)
+![B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png](/images/Diffusion_DDPM/01.png)
 
 ---
 
-## Requirements
+## Background
 
 Diffusion에 관해 설명하기 전에 알고있어야할 사전지식들을 간단하게 정리해보겠다.
 
@@ -55,9 +55,9 @@ $$
 
 이 두 term을 통해(싸우는 느낌?) q가 p로 근사가 된다.
 
-KL divergence의 특성
+**KL divergence의 특성** 
 
-항상 0 이상이다. CE는 아무리 낮아져봤자 즉 q와 p가 같은 분포가 된다 했을 때 self-entropy이다. 그러므로 최솟값이 0이고 , 절대 음수가 될 수 없다. 
+항상 0 이상이다. CE는 아무리 낮아져봤자 즉 q와 p가 같은 분포가 된다 했을 때 self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. 
 
 거리 개념이 아니다. 
 
@@ -69,9 +69,11 @@ $$
 P(H|E) = \frac {P(H) P(E|H)}{P(E)}
 $$
 
-Straight forward하므로 식설명은 생략하고, 논문을 읽다보면 확률 용어가 많이 나와 헷갈렸는데 용어만 간단히 정리하겠다.
+Straight forward하다. 논문을 읽다보면 확률 용어가 많이 나와 헷갈렸는데 용어를 간단히 정리하자.
 
-E : Evidence(~sample x), H : Hypothesis(~latent z)
+**Terms**  
+
+E : Evidence( ~ sample x), H : Hypothesis( ~ latent z)
 
 - P(H) : Prior Probability ( 사전에 알고 있는 H가 발생할 확률 )
 - P(E|H) : **Likelihood** of the evidence E if the Hypothesis H is true ( 모든 사건 H에 대한 E가 발생할 likelihood ) ⇒ How well H explains E !
@@ -92,7 +94,7 @@ $$
 
 ### ELBO : Evidence Lower Bound
 
-결국 `Variational Inference`는 사후확률 분포(posterior) `p(z|x)`를 다루기 쉬운 확률분포 `q(z)로 근사`하고 싶은 의지이다.
+결국 **`Variational Inference`**는 사후확률 분포(posterior) `p(z|x)`를 다루기 쉬운 확률분포 `q(z)로 근사`하고 싶은 의지이다.
 
 $q^*(z)  = argmin_{q(z) \in Q} D_{KL}(q(z)||p(z|x))$
 
@@ -121,10 +123,9 @@ Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 ma
 [Expectation-Maximization](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4e8e6c6e-5d0f-4c41-a457-ad6fa203a2a1%2FUntitled.png?table=block&id=1163df0e-ec45-812f-9a80-c4068024117e&spaceId=14f1eeea-15e5-42e2-b9d5-486040ff5c3d&width=2000&userId=df45ccee-de8f-4276-80c1-4933eb8b1e4d&cache=v2)
 
 <aside>
-💡 **log p(x) 를 evidence라고 한다.**
+log p(x) 를 evidence라고 한다
 
  $\theta$로 parameterized된 우리의 model이 observed data x에 대해 marginal probability를 계산했을 때 만약 우리 모델이 잘 학습이 되었다면 높은 값을 내놓을 것이다. 즉, 학습 중에 $\theta$를 잠시 fix해놓고 evaluation을 했을 때 높은 값을 내놓고 있다면 우리는 잘 가고 있다는 것이다. 그래서 $logp(x;\theta)$를 우리가 잘 가고 있다는 의미에서  evidence라 한다. 
-
 </aside>
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e8e6c6e-5d0f-4c41-a457-ad6fa203a2a1/Untitled.png)

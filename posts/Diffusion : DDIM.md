@@ -1,5 +1,5 @@
 ---
-title: "Diffusion Model : DDIM 정리"
+title: "Diffusion : DDIM"
 date: 2025-02-17
 readingTime: 20 
 thumbnail: images/post-002-thumb.jpg
