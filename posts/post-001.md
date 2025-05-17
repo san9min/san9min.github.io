@@ -2,7 +2,7 @@
 title: "Diffusion Model : DDPM 정리"
 date: 2023-02-17
 readingTime: 20 
-thumbnail: images/latentdiffusion.webp
+thumbnail: images/post-001-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
 ---
 

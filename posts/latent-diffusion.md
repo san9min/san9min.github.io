@@ -1,10 +1,10 @@
-
 ---
 title: "latent diffusion"
 date: 2023-02-17
 readingTime: 20 
-thumbnail: images/post-001-thumb.jpg
+thumbnail: images/latentdiffusion.webp
 tags: [Generative AI, Diffusion, DDPM]
+category : [Paper Reivew]
 ---
 
 
