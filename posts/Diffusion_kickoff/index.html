@@ -15,7 +15,7 @@
   <main class="article">
     <h1>Diffusion : Kick-off</h1>
     <div class="meta">Jan 15, 2023 · 15 min read</div>
-    <img class="hero" src="../../images/Diffusion_kickoff/thumb.png" alt="cover image">
+    <img class="hero" src="../../images/diffusion_kickoff/thumb.png" alt="cover image">
     <h2>Genetrative Model Framework</h2>
 <p>Genetraion은 크게 두가지 framework으로 나뉜다.</p>
 <ul>
@@ -31,14 +31,14 @@
 </ul>
 </li>
 </ul>
-<p>likelihood based 인 diffusion model에 관해 알아보자</p>
 <p><img src="/images/Diffusion_DDPM/01.png" alt="B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png"></p>
+<p>diffusion model은 likelihood based이다.</p>
 <hr>
-<h2>Background</h2>
+<h2>📚 Background</h2>
 <p>Diffusion은 확률 기반의 process이다. 먼저 핵심 확률 개념 3가지를 정리하자.</p>
 <h3>(1) KL-Divergence</h3>
 <blockquote>
-<p><code>두 확률 분포가 얼마나 다른지</code>를 계산</p>
+<p><code>두 확률 분포가 얼마나 다른지</code>를 계산, minimize를 통해 근사</p>
 </blockquote>
 <p>$$
 D_{KL}(q||p)=
@@ -47,7 +47,7 @@ D_{KL}(q||p)=
 -\displaystyle\int q(x)\log\frac{p(x)}{q(x)}, &amp; \text{(continuous form)}
 \end{cases}
 $$</p>
-<p>식을 전개하면 self-entropy term과 cross entropy(or average of negative log-likelihood in p of samples from q)으로 분리할 수 있다.</p>
+<p>식을 전개하면 Self Entropy term과 Cross Entropy으로 분리할 수 있다.</p>
 <p>$$
 D_{KL} = -H(q) + H(q,p)
 $$</p>
@@ -56,11 +56,14 @@ $$</p>
 \int q(x) log(q(x))dx + \int q(x)(-log(p(x))dx\ = -H(q) + H(q,p)
 $$</p>
 <p>로 쓸 수 있다.</p>
-<p>예를들어, 우리가 q를 p로 근사시키기 위해, KL divergence를 minimize하면 Self Entropy term은 q의 variance를 증가시키켜 넓게 퍼진 분포가 되려는 경향을 갖게하고 Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 Dirac -delta function처럼 되게하려는 경향을 갖게 할 것이다. </p>
+<p>식을 자세히 보자.
+우리가 q를 p로 근사시키기 위해, KL divergence를 minimize한다고 했을 때
+Self Entropy term은 q의 variance를 증가시키켜 넓게 퍼진 분포가 되려는 경향을 갖게하고 
+Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 Delta function처럼 되게하려는 경향을 갖게 할 것이다.  </p>
 <p>이 두 term을 통해 (싸우는 느낌?) q가 p로 근사가 된다.</p>
 <p><strong>KL divergence의 특성</strong> </p>
 <ul>
-<li><p>항상 0 이상이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. </p>
+<li><p><mark>항상 0 이상</mark>이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. </p>
 </li>
 <li><p>엄밀히는 거리 개념이 아니다. </p>
 </li>
@@ -69,12 +72,12 @@ $$</p>
 </ul>
 <h3>(2) Bayes Rule</h3>
 <blockquote>
-<p>복잡한 사후확률 p(z∣x)를 prior·likelihood·evidence 항으로 분해, ELBO와 KL 식 도출</p>
+<p>복잡한 posterior p(z∣x)를 prior·likelihood·evidence 항으로 분해, ELBO와 KL 식 도출</p>
 </blockquote>
 <p>$$
 P(H \mid E) =\ \frac{P(H),P(E \mid H)}{P(E)}
 $$</p>
-<p>E : Evidence(sample x, 증거·관측 데이터), H : Hypothesis(latent z ,가설)</p>
+<p><em>E : Evidence(sample x, 증거·관측 데이터), H : Hypothesis(latent z ,가설)</em></p>
 <table>
 <thead>
 <tr>
@@ -108,35 +111,61 @@ $$</p>
 <blockquote>
 <p>적분 대신 <strong>샘플 평균</strong>으로 근사</p>
 </blockquote>
-<p>랜덤 표본을 뽑아(<code>sampling</code>을 통해) 함수값을 확률적으로 계산하겠다 이고 결국 근사(<code>approximation</code>) 시키겠다는 이야기다.</p>
+<p>랜덤 표본을 뽑아 (<code>sampling</code>을 통해) 함수값을 확률적으로 계산하는 방식으로, 결국 근사(<code>approximation</code>) 이야기다.</p>
 <p>예를들면</p>
 <p>$$
 \int p(x)f(x)dx = E_{x \sim p(x)}[f(x)] \approx \frac 1 K \sum_i^K f(x_i), x_i \sim p(x)
 $$</p>
 <p>확률 밀도함수 p(x)를 따르는 x에대한 f(x)의 기댓값을 구하고 싶다했을 때 p(x)에서 K개의 샘플을 뽑아 이로 계산해도 괜찮다는 이야기이다.</p>
 <hr>
-<h2>ELBO : Evidence Lower Bound</h2>
-<p><code>Variational Inference</code>의 목표는 사후확률 분포(posterior) <code>p(z|x)</code>를 다루기 쉬운 확률분포 <code>q(z)로 근사</code>하는 것이다. </p>
-<p>$q^*(z)  = argmin_{q(z) \in Q} D_{KL}(q(z)||p(z|x))$</p>
+<h2>🤔 왜 Variational Inference(VI)가 필요할까?</h2>
+<blockquote>
+<p>직접 적분이 불가능한 posterior $p_\theta(z\mid x)$ 대신, tractable 근사분포 $q_\phi(z\mid x)$로 문제를 풀어 $\log p_\theta(x)$를 최적화하기 위해  </p>
+</blockquote>
+<p><strong>먼저, Likelihood-based 모델이 최적화하려는 핵심 값 두 가지</strong></p>
+<ol>
+<li><p><strong>Likelihood</strong><br>$$
+\log p_\theta(x)
+$$
+→ 모델이 관측 $x$ 를 얼마나 잘 설명하는지의 척도</p>
+</li>
+<li><p><strong>Posterior</strong><br>$$
+p_\theta(z \mid x)
+$$
+→ 주어진 $x$ 에서 잠재 변수 $z$ 가 취할 분포</p>
+</li>
+</ol>
+<p>Bayes Rule로 posterior $p_\theta(z\mid x)$를 정의할 수는 있지만  <strong>정규화 상수</strong> $p_\theta(x)$ 계산이 어렵고 <strong>고차원 적분</strong> 때문에 실제 값을 구하기가 사실상 불가능하다.  </p>
+<p>$$
+p_\theta(z\mid x) = \frac{p_\theta(x\mid z) p_\theta(z)}{p_\theta(x)}
+\quad\text{where}\quad p_\theta(x)=\int p_\theta(x\mid z)p_\theta(z) dz
+$$</p>
+<p>따라서 <strong>Variational Inference</strong>는 다루기 쉬운 분포 $q_\phi(z\mid x)$로 $p_\theta(z\mid x)$를 <strong>근사</strong>하고, 두 분포의 차이를 <strong>KL Divergence</strong>로 최소화한다.  </p>
+<p>이 과정의 최적화 목표가 <strong>ELBO(Evidence Lower Bound)</strong> 이다.</p>
+<hr>
+<h2>📐 ELBO : Evidence Lower Bound</h2>
+<p>정리하면, Variational Inference의 궁극적 목적은 복잡한 posterior $p(z\mid x)$ 를 다루기 쉬운 $q_\phi(z\mid x)$ 로 근사하는 것.<br>여기서 latent variable z 의 사전확률 분포 p(z)는 x와 무관해 가장 간단하고 예쁜 Gaussian이라 하자. 그리고 q를 $\phi$, p를 $\theta$로 parameterize하자. </p>
+<p>$$q_\phi^{*} = \underset{q_\phi \in \mathcal Q}{\arg\min} D_{KL}(q_\phi(z \mid x) || p_\theta(z \mid x))
+$$</p>
 <h3>(1) KL 분해</h3>
-<p>bayes rule에 의해 우리는 사후확률 p(z|x)를 p(z), p(x), p(x|z)로 쓸 수 있다.
-그러므로 Bayes Rule을 이용해 KL divergence를 이용해 이를 식으로 표현하면</p>
+<p>Bayes Rule에 의해 우리는 posterior p(z|x)를 p(z), p(x), p(x|z)로 쓸 수 있다.
+그러므로 Bayes Rule을 이용해 KL divergence를 표현하면</p>
 <p>$$
 \begin{aligned}
-D_{KL}\bigl(q(z)|p(z\mid x)\bigr)
-  &amp;= \int q(z)\log\frac{q(z)}{p(z\mid x)} \mathrm dz \\
-  &amp;= \int q(z)\log\frac{q(z)p(x)}{p(x\mid z)p(z)} \mathrm dz \\
-  &amp;= \int q(z)\log\frac{q(z)}{p(z)} \mathrm dz
-     + \int q(z)\log p(x) \mathrm dz
-     - \int q(z)\log p(x\mid z) \mathrm dz \\
-  &amp;= D_{KL}\bigl(q(z)|p(z)\bigr)
-     + \log p(x)
-     - \mathbb E_{z\sim q(z)}\bigl[\log p(x\mid z)\bigr]
+D_{KL}\bigl(q_\phi(z\mid x)|p_\theta(z\mid x)\bigr)
+  &amp;= \int q_\phi(z\mid x)<br>       \log\frac{q_\phi(z\mid x)}{p_\theta(z\mid x)}<br>       \mathrm dz \\[6pt]
+  &amp;= \int q_\phi(z\mid x)<br>       \log\frac{q_\phi(z\mid x)p_\theta(x)}
+                {p_\theta(x\mid z)p_\theta(z)}<br>       \mathrm dz \\[6pt]
+  &amp;= \int q_\phi(z\mid x)<br>       \log\frac{q_\phi(z\mid x)}{p_\theta(z)}<br>       \mathrm dz
+     + \log p_\theta(x)
+     - \int q_\phi(z\mid x)<br>         \log p_\theta(x\mid z)<br>         \mathrm dz \\[6pt]
+  &amp;= D_{KL}\bigl(q_\phi(z\mid x)|p_\theta(z)\bigr)
+     + \log p_\theta(x)
+     - \mathbb E_{z \sim q_\phi(z\mid x)}
+       \bigl[\log p_\theta(x\mid z)\bigr]
 \end{aligned}
 $$</p>
 <p>로 정리된다. </p>
-<p>여기서 latent variable z 의 사전확률 분포 p(z)는 x와 무관해 가장 간단하고 예쁜 Gaussian이라 하자. 그
-리고 q를 $\phi$, p를 $\theta$로 parameterize하자. </p>
 <mark>
 그런데 여기서 $\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.
 </mark>
@@ -144,7 +173,7 @@ $$</p>
 <p>Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾자</p>
 <p>Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 maximize하는 $\theta$를 찾자</p>
 <aside>
-log p(x) 를 evidence라고 한다
+✏️ <bold>log p(x) 를 evidence, likelihood라고 한다</bold>
 
 <p> $\theta$로 parameterized된 우리의 model이 observed data x에 대해 marginal probability를 계산했을 때 만약 우리 모델이 잘 학습이 되었다면 높은 값을 내놓을 것이다. 즉, 학습 중에 $\theta$를 잠시 fix해놓고 evaluation을 했을 때 높은 값을 내놓고 있다면 우리는 잘 가고 있다는 것이다. 그래서 $\log p(x;\theta)$를 우리가 잘 가고 있다는 의미에서  evidence라 한다. </p>
 </aside>
@@ -154,32 +183,52 @@ log p(x) 를 evidence라고 한다
 <p>$$
 \log p_{\theta}(x) \ge E_{z \sim q(z)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
 $$</p>
-<p>가 된다. </p>
+<p>가 된다.</p>
 <h3>(2) ELBO 정의</h3>
 <p>$$
 {\text{ELBO}} = E_{z \sim q_{\phi}(z|x)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
 $$</p>
 <p><strong>1st term</strong></p>
 <p>$E_{z \sim q(z|x)}[\log p_{\theta}(x|z)]$</p>
-<p><mark><code>Reconstruction Error</code> </mark>
-→ generative model(Decoder in VAE), Decoder가 데이터를 얼마나 잘 복원하는가</p>
+<p><mark><code>Reconstruction Error</code> </mark></p>
+<ul>
+<li>generative model(Decoder in VAE)</li>
+<li>Decoder가 데이터를 얼마나 잘 복원하는가</li>
+</ul>
 <p><strong>2nd term</strong></p>
 <p>$D_{KL}(q(z|x)||p(z)) \text{ or } E_{q(z|x)} [\log \frac {q(z|x) }{p(z)}]$</p>
-<p><mark><code>Regularization term</code></mark>
-→ inference model( Encoder in VAE ), $(q(z\mid x))$ 가 prior $(p(z))$ 와 얼마나 비슷한가</p>
-<p>를 나타댄다.</p>
-<h2>정리하면</h2>
-<blockquote>
-<p><em>ELBO는 “likelihood가 얼마나 높을까?”를 계산 불가할 때 대신 끌어올 수 있는 안전한 하한선</em><br>Diffusion·VAE 등 Variational 모델은 모두 이 하한(ELBO)을 최대화하면서 실제 likelihood를 근사함</p>
-</blockquote>
+<p><mark><code>Regularization term</code></mark></p>
 <ul>
-<li><p><strong>Diffusion</strong> 은 Likelihood-based 모델 계열이며, 학습 시 <strong>ELBO 최대화</strong> 로 파라미터를 최적화  </p>
-</li>
-<li><p>ELBO는 $(\log p_\theta(x))$ 의 <strong>하한(lower bound)</strong>, <em>Reconstruction Error</em> 와 <em>Regularization term</em> 으로 구성 </p>
-</li>
-<li><p>Variational Inference 는 복잡한 사후분포를 단순 (q(z)) 로 근사하고, 그 차이를 <strong>KL Divergence</strong> 로 측정·최소화</p>
-</li>
+<li>inference model(Encoder in VAE)</li>
+<li>$q(z\mid x)$ 가 prior $p(z)$ 와 얼마나 비슷한가</li>
 </ul>
+<p>를 나타댄다.</p>
+<p>$$
+\log p_{\theta}(x) \ge {\text{ELBO}}
+$$
+이므로 ELBO를 최대화하면 곧 KL도 줄이면서 $\log p_\theta(x)$를 끌어올리는 효과를 얻는다.</p>
+<hr>
+<h2>🏁 나가며</h2>
+<h4>① ELBO가 하는 일</h4>
+<ul>
+<li><strong>ELBO</strong>는 직접 계산이 어려운 <strong>likelihood $p_\theta(x)$</strong> 의 <em>안전한 하한(lower bound)</em>.  </li>
+<li>이 하한을 <strong>최대화</strong>하면 실제 $\log p_\theta(x)$ 도 함께 끌어올릴 수 있다.</li>
+</ul>
+<h4>② Diffusion·VAE 등 모델의 학습 법칙</h4>
+<ul>
+<li><strong>Diffusion</strong> 모델은 likelihood-based 계열 → 학습 단계에서 <strong>ELBO 최대화</strong>로 파라미터 최적화  </li>
+<li>VAE·Flow 등 모든 <strong>Variational 모델</strong>도 동일한 목표를 따른다.</li>
+</ul>
+<h4>③ Variational Inference 관점</h4>
+<ul>
+<li>복잡한 사후분포 $p_\theta(z\mid x)$ 대신 <strong>근사 분포 $q_\phi(z\mid x)$</strong> 사용  </li>
+<li>두 분포의 차이를 <strong>KL Divergence</strong>로 측정·최소화  </li>
+<li>결론적으로 나온 ELBO는 <em>Reconstruction Error</em> 와 <em>Regularization term</em> 으로 구성</li>
+</ul>
+<blockquote>
+<p><em>Training</em> 단계에서는 <strong>ELBO</strong> 를 최대화해 $\log p_\theta(x)$ 를 간접적으로 높인다.
+<em>Inference</em> 단계에서는 $q_\phi(z\mid x)$ 로 posterior를 근사한다.  </p>
+</blockquote>
 
     <section class="related">
         <div class="related-head">
