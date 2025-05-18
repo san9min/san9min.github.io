@@ -1,10 +1,10 @@
 ---
 title: "Diffusion : DDIM"
-date: 2025-02-17
+date: 2023-01-31
 readingTime: 20 
 thumbnail: images/post-002-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 
 # **Denoising Diffusion Implicit Models**

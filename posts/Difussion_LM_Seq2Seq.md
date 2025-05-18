@@ -4,7 +4,7 @@ date: 2023-02-26
 readingTime: 20 
 thumbnail: /images/Difussion_LM_Seq2Seq/thumb.png
 tags: [Generative AI, Diffusion, DDPM]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 
 # Diffusion LM Improves Controllable Text Generation

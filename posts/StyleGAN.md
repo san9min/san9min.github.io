@@ -4,7 +4,7 @@ date: 2022-09-26
 readingTime: 20 
 thumbnail: /images/StyleGAN/thumb.webp
 tags: [Generative AI, Diffusion, DDPM]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 
 

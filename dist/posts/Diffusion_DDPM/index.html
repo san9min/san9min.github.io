@@ -2,7 +2,7 @@
 <html lang="ko"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sangmin Blog | Diffusion : Denoising Diffusion Probabilistic Models</title>
+  <title>Sangmin Blog | Diffusion : DDPM</title>
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="../../assets/styles/main.css">
@@ -13,10 +13,10 @@
 
 </head><body>
   <main class="article">
-    <h1>Diffusion : Denoising Diffusion Probabilistic Models</h1>
+    <h1>Diffusion : DDPM</h1>
     <div class="meta">Jan 22, 2023 · 20 min read</div>
     <img class="hero" src="../..//images/diffusion_ddpm/thumbnail.jpg" alt="cover image">
-    <h2>DDPM</h2>
+    <h2>Denoising Diffusion Probabilistic Models</h2>
 <p><a href="https://arxiv.org/abs/2006.11239">Denoising Diffusion Probabilistic Models</a></p>
 <ul>
 <li>parameterized Markov chain</li>
@@ -108,10 +108,7 @@ $$</p>
 p_{\theta}(x_{0;T}) = p(x_T)\Pi_{t=1}^T p_{\theta}(x_{t-1}|x_t)
 $$</p>
 <p>로 fomulate할 수 있다.</p>
-<aside>
-neural network에 timestep t를 conditioning하면 model은 각 time step의 Gaussian의 mean과 variance를 예측할 수 있게된다.
-</aside>
-
+<p>neural network에 timestep t를 conditioning하면 model은 각 time step의 Gaussian의 mean과 variance를 예측할 수 있게된다.</p>
 <hr>
 <h2>🏋️ Training</h2>
 <blockquote>
@@ -244,24 +241,6 @@ def loss_step(model, x0, t, √abar, √1mabar):
           <a class="all-link" href="../../">Browse all articles&nbsp;→</a>
         </div>
         <div class="related-list">
-      <a class="card mini" href="../../posts/Diffusion_DDIM/">
-        <img class="thumb" src="../../images/post-002-thumb.jpg" alt="">
-        <div class="card-body">
-        
-          <h3 class="card-title">Diffusion : DDIM</h3>
-          <span class="arrow">↗</span>
-          <div class="meta">Feb 17, 2025 · 20 min</div>
-        </div>
-      </a>
-      <a class="card mini" href="../../posts/RL_Asynchronous Methods for Deep Reinforcement Learning/">
-        <img class="thumb" src="../../images/RL_Asynchronous_Methods_for_Deep_Reinforcement_Learning/thumb.png" alt="">
-        <div class="card-body">
-        
-          <h3 class="card-title">Reinforcement Learning : Asynchronous Methods for Deep Reinforcement Learning</h3>
-          <span class="arrow">↗</span>
-          <div class="meta">Feb 17, 2025 · 20 min</div>
-        </div>
-      </a>
       <a class="card mini" href="../../posts/Difussion_Latent Diffusion/">
         <img class="thumb" src="../../images/latentdiffusion.webp" alt="">
         <div class="card-body">
@@ -269,6 +248,24 @@ def loss_step(model, x0, t, √abar, √1mabar):
           <h3 class="card-title">Difussion : Latent Diffusion</h3>
           <span class="arrow">↗</span>
           <div class="meta">Feb 17, 2024 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Difussion_LM_Seq2Seq/">
+        <img class="thumb" src="../..//images/Difussion_LM_Seq2Seq/thumb.png" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Difussion : Difussion LM & Seq2Seq</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Feb 26, 2023 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Diffusion_DDIM/">
+        <img class="thumb" src="../../images/post-002-thumb.jpg" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Diffusion : DDIM</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Jan 31, 2023 · 20 min</div>
         </div>
       </a></div>
       </section> 

@@ -1,10 +1,10 @@
 ---
-title: "Reinforcement Learning : Asynchronous Methods for Deep Reinforcement Learning"
-date: 2025-02-17
+title: "Reinforcement Learning : A3C"
+date: 2022-08-17
 readingTime: 20 
 thumbnail: images/RL_Asynchronous_Methods_for_Deep_Reinforcement_Learning/thumb.png
 tags: [Generative AI, Diffusion, DDPM]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 
 

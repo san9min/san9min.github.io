@@ -1,10 +1,10 @@
 ---
-title: "GPT-3 → Word2Vec : 단어 의미 표현 여정"
-date: 2025-05-18
+title: "Word to Vector"
+date: 2022-07-18
 readingTime: 12
-thumbnail: images/word2vec_intro/thumbnail.png
+thumbnail: /images/word2vec_intro/thumbnail.png
 tags: [NLP, Word Embedding, Word2Vec]
-category: [Tech Study]
+category: [Tech Review]
 ---
 
 ## 🚀 Intro

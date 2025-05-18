@@ -4,7 +4,7 @@ date: 2023-01-15
 readingTime: 15 
 thumbnail: /images/diffusion_kickoff/thumbnail.png
 tags: [Generative AI, Diffusion]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 ## Genetrative Model Framework
 Genetraion은 크게 두가지 framework으로 나뉜다.

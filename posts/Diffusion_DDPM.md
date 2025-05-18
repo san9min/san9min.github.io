@@ -4,7 +4,7 @@ date: 2023-01-22
 readingTime: 20 
 thumbnail: /images/diffusion_ddpm/thumbnail.jpg
 tags: [Generative AI, Diffusion, DDPM]
-category : [Tech Papers Reivew]
+category : [Tech Review]
 ---
 
 ## Denoising Diffusion Probabilistic Models
