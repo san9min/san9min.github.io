@@ -2,7 +2,7 @@
 title: "Diffusion : Kick-off"
 date: 2023-01-15
 readingTime: 15 
-thumbnail: images/diffusion_kickoff/thumbnail.png
+thumbnail: /images/diffusion_kickoff/thumbnail.png
 tags: [Generative AI, Diffusion]
 category : [Tech Papers Reivew]
 ---

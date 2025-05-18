@@ -2,7 +2,7 @@
 title: "Diffusion : Denoising Diffusion Probabilistic Models"
 date: 2023-01-22
 readingTime: 20 
-thumbnail: images/diffusion_ddpm/thumbnail.jpg
+thumbnail: /images/diffusion_ddpm/thumbnail.jpg
 tags: [Generative AI, Diffusion, DDPM]
 category : [Tech Papers Reivew]
 ---
@@ -134,7 +134,6 @@ $$
 
 <aside>
 neural network에 timestep t를 conditioning하면 model은 각 time step의 Gaussian의 mean과 variance를 예측할 수 있게된다.
-
 </aside>
 
 ---
