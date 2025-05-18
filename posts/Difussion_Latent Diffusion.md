@@ -4,7 +4,7 @@ date: 2024-02-17
 readingTime: 20 
 thumbnail: images/latentdiffusion.webp
 tags: [Generative AI, Diffusion, DDPM]
-category : [Paper Reivew]
+category : [Tech Papers Reivew]
 ---
 
 

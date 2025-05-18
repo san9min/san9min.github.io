@@ -4,7 +4,7 @@ date: 2025-02-17
 readingTime: 20 
 thumbnail: images/post-002-thumb.jpg
 tags: [Generative AI, Diffusion, DDPM]
-category : [Paper Reivew]
+category : [Tech Papers Reivew]
 ---
 
 # **Denoising Diffusion Implicit Models**

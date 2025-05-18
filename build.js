@@ -106,13 +106,26 @@ for (const { file, attr, content } of posts) {   // ← 여기만 변경
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\\\(', '\\\\)']] },
-      options: { linebreaks: { automatic: true, width: 'container' } }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\\\(', '\\\\)']],
+    displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+
+  chtml: {
+    linebreaks: { automatic: true, width: "match" }  // 또는 width: 80
+  },
+
+  options: {
+    renderActions: { addMenu: [] }   // 우클릭 메뉴 제거
+  }
+};
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <script src="${root}assets/js/main.js" defer></script>
 </body></html>`);
 
@@ -142,7 +155,17 @@ const indexSrc = readFileSync(join(SRC, 'index.html'), 'utf-8')
   .replace('<!--AUTO-CARDS-->', cardsHTML)
   .replace('<!--AUTO-CATEGORIES-->', categoryNav);
 writeFileSync(join(DIST, 'index.html'), indexSrc);
-
+{
+  const pageSrc = join(SRC, 'about.html');
+  if (fse.existsSync(pageSrc)) {
+    const pageDir = join(DIST, 'about');
+    await mkdir(pageDir, { recursive: true });
+    await fse.copy(pageSrc, join(pageDir, 'index.html'));
+    console.log('✓ about.html copied');        // ← 로그로 확인
+  } else {
+    console.warn('[skip] about.html not found');
+  }
+}
 /* 4. 정적 자원 복사 */
 for (const dir of ASSETS) {
   await fse.copy(join(SRC, dir), join(DIST, dir));

@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Blog | Home</title>
+  <title>Blog | Sangmin Lee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- 외부 리소스 -->
@@ -20,7 +20,7 @@
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-
+<link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
   <header class="topbar">
     <a class="logo" href="/">Sangmin&nbsp;Lee</a>
     <nav class="top-nav">
-      <a href="/">Bio</a>
+      <!-- <a href="/">Bio</a> -->
       <a href="/about/">About</a>
       <!-- 다크토글·검색 버튼도 추후 넣을 수 있음 -->
     </nav>
@@ -44,39 +44,79 @@
     <p class="subtitle">AI Blog</p>
   </header>
   
-  <nav class="cat-filter"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="Paper Reivew">Paper Reivew</button></nav>
+  <nav class="cat-filter"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="Tech Papers Reivew">Tech Papers Reivew</button></nav>
   <hr class="divider">
   
   <main class="site-main">
     <section class="post-list">
-    <a class="card" data-cat="Paper Reivew" href="posts/Diffusion : DDIM/">
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/Diffusion_DDIM/">
       <div class="thumb-wrap">
         <img src="images/post-002-thumb.jpg" class="thumb" alt="">
-        <span class="badge">Paper Reivew</span>
+        <span class="badge">Tech Papers Reivew</span>
       </div>
       <div class="card-body">
         <h2 class="card-title">Diffusion : DDIM</h2>
         <div class="meta">Feb 17, 2025 · 20 min read</div>
       </div>
     </a>
-    <a class="card" data-cat="Paper Reivew" href="posts/Difussion : Latent Diffusion/">
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/RL_Asynchronous Methods for Deep Reinforcement Learning/">
+      <div class="thumb-wrap">
+        <img src="images/RL_Asynchronous_Methods_for_Deep_Reinforcement_Learning/thumb.png" class="thumb" alt="">
+        <span class="badge">Tech Papers Reivew</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Reinforcement Learning : Asynchronous Methods for Deep Reinforcement Learning</h2>
+        <div class="meta">Feb 17, 2025 · 20 min read</div>
+      </div>
+    </a>
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/Difussion_Latent Diffusion/">
       <div class="thumb-wrap">
         <img src="images/latentdiffusion.webp" class="thumb" alt="">
-        <span class="badge">Paper Reivew</span>
+        <span class="badge">Tech Papers Reivew</span>
       </div>
       <div class="card-body">
         <h2 class="card-title">Difussion : Latent Diffusion</h2>
         <div class="meta">Feb 17, 2024 · 20 min read</div>
       </div>
     </a>
-    <a class="card" data-cat="Paper Reivew" href="posts/Diffusion_DDPM/">
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/Difussion_LM_Seq2Seq/">
+      <div class="thumb-wrap">
+        <img src="/images/Difussion_LM_Seq2Seq/thumb.png" class="thumb" alt="">
+        <span class="badge">Tech Papers Reivew</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Difussion : Difussion LM & Seq2Seq</h2>
+        <div class="meta">Feb 26, 2023 · 20 min read</div>
+      </div>
+    </a>
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/StyleGAN/">
+      <div class="thumb-wrap">
+        <img src="/images/StyleGAN/thumb.webp" class="thumb" alt="">
+        <span class="badge">Tech Papers Reivew</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">StyleGAN</h2>
+        <div class="meta">Feb 26, 2023 · 20 min read</div>
+      </div>
+    </a>
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/Diffusion_DDPM/">
       <div class="thumb-wrap">
         <img src="images/Diffusion_DDPM/thumb.jpg" class="thumb" alt="">
-        <span class="badge">Paper Reivew</span>
+        <span class="badge">Tech Papers Reivew</span>
       </div>
       <div class="card-body">
         <h2 class="card-title">Diffusion : DDPM</h2>
-        <div class="meta">Feb 17, 2023 · 20 min read</div>
+        <div class="meta">Jan 15, 2023 · 20 min read</div>
+      </div>
+    </a>
+    <a class="card" data-cat="Tech Papers Reivew" href="posts/Diffusion_kickoff/">
+      <div class="thumb-wrap">
+        <img src="images/Diffusion_kickoff/thumb.png" class="thumb" alt="">
+        <span class="badge">Tech Papers Reivew</span>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">Diffusion : Kick-off</h2>
+        <div class="meta">Jan 15, 2023 · 15 min read</div>
       </div>
     </a></section>
   </main>
