@@ -1,5 +1,5 @@
 ---
-title: "Diffusion : Denoising Diffusion Probabilistic Models"
+title: "Diffusion : DDPM"
 date: 2023-01-22
 readingTime: 20 
 thumbnail: /images/diffusion_ddpm/thumbnail.jpg
@@ -7,13 +7,13 @@ tags: [Generative AI, Diffusion, DDPM]
 category : [Tech Papers Reivew]
 ---
 
-## DDPM
+## Denoising Diffusion Probabilistic Models
 
 [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
 
 - parameterized Markov chain
 - trained using variational inference
-- `learn to reverse a diffusion process`
+- <marck>`learn to reverse a diffusion process` </mark>
 
 ![Untitled](/images/diffusion_ddpm/00.png)
 
@@ -32,7 +32,7 @@ model은 이 reverse process를 학습하고 새로운 data를 generation한다.
 
 ---
 
-##  ⏩ Forward Process (diffusion process)
+##  >> Forward Process (diffusion process)
 
 > `Gaussian noise를 더해가는 과정`
 
@@ -45,22 +45,27 @@ $$
 
 
 forward 과정은 Markov chain으로 formulate할 수 있다.  
-Markov chain은 각 step은 오직 직전 step에만 의존함을 의미한다.
+Markov chain은 각 step은 오직 직전 step에만 의존함을 의미한다.  
 여기서 $q(x_{1:T})$는 q를 timestep 1부터 T까지 반복해서 노이즈를 가함을 의미하는 notation이다.
 
 
-$$
-q(x_{t}|x_{t-1}) = N(x_t ; \sqrt {1-\beta_t}x_{t-1},\beta_tI) 
-$$
+$$q(x_{t}|x_{t-1}) = N(x_t ; \sqrt {1-\beta_t}x_{t-1},\beta_tI)$$
 
-각 스텝에서 Gaussian noise를 더한다. 한 스텝 전이할 때마다,평균을 스케일링하고, 분산만큼 가우시안 노이즈를 추가한다.
-**$\beta_t$ (분산 스케줄)**
+각 스텝에서 Gaussian noise를 더한다. 한 스텝 전이할 때마다,평균을 스케일링하고, 분산만큼 가우시안 노이즈를 추가한다.  
+
+**$\beta_t$ (분산 스케줄)**  
+
 여기서 $\beta_t$는 variance schedule이고 I가 identity이므로 각 dimension은 같은 std를 갖는다. 
 상수로 둬도 되고, 시간에 따른 변수로 두어도 된다. 
 논문에선 higer t로 갈수록 커지는 방향으로 linear하게 두었는데 다른 논문에선 cosine shcedule 이 잘 됐다고 한다.
 
 $\beta_t$를 이용해 scaling한 후 더해주는 이유는 variance가 diverge하는 것을 막기 위함으로 볼 수 있다. 
-Gaussian noise를 더해가면, 최종 step (time T)에서는 standard normal prior $N(x_T;0,I)$ 가된다.
+Gaussian noise를 더해가면, 최종 step (time T)에서는 표준 정규분포에 $N(x_T;0,I)$ 가깝게 수렴한다. 
+이 단순한 prior 덕분에 Reverse Process 는 “완전한 노이즈 → 원본” 만 학습하면 된다
+
+<aside>
+$\beta _t$를 너무 크게 잡으면 분산이 폭주하고, 너무 작으면 느리게 파괴되므로 스케줄 디자인이 핵심이다.
+</aside>
 
 그런데 여기서 어떤 순간 t ( $0 \le t \le T)$에서 $x_t$를 알고 싶다고한다면, 위의 식을 이용해 반복적인 계산을 수행하면 된다. 그러나 t 가 크다면 이는 좋은 방법이 아닐 것이다.
 
@@ -105,12 +110,15 @@ $$
 x_0 = \frac{1}{\sqrt{\bar \alpha_t}}(x_t - \sqrt{1-\bar \alpha_t}\epsilon)
 $$
 
-즉, 모든 중간 스텝을 거치지 않아도, $x_0$ 과 표준정규 노이즈 $\epsilon$ 만으로 즉시 $x_t$ 생성 가능하다.
+<aside>
+모든 중간 스텝을 거치지 않아도, $x_0$ 과 표준정규 노이즈 $\epsilon$ 만으로 즉시 $x_t$ 생성 가능하다.
 이 트릭 덕분에 임의 시점의 노이즈 상태를 빠르고 안정적으로 샘플링할 수 있고, 미분 가능한 parameter로 업데이트에 사용할 수 있다.
+</aside>
+
 
 ---
 
-## ⏪ Reverse Process (denoising process)
+## << Reverse Process (denoising process)
 
 > `모델이 학습할 과정`
 
@@ -132,9 +140,7 @@ $$
 
 로 fomulate할 수 있다.
 
-<aside>
 neural network에 timestep t를 conditioning하면 model은 각 time step의 Gaussian의 mean과 variance를 예측할 수 있게된다.
-</aside>
 
 ---
 

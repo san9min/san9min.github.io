@@ -1,6 +1,6 @@
 ---
 title: "StyleGAN"
-date: 2023-02-26
+date: 2022-09-26
 readingTime: 20 
 thumbnail: /images/StyleGAN/thumb.webp
 tags: [Generative AI, Diffusion, DDPM]

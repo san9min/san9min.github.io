@@ -9,7 +9,6 @@ category : [Tech Papers Reivew]
 
 # **Denoising Diffusion Implicit Models**
 
-## DDIM
 
 [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
 
