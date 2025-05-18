@@ -14,114 +14,10 @@
 </head><body>
   <main class="article">
     <h1>Diffusion : DDPM</h1>
-    <div class="meta">Feb 17, 2023 · 20 min read</div>
+    <div class="meta">Jan 15, 2023 · 20 min read</div>
     <img class="hero" src="../../images/Diffusion_DDPM/thumb.jpg" alt="cover image">
-    <h2>Genetrative Model Framework</h2>
-<p>Genetraion은 크게 두가지 framework으로 나뉜다.</p>
-<ul>
-<li><strong>Likelihood-based</strong><ul>
-<li>autoregressive models</li>
-<li>variational autoencoders</li>
-<li>flow-based models</li>
-<li><strong><code>diffusion models</code></strong></li>
-</ul>
-</li>
-<li><strong>Implicit model</strong><ul>
-<li>generative adversarial networks(GAN)</li>
-</ul>
-</li>
-</ul>
-<p>likelihood based 인 diffusion model에 관해 알아보자</p>
-<p><img src="/images/Diffusion_DDPM/01.png" alt="B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png"></p>
-<hr>
-<h2>Background</h2>
-<p>Diffusion에 관해 설명하기 전에 알고있어야할 사전지식들을 간단하게 정리해보겠다.</p>
-<h3>KL-Divergence</h3>
-<p><code>두 확률 분포가 얼마나 다른지</code>를 계산(정보 엔트로피 차이를 계산)</p>
-<p>$$
-D_{KL}(q||p) = \begin{cases} - \sum_i q_ilog\frac{p_i}{q_i} 
-&amp;\text{(discrete form)}\
--\int q(x)log \frac{p(x)}{q(x)} &amp;\text{(continuous form)}
-\end{cases}
-$$</p>
-<p>이고 식을 전개하면 self-entropy term과 cross entropy(or average of negative log-likelihood in p of samples from q)으로 분리할 수 있다.</p>
-<p>$$
-D_{KL} = -H(q) + H(q,p)
-$$</p>
-<p>만약 분포가 continuous 한 경우</p>
-<p>$$
-\int q(x) log(q(x))dx + \int q(x)(-log(p(x))dx\ = -H(q) + H(q,p)
-$$</p>
-<p>로 쓸 수 있다.</p>
-<p>예를들어, 우리가 q를 p로 근사시키기 위해, KL divergence를 minimize하면 self entropy term은 q의 variance를 증가시키켜 넓게 퍼진 분포가 되려는 경향을 갖게하고 cross entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 Dirac -delta function처럼 되게하려는 경향을 갖게 할 것이다. </p>
-<p>이 두 term을 통해(싸우는 느낌?) q가 p로 근사가 된다.</p>
-<p><strong>KL divergence의 특성</strong> </p>
-<p>항상 0 이상이다. CE는 아무리 낮아져봤자 즉 q와 p가 같은 분포가 된다 했을 때 self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. </p>
-<p>거리 개념이 아니다. </p>
-<p>일반적으로 $D_{KL}(p|q) \neq D_{KL}(q|p)$이다.</p>
-<h3>Bayes Rule</h3>
-<p>$$
-P(H|E) = \frac {P(H) P(E|H)}{P(E)}
-$$</p>
-<p>Straight forward하다. 논문을 읽다보면 확률 용어가 많이 나와 헷갈렸는데 용어를 간단히 정리하자.</p>
-<p><strong>Terms</strong>  </p>
-<p>E : Evidence( ~ sample x), H : Hypothesis( ~ latent z)</p>
-<ul>
-<li>P(H) : Prior Probability ( 사전에 알고 있는 H가 발생할 확률 )</li>
-<li>P(E|H) : <strong>Likelihood</strong> of the evidence E if the Hypothesis H is true ( 모든 사건 H에 대한 E가 발생할 likelihood ) ⇒ How well H explains E !</li>
-<li>P(E) : Priori probability that the evidence E itself is true ( E의 사전확률,즉 E가 발생할 확률, marginal이라고도 함 )</li>
-<li>P(H|E) : <strong>Posterior Probability</strong> of ‘H’ given the evidence</li>
-</ul>
-<h3>Monte Carlo Method</h3>
-<p>랜덤 표본을 뽑아(<code>sampling</code>을 통해) 함수값을 확률적으로 계산하겠다 이고 결국 근사(<code>approximation</code>) 시키겠다는 이야기다.</p>
-<p>예를들면</p>
-<p>$$
-\int p(x)f(x)dx = E_{x \sim p(x)}[f(x)] \approx \frac 1 K \sum_i^K f(x_i), x_i \sim p(x)
-$$</p>
-<p>확률 밀도함수 p(x)를 따르는 x에대한 f(x)의 기댓값을 구하고 싶다했을 때 p(x)에서 K개의 샘플을 뽑아 이로 계산해도 괜찮다는 이야기</p>
-<h3>ELBO : Evidence Lower Bound</h3>
-<p>결국 **<code>Variational Inference</code>**는 사후확률 분포(posterior) <code>p(z|x)</code>를 다루기 쉬운 확률분포 <code>q(z)로 근사</code>하고 싶은 의지이다.</p>
-<p>$q^*(z)  = argmin_{q(z) \in Q} D_{KL}(q(z)||p(z|x))$</p>
-<p><img src="/images/Diffusion_DDPM/02.png" alt="Untitled"></p>
-<p><img src="/images/Diffusion_DDPM/03.png" alt="Untitled"></p>
-<p>그러므로 KL divergence를 이용해 이를 식으로 표현하면</p>
-<p>$$
-D_{KL} (q(z) || p(z|x)) = \int q(z) \log \frac{q(z)}{p(z|x)}dz\ \text{by Bayes Rule} \= \int q(z)\log\frac{q(z)p(x)}{p(x|z)p(z)}dz \= \int q(z)\log\frac{q(z)}{p(z)}dz +\int q(z)\log p(x)dz -\int q(z)\log p(x|z)dz \ = D_{KL}(q(z)||p(z)) + \log p(x) - E_{z \sim q(z)} [ \log p(x|z)]
-$$</p>
-<p>로 정리된다. </p>
-<p>bayes rule에 의해 우리는 사후확률 p(z|x)를 p(z), p(x), p(x|z)로 가져갔다. </p>
-<p>여기서 latent variable z 의사전확률 분포 p(z)는 x와 무관해 any kind of distribution이여도 괜찮으므로 가장 간단하고 예쁜 Gaussian이라 하자. 그리고 q를 $\phi$, p를 $\theta$로 parameterize하자. </p>
-<p>그런데 여기서 $\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.</p>
-<p>Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾자</p>
-<p>Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 maximize하는 $\theta$를 찾자</p>
-<p><a href="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4e8e6c6e-5d0f-4c41-a457-ad6fa203a2a1%2FUntitled.png?table=block&id=1163df0e-ec45-812f-9a80-c4068024117e&spaceId=14f1eeea-15e5-42e2-b9d5-486040ff5c3d&width=2000&userId=df45ccee-de8f-4276-80c1-4933eb8b1e4d&cache=v2">Expectation-Maximization</a></p>
-<aside>
-log p(x) 를 evidence라고 한다
-
-<p> $\theta$로 parameterized된 우리의 model이 observed data x에 대해 marginal probability를 계산했을 때 만약 우리 모델이 잘 학습이 되었다면 높은 값을 내놓을 것이다. 즉, 학습 중에 $\theta$를 잠시 fix해놓고 evaluation을 했을 때 높은 값을 내놓고 있다면 우리는 잘 가고 있다는 것이다. 그래서 $logp(x;\theta)$를 우리가 잘 가고 있다는 의미에서  evidence라 한다. </p>
-</aside>
-
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e8e6c6e-5d0f-4c41-a457-ad6fa203a2a1/Untitled.png" alt="Untitled"></p>
-<p>$D_{KL} (q_{\phi}(z|x) || p(z|x))\ge 0$ 이므로 </p>
-<p>$$
-\log p_{\theta}(x) \ge E_{z \sim q(z)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
-$$</p>
-<p>가 된다. </p>
-<p><strong>ELBO</strong> </p>
-<p>$$
-⁍
-$$</p>
-<p>1st term</p>
-<p>$E_{z \sim q(z|x)}[\log p_{\theta}(x|z)]$</p>
-<p><code>Reconstruction Error</code> → generative model( Decoder in VAE )</p>
-<p>2nd term</p>
-<p>$D_{KL}(q(z|x)||p(z)) \text{ or } E_{q(z|x)} [\log \frac {q(z|x) }{p(z)}]$</p>
-<p><code>Regularization term</code> → inference model( Encoder in VAE )</p>
-<h3>SDE : Stochastic Differential Equation</h3>
-<p>TODO</p>
-<hr>
-<h1><strong>Denoising Diffusion Probabilistic Models</strong></h1>
-<h2>DDPM</h2>
+    <h2><strong>Denoising Diffusion Probabilistic Models</strong></h2>
+<h3>DDPM</h3>
 <p><a href="https://arxiv.org/abs/2006.11239">Denoising Diffusion Probabilistic Models</a></p>
 <ul>
 <li>parameterized Markov chain</li>
@@ -293,7 +189,7 @@ Skeleton code 작성해보기
           <a class="all-link" href="../../">Browse all articles&nbsp;→</a>
         </div>
         <div class="related-list">
-      <a class="card mini" href="../../posts/Diffusion : DDIM/">
+      <a class="card mini" href="../../posts/Diffusion_DDIM/">
         <img class="thumb" src="../../images/post-002-thumb.jpg" alt="">
         <div class="card-body">
         
@@ -302,7 +198,16 @@ Skeleton code 작성해보기
           <div class="meta">Feb 17, 2025 · 20 min</div>
         </div>
       </a>
-      <a class="card mini" href="../../posts/Difussion : Latent Diffusion/">
+      <a class="card mini" href="../../posts/RL_Asynchronous Methods for Deep Reinforcement Learning/">
+        <img class="thumb" src="../../images/RL_Asynchronous_Methods_for_Deep_Reinforcement_Learning/thumb.png" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Reinforcement Learning : Asynchronous Methods for Deep Reinforcement Learning</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Feb 17, 2025 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Difussion_Latent Diffusion/">
         <img class="thumb" src="../../images/latentdiffusion.webp" alt="">
         <div class="card-body">
         
@@ -316,12 +221,25 @@ Skeleton code 작성해보기
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      options: { linebreaks: { automatic: true, width: 'container' } }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+
+  chtml: {
+    linebreaks: { automatic: true, width: "match" }  // 또는 width: 80
+  },
+
+  options: {
+    renderActions: { addMenu: [] }   // 우클릭 메뉴 제거
+  }
+};
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <script src="../../assets/js/main.js" defer></script>
 </body></html>

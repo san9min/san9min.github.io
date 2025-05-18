@@ -5,6 +5,7 @@
   /*─ 브랜드 ─*/
   --accent : #13279A;
   --accent2: #904e95;
+  --accent-light:#c9d1ff;
   
 
   /*─ Light palette ─*/
@@ -46,6 +47,8 @@
     --chip-fg : #e6e7e9;
     --chip-hover:#2a2d36;
     --accent  : #ff8a57;
+    --accent-light:#ff763b;;   /* 밝은 배경용 */
+    
     --code-bg : #1c1f24;
     --shadow  : 0 4px 12px rgba(0,0,0,.6);
 
@@ -54,6 +57,7 @@
     --footer-fg : #a0a4ac;
     --footer-ic : #d4d4d4;
   }
+
 }
 
 /* ───────────────────────────────────────────────
@@ -280,7 +284,7 @@ mjx-container{overflow-x:auto;max-width:100%;}
   margin:32px 0;
   padding:22px 28px 22px 56px;   /* 좌측 아이콘 자리 확보 */
   background:var(--chip-hover);  /* 연한 회색 (다크·라이트 자동) */
-  border-left:4px solid var(--accent);
+  border-left:4px solid var(--fg);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   color:var(--fg);
@@ -288,12 +292,38 @@ mjx-container{overflow-x:auto;max-width:100%;}
   line-height:1.68;
 }
 
-/* 💡 전구 아이콘 */
-.article aside::before{
-  content:'\f0eb';              /* Font-Awesome 'fa-lightbulb' */
-  font-family:'Font Awesome 6 Free';
-  font-weight:900;
-  position:absolute;left:22px;top:22px;
-  color:var(--accent);
-  font-size:1.05rem;
+mark{
+  background:var(--accent-light);   /* 연한 브랜드 색 */
+  color:var(--fg);                  /* 글자색은 기본 전경색 */
+  padding:0 4px;border-radius:3px;
+}
+
+blockquote{
+  margin:32px 0;padding:20px 28px;
+  background:var(--chip-hover);     /* 연한 회색 */
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  color:var(--fg);
+  font-style:italic;
+}
+
+/* ─────────── 2) 다크 모드 보정 ─────────── */
+@media (prefers-color-scheme:dark){
+  mark{
+    background:var(--accent-light); /* 이미 다크 팔레트에서 오렌지 계열로 치환됨 */
+    color:var(--bg);                /* 더 높은 대비 확보 */
+  }
+
+  blockquote{
+    background:var(--card);         /* 다크 배경과 자연스럽게 맞추기 */
+    border-left-color:var(--accent);
+  }
+  th{
+    background:var(--card);      /* 짙은 카드 배경색 */
+    color:var(--fg);             /* 밝은 전경색 */
+  }
+  th,td{
+    border-color:var(--border);  /* 다크 테마용 경계색 */
+  }
 }

@@ -57,3 +57,4 @@ window.addEventListener('scroll', () => {
   const tb = document.querySelector('.topbar');
   if (tb) tb.classList.toggle('scrolled', window.scrollY > 32);
 });
+
