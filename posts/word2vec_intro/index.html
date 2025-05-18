@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sangmin Blog | GPT-3 → Word2Vec : 단어 의미 표현 여정</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="../../assets/styles/main.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head><body>
+  <main class="article">
+    <h1>GPT-3 → Word2Vec : 단어 의미 표현 여정</h1>
+    <div class="meta">May 18, 2025 · 12 min read</div>
+    <img class="hero" src="../../images/word2vec_intro/thumbnail.png" alt="cover image">
+    <h2>🚀 Intro</h2>
+<blockquote>
+<p><strong>GPT-3 — A first step on the path to universal models</strong><br>“언어 모델은 결국 <em>의미</em>를 어떻게 담아낼까?”</p>
+</blockquote>
+<hr>
+<h2>1️⃣ 의미를 표현하는 고전적 방식</h2>
+<h3>• Webster 사전 정의 <em>(발췌)</em></h3>
+<ul>
+<li>the idea that is represented by a word  </li>
+<li>… <strong>signifier ↔ signified</strong> (denotational semantics)</li>
+</ul>
+<h3>• NLP 전통 : <strong>단어 = 독립 기호</strong></h3>
+<table>
+<thead>
+<tr>
+<th>단어</th>
+<th>one-hot 벡터 예시</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>motel</td>
+<td><code>[0 … 0 1 0 …]</code></td>
+</tr>
+<tr>
+<td>hotel</td>
+<td><code>[0 … 1 0 0 …]</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>문제</strong>  </p>
+<ol>
+<li>벡터 차원 = 어휘 크기 → 💥 수십만 차원  </li>
+<li>one-hot 은 항상 직교 → <em>유사도 0</em><br>  → “<em>Seattle motel</em>” 검색 시 <em>hotel</em> 문서를 놓친다</li>
+</ol>
+</blockquote>
+<hr>
+<h2>2️⃣ 🌐 Distributional Semantics</h2>
+<blockquote>
+<p>“<strong>You shall know a word by the company it keeps</strong>”</p>
+</blockquote>
+<ul>
+<li><strong>Context window</strong> <em>m</em> : 중심 단어 <code>w_t</code> 주변 ± <em>m</em> 토큰</li>
+<li>단어 <code>w</code> 출현 ➜ 이웃 토큰 집합이 <strong>의미 벡터</strong>를 만든다</li>
+</ul>
+<pre><code class="language-text">… government debt problems turning into  banking  crises …
+                                 ▲── context
+</code></pre>
+<hr>
+<h2>3️⃣ Word Embedding 개념</h2>
+<ul>
+<li><strong>Dense 실수 벡터</strong> <code>v_w ∈ ℝⁿ</code></li>
+<li>“비슷한 문맥 ↔ 비슷한 벡터” (내적 ↑, cos θ ↑)</li>
+</ul>
+<p>예)  </p>
+<pre><code>banking = [ 0.286, 0.792, −0.177, … ]ᵀ
+</code></pre>
+<blockquote>
+<p><strong>Synonyms</strong> ≈ 가까운 벡터<br><strong>king − man + woman →</strong> <em>queen</em> 같은 벡터 연산도 가능</p>
+</blockquote>
+<hr>
+<h2>4️⃣ Word2Vec : 학습 아이디어</h2>
+<ol>
+<li>말뭉치 전체 <strong>토큰 시퀀스</strong> <code>w₁…w_T</code></li>
+<li>각 단어에 <strong>중심 벡터</strong> <code>v_c</code> / <strong>외부 벡터</strong> <code>u_o</code> 쌍 배정</li>
+<li>위치 <code>t</code> 에서 중심단어 <code>c=w_t</code><br>→ <em>context</em> <code>o ∈ window</code> 의 <strong>예측 확률</strong> 최대화</li>
+</ol>
+<h3>4-1. Softmax 확률</h3>
+<p>[
+P(o\mid c)=
+\frac{\exp(u_o^{!\top}v_c)}
+     {\sum_{w\in V}\exp(u_w^{!\top}v_c)}
+]</p>
+<h3>4-2. 전체 목표 (Skip-gram)</h3>
+<figure class="eq">
+
+<p>[
+\mathcal L(\theta)=
+-\frac1T\sum_{t=1}^{T}
+      \sum_{\substack{-m\le j\le m\ j\ne0}}
+      \log P(w_{t+j}\mid w_t;\theta)
+]</p>
+</figure>
+
+<p>(경사 하강 → <code>v, u</code> 업데이트)</p>
+<hr>
+<h2>💻 Word2Vec (Skip-gram + NegSampling) 초간단 코드</h2>
+<pre><code class="language-python">import torch
+import torch.nn as nn
+
+class SkipGramNS(nn.Module):
+    def __init__(self, vocab_size: int, dim: int):
+        super().__init__()
+        self.in_embed  = nn.Embedding(vocab_size, dim)   # v_c
+        self.out_embed = nn.Embedding(vocab_size, dim)   # u_o
+
+    def forward(self, center, pos, neg):
+        v_c   = self.in_embed(center)            # [B, D]
+        u_pos = self.out_embed(pos)              # [B, K, D]
+        u_neg = self.out_embed(neg)              # [B, Kneg, D]
+
+        # positive &amp; negative loss
+        pos_score = (u_pos @ v_c.unsqueeze(2)).squeeze()                         .sigmoid().log()
+        neg_score = (u_neg @ (-v_c).unsqueeze(2)).squeeze()                         .sigmoid().log()
+
+        loss = -(pos_score.sum() + neg_score.sum()) / center.size(0)
+        return loss
+</code></pre>
+<hr>
+<h2>📝 핵심 요약</h2>
+<table>
+<thead>
+<tr>
+<th>Key Idea</th>
+<th>한 줄 설명</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>One-hot 한계</strong></td>
+<td>차원↑↑ &amp; 유사도 0</td>
+</tr>
+<tr>
+<td><strong>Distributional Hypothesis</strong></td>
+<td>“같은 문맥 → 비슷한 의미”</td>
+</tr>
+<tr>
+<td><strong>Word2Vec 학습</strong></td>
+<td>중심-문맥 쌍 확률 ↑ → 벡터가 의미 공간 형성</td>
+</tr>
+<tr>
+<td><strong>Embedding 효용</strong></td>
+<td>검색·추천·유추 <em>king − man + woman ≈ queen</em></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>결국</strong>: <em>텍스트 자체</em>가 단어 의미를 학습시킨다 → GPT-시리즈 같은 거대 LM의 토대 🚀</p>
+</blockquote>
+
+     
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+
+  chtml: {
+    linebreaks: { automatic: true, width: "match" }  // 또는 width: 80
+  },
+
+  options: {
+    renderActions: { addMenu: [] }   // 우클릭 메뉴 제거
+  }
+};
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="../../assets/js/main.js" defer></script>
+</body></html>
