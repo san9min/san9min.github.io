@@ -4,7 +4,7 @@ date: 2025-05-18
 readingTime: 12
 thumbnail: images/word2vec_intro/thumbnail.png
 tags: [NLP, Word Embedding, Word2Vec]
-category: [Tech Walk-through]
+category: [Tech Study]
 ---
 
 ## 🚀 Intro
