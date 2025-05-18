@@ -16,7 +16,7 @@ Genetraion은 크게 두가지 framework으로 나뉜다.
 - **Implicit model**
     - Generative Adversarial Networks(GAN)
 
-![B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png](/images/Diffusion_DDPM/01.png)
+![B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png](/images/diffusion_kickoff/01.png)
 
 diffusion model은 likelihood based이다.
 

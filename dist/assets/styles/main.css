@@ -22,9 +22,12 @@
   --shadow  : 0 6px 18px rgba(0,0,0,.06);
 
   /*─ Footer(light) ─*/
-  --footer-bg : #fafbfc;
+  /* --footer-bg : #fafbfc;
   --footer-fg : #5f6368;
-  --footer-ic : #555;
+  --footer-ic : #555; */
+  --footer-bg : #0f1117;;
+  --footer-fg : #a0a4ac;
+  --footer-ic : #d4d4d4;
 
   --radius : 18px;
 
@@ -145,10 +148,6 @@ a{color:var(--fg);text-decoration:none;}
 .hero{width:100%;max-width:960px;margin:0 auto 48px;border-radius:var(--radius);box-shadow:var(--shadow);object-fit:cover;}
 pre{background:var(--code-bg);padding:18px;border-radius:var(--radius);overflow:auto;margin:24px 0;font-size:.9rem;}
 code{font-family:var(--font-code);}
-blockquote{
-  margin:32px 0;padding:20px 28px;font-style:italic;color:var(--fg);
-  background:#fafbfc;border-left:4px solid var(--accent);border-radius:var(--radius);
-}
 table{width:100%;border-collapse:collapse;margin:32px 0;font-size:.92rem;}
 th,td{padding:10px 14px;border:1px solid #e1e4e8;text-align:left;}
 th{background:#fafafa;font-weight:600;}
@@ -282,30 +281,50 @@ mjx-container{overflow-x:auto;max-width:100%;}
 .article aside{
   position:relative;
   margin:32px 0;
-  padding:22px 28px 22px 56px;   /* 좌측 아이콘 자리 확보 */
-  background:var(--chip-hover);  /* 연한 회색 (다크·라이트 자동) */
-  border-left:4px solid var(--fg);
+  padding:20px 24px 20px 60px;          /* 왼쪽 아이콘 자리 */
+  background:var(--chip-hover);       /* 살짝 컬러 배경  */
   border-radius:var(--radius);
   box-shadow:var(--shadow);
   color:var(--fg);
-  font-size:.97rem;
   line-height:1.68;
+  font-size:.97rem;
 }
 
+/* 왼쪽 아이콘 ⓘ 표시 */
+/* .article aside::before{
+  content:"\f276";                      
+  font-family:"Font Awesome 6 Free";    
+  font-weight:900;
+  position:absolute;left:24px;top:22px;
+  font-size:1rem;
+  color:var(--fg);
+} */
+
+
 mark{
-  background:var(--accent-light);   /* 연한 브랜드 색 */
-  color:var(--fg);                  /* 글자색은 기본 전경색 */
+  background:var(--fg-soft);   /* 연한 브랜드 색 */
+  color:var(--bg);                  /* 글자색은 기본 전경색 */
   padding:0 4px;border-radius:3px;
 }
 
 blockquote{
-  margin:32px 0;padding:20px 28px;
-  background:var(--chip-hover);     /* 연한 회색 */
+  padding:6px 12px;
+  background:transparent;               /* 배경 제거 */
+  border-left:4px solid var(--fg);  /* 얇은 컬러 바만 */
+  border-radius:0;
+  color:var(--fg-soft);                 /* 살짝 옅은 글자색 */
+  font-style:italic;
+}
+
+
+.eq-box{
+  margin:32px 0;
+  padding:18px 24px;
+  background:var(--chip-hover);     /* 연한 회색(라이트) */
   border-left:4px solid var(--accent);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-  color:var(--fg);
-  font-style:italic;
+  overflow-x:auto;                  /* 긴 수식 가로 스크롤 */
 }
 
 /* ─────────── 2) 다크 모드 보정 ─────────── */
@@ -314,9 +333,18 @@ blockquote{
     background:var(--accent-light); /* 이미 다크 팔레트에서 오렌지 계열로 치환됨 */
     color:var(--bg);                /* 더 높은 대비 확보 */
   }
+  .article aside{
+    background:#262a38;                 /* 카드와 구분되는 톤 */
+  }
+  .article aside::before{color:var(--accent);}
 
   blockquote{
-    background:var(--card);         /* 다크 배경과 자연스럽게 맞추기 */
+    background:transparent;
+    border-left-color:var(--accent);
+    color:var(--fg-soft);
+  }
+  .eq-box{
+    background:var(--card);         /* 짙은 카드 배경 */
     border-left-color:var(--accent);
   }
   th{
@@ -326,4 +354,58 @@ blockquote{
   th,td{
     border-color:var(--border);  /* 다크 테마용 경계색 */
   }
+}
+
+.eq-box mjx-container{max-width:100%;overflow-x:auto;}
+
+figure.eq{
+  position:relative;
+  margin:40px auto;
+  padding:28px 32px 24px;
+  max-width:720px;                 /* 글 너비와 균형 */
+  text-align:center;
+
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+/* 긴 수식 넘침 방지 */
+figure.eq mjx-container{max-width:100%;overflow-x:auto;}
+
+/* 다크 모드: 배경·그림자만 자연스럽게 */
+@media (prefers-color-scheme:dark){
+  figure.eq{background:var(--card);box-shadow:var(--shadow);}
+}
+
+/* ── ChatGPT-like code card ───────────────────── */
+pre.codebox{
+  position:relative;
+  background:var(--code-bg);          /* 연한 다크/라이트 자동 */
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:20px 18px 18px 18px;
+  overflow:auto;
+  font-size:.88rem;                   /* 살짝 작게 */
+}
+
+/* 복사 버튼 */
+pre.codebox::after{
+  content:"Copy";
+  position:absolute; top:8px; right:12px;
+  font-size:.72rem; font-weight:600;
+  background:var(--accent); color:#fff;
+  padding:4px 8px; border-radius:8px;
+  cursor:pointer; user-select:none;
+  opacity:.0; transition:.2s;
+}
+pre.codebox:hover::after{opacity:.85;}
+pre.codebox:active::after{opacity:1;transform:scale(.97);}
+
+/* 선택 영역 하이라이트 일관화 */
+pre.codebox code::selection{background:var(--accent-light);color:var(--fg);}
+
+@media(prefers-color-scheme:dark){
+  pre.codebox{background:#1e1f26;}
 }

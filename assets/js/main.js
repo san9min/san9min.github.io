@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     bar.innerHTML = `
       <a class="logo" href="/">Sangmin&nbsp;Lee</a>
       <nav class="top-nav">
-        <a href="/">Bio</a>
         <a href="/about/">About</a>
       </nav>`;
     document.body.prepend(bar);
@@ -58,3 +57,12 @@ window.addEventListener('scroll', () => {
   if (tb) tb.classList.toggle('scrolled', window.scrollY > 32);
 });
 
+document.addEventListener("click", e=>{
+  if(!e.target.matches("pre.codebox::after, pre.codebox::after *")) return;
+  const pre = e.target.closest("pre");
+  const text = pre.innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    e.target.textContent="Copied!";
+    setTimeout(()=>e.target.textContent="Copy",1200);
+  });
+});
