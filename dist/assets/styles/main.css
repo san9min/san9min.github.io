@@ -46,8 +46,8 @@
     --chip-bg : #181b23;
     --chip-fg : #e6e7e9;
     --chip-hover:#2a2d36;
-    --accent  : #ff583b;
-    --accent-light:#ff8a57;   /* 밝은 배경용 */
+    --accent  : #ff8a57;
+    --accent-light:#ff763b;;   /* 밝은 배경용 */
     
     --code-bg : #1c1f24;
     --shadow  : 0 4px 12px rgba(0,0,0,.6);

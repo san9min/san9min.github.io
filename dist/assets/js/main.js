@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bar.innerHTML = `
       <a class="logo" href="/">Sangmin&nbsp;Lee</a>
       <nav class="top-nav">
-        
+        <a href="/">Bio</a>
         <a href="/about/">About</a>
       </nav>`;
     document.body.prepend(bar);
