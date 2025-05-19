@@ -317,12 +317,7 @@ mark:hover{
 }
 
 /* 다크 모드용 톤 다운 */
-@media (prefers-color-scheme:dark){
-  mark{
-    --mark-bg : color-mix(in srgb, var(--accent) 30%, #1e1f26);
-    color:var(--bg);              /* 텍스트는 밝게 */
-  }
-}
+
 
 blockquote{
   padding:6px 12px;
@@ -346,10 +341,11 @@ blockquote{
 
 /* ─────────── 2) 다크 모드 보정 ─────────── */
 @media (prefers-color-scheme:dark){
-  mark{
-    background:var(--accent-light); /* 이미 다크 팔레트에서 오렌지 계열로 치환됨 */
-    color:var(--bg);                /* 더 높은 대비 확보 */
-  }
+  
+    mark{
+      --mark-bg : color-mix(in srgb, var(--accent) 12%, #1e1f26);
+      color:var(--fg);              /* 텍스트는 밝게 */
+    }
   .article aside{
     background:#262a38;                 /* 카드와 구분되는 톤 */
   }
@@ -357,7 +353,7 @@ blockquote{
 
   blockquote{
     background:transparent;
-    border-left-color:var(--accent);
+    border-left-color:var(--fg);
     color:var(--fg-soft);
   }
   .eq-box{
