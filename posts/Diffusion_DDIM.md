@@ -2,7 +2,7 @@
 title: "Diffusion : DDIM"
 date: 2023-01-31
 readingTime: 20 
-thumbnail: images/post-002-thumb.jpg
+thumbnail: images/diffusion_ddim/thumbnail.png
 tags: [Generative AI, Diffusion, DDPM]
 category : [Tech Review]
 ---
