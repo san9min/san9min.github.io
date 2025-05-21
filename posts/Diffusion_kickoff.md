@@ -6,7 +6,7 @@ thumbnail: /images/diffusion_kickoff/thumbnail.png
 tags: [Generative AI, Diffusion]
 category : [Tech Review]
 ---
-## Genetrative Model Framework
+### Genetrative Model Framework
 Genetraion은 크게 두가지 framework으로 나뉜다.
 - **Likelihood-based**
     - Autoregressive Models
@@ -22,11 +22,11 @@ diffusion model은 likelihood based이다.
 
 ---
 
-## 📚 Background  
+### 📚 Background  
 
 Diffusion은 확률 기반의 process이다. 먼저 핵심 확률 개념 3가지를 정리하자.
 
-### (1) KL-Divergence
+#### (1) KL-Divergence
 
 > `두 확률 분포가 얼마나 다른지`를 계산, minimize를 통해 근사
 
@@ -69,7 +69,7 @@ Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 De
 
 * 일반적으로 $D_{KL}(p|q) \neq D_{KL}(q|p)$이다.
 
-### (2) Bayes Rule  
+#### (2) Bayes Rule  
 > 복잡한 posterior p(z∣x)를 prior·likelihood·evidence 항으로 분해, ELBO와 KL 식 도출
 
 $$
@@ -86,7 +86,7 @@ $$
 | $P(H \mid E)$ | **Posterior probability**          | 증거 $E$를 본 뒤 가설 $H$가 참일 사후확률                                 |
 
 
-### (3) Monte Carlo Method
+#### (3) Monte Carlo Method
 > 적분 대신 **샘플 평균**으로 근사
 
 랜덤 표본을 뽑아 (`sampling`을 통해) 함수값을 확률적으로 계산하는 방식으로, 결국 근사(`approximation`) 이야기다.
@@ -103,7 +103,7 @@ $$
 ---
 
 
-## 🤔 왜 Variational Inference(VI)가 필요할까?  
+### 🤔 왜 Variational Inference(VI)가 필요할까?  
 > 직접 적분이 불가능한 posterior $p_\theta(z\mid x)$ 대신, tractable 근사분포 $q_\phi(z\mid x)$로 문제를 풀어 $\log p_\theta(x)$를 최적화하기 위해  
 
 
@@ -139,7 +139,7 @@ $$
 ---
 
 
-## 📐 ELBO : Evidence Lower Bound  
+### 📐 ELBO : Evidence Lower Bound  
 
 
 정리하면, Variational Inference의 궁극적 목적은 복잡한 posterior $p(z\mid x)\$ 를 다루기 쉬운 $q_\phi(z\mid x)\$ 로 근사하는 것.  
@@ -149,7 +149,7 @@ $$
 $$q_\phi^{*} = \underset{q_\phi \in \mathcal Q}{\arg\min} D_{KL}\(q_\phi(z \mid x) || p_\theta(z \mid x))
 $$
 
-### (1) KL 분해
+#### (1) KL 분해
 Bayes Rule에 의해 우리는 posterior p(z|x)를 p(z), p(x), p(x|z)로 쓸 수 있다.
 그러므로 Bayes Rule을 이용해 KL divergence를 표현하면
 
@@ -190,7 +190,7 @@ Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾
 Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 maximize하는 $\theta$를 찾자
 
 <aside>
-✏️ <bold>log p(x) 를 evidence, likelihood라고 한다</bold>
+<bold>log p(x) 를 evidence, likelihood라고 한다</bold>
 
  $\theta$로 parameterized된 우리의 model이 observed data x에 대해 marginal probability를 계산했을 때 만약 우리 모델이 잘 학습이 되었다면 높은 값을 내놓을 것이다. 즉, 학습 중에 $\theta$를 잠시 fix해놓고 evaluation을 했을 때 높은 값을 내놓고 있다면 우리는 잘 가고 있다는 것이다. 그래서 $\log p(x;\theta)$를 우리가 잘 가고 있다는 의미에서  evidence라 한다. 
 </aside>
@@ -204,7 +204,7 @@ $$
 
 가 된다.
 
-### (2) ELBO 정의
+#### (2) ELBO 정의
 
 $$
 {\text{ELBO}} = E_{z \sim q_{\phi}(z|x)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
@@ -238,7 +238,7 @@ $$
 
 ---
 
-## 🏁 나가며
+### 🏁 나가며
 
 #### ① ELBO가 하는 일  
 * **ELBO**는 직접 계산이 어려운 **likelihood $p_\theta(x)$** 의 *안전한 하한(lower bound)*.  

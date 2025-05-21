@@ -32,12 +32,12 @@ model은 이 reverse process를 학습하고 새로운 data를 generation한다.
 
 ---
 
-##  >> Forward Process (diffusion process)
+###  >> Forward Process (diffusion process)
 
 > `Gaussian noise를 더해가는 과정`
 
 
-### (1) Markov chain - Noising process
+#### (1) Markov chain - Noising process
 
 $$
 q(x_{1:T}|x_0) = \Pi_{t=1}^Tq(x_t|x_{t-1}) 
@@ -69,7 +69,7 @@ $\beta _t$를 너무 크게 잡으면 분산이 폭주하고, 너무 작으면 �
 
 그런데 여기서 어떤 순간 t ( $0 \le t \le T)$에서 $x_t$를 알고 싶다고한다면, 위의 식을 이용해 반복적인 계산을 수행하면 된다. 그러나 t 가 크다면 이는 좋은 방법이 아닐 것이다.
 
-### (2) Reparameterization trick - 한번에 $x_t$ 를 sampling
+#### (2) Reparameterization trick - 한번에 $x_t$ 를 sampling
 
 만약 우리가
 $\alpha_t = 1-\beta_t , \bar \alpha_t = \Pi_{s=0}^t \alpha_s$ 라고 잡는다면, t에서 $x_t$를 sampling하는 것을 closed form으로 쓸 수 있을 것이다.
@@ -118,7 +118,7 @@ $$
 
 ---
 
-## << Reverse Process (denoising process)
+### << Reverse Process (denoising process)
 
 > `모델이 학습할 과정`
 
@@ -144,7 +144,7 @@ neural network에 timestep t를 conditioning하면 model은 각 time step의 Gau
 
 ---
 
-## 🏋️ Training
+### 🏋️ Training
 
 > `ELBO` on the negative log likelihood를 optimize
 
@@ -235,7 +235,7 @@ random하게 timesteps t를 뽑고, $x_0$와 t를 이용해 $q(x_t|x_0)$ 로부�
 
 ---
 
-##  🛠️ Model Architectue
+###  🛠️ Model Architectue
 
 model의 input과 output의 dimension이 같아야한다. 본 논문에선 U-Net을 사용했다. 
 U-Net은 Residual Block, self-attention block이 있다.

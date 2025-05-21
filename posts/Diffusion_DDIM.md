@@ -7,7 +7,7 @@ tags: [Generative AI, Diffusion, DDPM]
 category : [Tech Review]
 ---
 
-# **Denoising Diffusion Implicit Models**
+## **Denoising Diffusion Implicit Models**
 
 
 [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
