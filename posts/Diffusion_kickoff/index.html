@@ -16,7 +16,7 @@
     <h1>Diffusion : Kick-off</h1>
     <div class="meta">Jan 15, 2023 · 15 min read</div>
     <img class="hero" src="../..//images/diffusion_kickoff/thumbnail.png" alt="cover image">
-    <h2>Genetrative Model Framework</h2>
+    <h3>Genetrative Model Framework</h3>
 <p>Genetraion은 크게 두가지 framework으로 나뉜다.</p>
 <ul>
 <li><strong>Likelihood-based</strong><ul>
@@ -34,9 +34,9 @@
 <p><img src="/images/diffusion_kickoff/01.png" alt="B948109D-1EBD-4BF6-B739-FB8EF24AE95E.png"></p>
 <p>diffusion model은 likelihood based이다.</p>
 <hr>
-<h2>📚 Background</h2>
+<h3>📚 Background</h3>
 <p>Diffusion은 확률 기반의 process이다. 먼저 핵심 확률 개념 3가지를 정리하자.</p>
-<h3>(1) KL-Divergence</h3>
+<h4>(1) KL-Divergence</h4>
 <blockquote>
 <p><code>두 확률 분포가 얼마나 다른지</code>를 계산, minimize를 통해 근사</p>
 </blockquote>
@@ -70,7 +70,7 @@ Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 De
 <li><p>일반적으로 $D_{KL}(p|q) \neq D_{KL}(q|p)$이다.</p>
 </li>
 </ul>
-<h3>(2) Bayes Rule</h3>
+<h4>(2) Bayes Rule</h4>
 <blockquote>
 <p>복잡한 posterior p(z∣x)를 prior·likelihood·evidence 항으로 분해, ELBO와 KL 식 도출</p>
 </blockquote>
@@ -107,7 +107,7 @@ $$</p>
 <td>증거 $E$를 본 뒤 가설 $H$가 참일 사후확률</td>
 </tr>
 </tbody></table>
-<h3>(3) Monte Carlo Method</h3>
+<h4>(3) Monte Carlo Method</h4>
 <blockquote>
 <p>적분 대신 <strong>샘플 평균</strong>으로 근사</p>
 </blockquote>
@@ -118,7 +118,7 @@ $$</p>
 $$</p>
 <p>확률 밀도함수 p(x)를 따르는 x에대한 f(x)의 기댓값을 구하고 싶다했을 때 p(x)에서 K개의 샘플을 뽑아 이로 계산해도 괜찮다는 이야기이다.</p>
 <hr>
-<h2>🤔 왜 Variational Inference(VI)가 필요할까?</h2>
+<h3>🤔 왜 Variational Inference(VI)가 필요할까?</h3>
 <blockquote>
 <p>직접 적분이 불가능한 posterior $p_\theta(z\mid x)$ 대신, tractable 근사분포 $q_\phi(z\mid x)$로 문제를 풀어 $\log p_\theta(x)$를 최적화하기 위해  </p>
 </blockquote>
@@ -143,11 +143,11 @@ $$</p>
 <p>따라서 <strong>Variational Inference</strong>는 다루기 쉬운 분포 $q_\phi(z\mid x)$로 $p_\theta(z\mid x)$를 <strong>근사</strong>하고, 두 분포의 차이를 <strong>KL Divergence</strong>로 최소화한다.  </p>
 <p>이 과정의 최적화 목표가 <strong>ELBO(Evidence Lower Bound)</strong> 이다.</p>
 <hr>
-<h2>📐 ELBO : Evidence Lower Bound</h2>
+<h3>📐 ELBO : Evidence Lower Bound</h3>
 <p>정리하면, Variational Inference의 궁극적 목적은 복잡한 posterior $p(z\mid x)$ 를 다루기 쉬운 $q_\phi(z\mid x)$ 로 근사하는 것.<br>여기서 latent variable z 의 사전확률 분포 p(z)는 x와 무관해 가장 간단하고 예쁜 Gaussian이라 하자. 그리고 q를 $\phi$, p를 $\theta$로 parameterize하자. </p>
 <p>$$q_\phi^{*} = \underset{q_\phi \in \mathcal Q}{\arg\min} D_{KL}(q_\phi(z \mid x) || p_\theta(z \mid x))
 $$</p>
-<h3>(1) KL 분해</h3>
+<h4>(1) KL 분해</h4>
 <p>Bayes Rule에 의해 우리는 posterior p(z|x)를 p(z), p(x), p(x|z)로 쓸 수 있다.
 그러므로 Bayes Rule을 이용해 KL divergence를 표현하면</p>
 <p>$$
@@ -173,7 +173,7 @@ $$</p>
 <p>Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾자</p>
 <p>Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 maximize하는 $\theta$를 찾자</p>
 <aside>
-✏️ <bold>log p(x) 를 evidence, likelihood라고 한다</bold>
+<bold>log p(x) 를 evidence, likelihood라고 한다</bold>
 
 <p> $\theta$로 parameterized된 우리의 model이 observed data x에 대해 marginal probability를 계산했을 때 만약 우리 모델이 잘 학습이 되었다면 높은 값을 내놓을 것이다. 즉, 학습 중에 $\theta$를 잠시 fix해놓고 evaluation을 했을 때 높은 값을 내놓고 있다면 우리는 잘 가고 있다는 것이다. 그래서 $\log p(x;\theta)$를 우리가 잘 가고 있다는 의미에서  evidence라 한다. </p>
 </aside>
@@ -184,7 +184,7 @@ $$</p>
 \log p_{\theta}(x) \ge E_{z \sim q(z)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
 $$</p>
 <p>가 된다.</p>
-<h3>(2) ELBO 정의</h3>
+<h4>(2) ELBO 정의</h4>
 <p>$$
 {\text{ELBO}} = E_{z \sim q_{\phi}(z|x)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
 $$</p>
@@ -208,7 +208,7 @@ $$</p>
 $$
 이므로 ELBO를 최대화하면 곧 KL도 줄이면서 $\log p_\theta(x)$를 끌어올리는 효과를 얻는다.</p>
 <hr>
-<h2>🏁 나가며</h2>
+<h3>🏁 나가며</h3>
 <h4>① ELBO가 하는 일</h4>
 <ul>
 <li><strong>ELBO</strong>는 직접 계산이 어려운 <strong>likelihood $p_\theta(x)$</strong> 의 <em>안전한 하한(lower bound)</em>.  </li>
@@ -236,22 +236,13 @@ $$
           <a class="all-link" href="../../">Browse all articles&nbsp;→</a>
         </div>
         <div class="related-list">
-      <a class="card mini" href="../../posts/Difussion_Latent Diffusion/">
-        <img class="thumb" src="../../images/latentdiffusion.webp" alt="">
+      <a class="card mini" href="../../posts/difussion_latent_diffusion/">
+        <img class="thumb" src="../..//images/difussion_latent_diffusion/thumbnail.png" alt="">
         <div class="card-body">
         
           <h3 class="card-title">Difussion : Latent Diffusion</h3>
           <span class="arrow">↗</span>
           <div class="meta">Feb 17, 2024 · 20 min</div>
-        </div>
-      </a>
-      <a class="card mini" href="../../posts/Difussion_LM_Seq2Seq/">
-        <img class="thumb" src="../..//images/Difussion_LM_Seq2Seq/thumb.png" alt="">
-        <div class="card-body">
-        
-          <h3 class="card-title">Difussion : Difussion LM & Seq2Seq</h3>
-          <span class="arrow">↗</span>
-          <div class="meta">Feb 26, 2023 · 20 min</div>
         </div>
       </a>
       <a class="card mini" href="../../posts/Diffusion_DDIM/">
@@ -261,6 +252,15 @@ $$
           <h3 class="card-title">Diffusion : DDIM</h3>
           <span class="arrow">↗</span>
           <div class="meta">Jan 31, 2023 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Diffusion_DDPM/">
+        <img class="thumb" src="../..//images/diffusion_ddpm/thumbnail.jpg" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Diffusion : DDPM</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Jan 22, 2023 · 20 min</div>
         </div>
       </a></div>
       </section> 

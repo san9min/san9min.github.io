@@ -321,6 +321,7 @@ mark:hover{
 
 blockquote{
   padding:6px 12px;
+  margin : 12px;
   background:transparent;               /* 배경 제거 */
   border-left:4px solid var(--fg);  /* 얇은 컬러 바만 */
   border-radius:0;
