@@ -1,6 +1,6 @@
 ---
 title: "Difussion : Latent Diffusion"
-date: 2024-02-17
+date: 2023-02-07
 readingTime: 20 
 thumbnail: /images/difussion_latent_diffusion/thumbnail.png
 tags: [Generative AI, Diffusion, DDPM]
