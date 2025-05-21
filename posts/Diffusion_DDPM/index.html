@@ -21,7 +21,7 @@
 <ul>
 <li>parameterized Markov chain</li>
 <li>trained using variational inference</li>
-<li><marck><code>learn to reverse a diffusion process</code> </mark></li>
+<li><code>learn to reverse a diffusion process</code></li>
 </ul>
 <p><img src="/images/diffusion_ddpm/00.png" alt="Untitled"></p>
 <p>Diffusion model은 latent variable 모델이다.
@@ -132,10 +132,7 @@ $q(x_{t-1}|x_t)$는 intractable하지만 $x_0$의 conditioning을 주면 tractab
 <p>$X_T$가 얼마나 standard Gaussian인지, 그런데 우리는 $\beta_t$를 시간에 따른 constant 로 두었으므로 이 term도 constant이고 학습할 때 <code>무시</code>해도 된다</p>
 <p>$L_{T-1} = \sum_{t&gt;1}D_{KL}(q(x_{t-1}|x_t,x_0)||p_{\theta}(x_{t-1}|x_t))$</p>
 <p>denoising step $p_{\theta}(x_{t-1}|x_t)$ 과 approximated denoising step $q(x_{t-1}|x_t,x_0)$간의 차이를 계산함을 볼 수 있음</p>
-<mark>
-model이 `noise를 예측`하도록 `Reparam`
-</mark>
-
+<p>model이 <code>noise를 예측</code>하도록 <code>Reparam</code></p>
 <ol>
 <li>$\Sigma_{\theta}(x_t,t) = \sigma_t^2I$, $\sigma$는 $\beta$에 관한 time dependent constants</li>
 <li>$\mu_\theta(x_t,t)$ for $p_{\theta}(x_{t-1}|x_t)$ using  $x_t(x_0,\epsilon)$</li>

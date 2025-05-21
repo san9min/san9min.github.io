@@ -63,7 +63,7 @@ Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 De
 <p>이 두 term을 통해 (싸우는 느낌?) q가 p로 근사가 된다.</p>
 <p><strong>KL divergence의 특성</strong> </p>
 <ul>
-<li><p><mark>항상 0 이상</mark>이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. </p>
+<li><p><strong>항상 0 이상</strong>이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. </p>
 </li>
 <li><p>엄밀히는 거리 개념이 아니다. </p>
 </li>
@@ -166,10 +166,7 @@ D_{KL}\bigl(q_\phi(z\mid x)|p_\theta(z\mid x)\bigr)
 \end{aligned}
 $$</p>
 <p>로 정리된다. </p>
-<mark>
-그런데 여기서 $\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.
-</mark>
-
+<p>그런데 여기서 <strong>$\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.</strong></p>
 <p>Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾자</p>
 <p>Maximization :  $\phi$를 고정하고 $\log p_{\theta}(x)$의 lower bound를 maximize하는 $\theta$를 찾자</p>
 <aside>
@@ -188,16 +185,14 @@ $$</p>
 <p>$$
 {\text{ELBO}} = E_{z \sim q_{\phi}(z|x)}[\log p_{\theta}(x|z)] - D_{KL}(q_{\phi}(z|x)||p(z)) 
 $$</p>
-<p><strong>1st term</strong></p>
 <p>$E_{z \sim q(z|x)}[\log p_{\theta}(x|z)]$</p>
-<p><mark><code>Reconstruction Error</code> </mark></p>
+<h4>1st term : Reconstruction Error</h4>
 <ul>
 <li>generative model(Decoder in VAE)</li>
 <li>Decoder가 데이터를 얼마나 잘 복원하는가</li>
 </ul>
-<p><strong>2nd term</strong></p>
 <p>$D_{KL}(q(z|x)||p(z)) \text{ or } E_{q(z|x)} [\log \frac {q(z|x) }{p(z)}]$</p>
-<p><mark><code>Regularization term</code></mark></p>
+<h4>2nd term : Regularization term`</h4>
 <ul>
 <li>inference model(Encoder in VAE)</li>
 <li>$q(z\mid x)$ 가 prior $p(z)$ 와 얼마나 비슷한가</li>
