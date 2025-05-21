@@ -94,7 +94,7 @@ for (const { file, attr, content } of posts) {   // ← 여기만 변경
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
   <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
 </head><body>
   <main class="article">
     <h1>${attr.title}</h1>

@@ -95,7 +95,7 @@ $$\epsilon_\theta(x_t,c) = s\epsilon_{cond}(x_t,c) + (1-s)\epsilon_{cond}(x_t,c_
 </figure>
 
 
-여기서 $c_u$는 empty prompt에 대한 조건(conditional embedding)이고, $$s$$는 guidance strength이다.
+여기서 $c_u$는 empty prompt에 대한 조건(conditional embedding)이고, $s$는 guidance strength이다.
 
 ### 🏗 Architecture
 
@@ -117,8 +117,5 @@ $$\epsilon_\theta(x_t,c) = s\epsilon_{cond}(x_t,c) + (1-s)\epsilon_{cond}(x_t,c_
 
 ### 🚪 나가며
 
-이 논문은 단순한 T2I 모델을 넘어서,
-텍스트라는 일반적인 조건을 활용해 효율적으로 고해상도 이미지를 생성하는 Latent Diffusion의 패러다임을 정립한 논문입니다.
-
-📌 그리고 Stable Diffusion은 이 논문을 바탕으로 실제 구현된 강력한 오픈소스 버전이며,
-이후 등장하는 대부분의 영상/애니메이션 생성 모델들도 이 구조를 기반으로 확장되고 있습니다.
+단순한 T2I 모델을 넘어서,
+텍스트라는 일반적인 조건을 활용해 효율적으로 고해상도 이미지를 생성하는 Latent Diffusion의 패러다임을 정립한 논문이다.
