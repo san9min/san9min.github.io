@@ -10,7 +10,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
   <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
 </head><body>
   <main class="article">
     <h1>Difussion : Latent Diffusion</h1>
@@ -72,7 +72,7 @@ $$\epsilon_\theta(x_t,c) = s\epsilon_{cond}(x_t,c) + (1-s)\epsilon_{cond}(x_t,c_
 </figure>
 
 
-<p>여기서 $c_u$는 empty prompt에 대한 조건(conditional embedding)이고, $$s$$는 guidance strength이다.</p>
+<p>여기서 $c_u$는 empty prompt에 대한 조건(conditional embedding)이고, $s$는 guidance strength이다.</p>
 <h3>🏗 Architecture</h3>
 <p><img src="/images/difussion_latent_diffusion/01.webp" alt="Untitled"></p>
 <p><code>CLIP Text</code></p>
@@ -90,10 +90,8 @@ $$\epsilon_\theta(x_t,c) = s\epsilon_{cond}(x_t,c) + (1-s)\epsilon_{cond}(x_t,c_
 <li>Image Decoder : 최종 latent ⇒ 이미지 복원</li>
 </ul>
 <h3>🚪 나가며</h3>
-<p>이 논문은 단순한 T2I 모델을 넘어서,
-텍스트라는 일반적인 조건을 활용해 효율적으로 고해상도 이미지를 생성하는 Latent Diffusion의 패러다임을 정립한 논문입니다.</p>
-<p>📌 그리고 Stable Diffusion은 이 논문을 바탕으로 실제 구현된 강력한 오픈소스 버전이며,
-이후 등장하는 대부분의 영상/애니메이션 생성 모델들도 이 구조를 기반으로 확장되고 있습니다.</p>
+<p>단순한 T2I 모델을 넘어서,
+텍스트라는 일반적인 조건을 활용해 효율적으로 고해상도 이미지를 생성하는 Latent Diffusion의 패러다임을 정립한 논문이다.</p>
 
     <section class="related">
         <div class="related-head">

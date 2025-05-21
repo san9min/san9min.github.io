@@ -10,148 +10,110 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
   <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
 </head><body>
   <main class="article">
     <h1>Word to Vector</h1>
-    <div class="meta">Jul 18, 2022 · 12 min read</div>
+    <div class="meta">Jul 18, 2022 · 15 min read</div>
     <img class="hero" src="../..//images/word2vec_intro/thumbnail.png" alt="cover image">
-    <h2>🚀 Intro</h2>
+    <h3>🤖 GPT-3와 단어의 의미</h3>
+<p>GPT 같은 언어 모델은 말 그대로 AGI로 가는 첫걸음이다.<br>그 시작은 아주 단순한 질문에서 출발한다.</p>
 <blockquote>
-<p><strong>GPT-3 — A first step on the path to universal models</strong><br>“언어 모델은 결국 <em>의미</em>를 어떻게 담아낼까?”</p>
+<p><strong>&quot;단어의 의미를 컴퓨터가 어떻게 알 수 있을까?&quot;</strong></p>
 </blockquote>
-<hr>
-<h2>1️⃣ 의미를 표현하는 고전적 방식</h2>
-<h3>• Webster 사전 정의 <em>(발췌)</em></h3>
+<p>사전적으로 의미는 이런 것들이다:</p>
 <ul>
-<li>the idea that is represented by a word  </li>
-<li>… <strong>signifier ↔ signified</strong> (denotational semantics)</li>
+<li>단어나 문장이 표현하는 개념</li>
+<li>사람이 단어를 통해 전하려는 생각</li>
+<li>글이나 예술작품 안에서 드러나는 메시지</li>
 </ul>
-<h3>• NLP 전통 : <strong>단어 = 독립 기호</strong></h3>
-<table>
-<thead>
-<tr>
-<th>단어</th>
-<th>one-hot 벡터 예시</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>motel</td>
-<td><code>[0 … 0 1 0 …]</code></td>
-</tr>
-<tr>
-<td>hotel</td>
-<td><code>[0 … 1 0 0 …]</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p><strong>문제</strong>  </p>
-<ol>
-<li>벡터 차원 = 어휘 크기 → 💥 수십만 차원  </li>
-<li>one-hot 은 항상 직교 → <em>유사도 0</em><br>  → “<em>Seattle motel</em>” 검색 시 <em>hotel</em> 문서를 놓친다</li>
-</ol>
-</blockquote>
+<p>언어학에서는 보통 <code>기호(signifier)</code>와 <code>지시 대상(signified)</code>의 관계로 설명한다.  </p>
+<p>이건 **지시적 의미론(denotational semantics)**이라고 부른다.</p>
 <hr>
-<h2>2️⃣ 🌐 Distributional Semantics</h2>
-<blockquote>
-<p>“<strong>You shall know a word by the company it keeps</strong>”</p>
-</blockquote>
+<h3>💻 의미를 컴퓨터에 어떻게 표현할까?</h3>
+<p>초기 자연어처리(NLP)에서는 WordNet 같은 자원을 사용했다.<br>WordNet은 유의어나 상위어 관계를 정리한 대형 사전이다.</p>
+<p>하지만 이런 자원에는 여러 한계가 있다:</p>
 <ul>
-<li><strong>Context window</strong> <em>m</em> : 중심 단어 <code>w_t</code> 주변 ± <em>m</em> 토큰</li>
-<li>단어 <code>w</code> 출현 ➜ 이웃 토큰 집합이 <strong>의미 벡터</strong>를 만든다</li>
+<li>의미의 <strong>미묘한 차이</strong>를 반영하지 못한다<br><em>(예: “proficient”는 항상 “good”과 같지 않다)</em></li>
+<li>새로운 단어나 **은어(slang)**를 반영하기 어렵다<br><em>(예: wicked, ninja, bombest 등)</em></li>
+<li>사람이 계속 업데이트해야 하므로 <strong>효율이 낮고 주관적이다</strong></li>
+<li><strong>단어 간 유사도</strong>를 수치로 계산하기 어렵다</li>
 </ul>
-<pre><code class="language-text">… government debt problems turning into  banking  crises …
-                                 ▲── context
-</code></pre>
 <hr>
-<h2>3️⃣ Word Embedding 개념</h2>
+<h3>🧾 기존 방식: 단어를 기호로 표현하기</h3>
+<p>과거 NLP에서는 단어를 <strong>고유한 기호</strong>로 다뤘다.<br>예: <code>hotel</code>, <code>conference</code>, <code>model</code></p>
+<p>이 방식에서는 단어를 <strong>one-hot vector</strong>로 표현한다:</p>
 <ul>
-<li><strong>Dense 실수 벡터</strong> <code>v_w ∈ ℝⁿ</code></li>
-<li>“비슷한 문맥 ↔ 비슷한 벡터” (내적 ↑, cos θ ↑)</li>
+<li><code>motel = [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]</code></li>
+<li><code>hotel = [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]</code></li>
 </ul>
-<p>예)  </p>
-<pre><code>banking = [ 0.286, 0.792, −0.177, … ]ᵀ
-</code></pre>
+<h4>문제 1</h4>
+<p>벡터의 차원이 <strong>어휘 수만큼</strong> 커지고,<br>단어 간 관계나 유사성을 전혀 알 수 없다.</p>
+<p>예를 들어, 사용자가 &quot;Seattle motel&quot;을 검색했을 때<br>&quot;Seattle hotel&quot; 관련 문서를 보여주고 싶어도<br>두 단어의 벡터가 **서로 직교(orthogonal)**하기 때문에<br>관련 문서를 찾기 어렵다.</p>
+<h4>문제 2</h4>
+<p>one-hot vector는 <strong>자연스러운 유사도 개념이 없다.</strong></p>
+<hr>
+<h3>📍 해결책: 문맥으로 단어를 표현하기</h3>
+<h4>분포 의미론 (Distributional Semantics)</h4>
 <blockquote>
-<p><strong>Synonyms</strong> ≈ 가까운 벡터<br><strong>king − man + woman →</strong> <em>queen</em> 같은 벡터 연산도 가능</p>
+<p>“You shall know a word by the company it keeps.”<br>— 단어는 주변 단어들을 통해 의미를 갖는다</p>
 </blockquote>
-<hr>
-<h2>4️⃣ Word2Vec : 학습 아이디어</h2>
-<ol>
-<li>말뭉치 전체 <strong>토큰 시퀀스</strong> <code>w₁…w_T</code></li>
-<li>각 단어에 <strong>중심 벡터</strong> <code>v_c</code> / <strong>외부 벡터</strong> <code>u_o</code> 쌍 배정</li>
-<li>위치 <code>t</code> 에서 중심단어 <code>c=w_t</code><br>→ <em>context</em> <code>o ∈ window</code> 의 <strong>예측 확률</strong> 최대화</li>
-</ol>
-<h3>4-1. Softmax 확률</h3>
-<p>[
-P(o\mid c)=
-\frac{\exp(u_o^{!\top}v_c)}
-     {\sum_{w\in V}\exp(u_w^{!\top}v_c)}
-]</p>
-<h3>4-2. 전체 목표 (Skip-gram)</h3>
-<figure class="eq">
-
-<p>[
-\mathcal L(\theta)=
--\frac1T\sum_{t=1}^{T}
-      \sum_{\substack{-m\le j\le m\ j\ne0}}
-      \log P(w_{t+j}\mid w_t;\theta)
-]</p>
-</figure>
-
-<p>(경사 하강 → <code>v, u</code> 업데이트)</p>
-<hr>
-<h2>💻 Word2Vec (Skip-gram + NegSampling) 초간단 코드</h2>
-<pre><code class="language-python">import torch
-import torch.nn as nn
-
-class SkipGramNS(nn.Module):
-    def __init__(self, vocab_size: int, dim: int):
-        super().__init__()
-        self.in_embed  = nn.Embedding(vocab_size, dim)   # v_c
-        self.out_embed = nn.Embedding(vocab_size, dim)   # u_o
-
-    def forward(self, center, pos, neg):
-        v_c   = self.in_embed(center)            # [B, D]
-        u_pos = self.out_embed(pos)              # [B, K, D]
-        u_neg = self.out_embed(neg)              # [B, Kneg, D]
-
-        # positive &amp; negative loss
-        pos_score = (u_pos @ v_c.unsqueeze(2)).squeeze()                         .sigmoid().log()
-        neg_score = (u_neg @ (-v_c).unsqueeze(2)).squeeze()                         .sigmoid().log()
-
-        loss = -(pos_score.sum() + neg_score.sum()) / center.size(0)
-        return loss
+<p>즉, 어떤 단어가 자주 함께 등장하는 **문맥(context)**을 보면<br>그 단어의 의미를 파악할 수 있다.</p>
+<p>예를 들어 <code>banking</code>이라는 단어가 들어간 문장은 다음과 같다:</p>
+<ul>
+<li>&quot;... government debt problems turning into <code>banking</code> crises ...&quot;</li>
+<li>&quot;... unified <code>banking</code> regulation ...&quot;</li>
+<li>&quot;... India gave its <code>banking</code> system a boost ...&quot;</li>
+</ul>
+<p>이 주변 단어들이 <code>banking</code>의 의미를 구성하는 정보가 된다.</p>
+<h3>🧱 Word Vectors: 단어를 벡터로 표현하기</h3>
+<p>이제 단어를 실수(real number)로 이루어진 **밀집 벡터(dense vector)**로 표현한다.<br>이를 <strong>워드 임베딩(word embedding)</strong> 또는 **신경망 단어 표현(neural word representation)**이라고 한다.</p>
+<p>같은 문맥에서 자주 등장하는 단어들은 <strong>비슷한 벡터</strong>를 갖도록 훈련된다.</p>
+<p>예:</p>
+<pre><code>banking = [0.286, 0.792, -0.177, ..., 0.271]
 </code></pre>
+<h3>⚙️ Word2Vec: 벡터를 학습하는 알고리즘</h3>
+<p><strong>Word2Vec</strong>은 대규모 텍스트로부터 단어 벡터를 학습하는 알고리즘이다.</p>
+<h4>핵심 아이디어</h4>
+<ul>
+<li>텍스트 전체를 훑으면서, 각 위치마다 중심 단어(center word)와 주변 단어(context word)를 찾는다.</li>
+<li>중심 단어가 주어졌을 때, 주변 단어가 나올 <strong>확률</strong>을 계산한다.</li>
+<li>이 확률이 높아지도록 벡터들을 계속 업데이트한다.</li>
+</ul>
+<h3>🎯 목표 함수(Objective Function)</h3>
+<p>Word2Vec의 학습 목표는<br><strong>주어진 중심 단어로 주변 단어들을 잘 예측할 수 있도록</strong> 벡터를 조정하는 것이다.</p>
+<p>목표 함수는 다음과 같다:</p>
+<p>$$
+J(\theta) = - \frac{1}{T} \sum_{t=1}^T \sum_{-m \le j \le m, j \ne 0} \log P(w_{t+j} | w_t; \theta)
+$$</p>
+<h3>📈 확률 계산 방법</h3>
+<p>확률은 소프트맥스(softmax)를 사용해 계산한다:</p>
+<p>$$
+P(o|c) = \frac{e^{u_o^T v_c}}{\sum_{w \in V} e^{u_w^T v_c}}
+$$</p>
+<ul>
+<li>$v_c$: 중심 단어의 벡터</li>
+<li>$u_o$: 주변 단어의 벡터</li>
+</ul>
+<h3>🔧 벡터 업데이트: 관측값 vs 기대값</h3>
+<p>목표 함수를 중심 단어 벡터 <code>v_c</code>로 미분하면 이렇게 된다:</p>
+<p>$$
+\frac{\partial \log P(o|c)}{\partial v_c} = u_o - \sum_{x \in V} P(x|c) u_x
+$$</p>
+<ul>
+<li>첫 번째 항: 실제로 관측된 주변 단어의 벡터</li>
+<li>두 번째 항: 모델이 기대하는 주변 단어 벡터들의 평균</li>
+</ul>
+<p><strong>두 값이 비슷해지도록 벡터를 업데이트</strong>하는 것이 Word2Vec의 핵심이다.</p>
 <hr>
-<h2>📝 핵심 요약</h2>
-<table>
-<thead>
-<tr>
-<th>Key Idea</th>
-<th>한 줄 설명</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>One-hot 한계</strong></td>
-<td>차원↑↑ &amp; 유사도 0</td>
-</tr>
-<tr>
-<td><strong>Distributional Hypothesis</strong></td>
-<td>“같은 문맥 → 비슷한 의미”</td>
-</tr>
-<tr>
-<td><strong>Word2Vec 학습</strong></td>
-<td>중심-문맥 쌍 확률 ↑ → 벡터가 의미 공간 형성</td>
-</tr>
-<tr>
-<td><strong>Embedding 효용</strong></td>
-<td>검색·추천·유추 <em>king − man + woman ≈ queen</em></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p><strong>결국</strong>: <em>텍스트 자체</em>가 단어 의미를 학습시킨다 → GPT-시리즈 같은 거대 LM의 토대 🚀</p>
-</blockquote>
+<h3>📝 마무리: 의미 있는 벡터 공간 만들기</h3>
+<p>Word2Vec을 사용하면:</p>
+<ul>
+<li>단어 간 <strong>유사도</strong>를 벡터 내적이나 코사인 유사도로 계산할 수 있고</li>
+<li>의미를 <strong>벡터 공간 위의 방향과 거리</strong>로 표현할 수 있다</li>
+<li>사람이 개입하지 않고도 대규모 텍스트만으로 학습된다</li>
+</ul>
+<p>단어를 단순한 기호로만 보던 전통적인 방식에서 벗어나<br><strong>단어의 의미를 수치화해서 계산 가능한 형태로 바꾸는 것</strong>,<br>그게 바로 Word2Vec이 만든 패러다임이다.</p>
 
     <section class="related">
         <div class="related-head">
