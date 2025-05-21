@@ -63,7 +63,7 @@ Cross Entropy term은 p 분포에서 likelihood가 가장 높은 지점에서 De
 
 **KL divergence의 특성** 
 
-* <mark>항상 0 이상</mark>이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. 
+* **항상 0 이상**이다. CE는 아무리 낮아져봤자 (즉, q와 p가 같은 분포가 된다 했을 때) self-entropy이다. 그러므로 최솟값이 0이고, 절대 음수가 될 수 없다. 
 
 * 엄밀히는 거리 개념이 아니다. 
 
@@ -181,9 +181,9 @@ $$
 
 로 정리된다. 
 
-<mark>
-그런데 여기서 $\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.
-</mark>
+
+그런데 여기서 **$\log p_{\theta}(x)$는 intractable하다. 그래서 우리는 tractable한 lower bound(ELBO)를 잡고 이를 maximize하는 방식을 취한다.**
+
 
 Expectation : $D_{KL} (q_{\phi}(z|x) || p(z|x))$를 minimize하는 $\phi$를 찾자
 
@@ -211,19 +211,17 @@ $$
 $$
 
 
-**1st term**
-
 $E_{z \sim q(z|x)}[\log p_{\theta}(x|z)]$
 
-<mark>`Reconstruction Error` </mark>
+#### 1st term : Reconstruction Error
 * generative model(Decoder in VAE)
 * Decoder가 데이터를 얼마나 잘 복원하는가
 
-**2nd term**
+
 
 $D_{KL}(q(z|x)||p(z)) \text{ or } E_{q(z|x)} [\log \frac {q(z|x) }{p(z)}]$
 
-<mark>`Regularization term`</mark>
+#### 2nd term : Regularization term`
 * inference model(Encoder in VAE)
 * $q(z\mid x)$ 가 prior $p(z)$ 와 얼마나 비슷한가
 

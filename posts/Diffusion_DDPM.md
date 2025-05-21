@@ -13,7 +13,7 @@ category : [Tech Review]
 
 - parameterized Markov chain
 - trained using variational inference
-- <marck>`learn to reverse a diffusion process` </mark>
+- `learn to reverse a diffusion process`
 
 ![Untitled](/images/diffusion_ddpm/00.png)
 
@@ -175,9 +175,9 @@ $L_{T-1} = \sum_{t>1}D_{KL}(q(x_{t-1}|x_t,x_0)||p_{\theta}(x_{t-1}|x_t))$
 
 denoising step $p_{\theta}(x_{t-1}|x_t)$ 과 approximated denoising step $q(x_{t-1}|x_t,x_0)$간의 차이를 계산함을 볼 수 있음
 
-<mark>
+
 model이 `noise를 예측`하도록 `Reparam`
-</mark>
+
 
 1. $\Sigma_{\theta}(x_t,t) = \sigma_t^2I$, $\sigma$는 $\beta$에 관한 time dependent constants
 2. $\mu_\theta(x_t,t)$ for $p_{\theta}(x_{t-1}|x_t)$ using  $x_t(x_0,\epsilon)$
