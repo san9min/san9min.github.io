@@ -25,7 +25,7 @@ DDPM의 Markovian이었던 forward diffusion process를 `non-Markcovian` form으
 <aside>
 DDIM에서는 DDPM의 $\bar\alpha$를 $\alpha$라고 썼다.  
 
-난 DDPM의 notation을 따른다.
+여기선 DDPM의 notation을 따라 정리했다.
 </aside>
 
 ### 📝 DDPM Remind
@@ -128,7 +128,9 @@ p^{(t)}_{\theta}\!\bigl(x_{t-1}\mid x_t\bigr)
 $$
 </figure>
 
-이고 objective $J_\sigma(\epsilon_\theta)$ 는 $\epsilon_{\theta}$의 함수가 된다. 또한 objective가 $\sigma$에 대한 dependency가 있으므로 각 $\sigma$에대해 따로 학습을 해주어야한다. 그런데 $J_\sigma$는 어떤 $\gamma$에대해 $L_\gamma$와 같다고 한다.
+이고 objective $J_\sigma(\epsilon_\theta)$ 는 $\epsilon_{\theta}$의 함수가 된다. 
+
+또한 objective가 $\sigma$에 대한 dependency가 있으므로 각 $\sigma$에대해 따로 학습을 해주어야한다. 그런데 $J_\sigma$는 어떤 $\gamma$에대해 $L_\gamma$와 같다고 한다.
 
 $$
 \text{Theorem 1)} \forall \sigma>0, there \; exists \; \gamma \in \mathbb R^T_{>0} \; and \; C \in \mathbb R \quad s.t.\; J_\sigma = L_\gamma + C
@@ -197,17 +199,17 @@ implicit probablistic이라 하는 이유는 sample들이 latent variable인 $x_
 
 #### 2️⃣ **Accelerated Generation Processes**
 
-다시 이 논문의 핵심 논리를 이야기하면 $L_1$의 objective가 어떠한 특정 forward process(joint distb)에 의존하지 않고 ⭐⭐ `$q(x_t|x_0)$만 만족`⭐⭐하면 됐다.
+다시 이 논문의 핵심 논리를 이야기하면 $L_1$의 objective가 어떠한 특정 forward process(joint distb)에 의존하지 않고 $q(x_t|x_0)$만 만족하면 됐다.
 
 그래서 우리는 기존 전체 forward process의 length of time step T보다 더 작게  일부 몇 개의 forward step에 대해서만 forward process를 진행하고 이들의 subset을 갖고 generative process를 진행해도 좋다.
 
 ⇒ pretrain된 DDPM을 활용해 generative process를 돌려도 되고 오히려 좋다는 이야기
 
-![Untitled](/images/diffusion_ddim/02.webp)
+![Untitled](/images/diffusion_ddim/02.png)
 
 $\tau = [1,3]$, $\tau$는 (sampling) trajectory이고 [1,2,3,…,T]의 subsequence이다. length를 S라고 denote하고, 이는 DDIM의 sampling step들의 개수를 의미
 
-1.  **Relevance to Nueral ODE**
+### 🔬 **Relevance to Nueral ODE**
 
 DDIM(with sigma = 0)을 ODE로 rewrite해보자.
 
@@ -234,7 +236,7 @@ DDIM은 DDPM보다 훨씬 더 적은 iteration으로 image generation이 가능�
 
 또한 sample들을 encoding할 수 있어 latent code에서  sample을 reconstruct할 수 있다.(DDIM의 deterministic한 성질)
 
-다른 조건은 다 같게 두고 $\tau$( (sampling) trajectory → how fast samples are obtained) 와  $\sigma$ (DDIM = 0)만을 조절하며 sampling에 집중했고,  $\sigma$를 편하게 control하기 위해 $\eta$ 도입
+다른 조건은 다 같게 두고 $\tau$( (sampling) trajectory → how fast samples are obtained) 와  $\sigma$ (DDIM = 0)만을 조절하며 sampling에 집중했고,  $\sigma$를 편하게 control하기 위해 $\eta$ 도입했다.
 
 <figure class='eq'>
 
