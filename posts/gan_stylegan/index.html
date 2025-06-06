@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sangmin Blog | GAN : StyleGAN</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  
+  <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../../assets/styles/main.css">
+  
+<link rel="icon" type="image/png" href="/assets/favicon.png" sizes="32x32">
+</head><body>
+  <main class="article">
+    <h1>GAN : StyleGAN</h1>
+    <div class="meta">Sep 26, 2022 · 20 min read</div>
+    <img class="hero" src="../..//images/gan_stylegan/thumb.webp" alt="cover image">
+    <p><a href="https://arxiv.org/abs/1812.04948">A Style-Based Generator Architecture for Generative Adversarial Networks</a></p>
+<blockquote>
+<p><strong>GAN은 implicit하게 train data의 distribution을 학습한다.
+Generator는 학습한 distribution을 바탕으로 이미지를 생성할 수 있다.</strong></p>
+</blockquote>
+<h3>👨‍🎨 Image style transfer</h3>
+<p><strong>Cycle GAN</strong></p>
+<p><img src="/images/gan_stylegan/01.png" alt="Untitled"></p>
+<p>X, Y는 Domain (여기선 스타일정도로 보면 됨)</p>
+<blockquote>
+<p>G : X → Y ; mapping function<br>F : Y → X  ; mapping function</p>
+</blockquote>
+<h4><strong>cycle consistency loss</strong></h4>
+<p>$F(G(X)) \approx X$</p>
+<p>$x → G(x) → F(G(x)) \approx x$</p>
+<p>$y → F(y) → G(F(y)) \approx y$</p>
+<p>Unparied data로도 학습이 가능해졌다, 별도의 label이 없다→ <strong>unsupervised learning</strong></p>
+<h4><strong>Full objective function (Loss)</strong></h4>
+<p>$L(G,F,D_X,D_Y) = L_{GAN}(G,D_Y,X,Y) + L_{GAN}(F,D_X,Y,X) + \lambda L_{CYC}(G,F)$</p>
+<p>그러나 $L_{GAN} (G,D_Y,X,Y) = \mathbb E_{y~p_{data(y)}}[logD_Y(y)] + \mathbb E_{x~p_{data(x)}}[log(1-D_Y(G(x))]$ 를 보면</p>
+<p>두개의 Domain 사이에서 transfer를 하려면 Discriminator 두개와 Generator 두개가 필요한 것을 볼 수있다.</p>
+<p>즉, 이를 <strong>여러 domain 사이에서 transfer를 하려면 Generator와 Discriminator 의 개수가 더 많아진다</strong>.</p>
+<p>⇒ 여기서 <strong>StarGAN이 등장</strong>한다.</p>
+<h3>⭐ <strong>StarGAN</strong></h3>
+<img src="/images/gan_stylegan/02.png" style="width:400px;">
+위에서 지적한바와 같이 우리가 여러 스타일로 transfer를 하고 싶을 때 그거에 맞게 서로를 연결해줄 generator와 discriminator가 필요한데 stargan에서는 이를 하나로 처리한다.
+
+<p><img src="/images/gan_stylegan/03.png" alt="Untitled"></p>
+<p>구분선을 기준으로 왼쪽(a)은 Discriminator, 오른쪽(b,c,d)은 Generator에 대한 설명이다. </p>
+<p>main idea는 <strong>Domain classification</strong>을 도입해 하나의 Generator와 Discriminator를 사용해 domain간 transfer가 가능하게 했다는 것이다. </p>
+<p>**Discriminator는 Real Image만을 이용해(not use Fake) Domain classification을 학습 (→ classification with real image)**하고, 마찬가지로 Real과 Fake를 구분할 수있도록 학습한다.</p>
+<p><strong>Generator</strong>는 CycleGAN의 아이디어와 유사한데, target domain label과 image를 input으로 받고 fake이미지를 생성한다. (b)</p>
+<p>이를 다시 Original domain label과 함께 Generator에 넣어서 image를 reconstruct한다. **이 reconstructed image가 우리가 처음 input으로 넣었던 original image가 되도록 학습 (→ Reconstruction loss)**시킨다. (c)</p>
+<p>그리고 마찬가지로 D를 속이도록 학습한다.주목할 점은 **G가 D를 fake image의 domain까지 추가로 속여야한다 (→ classfication with fake image)**는 점이다.(d)</p>
+<h3>🎯 StyleGAN</h3>
+<p><img src="/images/gan_stylegan/04.png" alt="Untitled"></p>
+<p>기존엔 fixed distribution에서 latent code를 뽑아 바로 Generator에 넣어 주었는데 이는 literally black box 였다. StyleGAN에서는 mapping network, AdaIN, Noise를 도입해 이를 어느정도 해소했다.</p>
+<p><img src="/images/gan_stylegan/05.png" alt="Untitled"></p>
+<ol>
+<li><strong>Mapping Network</strong></li>
+</ol>
+<p>latent code를 random하게 fixed distribution에서 뽑아 G에 넘겨주는게 기존방식</p>
+<p>StyleGAN에선 mapping network를 도입해 z를 w로 먼저 mapping한 후 G에 넣어준다</p>
+<p>$$f : z → w $$</p>
+<p>이렇게 됨으로써 entanglement를 “어느정도” <strong>disentangle</strong>할 수 있게 되었다.</p>
+<p>또한 w를 G의 input layer에 바로 넣어주는게 아니라 각 layer에 넣어주면서 style 정보도 우리가 어느정도 알 수 있게 되었다.</p>
+<p><img src="/images/gan_stylegan/06.png" alt="Untitled"></p>
+<ol start="2">
+<li><strong>ProgressiveGAN based</strong></li>
+</ol>
+<p>쉽게 말해 낮은 resolution부터 차근차근 만들어간다는 것이다. 여기서 우리가 주목해야 될것은</p>
+<p><strong>낮은 Resolution에서는 조금 더 global한, coarse한, macroscopic한 feature들과 관련되고</strong></p>
+<p><strong>높은 Resolution에서는 조금 더 local한, fine한, microscopic한 feature들과 관련된다는 것이다.</strong>
+<img src="/images/gan_stylegan/07.png" alt="Untitled"></p>
+<ol start="3">
+<li><strong>AdaIN + Noise</strong></li>
+</ol>
+<p><strong>AdaIN은</strong> feature를 normalize하고 스타일에 관한 정보로 스케일링하는 역할을 한다. 즉 feature 정보는 남기되 기존의 statistics에 관한 정보를 지우고 style에 기반한 새로운 statistics을 따르게 한다.( AdaIN을 해주고 다음 AdaIn을 해주기 전까지 같은 분포, 영역별로 따르는 분포가 다름, feature 정보는 유지해서 넘겨줌).
+<img src="/images/gan_stylegan/08.png" alt="Untitled"></p>
+<aside>
+원래 있던 feature map의 scale 특징을 새로운 값으로 바꿈 (새로운 style 추가)
+> 한 layer에서 입혀진 style은 다음 convolution layer에만 영향, 다음 block에는 영향 X
+> Progressive 구조와 합쳐져서 style 마다 global / local 특징 갖게 됨
+</aside>
+
+<p>다음 convolution 에 더 중요한 정보를 넘겨주는 역할로 이해할 수 있다 → <strong>Style을 더해준다!</strong>
+<img src="/images/gan_stylegan/09.png" alt="Untitled">
+<strong>Noise를 주면서 조금 더 detail하고 local한 정보들을 정교하게 생성할 수 있다.</strong></p>
+<p><img src="/images/gan_stylegan/10.png" alt="Untitled"></p>
+<h3>Style Mixing</h3>
+<p>이 Style Mixing은 우리 프로젝트랑 밀접한 관련이 있다. Style Mixing이 가능하고, 어떤 원리에 의해 되는지 이해해야한다.</p>
+<p><img src="/images/gan_stylegan/11.png" alt="Untitled"></p>
+<aside>
+
+<h3>🔄  <strong>Style Mixing</strong></h3>
+<p>: $w_1$, $w_2$ 를 섞어서 이미지 생성
+: 섞을 때 어떤 layer에 무엇을 넣는지를 변경하며 실험한 결과</p>
+</aside>
+mapping network를 통과한 w, 즉 style(y = W * **w** +b, style은 단순히 w를 affine transform한 결과이므로)과 관련된 두 벡터(w1,w2)를 믹싱한 결과를 보여준다. 
+
+<p>⇒ low resolution level은 pose, identity, general hair-style, face-shape, eye-glasses 같은 coarse(global,macroscope)한 특징들과 관련있고,</p>
+<p>high resolution으로 갈 수록 color 같이 더 fine(local,microscope)한 특징들과 관련이 있음을 볼 수 있었다. (→ 우리가 control할 여지가 보인다…!)</p>
+<aside>
+
+<p><strong>StyleGAN2 는 가져다 사용하면 될 거고 우리 플젝에 사용할 중요한 원리는 StyleGAN1에 있다</strong></p>
+<p>v1에서 AdaIN 할 때 normalize와 modulation하는 과정에서 문제가 있어서 effect는 유지하되 다른 방식으로 style을 더해주는 과정을 진행함</p>
+</aside>
+
+
+
+
+<h3>🖼️ <strong>Toonify</strong></h3>
+<p><img src="/images/gan_stylegan/12.png" alt="Untitled"></p>
+<p>StyleGAN을 base로 삼고있다.</p>
+<p>우리가 선택한 특정 Resolution을 기준으로 layer block 영역을 두개(낮은 해상도, 높은 해상도)로 나눈다. 하나의 영역에는 base model의 weight를, 다른 영역에는 trasnfer learned model의 weight를 사용한다. 이 논문은 StyleGAN Style Mixing을 이해하면 쉽게 납득 가능하다.</p>
+<h3>🪞 <strong>GAN Inversion</strong></h3>
+<p>가장 궁금했던 부분이 해결된 지점이다. GAN에는 어떤 distribution(ex. Gaussian)에서 random하게 latent code뽑아 Generator에 넣어줬는데, 그러면 도대체 image를 input으로해서 어떻게 style을 바꾸는 걸까? 에대한 답을 주었다.</p>
+<p>G가 어떤 이미지를 생성해 냈을 때, 이 <strong>이미지에 대한 latent vector를 찾는</strong>… 그래서 inversion… WOW…</p>
+<p>우리 프로젝트에 가장 중요한 Subtask가 될 것 같다. ⇒ <strong>GAN Inversion</strong> </p>
+<p><img src="/images/gan_stylegan/13.png" alt="Untitled"></p>
+<blockquote>
+<p>latent code -&gt; image (X)
+image -&gt; latent code (O)</p>
+</blockquote>
+<p><img src="/images/gan_stylegan/14.png" alt="Untitled"></p>
+<blockquote>
+<p>find $w$</p>
+</blockquote>
+<p>📝 정리하면</p>
+<p>StyleGAN의 Mapping Network로 잠재 속성을 분리해 스타일 제어가 용이하다.</p>
+<p>AdaIN + Noise가 전역·국소 스타일을 층별로 분담한다.</p>
+<p>Style Mixing은 원하는 레이어에서 두 스타일을 혼합, 세밀한 컨트롤을 가능케 한다.</p>
+<p>GAN Inversion을 이용하면 임의의 이미지도 StyleGAN 파이프라인 안에서 자유롭게 편집할 수 있다.</p>
+
+    <section class="related">
+        <div class="related-head">
+          <h2>Related posts</h2>
+          <a class="all-link" href="../../">Browse all articles&nbsp;→</a>
+        </div>
+        <div class="related-list">
+      <a class="card mini" href="../../posts/difussion_latent_diffusion/">
+        <img class="thumb" src="../..//images/difussion_latent_diffusion/thumbnail.png" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Difussion : Latent Diffusion</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Feb 7, 2023 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Diffusion_DDIM/">
+        <img class="thumb" src="../../images/diffusion_ddim/thumbnail.png" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Diffusion : DDIM</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Jan 31, 2023 · 20 min</div>
+        </div>
+      </a>
+      <a class="card mini" href="../../posts/Diffusion_DDPM/">
+        <img class="thumb" src="../..//images/diffusion_ddpm/thumbnail.jpg" alt="">
+        <div class="card-body">
+        
+          <h3 class="card-title">Diffusion : DDPM</h3>
+          <span class="arrow">↗</span>
+          <div class="meta">Jan 22, 2023 · 20 min</div>
+        </div>
+      </a></div>
+      </section> 
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+
+  chtml: {
+    linebreaks: { automatic: true, width: "match" }  // 또는 width: 80
+  },
+
+  options: {
+    renderActions: { addMenu: [] }   // 우클릭 메뉴 제거
+  }
+};
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="../../assets/js/main.js" defer></script>
+</body></html>
