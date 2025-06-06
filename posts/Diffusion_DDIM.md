@@ -20,23 +20,21 @@ DDPM으로 여러 step하고, DDIM으로 빠르게 샘플링한다.
 ⇒ 높은 품질과 빠른 샘플링
 </aside>
 
-DDPM의 Markovian이었던 forward diffusion process를 `non-Markcovian` form으로 일반화하고, reverese process는 짧은 Markov chain으로 설계해서 더 빠르게 sampling을 할 수 있도록 했다. 
+DDPM의 Markovian이었던 forward process를 `non-Markcovian` form으로 일반화하고, reverese process는 짧은 Markov chain으로 설계해서 더 빠르게 sampling을 할 수 있도록 하는 것이 주요 contribution이다.
 
-<aside>
 DDIM에서는 DDPM의 $\bar\alpha$를 $\alpha$라고 썼다.  
-
 여기선 DDPM의 notation을 따라 정리했다.
-</aside>
 
 ### 📝 DDPM Remind
 
-DDPM을 remind해보면 variational lower bound를 maximize하는 방식으로 학습한다.  
+DDPM을 remind해보자.
+DDPM은 Variational lower bound를 maximize하는 방식으로 학습한다.  
 
-Gaussian transition을 하는 Markov chain을 생각해 forward process를 formulate했고 이 역과정은 intractable해서 neural network를 사용했었다.
+Gaussian transition을 하는 Markov chain을 생각해 forward process를 formulate했고 이 역과정은 intractable해서 neural network를 사용했다.
 
 그리고 식을 Reparmeterize해서 $x_t = \sqrt{\bar \alpha_t}x_0 + \sqrt{1-\bar{\alpha_t}}\epsilon$ 로 $x_t$를 $x_0$ 와 noise의 linear combination으로 쓸 수 있었다. 
 
-뉴럴 네트워크는 noise를 예측하도록 학습했었다.
+neural network는 noise를 예측하도록 학습했었다.
 
 $$
 L_\gamma (\epsilon_{\theta}) = \sum_{t=1}^T \gamma_t  \mathbb E_{x_0 \sim q(x_0), \epsilon_t \sim N(0,I) }[||\epsilon_\theta ^{(t)}(\sqrt{\bar \alpha_t}x_0 +\sqrt{1-\bar{\alpha_t}}\epsilon_t)-\epsilon_t||^2_2]
@@ -49,11 +47,11 @@ $$
 
 ### 🧩 Variational inference for Non-Markovian Forward Processes
 
-결국 우리의 generative model은 reverse 를 approximate을 잘해보자라는 것.
+우리의 generative model은 reverse 를 approximate을 잘하는 것이 목적이다.
 
 그래서 iteration의 수를 줄이고자하는 의지와 함께 식을 뜯어 고쳐보자. 위의 objective function을 보면 우리가 ddpm에서 reparametrization을 통해 볼 수 있듯 joint distribution $q(x_{1:T}|x_0)$ 가 아니라 $q(x_t|x_0)$에만 직접적인 dependency가 있음을 볼 수 있다.  
 
-같은 obejctive를 갖게 하기 위해,$q(x_t|x_0)$만 만족하면되고 이를 만족하는 joint는 많기에 forward process를 non-Markovian 으로 바꿔 일반화해보자.
+같은 obejctive를 갖게 하기 위해, $q(x_t|x_0)$만 만족하면되고 이를 만족하는 joint는 많기에 forward process를 non-Markovian 으로 바꿔 일반화해보자.
 
 #### 1️⃣ **Non-Markovian Forward Processes**
 
@@ -99,7 +97,7 @@ $\sigma$의 크기가 forward process가 얼마나 stochastic한지를 결정한
 
 #### 2️⃣ **Generative Process && Unified Variational Inference Objective**
 
-> **Goal** $p_\theta (x_{0:T})$
+> **Goal** : $p_\theta (x_{0:T})$
 
 Generation 측면에서 `$x_t$→ $x_{t-1}$`로 가는 process가 궁금하고, $q_{\sigma}(x_{t-1}|x_t,x_0)$를 이용해 $p_\theta ^t (x_{t-1}|x_t)$를 define해보자
 
@@ -130,21 +128,29 @@ $$
 
 이고 objective $J_\sigma(\epsilon_\theta)$ 는 $\epsilon_{\theta}$의 함수가 된다. 
 
-또한 objective가 $\sigma$에 대한 dependency가 있으므로 각 $\sigma$에대해 따로 학습을 해주어야한다. 그런데 $J_\sigma$는 어떤 $\gamma$에대해 $L_\gamma$와 같다고 한다.
+또한 objective가 $\sigma$에 대한 dependency가 있으므로 각 $\sigma$에대해 따로 학습을 해주어야한다.  
+
+그런데 $J_\sigma$는 어떤 $\gamma$ 에대해 $L_\gamma$와 같다고 한다.
 
 $$
-\text{Theorem 1)} \forall \sigma>0, there \; exists \; \gamma \in \mathbb R^T_{>0} \; and \; C \in \mathbb R \quad s.t.\; J_\sigma = L_\gamma + C
+\text{Theorem 1)} \forall \sigma>0, there \ exists \ \gamma \in \mathbb R^T_{>0} \; and \; C \in \mathbb R \quad s.t.\; J_\sigma = L_\gamma + C
 $$
+
+  
 
 여기서 $L_\gamma (\epsilon_{\theta}) = \sum_{t=1}^T \gamma_t \mathbb E_{x_0 \sim q(x_0), \epsilon_t \sim N(0,I) }[||\epsilon_\theta ^{(t)}(\sqrt{\bar \alpha_t}x_0 +\sqrt{1-\bar{\alpha_t}}\epsilon_t)-\epsilon_t||^2_2]$를 다시 보자. 
 
-만약 $\epsilon_{\theta}^t$가 서로다른 t 끼리 parameter를 공유하지 않는다면 전체를 maximize하기 위해선 우리는 각 t에 대한 term들을 각각 maximize해야된다, 즉 weight factor $\gamma$와 무관하게 optimization이 진행된다는 것이다. 
+만약 $\epsilon_{\theta}^t$가 서로다른 t 끼리 parameter를 공유하지 않는다면 전체를 maximize하기 위해선 우리는 각 t에 대한 term들을 각각 maximize해야된다, 
 
-그러므로 objective관점에서 $\gamma$는 arbitrary하게 잡아도 되고, 이를 1로 잡아도 Ok이다. 그런데 theorem 1에 의하면 어떤 $L_\gamma$ 는 $J_\sigma$와 같은 objective를 갖으므로 $L_1$을  $J_\sigma$ 대신 사용할 수 있다.
+즉 weight factor $\gamma$와 무관하게 optimization이 진행된다는 것이다. 
+
+그러므로 objective관점에서 $\gamma$는 arbitrary하게 잡아도 되고, 이를 1로 잡아도 Ok이다. 
+
+그런데 theorem 1에 의하면 어떤 $L_\gamma$ 는 $J_\sigma$와 같은 objective를 갖으므로 $L_1$을  $J_\sigma$ 대신 사용할 수 있다.
 
 <aside>
 만약 모델 $\epsilon_\theta$의 paramter가 서로다른 t끼리 공유하지 않는 구조면
- `$J_\sigma$의 objective로 $L_1$을 써도 Ok`.
+ $J_\sigma$의 objective로 $L_1$을 써도 Ok.
 </aside>
 
 ### ⚙️ Sampling From Generalized Generative Processes
